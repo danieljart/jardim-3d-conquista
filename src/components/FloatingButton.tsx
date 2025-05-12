@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Whatsapp } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const FloatingButton = () => {
   return (
@@ -10,7 +10,7 @@ const FloatingButton = () => {
       onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
       aria-label="WhatsApp"
     >
-      <Whatsapp className="h-6 w-6" />
+      <MessageSquare className="h-6 w-6" />
     </Button>
   );
 };

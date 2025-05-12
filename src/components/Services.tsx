@@ -3,7 +3,7 @@ import React from 'react';
 import { 
   Image, 
   LayoutDashboard, 
-  Design, 
+  PanelRight, 
   Video, 
   MessageSquare
 } from "lucide-react";
@@ -24,7 +24,7 @@ const Services = () => {
     {
       title: "Projetos de Comunicação Visual",
       description: "Letreiros em ACM, sinalização e displays personalizados que fortalecem a identidade da sua marca.",
-      icon: <Design className="h-10 w-10 text-secondary" />,
+      icon: <PanelRight className="h-10 w-10 text-secondary" />,
     },
     {
       title: "Identidade Visual Completa",

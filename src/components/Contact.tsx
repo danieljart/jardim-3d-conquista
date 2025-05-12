@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Phone, MessageSquare, Whatsapp } from "lucide-react";
+import { Phone, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -28,7 +27,7 @@ const Contact = () => {
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-6 flex flex-col items-center text-center">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <Whatsapp className="h-6 w-6 text-primary" />
+                <MessageSquare className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">WhatsApp</h3>
               <p className="text-text mb-4">(91) 98259-1612</p>
@@ -164,7 +163,7 @@ const Contact = () => {
                   className="mt-8 border-white text-white hover:bg-white hover:text-primary"
                   onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
                 >
-                  <Whatsapp className="h-4 w-4 mr-2" />
+                  <MessageSquare className="h-4 w-4 mr-2" />
                   Conversar no WhatsApp
                 </Button>
               </div>
