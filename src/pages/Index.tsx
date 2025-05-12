@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -13,13 +13,24 @@ import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 
 const Index = () => {
+  useEffect(() => {
+    // Add parallax effect to sections
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      document.documentElement.style.setProperty('--parallax-y', `${scrollY * 0.1}px`);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#121212]">
       <Navbar />
       <Hero />
       <Services />
-      <Portfolio />
       <About />
+      <Portfolio />
       <Testimonials />
       <VideoSection />
       <Pricing />

@@ -7,14 +7,14 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 255 70% 40%;
     --primary-foreground: 210 40% 98%;
@@ -22,55 +22,51 @@
     --secondary: 262 83% 58%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215.4 16.3% 56.9%;
 
     --accent: 262 83% 58%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.75rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-primary/20 selection:text-white;
   }
 
   body {
-    @apply bg-white text-text font-sans;
+    @apply bg-[#121212] text-slate-100 font-sans;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-semibold text-primary;
+    @apply font-heading font-semibold text-white;
+  }
+  
+  html {
+    @apply scroll-smooth;
   }
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  background: linear-gradient(135deg, #47365C 0%, #583F7D 50%, #6B4FAC 100%);
 }
 
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, #6366f1, #8b5cf6);
+  background-image: linear-gradient(to right, #8B5CF6, #D946EF);
 }
 
 .service-card {
@@ -78,8 +74,8 @@
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
 }
 
 .custom-shape-divider {
@@ -98,7 +94,7 @@
 }
 
 .custom-shape-divider .shape-fill {
-  fill: #FFFFFF;
+  fill: #121212;
 }
 
 .animate-float {
@@ -110,7 +106,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0px);
@@ -126,13 +122,58 @@
     box-shadow: 0 0 5px -5px #8b5cf6;
   }
   to {
-    box-shadow: 0 0 20px 5px #8b5cf6;
+    box-shadow: 0 0 30px 5px #8b5cf6;
   }
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.parallax {
+  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.parallax-slow {
+  transform: translateY(var(--parallax-y, 0));
+}
+
+.parallax-medium {
+  transform: translateY(calc(var(--parallax-y, 0) * 2));
+}
+
+.parallax-fast {
+  transform: translateY(calc(var(--parallax-y, 0) * 3));
+}
+
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+.neon-border {
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5),
+              0 0 20px rgba(139, 92, 246, 0.3),
+              inset 0 0 10px rgba(139, 92, 246, 0.2);
+}
+
+.section-divider {
+  height: 5px;
+  background: linear-gradient(90deg, #8B5CF6, #D946EF);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }

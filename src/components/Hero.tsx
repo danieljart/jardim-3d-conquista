@@ -1,29 +1,41 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      document.documentElement.style.setProperty('--parallax-y', `${scrollY * 0.1}px`);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex items-center pt-16">
+    <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90"></div>
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)]"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 py-20">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in">
-              Sua Fachada em 3D que Conquista Clientes!
+          <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 parallax parallax-slow">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in mb-2">
+              Sua Fachada em <span className="gradient-text">3D</span> que 
+              <span className="gradient-text"> Conquista</span> Clientes!
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/90 max-w-lg mx-auto md:mx-0">
+            <p className="mt-6 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
               Design 3D profissional para empresas que querem se destacar e atrair mais clientes com tecnologia de ponta.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg"
+                className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold text-lg border-none shadow-lg shadow-violet-900/30"
                 onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
               >
                 Fale no WhatsApp <ArrowRight className="ml-2 h-5 w-5" />
@@ -31,25 +43,27 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10 font-semibold text-lg"
+                className="border-white/30 text-white hover:bg-white/10 font-semibold text-lg backdrop-blur-sm"
                 onClick={() => document.getElementById('servicos')?.scrollIntoView({behavior: 'smooth'})}
               >
                 Conheça Nossos Serviços
               </Button>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center md:justify-end">
-            <div className="relative w-full max-w-md">
-              <div className="w-full h-[400px] bg-white/10 backdrop-blur-sm rounded-lg shadow-lg border border-white/20 p-4 overflow-hidden animate-float">
+          <div className="md:w-1/2 flex justify-center md:justify-end parallax parallax-medium">
+            <div className="relative w-full max-w-md group">
+              <div className="w-full h-[450px] glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500">
                 <img 
                   src="/placeholder.svg" 
                   alt="Mockup de design 3D" 
-                  className="w-full h-full object-cover rounded"
+                  className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute bottom-8 left-0 right-0 mx-auto w-4/5 bg-white/90 backdrop-blur-md p-4 rounded shadow-lg">
-                  <p className="text-primary text-sm font-medium">Transformamos sua ideia em realidade 3D</p>
+                <div className="absolute bottom-8 left-0 right-0 mx-auto w-4/5 glass-card p-4 rounded-lg shadow-lg border border-white/10 backdrop-blur-xl">
+                  <p className="text-white font-medium">Transformamos sua ideia em realidade 3D</p>
                 </div>
               </div>
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>
