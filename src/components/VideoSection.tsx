@@ -13,7 +13,7 @@ const VideoSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">A prova irrefutável do nosso Poder 3D!</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">A prova irrefutável do nosso poder 3D!</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             Palavras convencem, mas resultados ARRRASTAM. Veja a transformação radical que nosso 3D proporciona e entenda por que somos a escolha número 1.
@@ -30,7 +30,7 @@ const VideoSection = () => {
                 </div>
               </div>
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Tour Virtual - Loja Conceito</h3>
+            <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
             <p className="text-white/70">
               Um exemplo de tour virtual interativo que permite ao cliente explorar cada detalhe do espaço antes mesmo da sua construção.
             </p>
@@ -45,7 +45,7 @@ const VideoSection = () => {
                 </div>
               </div>
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada Comercial</h3>
+            <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada comercial</h3>
             <p className="text-white/70">
               Vídeo demonstrativo que apresenta as transformações de uma fachada comercial, destacando os detalhes arquitetônicos e a comunicação visual.
             </p>

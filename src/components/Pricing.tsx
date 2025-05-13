@@ -54,7 +54,7 @@ const Pricing = () => {
               <CardHeader className="pb-6 flex flex-col items-center">
                 {step.icon}
                 <CardTitle className="mt-4 text-center">
-                  <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                  <p className="text-xl font-bold text-white">{step.title}</p>
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center pt-0">
