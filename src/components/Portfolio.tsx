@@ -101,8 +101,8 @@ const Portfolio = () => {
         </div>
 
         <div className="mt-16 bg-[#151515] p-8 rounded-lg border border-[#252525]">
-          <h3 className="text-3xl font-bold mb-8 text-center text-white">A prova irrefutável do nosso poder 3D!</h3>
-          <p className="text-center text-white/80 mb-8">Palavras convencem, mas resultados ARRRASTAM. Veja a transformação radical que nosso 3D proporciona e entenda por que somos a escolha número 1.</p>
+          <h3 className="text-3xl font-bold mb-8 text-center text-white">Veja a transformação real com nosso 3D!</h3>
+          <p className="text-center text-white/80 mb-8">Compare o antes e depois e comprove o impacto visual que podemos criar para seu negócio. Os resultados falam por si.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
