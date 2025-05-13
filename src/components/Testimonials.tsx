@@ -36,7 +36,7 @@ const Testimonials = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Quem fez comprova: Somos os Melhores</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Quem fez comprova: somos os melhores</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             A maior prova da nossa excelência? A satisfação de quem já transformou seu negócio com a gente. Leia e veja por que eles nos amam.
@@ -81,7 +81,7 @@ const Testimonials = () => {
             <span className="bg-gradient-to-r from-indigo-600 to-violet-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">
               <Sparkles className="h-4 w-4 text-white" />
             </span>
-            Daniel Jardim - Seu Especialista em 3D para Resultados Máximos
+            Daniel Jardim - Seu especialista em 3D para resultados máximos
           </p>
         </div>
       </div>

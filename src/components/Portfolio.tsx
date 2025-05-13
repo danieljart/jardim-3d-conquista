@@ -54,7 +54,7 @@ const Portfolio = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Nossos clientes já estão lucrando mais. Veja Como:</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Nossos clientes já estão lucrando mais. Veja como:</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             Estes não são apenas projetos bonitos. São cases de sucesso. Inspire-se e imagine o que podemos fazer pelo seu negócio.
@@ -81,7 +81,7 @@ const Portfolio = () => {
                     size="sm"
                     className="text-indigo-400 hover:text-indigo-300 hover:bg-indigo-900/20"
                   >
-                    <GalleryHorizontal className="h-4 w-4 mr-1" /> Ver o Sucesso
+                    <GalleryHorizontal className="h-4 w-4 mr-1" /> Ver o sucesso
                   </Button>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const Portfolio = () => {
         </div>
 
         <div className="mt-16 bg-[#151515] p-8 rounded-lg border border-[#252525]">
-          <h3 className="text-3xl font-bold mb-8 text-center text-white">A prova irrefutável do nosso Poder 3D!</h3>
+          <h3 className="text-3xl font-bold mb-8 text-center text-white">A prova irrefutável do nosso poder 3D!</h3>
           <p className="text-center text-white/80 mb-8">Palavras convencem, mas resultados ARRRASTAM. Veja a transformação radical que nosso 3D proporciona e entenda por que somos a escolha número 1.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>

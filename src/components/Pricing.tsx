@@ -79,7 +79,7 @@ const Pricing = () => {
                   className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-6 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 whitespace-nowrap"
                 >
                   <Sparkles className="h-5 w-5" />
-                  Quero meu Projeto 3D vencedor!
+                  Quero meu projeto 3D vencedor!
                 </Button>
               </div>
             </div>

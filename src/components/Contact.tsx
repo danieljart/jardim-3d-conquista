@@ -42,7 +42,7 @@ const Contact = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Vamos Conversar Sobre o Seu Projeto?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Vamos conversar sobre o seu projeto?</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             Pronto para dar o próximo passo e transformar a imagem do seu negócio? Selecione os serviços de seu interesse e envie uma mensagem direta. Estamos ansiosos para entender suas ideias e propor a melhor solução 3D para você!
@@ -67,6 +67,24 @@ const Contact = () => {
               </Button>
             </CardContent>
           </Card>
+          
+          <Card className="hover:shadow-lg transition-shadow bg-[#151515] border-[#252525] text-white hover:border-white/20">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center mb-4">
+                <Phone className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="font-semibold mb-2 text-white">Instagram</h3>
+              <p className="text-white/80 mb-4">@danieljardim.3d</p>
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="mt-auto border-white/20 text-white hover:bg-white/10"
+                onClick={() => window.open('https://instagram.com/danieljardim.3d', '_blank')}
+              >
+                Seguir
+              </Button>
+            </CardContent>
+          </Card>
 
           <Card className="hover:shadow-lg transition-shadow bg-[#151515] border-[#252525] text-white hover:border-white/20">
             <CardContent className="p-6 flex flex-col items-center text-center">
@@ -82,24 +100,6 @@ const Contact = () => {
                 onClick={() => window.location.href = 'mailto:ddedesign1809@gmail.com'}
               >
                 Enviar e-mail
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-lg transition-shadow bg-[#151515] border-[#252525] text-white hover:border-white/20">
-            <CardContent className="p-6 flex flex-col items-center text-center">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center mb-4">
-                <Phone className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="font-semibold mb-2 text-white">Instagram</h3>
-              <p className="text-white/80 mb-4">@danieljardim.3d</p>
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="mt-auto border-white/20 text-white hover:bg-white/10"
-                onClick={() => window.open('https://instagram.com/danieljardim.3d', '_blank')}
-              >
-                Seguir
               </Button>
             </CardContent>
           </Card>

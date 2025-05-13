@@ -47,7 +47,7 @@ const Services = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Soluções 3D que Transformam Seu Negócio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Soluções 3D que transformam seu negócio</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             Descubra como nossas soluções 3D vão muito além do visual: elas criam experiências que seus clientes não esquecem e que convertem curiosos em compradores fiéis.
@@ -81,7 +81,7 @@ const Services = () => {
             className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 mx-auto shadow-lg shadow-indigo-900/30"
           >
             <Sparkles className="h-5 w-5" />
-            Quero um Orçamento Exclusivo
+            Quero um orçamento exclusivo
           </button>
         </div>
       </div>

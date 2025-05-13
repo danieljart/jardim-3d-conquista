@@ -27,10 +27,10 @@ const Hero = () => {
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 parallax parallax-slow">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in mb-2">
               Sua Fachada <span className="gradient-text">3D</span> que 
-              <span className="gradient-text"> Vende Sozinha!</span>
+              <span className="gradient-text"> Conquista!</span>
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
-              Chega de passar despercebido. Com nosso Design 3D, sua empresa não apenas se destaca: ela <span className="font-bold">domina</span>. Atraia todos os olhares, impulsione suas vendas e deixe a concorrência para trás. A transformação começa aqui.
+              Chega de passar despercebido. Com nosso Design 3D, sua empresa não apenas se destaca: ela <span className="font-bold">domina</span>!
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
               <Button 
