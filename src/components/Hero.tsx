@@ -30,7 +30,7 @@ const Hero = () => {
               <span className="gradient-text"> Conquista</span> Clientes!
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
-              Design 3D profissional para empresas que querem se destacar e atrair mais clientes com tecnologia de ponta.
+              Transformamos a imagem da sua empresa com Design 3D de alto impacto. Destaque-se da concorrência, atraia mais olhares e impulsione seus resultados com soluções visuais inovadoras e tecnologia de ponta.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
               <Button 
@@ -46,7 +46,7 @@ const Hero = () => {
                 className="border-white/30 text-white hover:bg-white/10 font-semibold text-lg backdrop-blur-sm"
                 onClick={() => document.getElementById('servicos')?.scrollIntoView({behavior: 'smooth'})}
               >
-                Conheça Nossos Serviços
+                Descubra Nossas Soluções 3D
               </Button>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                   className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute bottom-8 left-0 right-0 mx-auto w-4/5 glass-card p-4 rounded-lg shadow-lg border border-white/10 backdrop-blur-xl">
-                  <p className="text-white font-medium">Transformamos sua ideia em realidade 3D</p>
+                  <p className="text-white font-medium">Visualizações 3D que Materializam Seus Projetos e Encantam Seus Clientes.</p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>

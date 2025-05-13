@@ -39,7 +39,7 @@ const Testimonials = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">O Que Nossos Clientes Dizem</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Confira os depoimentos de quem já transformou seu negócio com nossas soluções em design 3D.
+            A satisfação dos nossos clientes é o nosso maior orgulho. Confira o que eles dizem sobre a parceria com o Daniel Jardim 3D e os resultados alcançados.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const Testimonials = () => {
               key={testimonial.id} 
               className="glass-card rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-indigo-500/10 group"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-64 overflow-hidden">
                 <img 
                   src={testimonial.avatar} 
                   alt={`Projeto para ${testimonial.company}`} 
@@ -73,14 +73,15 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-16 text-center max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold mb-4 text-white">Uma Mensagem de Daniel Jardim</h3>
           <blockquote className="text-xl italic">
-            "Nosso compromisso é transformar sua visão em realidade, criando ambientes digitais que se traduzem em resultados reais para o seu negócio."
+            "Minha paixão é materializar ideias em experiências visuais que transcendem o comum. No Daniel Jardim 3D, cada projeto é uma jornada colaborativa onde a tecnologia e a criatividade se unem para entregar não apenas design de impacto, mas soluções que impulsionam o sucesso e o crescimento dos negócios de nossos clientes. Seu objetivo é o nosso ponto de partida."
           </blockquote>
           <p className="mt-4 font-semibold flex items-center justify-center">
             <span className="bg-gradient-to-r from-indigo-600 to-violet-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">
               <Sparkles className="h-4 w-4 text-white" />
             </span>
-            Daniel Jardim, Fundador
+            Daniel Jardim - Fundador & Designer 3D Especialista
           </p>
         </div>
       </div>

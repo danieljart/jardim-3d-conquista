@@ -46,81 +46,87 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="portfolio" className="py-24 bg-[#111111] relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-800/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-violet-800/5 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Portfólio</h2>
-          <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
-          <p className="text-lg text-text">
-            Confira alguns de nossos trabalhos recentes e descubra como podemos transformar o visual do seu negócio.
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Portfólio: Projetos 3D que Transformam Negócios</h2>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
+          <p className="text-xl text-white/80">
+            Navegue por uma seleção de nossos trabalhos recentes e veja na prática como o design 3D pode revolucionar a apresentação visual e os resultados do seu negócio. Cada projeto é uma história de sucesso.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolioItems.map((item) => (
-            <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+            <div key={item.id} className="bg-[#151515] border border-[#252525] rounded-lg overflow-hidden hover:shadow-lg hover:shadow-indigo-500/10 transition-transform duration-300 hover:-translate-y-1 group">
               <div className="h-64 overflow-hidden">
                 <img 
                   src={item.imageUrl} 
                   alt={item.title} 
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <CardContent className="p-4">
-                <div className="text-sm text-secondary font-medium mb-1">{item.category}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+              <div className="p-4">
+                <div className="text-sm text-indigo-400 font-medium mb-1">{item.category}</div>
+                <h3 className="font-semibold text-lg mb-2 text-white">{item.title}</h3>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-500">@danieljardim.3d</span>
                   <Button 
                     variant="ghost" 
                     size="sm"
-                    className="text-primary hover:text-secondary"
+                    className="text-indigo-400 hover:text-indigo-300 hover:bg-indigo-900/20"
                   >
-                    <GalleryHorizontal className="h-4 w-4 mr-1" /> Ver Mais
+                    <GalleryHorizontal className="h-4 w-4 mr-1" /> Ver Detalhes do Projeto
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
 
         <div className="mt-12 text-center">
-          <p className="mb-4">Veja mais projetos em nosso Instagram</p>
+          <p className="mb-4 text-white/80">Veja mais projetos em nosso Instagram</p>
           <Button 
             onClick={() => window.open('https://instagram.com/danieljardim.3d', '_blank')}
             variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-white"
+            className="border-indigo-500/30 text-indigo-400 hover:bg-indigo-900/20 hover:text-indigo-300"
           >
             @danieljardim.3d
           </Button>
         </div>
 
-        <div className="mt-16 bg-gray-50 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-8 text-center">Antes & Depois</h3>
+        <div className="mt-16 bg-[#151515] p-8 rounded-lg border border-[#252525]">
+          <h3 className="text-3xl font-bold mb-8 text-center text-white">Impacto Real: Antes e Depois com Daniel Jardim 3D</h3>
+          <p className="text-center text-white/80 mb-8">Veja a transformação que o design 3D de alta qualidade pode trazer para o seu negócio. Comparamos o antes e o depois para que você visualize o impacto direto de nossas soluções.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <div className="bg-gray-200 h-64 rounded-lg mb-4 overflow-hidden">
+              <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
                 <img 
                   src="/placeholder.svg" 
                   alt="Antes" 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" 
                 />
               </div>
               <div className="text-center">
-                <span className="font-medium text-text">Antes</span>
+                <span className="font-medium text-white">Antes</span>
               </div>
             </div>
             <div>
-              <div className="bg-gray-200 h-64 rounded-lg mb-4 overflow-hidden">
+              <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
                 <img 
                   src="/placeholder.svg" 
                   alt="Depois" 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" 
                 />
               </div>
               <div className="text-center">
-                <span className="font-medium text-text">Depois</span>
-                <p className="text-sm text-gray-500 mt-1">60% de aumento no fluxo de clientes</p>
+                <span className="font-medium text-white">Depois</span>
+                <p className="text-sm text-indigo-400 mt-1">60% de aumento no fluxo de clientes</p>
               </div>
             </div>
           </div>

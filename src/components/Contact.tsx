@@ -12,12 +12,12 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   
   const services = [
-    "Modelagem 3D de Fachada",
-    "Design de Interior",
-    "Comunicação Visual",
-    "Identidade Visual",
-    "Tour Virtual 3D",
-    "Vídeo de Apresentação",
+    "Fachadas 3D Impactantes",
+    "Interiores 3D Funcionais",
+    "Comunicação Visual 3D",
+    "Identidade Visual 3D",
+    "Vídeos e Tours Virtuais 3D",
+    "Estandes para Feiras e Eventos",
   ];
   
   const handleServiceToggle = (service: string) => {
@@ -42,10 +42,10 @@ const Contact = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Entre em Contato</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Vamos Conversar Sobre o Seu Projeto?</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Estamos prontos para transformar suas ideias em experiências visuais impactantes. Fale conosco!
+            Pronto para dar o próximo passo e transformar a imagem do seu negócio? Selecione os serviços de seu interesse e envie uma mensagem direta. Estamos ansiosos para entender suas ideias e propor a melhor solução 3D para você!
           </p>
         </div>
 
@@ -166,7 +166,7 @@ const Contact = () => {
                   className="w-full mt-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white"
                 >
                   <MessageSquare className="h-4 w-4 mr-2" />
-                  Enviar Mensagem via WhatsApp
+                  Enviar e Iniciar Conversa
                 </Button>
               </div>
             </div>
@@ -190,8 +190,8 @@ const Contact = () => {
                       <Check className="h-4 w-4 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Condições especiais de pagamento</h4>
-                      <p className="text-white/80 text-sm">50% na aprovação e 50% na entrega ou 10% de desconto para pagamento antecipado.</p>
+                      <h4 className="font-semibold mb-1">Processo transparente</h4>
+                      <p className="text-white/80 text-sm">Acompanhamento em cada etapa do projeto, com abertura para ajustes e revisões quando necessário.</p>
                     </div>
                   </li>
                   
@@ -201,7 +201,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Entrega rápida e eficiente</h4>
-                      <p className="text-white/80 text-sm">Prazos claramente definidos e cumpridos rigorosamente para melhor planejamento do seu projeto.</p>
+                      <p className="text-white/80 text-sm">Compromisso com prazos claramente definidos para melhor planejamento do seu projeto.</p>
                     </div>
                   </li>
                   
