@@ -13,10 +13,10 @@ const VideoSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Experiências Imersivas em 3D</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">A prova irrefutável do nosso Poder 3D!</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Vídeos e tours virtuais que apresentam seu espaço de forma interativa e memorável, permitindo que seus clientes experimentem seu ambiente antes mesmo de existir fisicamente.
+            Palavras convencem, mas resultados ARRRASTAM. Veja a transformação radical que nosso 3D proporciona e entenda por que somos a escolha número 1.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const VideoSection = () => {
             onClick={() => window.open('https://wa.me/5591982591612?text=Olá! Tenho interesse em vídeos e tours virtuais para meu negócio.', '_blank')}
             className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
           >
-            Solicitar Demonstração
+            Quero falar com o Daniel AGORA!
           </Button>
         </div>
       </div>

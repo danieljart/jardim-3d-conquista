@@ -7,23 +7,23 @@ import { Button } from "@/components/ui/button";
 const Pricing = () => {
   const processSteps = [
     {
-      title: "Briefing Detalhado",
-      description: "Conversamos para entender sua visão, público e metas.",
+      title: "1. Sua visão, nosso ponto de partida",
+      description: "Entendemos seus sonhos e metas a fundo.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">1</div>,
     },
     {
-      title: "Proposta Personalizada",
-      description: "Desenvolvemos uma solução e orçamento sob medida para você.",
+      title: "2. Estratégia 3D vencedora",
+      description: "Criamos a solução perfeita para seu sucesso, com orçamento justo.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">2</div>,
     },
     {
-      title: "Desenvolvimento Criativo",
-      description: "Iniciamos a modelagem e o design 3D do seu projeto.",
+      title: "3. Magia em ação",
+      description: "Nosso time de craques transforma sua ideia em 3D espetacular.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">3</div>,
     },
     {
-      title: "Revisões e Ajustes",
-      description: "Você acompanha e aprova cada etapa importante.",
+      title: "4. Você no comando",
+      description: "Acompanhe tudo e aprove cada detalhe. Sua satisfação é lei.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">4</div>,
     },
   ];
@@ -37,10 +37,10 @@ const Pricing = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Nosso Processo Transparente e Personalizado</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Seu projeto 3D exclusivo começa agora!</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            No Daniel Jardim 3D, cada projeto é tratado com a individualidade que merece. Não trabalhamos com pacotes fixos, mas sim com um processo consultivo para entender profundamente suas necessidades e objetivos. A partir daí, elaboramos uma proposta de solução 3D e um orçamento totalmente personalizados para o seu caso. Veja como é simples iniciar sua transformação visual:
+            Chega de soluções genéricas. Seu negócio merece um projeto 3D único, pensado para seus desafios e ambições. Nosso processo é 100% focado em você, do primeiro bate-papo à entrega de um resultado que vai te surpreender. Vamos criar juntos?
           </p>
         </div>
 
@@ -70,8 +70,8 @@ const Pricing = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold text-2xl">5</div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2">Entrega Final e Suporte</h3>
-                <p className="text-white/70">Entregamos seu projeto com máxima qualidade e continuamos à disposição para garantir sua satisfação completa. Nossa parceria não termina na entrega: estamos sempre prontos para ajustes futuros ou até mesmo novas ideias que possam surgir para o seu negócio.</p>
+                <h3 className="text-xl font-bold text-white mb-2">5. Resultado entregue, parceria que fica</h3>
+                <p className="text-white/70">Seu projeto impecável e nosso suporte total para o que vier. Nossa parceria não termina na entrega: estamos sempre prontos para ajustes futuros ou até mesmo novas ideias que possam surgir para o seu negócio.</p>
               </div>
               <div>
                 <Button 
@@ -79,7 +79,7 @@ const Pricing = () => {
                   className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-6 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 whitespace-nowrap"
                 >
                   <Sparkles className="h-5 w-5" />
-                  Inicie Seu Projeto Conosco
+                  Quero meu Projeto 3D vencedor!
                 </Button>
               </div>
             </div>
