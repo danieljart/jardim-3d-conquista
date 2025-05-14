@@ -4,36 +4,36 @@ import {
   Image, 
   LayoutDashboard, 
   PanelRight, 
-  Video, 
   MessageSquare,
+  Video, 
   Sparkles
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      title: "Design de fachadas de alto impacto",
+      title: "Fachadas\nImpactantes",
       description: "A fachada é um dos principais cartões de visita do seu negócio. Com minha expertise, ela se torna um elemento de atração e comunicação de valor, destacando sua marca.",
       icon: <Image className="h-10 w-10 text-white" />,
     },
     {
-      title: "Design de interiores estratégico e funcional",
-      description: "Transforme seu espaço comercial em um ambiente otimizado e funcional. Desenvolvo layouts que valorizam a experiência do cliente e a eficiência operacional.",
+      title: "Interiores\nFuncionais",
+      description: "Transformo seu espaço comercial em um ambiente otimizado e funcional. Desenvolvo layouts que valorizam a experiência do cliente e a eficiência operacional.",
       icon: <LayoutDashboard className="h-10 w-10 text-white" />,
     },
     {
-      title: "Comunicação visual estratégica",
-      description: "Fortaleça a identidade da sua marca. Desenvolvo projetos de letreiros e sinalização que comunicam com clareza e profissionalismo, orientando e impactando seus clientes.",
+      title: "Comunicação\nEstratégica",
+      description: "Fortaleço a identidade da sua marca. Desenvolvo projetos de letreiros e sinalização que comunicam com clareza e profissionalismo, orientando e impactando seus clientes.",
       icon: <PanelRight className="h-10 w-10 text-white" />,
     },
     {
-      title: "Identidade visual profissional e coesa",
-      description: "Construa uma marca sólida e reconhecida. Do logotipo à aplicação em diversos materiais, asseguro uma identidade visual que transmite credibilidade e atrai negócios.",
+      title: "Identidade\nVisual",
+      description: "Construo uma marca sólida e reconhecida. Do logotipo à aplicação em diversos materiais, asseguro uma identidade visual que transmite credibilidade e atrai negócios.",
       icon: <MessageSquare className="h-10 w-10 text-white" />,
     },
     {
-      title: "Vídeos e tours virtuais imersivos",
-      description: "Permitindo que você vivencie seu projeto de forma interativa. Meus vídeos e tours virtuais são ferramentas eficazes para encantar e acelerar decisões.",
+      title: "Vídeos\nImersivos",
+      description: "Permito que você vivencie seu projeto de forma interativa. Meus vídeos e tours virtuais são ferramentas eficazes para encantar e acelerar decisões.",
       icon: <Video className="h-10 w-10 text-white" />,
     },
   ];
@@ -58,14 +58,16 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="service-card bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
+              className="service-card bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 h-full"
             >
               <div className="h-2 bg-gradient-to-r from-indigo-500 to-violet-500"></div>
               <div className="p-6">
-                <div className="mb-5 bg-gradient-to-br from-indigo-600 to-violet-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-indigo-900/30">
-                  {service.icon}
+                <div className="flex items-center mb-5">
+                  <div className="bg-gradient-to-br from-indigo-600 to-violet-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-indigo-900/30">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold ml-4 text-white whitespace-pre-line">{service.title}</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-white">{service.title}</h3>
                 <p className="text-white/70">{service.description}</p>
               </div>
             </div>

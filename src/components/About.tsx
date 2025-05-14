@@ -53,7 +53,7 @@ const About = () => {
             <div className="relative bg-[#181818] p-8 rounded-xl border border-white/10">
               <h3 className="text-3xl font-bold mb-6 text-white">A essência do design que entrega valor real</h3>
               <p className="mb-6 text-lg text-white/70 leading-relaxed">
-                Com sólida experiência no mercado, o estúdio Daniel Jardim - 3D é sua referência em modelagem e design tridimensional para ambientes comerciais. Utilizo as mais avançadas ferramentas digitais para criar soluções que não apenas encantam pelo visual, mas que, fundamentalmente, geram resultados e impulsionam o sucesso do seu negócio.
+                Com experiência no mercado, sou referência em modelagem e design tridimensional para ambientes comerciais. Utilizo ferramentas digitais avançadas para criar soluções que não apenas encantam visualmente, mas que geram resultados concretos e impulsionam o sucesso do seu negócio.
               </p>
               
               <div className="flex flex-wrap gap-6">
@@ -115,6 +115,7 @@ const About = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <p className="text-white/70"><strong>Compromisso e parceria</strong></p>
+                <p className="text-white/60 text-sm mt-1">Dedicação total ao seu projeto</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
@@ -122,6 +123,7 @@ const About = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <p className="text-white/70"><strong>Excelência e qualidade</strong></p>
+                <p className="text-white/60 text-sm mt-1">Padrão superior em cada detalhe</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
@@ -129,6 +131,7 @@ const About = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <p className="text-white/70"><strong>Atendimento personalizado</strong></p>
+                <p className="text-white/60 text-sm mt-1">Foco nas suas necessidades</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
@@ -136,6 +139,7 @@ const About = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <p className="text-white/70"><strong>Visão estratégica</strong></p>
+                <p className="text-white/60 text-sm mt-1">Soluções que geram resultados</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
@@ -143,6 +147,7 @@ const About = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <p className="text-white/70"><strong>Compromisso com prazos</strong></p>
+                <p className="text-white/60 text-sm mt-1">Entrega sempre pontual</p>
               </div>
             </div>
           </div>

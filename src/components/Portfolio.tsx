@@ -54,10 +54,10 @@ const Portfolio = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Nossos clientes já estão lucrando mais. Veja como:</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Meus clientes já estão lucrando mais. Veja como:</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Estes não são apenas projetos bonitos. São cases de sucesso. Inspire-se e imagine o que podemos fazer pelo seu negócio.
+            Estes não são apenas projetos bonitos. São cases de sucesso. Inspire-se e imagine o que posso fazer pelo seu negócio.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const Portfolio = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="mb-4 text-white/80">Veja mais projetos em nosso Instagram</p>
+          <p className="mb-4 text-white/80">Veja mais projetos em meu Instagram</p>
           <Button 
             onClick={() => window.open('https://instagram.com/danieljardim.3d', '_blank')}
             variant="outline"
@@ -101,9 +101,9 @@ const Portfolio = () => {
         </div>
 
         <div className="mt-16 bg-[#151515] p-8 rounded-lg border border-[#252525]">
-          <h3 className="text-3xl font-bold mb-8 text-center text-white">Veja a transformação real com nosso 3D!</h3>
-          <p className="text-center text-white/80 mb-8">Compare o antes e depois e comprove o impacto visual que podemos criar para seu negócio. Os resultados falam por si.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h3 className="text-3xl font-bold mb-8 text-center text-white">Veja a transformação real com meu 3D!</h3>
+          <p className="text-center text-white/80 mb-8">Compare o antes e depois e comprove o impacto visual que posso criar para seu negócio. Os resultados falam por si.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
                 <img 
@@ -116,6 +116,21 @@ const Portfolio = () => {
                 <span className="font-medium text-white">Antes</span>
               </div>
             </div>
+            
+            <div>
+              <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Render do Projeto" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" 
+                />
+              </div>
+              <div className="text-center">
+                <span className="font-medium text-white">Meu Render 3D</span>
+                <p className="text-sm text-indigo-400 mt-1">Visualização realista do resultado</p>
+              </div>
+            </div>
+            
             <div>
               <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
                 <img 

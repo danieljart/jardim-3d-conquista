@@ -107,6 +107,62 @@ const Contact = () => {
 
         <div className="bg-[#151515] rounded-lg shadow-xl overflow-hidden border border-[#252525]">
           <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="bg-gradient-to-br from-indigo-800 to-violet-900 p-8 flex items-center text-white">
+              <div>
+                <h3 className="text-2xl font-semibold mb-6">Por que trabalhar conosco?</h3>
+                <ul className="space-y-6">
+                  <li className="flex items-start">
+                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
+                      <Check className="h-4 w-4 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Atendimento personalizado e flexível</h4>
+                      <p className="text-white/80 text-sm">100% digital, com comunicação ágil e eficiente para sua conveniência.</p>
+                    </div>
+                  </li>
+                  
+                  <li className="flex items-start">
+                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
+                      <Check className="h-4 w-4 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Processo transparente</h4>
+                      <p className="text-white/80 text-sm">Acompanhamento em cada etapa do projeto, com abertura para ajustes e revisões quando necessário.</p>
+                    </div>
+                  </li>
+                  
+                  <li className="flex items-start">
+                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
+                      <Check className="h-4 w-4 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Entrega rápida e eficiente</h4>
+                      <p className="text-white/80 text-sm">Compromisso com prazos claramente definidos para melhor planejamento do seu projeto.</p>
+                    </div>
+                  </li>
+                  
+                  <li className="flex items-start">
+                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
+                      <Check className="h-4 w-4 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Resultados mensuráveis</h4>
+                      <p className="text-white/80 text-sm">Mais de 50 projetos entregues com comprovado aumento de engajamento e conversão.</p>
+                    </div>
+                  </li>
+                </ul>
+                
+                <Button 
+                  variant="outline" 
+                  className="mt-8 border-white/20 text-white hover:bg-white/10"
+                  onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
+                >
+                  <MessageSquare className="h-4 w-4 mr-2" />
+                  Conversar no WhatsApp
+                </Button>
+              </div>
+            </div>
+            
             <div className="p-8">
               <h3 className="text-2xl font-semibold mb-6 text-white">Envie sua mensagem</h3>
               
@@ -167,62 +223,6 @@ const Contact = () => {
                 >
                   <MessageSquare className="h-4 w-4 mr-2" />
                   Enviar e Iniciar Conversa
-                </Button>
-              </div>
-            </div>
-            
-            <div className="bg-gradient-to-br from-indigo-800 to-violet-900 p-8 flex items-center text-white">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">Por que trabalhar conosco?</h3>
-                <ul className="space-y-6">
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
-                      <Check className="h-4 w-4 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Atendimento personalizado e flexível</h4>
-                      <p className="text-white/80 text-sm">100% digital, com comunicação ágil e eficiente para sua conveniência.</p>
-                    </div>
-                  </li>
-                  
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
-                      <Check className="h-4 w-4 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Processo transparente</h4>
-                      <p className="text-white/80 text-sm">Acompanhamento em cada etapa do projeto, com abertura para ajustes e revisões quando necessário.</p>
-                    </div>
-                  </li>
-                  
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
-                      <Check className="h-4 w-4 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Entrega rápida e eficiente</h4>
-                      <p className="text-white/80 text-sm">Compromisso com prazos claramente definidos para melhor planejamento do seu projeto.</p>
-                    </div>
-                  </li>
-                  
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">
-                      <Check className="h-4 w-4 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-1">Resultados mensuráveis</h4>
-                      <p className="text-white/80 text-sm">Mais de 50 projetos entregues com comprovado aumento de engajamento e conversão.</p>
-                    </div>
-                  </li>
-                </ul>
-                
-                <Button 
-                  variant="outline" 
-                  className="mt-8 border-white/20 text-white hover:bg-white/10"
-                  onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
-                >
-                  <MessageSquare className="h-4 w-4 mr-2" />
-                  Conversar no WhatsApp
                 </Button>
               </div>
             </div>

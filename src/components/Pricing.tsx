@@ -66,7 +66,7 @@ const Pricing = () => {
         
         <Card className="mt-12 bg-[#151515] border-[#252525] overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-violet-500"></div>
-          <CardContent className="p-8">
+          <CardContent className="p-8 pt-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold text-2xl">5</div>
               <div className="flex-1">
