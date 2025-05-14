@@ -51,9 +51,9 @@ const About = () => {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-xl blur opacity-30"></div>
               <div className="relative bg-[#181818] p-8 rounded-xl border border-white/10">
-                <h3 className="text-3xl font-bold mb-6 text-white">Especialistas em dar vida às suas ideias com design 3D</h3>
+                <h3 className="text-3xl font-bold mb-6 text-white">A essência do design que entrega valor real</h3>
                 <p className="mb-6 text-lg text-white/70 leading-relaxed">
-                  Com sólida experiência no mercado, o estúdio Daniel Jardim - 3D é sua referência em modelagem e design tridimensional para ambientes comerciais. Utilizamos as mais avançadas ferramentas digitais para criar soluções que não apenas encantam pelo visual, mas que, fundamentalmente, geram resultados e impulsionam o sucesso do seu negócio.
+                  Com sólida experiência no mercado, o estúdio Daniel Jardim - 3D é sua referência em modelagem e design tridimensional para ambientes comerciais. Utilizo as mais avançadas ferramentas digitais para criar soluções que não apenas encantam pelo visual, mas que, fundamentalmente, geram resultados e impulsionam o sucesso do seu negócio.
                 </p>
                 
                 <div className="flex flex-col gap-4">
@@ -61,19 +61,19 @@ const About = () => {
                     <div className="mt-1 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
                       <Check className="h-4 w-4 text-white" />
                     </div>
-                    <p className="text-white/70"><strong>Expertise técnica e sensibilidade estética:</strong> Unimos profundo conhecimento técnico em modelagem 3D com uma apurada visão artística para desenvolver projetos que são ao mesmo tempo precisos e visualmente impactantes.</p>
+                    <p className="text-white/70"><strong>Expertise técnica e sensibilidade estética:</strong> Uno profundo conhecimento técnico em modelagem 3D com uma apurada visão artística para desenvolver projetos que são ao mesmo tempo precisos e visualmente impactantes.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="mt-1 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
                       <Check className="h-4 w-4 text-white" />
                     </div>
-                    <p className="text-white/70"><strong>Soluções sob medida para seu negócio:</strong> Compreendemos que cada empresa é única. Por isso, criamos projetos 100% personalizados, alinhados com seus objetivos, sua marca e as particularidades do seu público.</p>
+                    <p className="text-white/70"><strong>Soluções sob medida para seu negócio:</strong> Compreendo que cada empresa é única. Por isso, crio projetos 100% personalizados, alinhados com seus objetivos, sua marca e as particularidades do seu público.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="mt-1 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
                       <Check className="h-4 w-4 text-white" />
                     </div>
-                    <p className="text-white/70"><strong>Foco em resultados e visibilidade:</strong> Mais do que design, entregamos estratégia. Nossas soluções 3D são pensadas para aumentar a visibilidade da sua marca, atrair novos clientes e fortalecer sua presença no mercado.</p>
+                    <p className="text-white/70"><strong>Foco em resultados e visibilidade:</strong> Mais do que design, entrego estratégia. Minhas soluções 3D são pensadas para aumentar a visibilidade da sua marca, atrair novos clientes e fortalecer sua presença no mercado.</p>
                   </div>
                 </div>
               </div>
@@ -82,22 +82,22 @@ const About = () => {
           
           <div className="lg:col-span-7 reveal-on-scroll opacity-0 transition-all duration-700 delay-300">
             <div className="grid grid-cols-12 gap-5">
-              <div className="col-span-8 glass-card p-6 rounded-xl hover-lift group">
+              <div className="col-span-8 glass-card p-6 rounded-xl hover-lift group h-full">
                 <div className="text-4xl md:text-5xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">50+</div>
                 <p className="text-white/70"><strong>Projetos concluídos anualmente:</strong> Contribuindo para a transformação de negócios e a satisfação de clientes.</p>
               </div>
               
-              <div className="col-span-4 glass-card p-6 rounded-xl hover-lift group">
+              <div className="col-span-4 glass-card p-6 rounded-xl hover-lift group h-full">
                 <div className="text-4xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">85%</div>
                 <p className="text-white/70"><strong>Resultados mensuráveis:</strong> Meus clientes constatam o impacto real do design na visibilidade e performance de seus negócios.</p>
               </div>
               
-              <div className="col-span-4 glass-card p-6 rounded-xl hover-lift group">
+              <div className="col-span-4 glass-card p-6 rounded-xl hover-lift group h-full">
                 <div className="text-4xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">100%</div>
                 <p className="text-white/70"><strong>Digital:</strong> Atendimento completamente digital e eficiente para sua comodidade.</p>
               </div>
               
-              <div className="col-span-8 glass-card p-6 rounded-xl hover-lift group">
+              <div className="col-span-8 glass-card p-6 rounded-xl hover-lift group h-full">
                 <div className="text-4xl md:text-5xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">5+</div>
                 <p className="text-white/70"><strong>Anos de experiência profissional:</strong> Dedicação contínua ao aprimoramento e à aplicação das melhores práticas de design.</p>
               </div>

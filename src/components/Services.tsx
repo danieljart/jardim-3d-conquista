@@ -12,28 +12,28 @@ import {
 const Services = () => {
   const services = [
     {
-      title: "Fachadas 3D",
-      description: "Sua fachada é seu melhor vendedor. Com nosso 3D, ela se torna irresistível, atraindo clientes e transmitindo o valor que só você tem.",
+      title: "Design de fachadas de alto impacto",
+      description: "A fachada é um dos principais cartões de visita do seu negócio. Com minha expertise, ela se torna um elemento de atração e comunicação de valor, destacando sua marca.",
       icon: <Image className="h-10 w-10 text-white" />,
     },
     {
-      title: "Interiores",
-      description: "Transforme seu espaço comercial em uma máquina de resultados. Nossos layouts 3D otimizam, encantam e fazem seus clientes quererem ficar (e comprar!).",
+      title: "Design de interiores estratégico e funcional",
+      description: "Transforme seu espaço comercial em um ambiente otimizado e funcional. Desenvolvo layouts que valorizam a experiência do cliente e a eficiência operacional.",
       icon: <LayoutDashboard className="h-10 w-10 text-white" />,
     },
     {
-      title: "Comunicação Visual",
-      description: "Deixe sua marca gravada na mente dos clientes. Criamos letreiros e sinalizações 3D que comunicam com força e clareza, guiando e vendendo.",
+      title: "Comunicação visual estratégica",
+      description: "Fortaleça a identidade da sua marca. Desenvolvo projetos de letreiros e sinalização que comunicam com clareza e profissionalismo, orientando e impactando seus clientes.",
       icon: <PanelRight className="h-10 w-10 text-white" />,
     },
     {
-      title: "Identidade Visual",
-      description: "Construa uma marca poderosa e reconhecida. Do logo 3D à aplicação final, garantimos uma identidade visual que impõe respeito e atrai negócios.",
+      title: "Identidade visual profissional e coesa",
+      description: "Construa uma marca sólida e reconhecida. Do logotipo à aplicação em diversos materiais, asseguro uma identidade visual que transmite credibilidade e atrai negócios.",
       icon: <MessageSquare className="h-10 w-10 text-white" />,
     },
     {
-      title: "Vídeos e Tours",
-      description: "Faça seus clientes sentirem a experiência do seu projeto como se fosse real. Nossos vídeos e tours 3D imersivos são a chave para encantar e fechar negócios mais rápido.",
+      title: "Vídeos e tours virtuais imersivos",
+      description: "Permitindo que você vivencie seu projeto de forma interativa. Meus vídeos e tours virtuais são ferramentas eficazes para encantar e acelerar decisões.",
       icon: <Video className="h-10 w-10 text-white" />,
     },
   ];
@@ -47,10 +47,10 @@ const Services = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Soluções 3D que transformam seu negócio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Soluções de design para a transformação do seu negócio</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Descubra como nossas soluções 3D vão muito além do visual: elas criam experiências que seus clientes não esquecem e que convertem curiosos em compradores fiéis.
+            Em meu trabalho, não me dedico apenas à criação de imagens esteticamente agradáveis, mas ao desenvolvimento de <strong>resultados concretos</strong>. Com anos de experiência e utilizando tecnologia de ponta, transformo sua visão em uma poderosa ferramenta de posicionamento e vendas.
           </p>
         </div>
 
@@ -74,14 +74,14 @@ const Services = () => {
 
         <div className="mt-20 text-center">
           <p className="text-lg font-medium mb-6 text-white">
-            Seu projeto é único. Sua solução 3D também precisa ser. Vamos criar algo incrível juntos?
+            Cada projeto é único e merece uma solução personalizada. Convido você a discutirmos como posso contribuir para o seu sucesso.
           </p>
           <button 
             onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
             className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 mx-auto shadow-lg shadow-indigo-900/30"
           >
             <Sparkles className="h-5 w-5" />
-            Quero um orçamento exclusivo
+            Solicitar um orçamento personalizado
           </button>
         </div>
       </div>
