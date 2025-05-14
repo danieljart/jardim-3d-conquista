@@ -36,10 +36,10 @@ const Testimonials = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Quem fez comprova: somos os melhores</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Depoimentos de clientes satisfeitos</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            A maior prova da nossa excelência? A satisfação de quem já transformou seu negócio com a gente. Leia e veja por que eles nos amam.
+            A maior validação da minha excelência profissional reside na satisfação dos clientes que confiaram em meu trabalho. Leia seus testemunhos.
           </p>
         </div>
 
@@ -73,9 +73,9 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-16 text-center max-w-2xl mx-auto">
-          <h3 className="text-2xl font-bold mb-4 text-white">Minha promessa para você!</h3>
+          <h3 className="text-2xl font-bold mb-4 text-white">Meu compromisso com você</h3>
           <blockquote className="text-xl italic">
-            "Minha missão é simples: usar todo o poder do 3D para fazer seu negócio explodir em resultados. Não se trata apenas de design, mas de estratégia, impacto e crescimento real. Conte comigo para levar sua empresa ao próximo nível – e além."
+            "Minha missão é aplicar todo o potencial da criatividade visual para impulsionar os resultados do seu negócio. Trata-se de estratégia, impacto e crescimento sustentável. Conte com minha dedicação para elevar sua empresa a um novo patamar."
           </blockquote>
           <p className="mt-4 font-semibold flex items-center justify-center">
             <span className="bg-gradient-to-r from-indigo-600 to-violet-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">

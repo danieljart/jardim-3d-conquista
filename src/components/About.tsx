@@ -39,10 +39,10 @@ const About = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Conheça o nosso estúdio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Por que optar pelos meus serviços?</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            O <span className="font-semibold text-white">Daniel Jardim - 3D</span> é um estúdio 100% digital, apaixonado por transformar ideias inovadoras em experiências visuais de alto impacto para empresas como a sua. Nossa especialidade é dar vida a projetos que não apenas impressionam, mas que também geram valor e resultados concretos.
+            Sou mais que um designer; sou seu parceiro estratégico na busca por resultados superiores. Com dedicação, expertise técnica e paixão pela inovação, transformo suas ideias em valor tangível para seu negócio.
           </p>
         </div>
 
@@ -81,50 +81,64 @@ const About = () => {
           </div>
           
           <div className="lg:col-span-7 reveal-on-scroll opacity-0 transition-all duration-700 delay-300">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-              <div className="col-span-2 glass-card p-8 rounded-xl hover-lift group">
+            <div className="grid grid-cols-12 gap-5">
+              <div className="col-span-8 glass-card p-6 rounded-xl hover-lift group">
                 <div className="text-4xl md:text-5xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">50+</div>
-                <p className="text-lg text-white/70">+50 projetos entregues anualmente: Experiência comprovada em transformar desafios em soluções visuais de sucesso para dezenas de empresas a cada ano.</p>
+                <p className="text-white/70"><strong>Projetos concluídos anualmente:</strong> Contribuindo para a transformação de negócios e a satisfação de clientes.</p>
               </div>
               
-              <div className="glass-card p-8 rounded-xl hover-lift group">
+              <div className="col-span-4 glass-card p-6 rounded-xl hover-lift group">
                 <div className="text-4xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">85%</div>
-                <p className="text-white/70">Resultados comprovados: Clientes relatam até 85% de aumento no engajamento e fluxo de público após a implementação de nossos projetos 3D.</p>
+                <p className="text-white/70"><strong>Resultados mensuráveis:</strong> Meus clientes constatam o impacto real do design na visibilidade e performance de seus negócios.</p>
               </div>
               
-              <div className="glass-card p-8 rounded-xl hover-lift group">
+              <div className="col-span-4 glass-card p-6 rounded-xl hover-lift group">
                 <div className="text-4xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">100%</div>
-                <p className="text-white/70">Digital</p>
+                <p className="text-white/70"><strong>Digital:</strong> Atendimento completamente digital e eficiente para sua comodidade.</p>
               </div>
               
-              <div className="col-span-2 glass-card p-8 rounded-xl hover-lift group">
+              <div className="col-span-8 glass-card p-6 rounded-xl hover-lift group">
                 <div className="text-4xl md:text-5xl font-bold mb-2 gradient-text group-hover:scale-110 transition-transform duration-300">5+</div>
-                <p className="text-lg text-white/70">+5 anos de experiência: Uma trajetória de mais de cinco anos dedicada à excelência em design 3D, sempre atualizados com as últimas tecnologias e tendências do mercado.</p>
+                <p className="text-white/70"><strong>Anos de experiência profissional:</strong> Dedicação contínua ao aprimoramento e à aplicação das melhores práticas de design.</p>
               </div>
             </div>
             
-            <div className="mt-5 glass-card p-8 rounded-xl hover-lift col-span-4">
-              <div className="text-2xl font-bold mb-3 text-white">Nossos compromissos com você:</div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="mt-5 glass-card p-8 rounded-xl hover-lift col-span-12">
+              <div className="text-2xl font-bold mb-3 text-white">Ao optar pelos meus serviços, seu sucesso é o foco:</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
                 <div className="flex flex-col items-start">
                   <div className="mb-2 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <p className="text-white/70"><strong>Flexibilidade e confiança:</strong> Oferecemos condições de pagamento flexíveis e a garantia de um trabalho que atenda às suas expectativas, construindo uma parceria de confiança mútua.</p>
+                  <p className="text-white/70"><strong>Compromisso e parceria:</strong> Flexibilidade e dedicação para superar suas expectativas. Sua tranquilidade é minha prioridade.</p>
                 </div>
                 
                 <div className="flex flex-col items-start">
                   <div className="mb-2 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <p className="text-white/70"><strong>Acabamento impecável:</strong> Cada detalhe conta. Nossa pós-produção avançada garante um acabamento profissional de altíssima qualidade, elevando o impacto visual do seu projeto.</p>
+                  <p className="text-white/70"><strong>Excelência e qualidade superior:</strong> Atenção meticulosa aos detalhes e acabamento de alto padrão. Seu projeto com a excelência que ele merece.</p>
                 </div>
                 
                 <div className="flex flex-col items-start">
                   <div className="mb-2 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <p className="text-white/70"><strong>Atendimento ágil e personalizado:</strong> Conte com um atendimento digital eficiente, próximo e totalmente personalizado, focado em entender suas necessidades e superar suas expectativas em cada etapa.</p>
+                  <p className="text-white/70"><strong>Atendimento dedicado e personalizado:</strong> Agilidade, proximidade e foco total em suas necessidades. Estou aqui para compreender e executar.</p>
+                </div>
+                
+                <div className="flex flex-col items-start">
+                  <div className="mb-2 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
+                  <p className="text-white/70"><strong>Visão estratégica de negócios:</strong> Minha abordagem integra o design aos seus objetivos comerciais, visando impulsionar vendas e fortalecer sua marca.</p>
+                </div>
+                
+                <div className="flex flex-col items-start">
+                  <div className="mb-2 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
+                  <p className="text-white/70"><strong>Cumprimento de prazos e transparência:</strong> Compromisso com o cronograma estabelecido e comunicação clara em todas as etapas do projeto.</p>
                 </div>
               </div>
             </div>
