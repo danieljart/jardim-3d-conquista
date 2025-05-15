@@ -7,22 +7,22 @@ import { Button } from "@/components/ui/button";
 const Pricing = () => {
   const processSteps = [
     {
-      title: "1. Sua visão, nosso ponto de partida",
+      title: "Sua visão, nosso ponto de partida",
       description: "Entendemos seus sonhos e metas a fundo.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">1</div>,
     },
     {
-      title: "2. Estratégia 3D vencedora",
+      title: "Estratégia 3D vencedora",
       description: "Criamos a solução perfeita para seu sucesso, com orçamento justo.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">2</div>,
     },
     {
-      title: "3. Magia em ação",
+      title: "Magia em ação",
       description: "Nosso time de craques transforma sua ideia em 3D espetacular.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">3</div>,
     },
     {
-      title: "4. Você no comando",
+      title: "Você no comando",
       description: "Acompanhe tudo e aprove cada detalhe. Sua satisfação é lei.",
       icon: <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold">4</div>,
     },
@@ -40,7 +40,7 @@ const Pricing = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Seu projeto 3D exclusivo começa agora!</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Chega de soluções genéricas. Seu negócio merece um projeto 3D único, pensado para seus desafios e ambições. Nosso processo é 100% focado em você, do primeiro bate-papo à entrega de um resultado que vai te surpreender. Vamos criar juntos?
+            Chega de soluções genéricas. Seu negócio merece um projeto 3D único, pensado para seus desafios e ambições. Meu processo é 100% focado em você, do primeiro bate-papo à entrega de um resultado que vai te surpreender. Vamos criar juntos?
           </p>
         </div>
 
@@ -68,10 +68,10 @@ const Pricing = () => {
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-violet-500"></div>
           <CardContent className="p-8 pt-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold text-2xl">5</div>
+              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">5</div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2">5. Resultado entregue, parceria que fica</h3>
-                <p className="text-white/70">Seu projeto impecável e nosso suporte total para o que vier. Nossa parceria não termina na entrega: estamos sempre prontos para ajustes futuros ou até mesmo novas ideias que possam surgir para o seu negócio.</p>
+                <h3 className="text-xl font-bold text-white mb-2">Resultado entregue, parceria que fica</h3>
+                <p className="text-white/70">Seu projeto impecável e meu suporte total para o que vier. Nossa parceria não termina na entrega: estou sempre pronto para ajustes futuros ou novas ideias que possam surgir para o seu negócio.</p>
               </div>
               <div>
                 <Button 

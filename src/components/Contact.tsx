@@ -45,7 +45,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Vamos conversar sobre o seu projeto?</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Pronto para dar o próximo passo e transformar a imagem do seu negócio? Selecione os serviços de seu interesse e envie uma mensagem direta. Estamos ansiosos para entender suas ideias e propor a melhor solução 3D para você!
+            Pronto para dar o próximo passo e transformar a imagem do seu negócio? Selecione os serviços de seu interesse e envie uma mensagem direta. Estou ansioso para entender suas ideias e propor a melhor solução 3D para você!
           </p>
         </div>
 
@@ -109,7 +109,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="bg-gradient-to-br from-indigo-800 to-violet-900 p-8 flex items-center text-white">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Por que trabalhar conosco?</h3>
+                <h3 className="text-2xl font-semibold mb-6">Por que trabalhar comigo?</h3>
                 <ul className="space-y-6">
                   <li className="flex items-start">
                     <div className="mr-3 mt-1 bg-white/20 p-1 rounded-full">

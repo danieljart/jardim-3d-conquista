@@ -13,10 +13,10 @@ const VideoSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">A prova irrefutável do nosso poder 3D!</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">A prova do meu poder 3D!</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Palavras convencem, mas resultados ARRRASTAM. Veja a transformação radical que nosso 3D proporciona e entenda por que somos a escolha número 1.
+            Palavras convencem, mas resultados transformam. Veja como meu trabalho 3D proporciona uma transformação radical para seu negócio.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ const VideoSection = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
             <p className="text-white/70">
-              Um exemplo de tour virtual interativo que permite ao cliente explorar cada detalhe do espaço antes mesmo da sua construção.
+              Tour virtual interativo que permite explorar cada detalhe do espaço antes da construção.
             </p>
           </div>
           
@@ -47,14 +47,14 @@ const VideoSection = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada comercial</h3>
             <p className="text-white/70">
-              Vídeo demonstrativo que apresenta as transformações de uma fachada comercial, destacando os detalhes arquitetônicos e a comunicação visual.
+              Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.
             </p>
           </div>
         </div>
 
         <div className="mt-16 text-center">
           <p className="mb-8 text-xl text-white/80">
-            Nossos vídeos e tours virtuais 3D são criados com tecnologia de ponta para proporcionar uma experiência realista e imersiva que antecipa a realização do seu projeto.
+            Meus vídeos e tours virtuais 3D proporcionam uma experiência realista que antecipa a realização do seu projeto.
           </p>
           <Button 
             onClick={() => window.open('https://wa.me/5591982591612?text=Olá! Tenho interesse em vídeos e tours virtuais para meu negócio.', '_blank')}

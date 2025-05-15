@@ -13,27 +13,27 @@ const Services = () => {
   const services = [
     {
       title: "Fachadas\nImpactantes",
-      description: "A fachada é um dos principais cartões de visita do seu negócio. Com minha expertise, ela se torna um elemento de atração e comunicação de valor, destacando sua marca.",
+      description: "A fachada é o cartão de visita do seu negócio. Com minha expertise, transformo-a em um elemento de atração que destaca sua marca.",
       icon: <Image className="h-10 w-10 text-white" />,
     },
     {
       title: "Interiores\nFuncionais",
-      description: "Transformo seu espaço comercial em um ambiente otimizado e funcional. Desenvolvo layouts que valorizam a experiência do cliente e a eficiência operacional.",
+      description: "Transformo seu espaço comercial em um ambiente otimizado. Desenvolvo layouts que valorizam a experiência do cliente e a eficiência.",
       icon: <LayoutDashboard className="h-10 w-10 text-white" />,
     },
     {
       title: "Comunicação\nEstratégica",
-      description: "Fortaleço a identidade da sua marca. Desenvolvo projetos de letreiros e sinalização que comunicam com clareza e profissionalismo, orientando e impactando seus clientes.",
+      description: "Fortaleço a identidade da sua marca com projetos de letreiros e sinalização que comunicam com clareza, orientando seus clientes.",
       icon: <PanelRight className="h-10 w-10 text-white" />,
     },
     {
       title: "Identidade\nVisual",
-      description: "Construo uma marca sólida e reconhecida. Do logotipo à aplicação em diversos materiais, asseguro uma identidade visual que transmite credibilidade e atrai negócios.",
+      description: "Construo uma marca sólida e reconhecida. Do logotipo à aplicação em diversos materiais, asseguro uma identidade que atrai negócios.",
       icon: <MessageSquare className="h-10 w-10 text-white" />,
     },
     {
       title: "Vídeos\nImersivos",
-      description: "Permito que você vivencie seu projeto de forma interativa. Meus vídeos e tours virtuais são ferramentas eficazes para encantar e acelerar decisões.",
+      description: "Permito que você vivencie seu projeto de forma interativa. Meus vídeos e tours virtuais são ferramentas para encantar e acelerar decisões.",
       icon: <Video className="h-10 w-10 text-white" />,
     },
   ];
@@ -63,7 +63,7 @@ const Services = () => {
               <div className="h-2 bg-gradient-to-r from-indigo-500 to-violet-500"></div>
               <div className="p-6">
                 <div className="flex items-center mb-5">
-                  <div className="bg-gradient-to-br from-indigo-600 to-violet-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-indigo-900/30">
+                  <div className="bg-gradient-to-br from-indigo-600 to-violet-600 min-w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-indigo-900/30 flex-shrink-0">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-semibold ml-4 text-white whitespace-pre-line">{service.title}</h3>

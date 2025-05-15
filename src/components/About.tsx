@@ -53,7 +53,7 @@ const About = () => {
             <div className="relative bg-[#181818] p-8 rounded-xl border border-white/10">
               <h3 className="text-3xl font-bold mb-6 text-white">A essência do design que entrega valor real</h3>
               <p className="mb-6 text-lg text-white/70 leading-relaxed">
-                Com experiência no mercado, sou referência em modelagem e design tridimensional para ambientes comerciais. Utilizo ferramentas digitais avançadas para criar soluções que não apenas encantam visualmente, mas que geram resultados concretos e impulsionam o sucesso do seu negócio.
+                Com experiência no mercado, sou referência em modelagem e design 3D para ambientes comerciais. Utilizo ferramentas avançadas para criar soluções que encantam visualmente e geram resultados concretos.
               </p>
               
               <div className="flex flex-wrap gap-6">
@@ -61,19 +61,19 @@ const About = () => {
                   <div className="mt-1 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full flex-shrink-0">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <p className="text-white/70"><strong>Expertise técnica e sensibilidade estética:</strong> Uno profundo conhecimento técnico em modelagem 3D com uma apurada visão artística para desenvolver projetos que são ao mesmo tempo precisos e visualmente impactantes.</p>
+                  <p className="text-white/70"><strong>Expertise técnica e estética:</strong> Combino conhecimento técnico em 3D com visão artística para projetos precisos e impactantes.</p>
                 </div>
                 <div className="flex items-start gap-3 flex-1 min-w-[280px]">
                   <div className="mt-1 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full flex-shrink-0">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <p className="text-white/70"><strong>Soluções sob medida para seu negócio:</strong> Compreendo que cada empresa é única. Por isso, crio projetos 100% personalizados, alinhados com seus objetivos, sua marca e as particularidades do seu público.</p>
+                  <p className="text-white/70"><strong>Soluções sob medida:</strong> Crio projetos 100% personalizados, alinhados com seus objetivos e marca.</p>
                 </div>
                 <div className="flex items-start gap-3 flex-1 min-w-[280px]">
                   <div className="mt-1 bg-gradient-to-br from-indigo-500 to-violet-500 p-1 rounded-full flex-shrink-0">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <p className="text-white/70"><strong>Foco em resultados e visibilidade:</strong> Mais do que design, entrego estratégia. Minhas soluções 3D são pensadas para aumentar a visibilidade da sua marca, atrair novos clientes e fortalecer sua presença no mercado.</p>
+                  <p className="text-white/70"><strong>Foco em resultados:</strong> Entrego estratégia. Minhas soluções 3D aumentam a visibilidade da sua marca e fortalecem sua presença no mercado.</p>
                 </div>
               </div>
             </div>
@@ -111,43 +111,43 @@ const About = () => {
             <div className="text-2xl font-bold mb-6 text-white text-center">Ao optar pelos meus serviços, seu sucesso é o foco:</div>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
               <div className="flex flex-col items-center text-center">
-                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full">
+                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full flex-shrink-0">
                   <Check className="h-4 w-4 text-white" />
                 </div>
-                <p className="text-white/70"><strong>Compromisso e parceria</strong></p>
+                <p className="text-white/70"><strong>Compromisso</strong></p>
                 <p className="text-white/60 text-sm mt-1">Dedicação total ao seu projeto</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full">
+                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full flex-shrink-0">
                   <Check className="h-4 w-4 text-white" />
                 </div>
-                <p className="text-white/70"><strong>Excelência e qualidade</strong></p>
+                <p className="text-white/70"><strong>Excelência</strong></p>
                 <p className="text-white/60 text-sm mt-1">Padrão superior em cada detalhe</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full">
+                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full flex-shrink-0">
                   <Check className="h-4 w-4 text-white" />
                 </div>
-                <p className="text-white/70"><strong>Atendimento personalizado</strong></p>
+                <p className="text-white/70"><strong>Personalização</strong></p>
                 <p className="text-white/60 text-sm mt-1">Foco nas suas necessidades</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full">
+                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full flex-shrink-0">
                   <Check className="h-4 w-4 text-white" />
                 </div>
-                <p className="text-white/70"><strong>Visão estratégica</strong></p>
+                <p className="text-white/70"><strong>Estratégia</strong></p>
                 <p className="text-white/60 text-sm mt-1">Soluções que geram resultados</p>
               </div>
               
               <div className="flex flex-col items-center text-center">
-                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full">
+                <div className="mb-3 bg-gradient-to-br from-indigo-500 to-violet-500 p-1.5 rounded-full flex-shrink-0">
                   <Check className="h-4 w-4 text-white" />
                 </div>
-                <p className="text-white/70"><strong>Compromisso com prazos</strong></p>
-                <p className="text-white/60 text-sm mt-1">Entrega sempre pontual</p>
+                <p className="text-white/70"><strong>Pontualidade</strong></p>
+                <p className="text-white/60 text-sm mt-1">Entrega sempre no prazo</p>
               </div>
             </div>
           </div>
