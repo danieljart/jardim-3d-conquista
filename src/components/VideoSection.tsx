@@ -1,39 +1,9 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const VideoSection = () => {
-  const kuulaContainerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (kuulaContainerRef.current) {
-      // Clear any existing script to prevent duplicates
-      const existingScript = kuulaContainerRef.current.querySelector('script');
-      if (existingScript) {
-        existingScript.remove();
-      }
-
-      // Create and append the Kuula script
-      const script = document.createElement('script');
-      script.src = 'https://static.kuula.io/embed.js';
-      script.setAttribute('data-kuula', 'https://kuula.co/share/collection/7Fwmv?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1');
-      script.setAttribute('data-width', '100%');
-      script.setAttribute('data-height', '640px');
-      kuulaContainerRef.current.appendChild(script);
-    }
-
-    // Clean up on component unmount
-    return () => {
-      if (kuulaContainerRef.current) {
-        const script = kuulaContainerRef.current.querySelector('script');
-        if (script) {
-          script.remove();
-        }
-      }
-    };
-  }, []);
-
   return (
     <section id="videos" className="py-24 bg-[#0d0d0d] relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
@@ -53,10 +23,14 @@ const VideoSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="group">
             <div className="aspect-video bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300">
-              <div 
-                ref={kuulaContainerRef}
+              <iframe 
+                src="https://kuula.co/share/collection/7Fwmv?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
                 className="w-full h-full"
-              ></div>
+                frameBorder="0"
+                allowFullScreen
+                loading="lazy"
+                title="Tour virtual - Loja conceito"
+              ></iframe>
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
             <p className="text-white/70">
