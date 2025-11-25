@@ -9,7 +9,8 @@ import { Label } from "@/components/ui/label";
 const Contact = () => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [empresa, setEmpresa] = useState('');
+  
   
   const services = [
     "Fachadas 3D Impactantes",
@@ -29,7 +30,7 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    const message = `Olá! Meu nome é ${name || 'Cliente'}${email ? ` (${email})` : ''}. Tenho interesse nos seguintes serviços: ${selectedServices.length > 0 ? selectedServices.join(', ') : 'Gostaria de mais informações sobre os serviços disponíveis.'}`;
+    const message = `Olá! Meu nome é ${name || 'Cliente'}${empresa ? `, da empresa ${empresa}` : ''}. Tenho interesse nos seguintes serviços: ${selectedServices.length > 0 ? selectedServices.join(', ') : 'Gostaria de mais informações sobre os serviços disponíveis.'}`;
     window.open(`https://wa.me/5591982591612?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -181,15 +182,15 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="email" className="text-white">
-                    E-mail
+                  <Label htmlFor="empresa" className="text-white">
+                    Empresa e nicho de atuação
                   </Label>
                   <input 
-                    id="email" 
+                    id="empresa" 
                     className="mt-1 w-full p-2 rounded-md bg-[#252525] text-white border border-[#353535] focus:border-indigo-500 focus:outline-none"
-                    placeholder="seu@email.com" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Ex: Loja de roupas, Restaurante..." 
+                    value={empresa}
+                    onChange={(e) => setEmpresa(e.target.value)}
                   />
                 </div>
                 
