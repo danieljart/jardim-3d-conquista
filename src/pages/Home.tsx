@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ServicesOverview from '@/components/ServicesOverview';
 import VideoSection from '@/components/VideoSection';
-import Contact from '@/components/Contact';
+import ProjectCTA from '@/components/ProjectCTA';
 import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 
@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       <ServicesOverview />
       <VideoSection />
-      <Contact />
+      <ProjectCTA />
       <Footer />
       <FloatingButton />
     </div>

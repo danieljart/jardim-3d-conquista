@@ -1,38 +1,30 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingButton from '@/components/FloatingButton';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 const galleryItems = [
-  { id: 1, title: 'Interior Loja Conceito', image: '/placeholder.svg' },
-  { id: 2, title: 'Layout Restaurante', image: '/placeholder.svg' },
-  { id: 3, title: 'Espaço Corporativo', image: '/placeholder.svg' },
-  { id: 4, title: 'Salão de Beleza', image: '/placeholder.svg' },
-  { id: 5, title: 'Clínica Médica', image: '/placeholder.svg' },
-  { id: 6, title: 'Coworking Space', image: '/placeholder.svg' },
+  { id: 1, title: 'Recepção Corporativa', image: '/placeholder.svg' },
+  { id: 2, title: 'Sala de Reuniões', image: '/placeholder.svg' },
+  { id: 3, title: 'Escritório Open Space', image: '/placeholder.svg' },
+  { id: 4, title: 'Loja Conceito', image: '/placeholder.svg' },
+  { id: 5, title: 'Cafeteria Moderna', image: '/placeholder.svg' },
+  { id: 6, title: 'Showroom de Móveis', image: '/placeholder.svg' },
 ];
 
 const AmbientesPage = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <ServicePageTemplate
-        title="Ambientes Internos"
-        subtitle="Layouts Funcionais e Impactantes"
-        description="Transformo espaços comerciais em ambientes otimizados que valorizam a experiência do cliente e aumentam a eficiência do seu negócio. Cada detalhe é pensado para gerar resultados."
-        features={[
-          'Layouts que otimizam o fluxo de clientes',
-          'Ambientes que valorizam produtos e serviços',
-          'Design funcional e esteticamente impactante',
-          'Projetos alinhados com sua identidade visual'
-        ]}
-        galleryItems={galleryItems}
-        ctaText="Solicitar Orçamento de Ambiente"
-      />
-      <Footer />
-      <FloatingButton />
-    </div>
+    <ServicePageTemplate
+      title="Ambientes Internos"
+      subtitle="Design de Interiores Comerciais e Corporativos"
+      description="Transformo espaços comerciais em ambientes funcionais e esteticamente impactantes. Meus projetos de interiores são focados na experiência do usuário e na otimização do fluxo de trabalho."
+      features={[
+        'Layouts funcionais e ergonômicos',
+        'Visualização fotorrealista dos materiais',
+        'Otimização do espaço disponível',
+        'Projetos que reforçam a cultura da empresa'
+      ]}
+      galleryItems={galleryItems}
+      ctaText="Solicitar Orçamento de Interiores"
+    />
   );
 };
 

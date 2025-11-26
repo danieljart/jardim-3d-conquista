@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 
 const portfolioItems = [
   { id: 1, title: 'Fachada Comercial Moderna', category: 'Fachadas', image: '/placeholder.svg' },
@@ -26,13 +26,7 @@ const GaleriaPage = () => {
     : portfolioItems.filter(item => item.category === filter);
 
   const handleContactClick = () => {
-    navigate('/');
-    setTimeout(() => {
-      const contactSection = document.getElementById('contato');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    navigate('/contato');
   };
 
   return (
@@ -60,8 +54,8 @@ const GaleriaPage = () => {
                 key={category}
                 onClick={() => setFilter(category)}
                 className={`px-6 py-2 rounded-full transition-all duration-300 ${filter === category
-                    ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg'
-                    : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
+                  ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg'
+                  : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
                   }`}
               >
                 {category}

@@ -4,6 +4,8 @@ import Footer from './Footer';
 import FloatingButton from './FloatingButton';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
+import ProjectCTA from './ProjectCTA';
 
 interface ServicePageProps {
     title: string;
@@ -24,6 +26,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
     galleryImages,
     ctaText = "Solicitar Orçamento"
 }) => {
+    const navigate = useNavigate();
     const images = galleryItems || galleryImages?.map((img, i) => ({ id: i, title: `Project ${i}`, image: img })) || [];
 
     return (
@@ -50,7 +53,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                     <Button
                         size="lg"
                         className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold text-lg border-none shadow-lg shadow-indigo-900/30"
-                        onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => navigate('/contato')}
                     >
                         {ctaText} <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
@@ -95,21 +98,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                 </section>
 
                 {/* CTA Section */}
-                <section className="container mx-auto px-4 text-center">
-                    <div className="bg-gradient-to-r from-indigo-900/50 to-violet-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-12 max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold mb-6 text-white">Pronto para transformar seu projeto?</h2>
-                        <p className="text-white/80 mb-8 text-lg">
-                            Entre em contato agora e vamos discutir como posso ajudar a elevar o nível visual do seu negócio.
-                        </p>
-                        <Button
-                            size="lg"
-                            className="bg-white text-indigo-900 hover:bg-indigo-50 font-bold text-lg"
-                            onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-                        >
-                            Falar no WhatsApp
-                        </Button>
-                    </div>
-                </section>
+                <ProjectCTA />
             </main>
 
             <Footer />

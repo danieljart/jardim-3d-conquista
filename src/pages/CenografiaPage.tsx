@@ -1,7 +1,4 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingButton from '@/components/FloatingButton';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 const galleryItems = [
@@ -15,24 +12,19 @@ const galleryItems = [
 
 const CenografiaPage = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <ServicePageTemplate
-        title="Cenografia & Estandes"
-        subtitle="Projetos para Feiras, Eventos e Exposições"
-        description="Crio estandes e cenografias que capturam atenção e geram impacto visual memorável. Do conceito à execução, desenvolvo projetos que destacam sua marca em qualquer evento."
-        features={[
-          'Estandes para feiras e exposições',
-          'Cenografia para eventos corporativos',
-          'Projetos para lançamentos de produtos',
-          'Palcos e ambientes para shows e premiações'
-        ]}
-        galleryItems={galleryItems}
-        ctaText="Solicitar Orçamento de Cenografia"
-      />
-      <Footer />
-      <FloatingButton />
-    </div>
+    <ServicePageTemplate
+      title="Cenografia & Estandes"
+      subtitle="Projetos para Feiras, Eventos e Exposições"
+      description="Crio estandes e cenografias que capturam atenção e geram impacto visual memorável. Do conceito à execução, desenvolvo projetos que destacam sua marca em qualquer evento."
+      features={[
+        'Estandes para feiras e exposições',
+        'Cenografia para eventos corporativos',
+        'Projetos para lançamentos de produtos',
+        'Palcos e ambientes para shows e premiações'
+      ]}
+      galleryItems={galleryItems}
+      ctaText="Solicitar Orçamento de Cenografia"
+    />
   );
 };
 

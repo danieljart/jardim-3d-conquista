@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -25,20 +25,7 @@ const Navbar = () => {
     ];
 
     const handleContactClick = () => {
-        if (location.pathname !== '/') {
-            navigate('/');
-            setTimeout(() => {
-                const contactSection = document.getElementById('contato');
-                if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);
-        } else {
-            const contactSection = document.getElementById('contato');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
+        navigate('/contato');
         setIsOpen(false);
     };
 

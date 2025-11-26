@@ -3,7 +3,10 @@ import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
+import { useNavigate } from 'react-router-dom';
+
 const Hero = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -36,7 +39,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold text-lg border-none shadow-lg shadow-violet-900/30"
-                onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => navigate('/contato')}
               >
                 Fale Comigo Agora! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

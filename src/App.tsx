@@ -11,6 +11,7 @@ import AmbientesPage from "./pages/AmbientesPage";
 import PersonalizadosPage from "./pages/PersonalizadosPage";
 import GaleriaPage from "./pages/GaleriaPage";
 import SobrePage from "./pages/SobrePage";
+import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/servicos/personalizados" element={<PersonalizadosPage />} />
           <Route path="/galeria" element={<GaleriaPage />} />
           <Route path="/sobre" element={<SobrePage />} />
+          <Route path="/contato" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
