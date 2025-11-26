@@ -42,18 +42,23 @@ const services = [
 
 const ServicosPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl"></div>
+      </div>
+
       <Navbar />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-24 pb-16 relative z-10">
         {/* Hero Section */}
         <section className="container mx-auto px-4 mb-16">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Meus Serviços
             </h1>
             <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/80">
               Soluções completas em design 3D, cenografia e personalizados. 
               Cada projeto é desenvolvido para gerar resultados reais para o seu negócio.
             </p>
@@ -69,7 +74,7 @@ const ServicosPage = () => {
                 <Link 
                   key={service.id}
                   to={service.slug}
-                  className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                  className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="h-48 overflow-hidden bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
                     <img 
@@ -84,10 +89,10 @@ const ServicosPage = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h2 className="text-2xl font-bold mb-3 text-foreground group-hover:text-indigo-400 transition-colors">
+                    <h2 className="text-2xl font-bold mb-3 text-white group-hover:text-indigo-400 transition-colors">
                       {service.title}
                     </h2>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-white/70 mb-4">
                       {service.description}
                     </p>
                     <div className="flex items-center text-indigo-400 font-medium">
@@ -102,7 +107,7 @@ const ServicosPage = () => {
 
         {/* CTA Section */}
         <section className="container mx-auto px-4 mt-16">
-          <div className="bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 rounded-2xl p-8 md:p-12 text-center">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">
               Tem um projeto em mente?
             </h2>

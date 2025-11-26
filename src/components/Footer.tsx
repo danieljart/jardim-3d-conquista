@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 text-white border-t border-white/10">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -12,11 +12,11 @@ const Footer = () => {
               Estúdio de design 3D especializado em transformar espaços comerciais e criar experiências visuais impactantes.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://instagram.com/danieljardim.3d" 
-                target="_blank" 
+              <a
+                href="https://instagram.com/danieljardim.3d"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-secondary transition-colors"
+                className="hover:text-indigo-400 transition-colors"
                 aria-label="Instagram"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
@@ -25,20 +25,20 @@ const Footer = () => {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              <a 
-                href="https://wa.me/5591982591612" 
-                target="_blank" 
+              <a
+                href="https://wa.me/5511949723280"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-secondary transition-colors"
+                className="hover:text-indigo-400 transition-colors"
                 aria-label="WhatsApp"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-message-circle">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
               </a>
-              <a 
-                href="mailto:ddedesign1809@gmail.com" 
-                className="hover:text-secondary transition-colors"
+              <a
+                href="mailto:ddedesign1809@gmail.com"
+                className="hover:text-indigo-400 transition-colors"
                 aria-label="Email"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-mail">
@@ -52,19 +52,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Serviços</h4>
             <ul className="space-y-2 text-white/80">
               <li>
-                <a href="#servicos" className="hover:text-secondary transition-colors">Modelagem 3D</a>
+                <a href="/servicos/fachadas" className="hover:text-indigo-400 transition-colors">Fachadas Comerciais</a>
               </li>
               <li>
-                <a href="#servicos" className="hover:text-secondary transition-colors">Renderização</a>
+                <a href="/servicos/cenografia" className="hover:text-indigo-400 transition-colors">Cenografia e Eventos</a>
               </li>
               <li>
-                <a href="#servicos" className="hover:text-secondary transition-colors">Layouts e Interiores</a>
+                <a href="/servicos/ambientes" className="hover:text-indigo-400 transition-colors">Ambientes Instagramáveis</a>
               </li>
               <li>
-                <a href="#servicos" className="hover:text-secondary transition-colors">Comunicação Visual</a>
-              </li>
-              <li>
-                <a href="#servicos" className="hover:text-secondary transition-colors">Identidade Visual</a>
+                <a href="/servicos/personalizados" className="hover:text-indigo-400 transition-colors">Projetos Personalizados</a>
               </li>
             </ul>
           </div>
@@ -72,19 +69,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Links Úteis</h4>
             <ul className="space-y-2 text-white/80">
               <li>
-                <a href="#sobre" className="hover:text-secondary transition-colors">Sobre Nós</a>
+                <a href="/sobre" className="hover:text-indigo-400 transition-colors">Sobre Nós</a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-secondary transition-colors">Portfólio</a>
+                <a href="/galeria" className="hover:text-indigo-400 transition-colors">Portfólio</a>
               </li>
               <li>
-                <a href="#planos" className="hover:text-secondary transition-colors">Planos</a>
+                <a href="/#videos" className="hover:text-indigo-400 transition-colors">Vídeos e Tours</a>
               </li>
               <li>
-                <a href="#videos" className="hover:text-secondary transition-colors">Vídeos e Tours</a>
-              </li>
-              <li>
-                <a href="#contato" className="hover:text-secondary transition-colors">Contato</a>
+                <a href="/#contato" className="hover:text-indigo-400 transition-colors">Contato</a>
               </li>
             </ul>
           </div>
@@ -92,36 +86,36 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-white/80">
               <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <span>ddedesign1809@gmail.com</span>
               </li>
               <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
-                <span>(91) 98259-1612</span>
+                <span>(11) 94972-3280</span>
               </li>
               <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                 </svg>
-                <a 
-                  href="https://instagram.com/danieljardim.3d" 
-                  target="_blank" 
+                <a
+                  href="https://instagram.com/danieljardim.3d"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-indigo-400 transition-colors"
                 >
                   @danieljardim.3d
                 </a>
               </li>
               <li className="mt-6">
-                <a 
-                  href="https://wa.me/5591982591612" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/5511949723280"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-secondary hover:bg-secondary/80 text-white px-4 py-2 rounded-lg inline-flex items-center transition-colors"
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg inline-flex items-center transition-colors"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -129,10 +123,9 @@ const Footer = () => {
                   Fale no WhatsApp
                 </a>
               </li>
-            </ul>
-          </div>
+            </ul>          </div>
         </div>
-        <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60 text-sm">
+        <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
           <p>&copy; {new Date().getFullYear()} Daniel Jardim - 3D. Todos os direitos reservados.</p>
         </div>
       </div>
