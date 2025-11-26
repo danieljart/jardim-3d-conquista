@@ -15,7 +15,7 @@ const VideoSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">A prova do meu poder 3D!</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Experiência e Qualidade em Cada Detalhe</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             Palavras convencem, mas resultados transformam. Veja como meu trabalho 3D proporciona uma transformação radical para seu negócio.
@@ -24,7 +24,7 @@ const VideoSection = () => {
 
         <div className="flex flex-col md:flex-row gap-8 items-stretch">
           <div className="group flex-1 flex flex-col">
-            <div className="w-full flex-1 bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 min-h-[300px]">
+            <div className="w-full flex-1 bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 aspect-video md:aspect-auto md:h-auto md:min-h-[400px]">
               <iframe
                 src="https://kuula.co/share/collection/7Fwmv?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
                 className="w-full h-full"
@@ -34,7 +34,7 @@ const VideoSection = () => {
                 title="Tour virtual - Loja conceito"
               ></iframe>
             </div>
-            <div className="h-32 flex flex-col justify-start">
+            <div className="h-auto md:h-32 flex flex-col justify-start">
               <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
               <p className="text-white/70">
                 Tour virtual interativo que permite explorar cada detalhe do espaço antes da construção.
@@ -42,8 +42,8 @@ const VideoSection = () => {
             </div>
           </div>
 
-          <div className="group md:w-auto flex flex-col flex-shrink-0 items-end text-right">
-            <div className="max-w-xs ml-auto aspect-[9/16] bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 w-full md:w-80">
+          <div className="group md:w-auto flex flex-col flex-shrink-0 items-center text-center md:items-end md:text-right">
+            <div className="max-w-xs mx-auto md:ml-auto aspect-[9/16] bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 w-full md:w-80">
               <video
                 src={videoSrc}
                 className="w-full h-full object-cover"
@@ -52,7 +52,7 @@ const VideoSection = () => {
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
-            <div className="h-32 flex flex-col justify-start items-end">
+            <div className="h-auto md:h-32 flex flex-col justify-start items-center md:items-end">
               <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada comercial</h3>
               <p className="text-white/70 max-w-xs">
                 Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.

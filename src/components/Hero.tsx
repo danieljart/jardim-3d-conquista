@@ -39,6 +39,12 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
+    // Preload images
+    slideshowImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % slideshowImages.length);
     }, 5000);
@@ -48,13 +54,18 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90"></div>
-        <div
-          key={currentImageIndex}
-          className="absolute inset-0 bg-cover bg-center mix-blend-overlay animate-fade-in transition-all duration-1000"
-          style={{ backgroundImage: `url("${slideshowImages[currentImageIndex]}")` }}
-        ></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90 z-10 mix-blend-multiply"></div>
+
+        {slideshowImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+            style={{ backgroundImage: `url("${image}")` }}
+          ></div>
+        ))}
+
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px] z-20"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 py-20">
