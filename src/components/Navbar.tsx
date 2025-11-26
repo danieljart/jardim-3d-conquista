@@ -35,10 +35,10 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link to="/" className="text-2xl font-bold text-white flex items-center gap-2">
-                    <span className="bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">
+                    <span className="text-white">
                         Daniel Jardim
                     </span>
-                    <span className="text-white/80 text-sm font-light">3D Design</span>
+                    <span className="bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">3D</span>
                 </Link>
 
                 {/* Desktop Menu */}

@@ -50,8 +50,9 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90"></div>
         <div
-          className="absolute inset-0 bg-cover bg-center mix-blend-overlay transition-opacity duration-1000"
-          style={{ backgroundImage: `url("${heroBg}")` }}
+          key={currentImageIndex}
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay animate-fade-in transition-all duration-1000"
+          style={{ backgroundImage: `url("${slideshowImages[currentImageIndex]}")` }}
         ></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px]"></div>
       </div>
