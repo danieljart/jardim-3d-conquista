@@ -1,12 +1,33 @@
-
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
-import heroBg from '@/content/projects/fachadas/Scene 0.png';
+import heroBg from '../content/projects/fachadas/Scene 0.png';
+
+// Slideshow images
+import imgFachada01 from '../content/projects/fachadas/01/SACOLÃO_ABCINTRA_0001@2x.png';
+import imgFachada02 from '../content/projects/fachadas/02/FP_0001@0,75x2_.png';
+import imgFachada03 from '../content/projects/fachadas/03/Scene 0.png';
+import imgFachada04 from '../content/projects/fachadas/04/danieljardim.3d_1714431786_3357219602789538712_58748782469.jpg';
+import imgFachada05 from '../content/projects/fachadas/05/danieljardim.3d_1743430934_3600482095865751082_58748782469.jpg';
+import imgFachada06 from '../content/projects/fachadas/06/danieljardim.3d_1707262212_3297076863603207571_58748782469.jpg';
+
+import imgCeno01 from '../content/projects/cenografia/01/D5_Scene 1_20240219_194511.png';
+import imgCeno02 from '../content/projects/cenografia/02/1.png';
+import imgCeno03 from '../content/projects/cenografia/03/Scene 10.png';
+import imgCeno04 from '../content/projects/cenografia/04/1.jpeg';
+import imgCeno05 from '../content/projects/cenografia/05/1.jpeg';
+import imgCeno06 from '../content/projects/cenografia/06/danieljardim.3d_1745367992_3616731317064987583_58748782469.webp';
+
+const slideshowImages = [
+  imgFachada01, imgFachada02, imgFachada03, imgFachada04, imgFachada05, imgFachada06,
+  imgCeno01, imgCeno02, imgCeno03, imgCeno04, imgCeno05, imgCeno06
+];
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -17,12 +38,19 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % slideshowImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90"></div>
         <div
-          className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay transition-opacity duration-1000"
           style={{ backgroundImage: `url("${heroBg}")` }}
         ></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px]"></div>
@@ -60,9 +88,10 @@ const Hero = () => {
             <div className="relative w-full max-w-md group">
               <div className="w-full h-[450px] glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500">
                 <img
-                  src={heroBg}
+                  key={currentImageIndex}
+                  src={slideshowImages[currentImageIndex]}
                   alt="Mockup de design 3D"
-                  className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover rounded group-hover:scale-105 transition-all duration-700 animate-fade-in"
                 />
                 <div className="absolute bottom-8 left-0 right-0 mx-auto w-4/5 glass-card p-4 rounded-lg shadow-lg border border-white/10 backdrop-blur-xl">
                   <p className="text-white font-medium">Seu projeto, minha realidade 3D que <span className="font-bold">converte</span>.</p>
@@ -74,8 +103,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 };
