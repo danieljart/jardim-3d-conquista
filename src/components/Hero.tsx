@@ -41,7 +41,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % slideshowImages.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
