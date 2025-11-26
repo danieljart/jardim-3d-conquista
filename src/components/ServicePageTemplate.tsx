@@ -3,17 +3,18 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import FloatingButton from './FloatingButton';
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { ArrowRight, Check } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import ProjectCTA from './ProjectCTA';
+import { projectsData } from '@/data/projectsData';
 
 interface ServicePageProps {
     title: string;
     subtitle: string;
     description: string;
     features: string[];
-    galleryItems?: { id: number; title: string; image: string }[];
-    galleryImages?: string[];
+    category: string; // Added category prop
     ctaText?: string;
 }
 
@@ -22,12 +23,13 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
     subtitle,
     description,
     features,
-    galleryItems,
-    galleryImages,
+    category,
     ctaText = "Solicitar Orçamento"
 }) => {
     const navigate = useNavigate();
-    const images = galleryItems || galleryImages?.map((img, i) => ({ id: i, title: `Project ${i}`, image: img })) || [];
+
+    // Filter projects by category
+    const categoryProjects = projectsData.filter(p => p.category === category);
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
@@ -76,24 +78,38 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                     </div>
                 </section>
 
+
+
                 {/* Gallery Section */}
                 <section className="container mx-auto px-4 mb-20">
                     <h2 className="text-3xl font-bold mb-10 text-white text-center">Galeria de Projetos</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {images.map((item) => (
-                            <div key={item.id} className="group relative overflow-hidden rounded-xl aspect-video bg-white/5 border border-white/10">
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <span className="text-white font-medium border border-white/30 px-4 py-2 rounded-full backdrop-blur-sm">
-                                        Ver Detalhes
-                                    </span>
+                        {categoryProjects.map((item) => (
+                            <Card
+                                key={item.id}
+                                className="bg-white/5 border-white/10 overflow-hidden hover:shadow-xl hover:shadow-indigo-900/20 transition-all duration-300 group cursor-pointer"
+                                onClick={() => navigate(`/projeto/${item.id}`)}
+                            >
+                                <div className="h-64 overflow-hidden relative">
+                                    <img
+                                        src={item.images[0]} // Use first image as thumbnail
+                                        alt={item.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
+                                        <div>
+                                            <span className="text-indigo-400 text-sm font-medium mb-1 block">{item.category}</span>
+                                            <h3 className="text-white text-xl font-bold">{item.title}</h3>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </Card>
                         ))}
+                        {categoryProjects.length === 0 && (
+                            <div className="col-span-full text-center text-white/50 py-12">
+                                Nenhum projeto encontrado nesta categoria.
+                            </div>
+                        )}
                     </div>
                 </section>
 

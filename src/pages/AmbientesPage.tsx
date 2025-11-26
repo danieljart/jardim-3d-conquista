@@ -1,29 +1,20 @@
 import React from 'react';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
-const galleryItems = [
-  { id: 1, title: 'Recepção Corporativa', image: '/placeholder.svg' },
-  { id: 2, title: 'Sala de Reuniões', image: '/placeholder.svg' },
-  { id: 3, title: 'Escritório Open Space', image: '/placeholder.svg' },
-  { id: 4, title: 'Loja Conceito', image: '/placeholder.svg' },
-  { id: 5, title: 'Cafeteria Moderna', image: '/placeholder.svg' },
-  { id: 6, title: 'Showroom de Móveis', image: '/placeholder.svg' },
-];
-
 const AmbientesPage = () => {
   return (
     <ServicePageTemplate
-      title="Ambientes Internos"
-      subtitle="Design de Interiores Comerciais e Corporativos"
-      description="Transformo espaços comerciais em ambientes funcionais e esteticamente impactantes. Meus projetos de interiores são focados na experiência do usuário e na otimização do fluxo de trabalho."
+      title="Ambientes"
+      subtitle="Projetos 3D de Ambientes Instagramáveis"
+      description="Transforme espaços comuns em cenários perfeitos para fotos. Projetos focados na experiência do usuário e no compartilhamento social, ideais para bares, restaurantes, lojas e eventos."
       features={[
-        'Layouts funcionais e ergonômicos',
-        'Visualização fotorrealista dos materiais',
-        'Otimização do espaço disponível',
-        'Projetos que reforçam a cultura da empresa'
+        'Design focado em fotografia e vídeo',
+        'Iluminação estratégica',
+        'Elementos interativos e "instagramáveis"',
+        'Viralização da sua marca nas redes sociais'
       ]}
-      galleryItems={galleryItems}
-      ctaText="Solicitar Orçamento de Interiores"
+      category="Ambientes"
+      ctaText="Solicitar Orçamento de Ambiente"
     />
   );
 };

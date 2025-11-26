@@ -1,2 +1,9 @@
-T�tulo do Projeto 04 - fachadas
-Descri��o do projeto aqui...
+﻿Vizion Car
+
+Esse projeto foi construído para ser um marco visual. A Vizion Car buscava um design moderno, ousado e que transmitisse inovação, então a fachada precisava ter personalidade e presença forte, especialmente à noite.
+
+A composição usa volumes altos, painéis metálicos texturizados e iluminação vermelha estratégica que cria um clima futurista. Os elementos gráficos que se repetem no revestimento trazem ritmo visual e reforçam a identidade da marca.
+
+O grande showroom gradeado permite que os veículos sejam exibidos como protagonistas, valorizados pela luz externa e pelo design da estrutura. Toda a fachada funciona quase como um totem urbano, destacando o negócio em qualquer horário.
+
+O resultado é uma fachada intensa, moderna e com um impacto visual que conversa diretamente com o posicionamento da marca.
