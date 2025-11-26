@@ -2,6 +2,7 @@ import React from 'react';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import videoSrc from '@/content/projects/ambientes/03/danieljardim.3d_1680981222_3076612849003130764_58748782469.mp4';
 
 const VideoSection = () => {
   const navigate = useNavigate();
@@ -21,9 +22,9 @@ const VideoSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="group">
-            <div className="aspect-video bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300">
+        <div className="flex flex-col md:flex-row gap-8 items-stretch">
+          <div className="group flex-1 flex flex-col">
+            <div className="w-full flex-1 bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 min-h-[300px]">
               <iframe
                 src="https://kuula.co/share/collection/7Fwmv?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
                 className="w-full h-full"
@@ -33,25 +34,30 @@ const VideoSection = () => {
                 title="Tour virtual - Loja conceito"
               ></iframe>
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
-            <p className="text-white/70">
-              Tour virtual interativo que permite explorar cada detalhe do espaço antes da construção.
-            </p>
+            <div className="h-32 flex flex-col justify-start">
+              <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
+              <p className="text-white/70">
+                Tour virtual interativo que permite explorar cada detalhe do espaço antes da construção.
+              </p>
+            </div>
           </div>
 
-          <div className="group">
-            <div className="aspect-video bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300">
-              <div className="w-full h-full flex items-center justify-center relative group-hover:bg-[#151515]/80 transition-all duration-300 cursor-pointer">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 to-violet-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Play className="h-6 w-6 text-white ml-1" />
-                </div>
-              </div>
+          <div className="group md:w-auto flex flex-col flex-shrink-0 items-end text-right">
+            <div className="max-w-xs ml-auto aspect-[9/16] bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 w-full md:w-80">
+              <video
+                src={videoSrc}
+                className="w-full h-full object-cover"
+                controls
+              >
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada comercial</h3>
-            <p className="text-white/70">
-              Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.
-            </p>
+            <div className="h-32 flex flex-col justify-start items-end">
+              <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada comercial</h3>
+              <p className="text-white/70 max-w-xs">
+                Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.
+              </p>
+            </div>
           </div>
         </div>
 

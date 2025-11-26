@@ -6,13 +6,14 @@ import FloatingButton from '@/components/FloatingButton';
 import ProjectCTA from '@/components/ProjectCTA';
 import { projectsData } from '@/data/projectsData';
 import useEmblaCarousel from 'embla-carousel-react';
+import AutoHeight from 'embla-carousel-auto-height';
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ProjectDetailsPage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [AutoHeight()]);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
     const [orientations, setOrientations] = React.useState<Record<number, 'horizontal' | 'vertical'>>({});
 

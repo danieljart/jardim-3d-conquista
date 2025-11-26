@@ -2,8 +2,8 @@
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 import { useNavigate } from 'react-router-dom';
+import heroBg from '@/content/projects/fachadas/Scene 0.png';
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -21,15 +21,18 @@ const Hero = () => {
     <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)]"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
+          style={{ backgroundImage: `url("${heroBg}")` }}
+        ></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px]"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 py-20">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 parallax parallax-slow">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in mb-2">
-              Crio fachadas <span className="gradient-text">3D</span> que
+              Crio projetos <span className="gradient-text">3D</span> que
               <span className="gradient-text"> conquistam</span>
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
@@ -57,7 +60,7 @@ const Hero = () => {
             <div className="relative w-full max-w-md group">
               <div className="w-full h-[450px] glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500">
                 <img
-                  src="/placeholder.svg"
+                  src={heroBg}
                   alt="Mockup de design 3D"
                   className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-500"
                 />
@@ -72,11 +75,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="custom-shape-divider">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
-        </svg>
-      </div>
+
     </section>
   );
 };

@@ -5,13 +5,19 @@ import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 import { Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
 
+// Import images
+import fachadasImg from '@/content/projects/fachadas/Scene 0.png';
+import cenografiaImg from '@/content/projects/cenografia/1.jpeg';
+import ambientesImg from '@/content/projects/ambientes/danieljardim.3d_1727818425_3469514874563525172_58748782469.jpg';
+import personalizadosImg from '@/content/projects/personalizados/danieljardim.3d_1692115206_3170014560966158750_58748782469.jpg';
+
 const services = [
   {
     id: 'fachadas',
     title: 'Fachadas',
     description: 'Projetos 3D de fachadas comerciais e residenciais que transformam a identidade visual do seu negócio, atraindo mais clientes e destacando sua marca.',
     icon: Building2,
-    image: '/placeholder.svg',
+    image: fachadasImg,
     slug: '/servicos/fachadas'
   },
   {
@@ -19,7 +25,7 @@ const services = [
     title: 'Cenografia & Estandes',
     description: 'Criação de estandes para feiras, eventos e exposições. Projetos que capturam atenção e geram impacto visual memorável.',
     icon: Warehouse,
-    image: '/placeholder.svg',
+    image: cenografiaImg,
     slug: '/servicos/cenografia'
   },
   {
@@ -27,7 +33,7 @@ const services = [
     title: 'Ambientes Internos',
     description: 'Layouts internos funcionais e esteticamente impactantes. Transformo espaços comerciais em ambientes que otimizam a experiência do cliente.',
     icon: Home,
-    image: '/placeholder.svg',
+    image: ambientesImg,
     slug: '/servicos/ambientes'
   },
   {
@@ -35,7 +41,7 @@ const services = [
     title: 'Personalizados',
     description: 'Troféus, medalhas e peças em acrílico personalizadas. Criações únicas para premiações, brindes corporativos e itens especiais.',
     icon: Trophy,
-    image: '/placeholder.svg',
+    image: personalizadosImg,
     slug: '/servicos/personalizados'
   }
 ];
@@ -49,7 +55,7 @@ const ServicosPage = () => {
       </div>
 
       <Navbar />
-      
+
       <main className="pt-24 pb-16 relative z-10">
         {/* Hero Section */}
         <section className="container mx-auto px-4 mb-16">
@@ -59,7 +65,7 @@ const ServicosPage = () => {
             </h1>
             <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
             <p className="text-xl text-white/80">
-              Soluções completas em design 3D, cenografia e personalizados. 
+              Soluções completas em design 3D, cenografia e personalizados.
               Cada projeto é desenvolvido para gerar resultados reais para o seu negócio.
             </p>
           </div>
@@ -71,16 +77,16 @@ const ServicosPage = () => {
             {services.map((service) => {
               const IconComponent = service.icon;
               return (
-                <Link 
+                <Link
                   key={service.id}
                   to={service.slug}
                   className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="h-48 overflow-hidden bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="bg-gradient-to-br from-indigo-600 to-violet-600 w-20 h-20 rounded-full flex items-center justify-center shadow-lg">
@@ -114,7 +120,7 @@ const ServicosPage = () => {
             <p className="text-white/80 mb-8 max-w-2xl mx-auto">
               Cada projeto é único. Vamos conversar sobre como posso transformar sua visão em realidade.
             </p>
-            <button 
+            <button
               onClick={() => window.open('https://wa.me/5591982591612', '_blank')}
               className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium shadow-lg"
             >
