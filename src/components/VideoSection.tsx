@@ -1,24 +1,27 @@
 import React from 'react';
 import { Play } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import videoSrc from '@/content/projects/ambientes/03/danieljardim.3d_1680981222_3076612849003130764_58748782469.mp4';
 
 const VideoSection = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
   return (
-    <section id="videos" className="py-24 bg-[#0d0d0d] relative overflow-hidden">
+    <section id="videos" className="py-6 md:py-24 bg-[#0d0d0d] relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-800/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-violet-800/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Experiência e Qualidade em Cada Detalhe</h2>
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">{t('home.videoSection.title')}</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
-            Palavras convencem, mas resultados transformam. Veja como meu trabalho 3D proporciona uma transformação radical para seu negócio.
+            {t('home.videoSection.subtitle')}
           </p>
         </div>
 
@@ -35,9 +38,9 @@ const VideoSection = () => {
               ></iframe>
             </div>
             <div className="h-auto md:h-32 flex flex-col justify-start">
-              <h3 className="text-xl font-semibold mb-2 text-white">Tour virtual - Loja conceito</h3>
+              <h3 className="text-xl font-semibold mb-2 text-white">{t('home.videoSection.tourTitle')}</h3>
               <p className="text-white/70">
-                Tour virtual interativo que permite explorar cada detalhe do espaço antes da construção.
+                {t('home.videoSection.tourDesc')}
               </p>
             </div>
           </div>
@@ -53,23 +56,23 @@ const VideoSection = () => {
               </video>
             </div>
             <div className="h-auto md:h-32 flex flex-col justify-start items-center md:items-end">
-              <h3 className="text-xl font-semibold mb-2 text-white">Apresentação 3D - Fachada comercial</h3>
+              <h3 className="text-xl font-semibold mb-2 text-white">{t('home.videoSection.presentationTitle')}</h3>
               <p className="text-white/70 max-w-xs">
-                Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.
+                {t('home.videoSection.presentationDesc')}
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-12 md:mt-16 text-center">
           <p className="mb-8 text-xl text-white/80">
-            Meus vídeos e tours virtuais 3D proporcionam uma experiência realista que antecipa a realização do seu projeto.
+            {t('home.videoSection.footerText')}
           </p>
           <Button
             onClick={() => navigate('/contato')}
             className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
           >
-            Quero falar com o Daniel AGORA!
+            {t('home.videoSection.cta')}
           </Button>
         </div>
       </div>

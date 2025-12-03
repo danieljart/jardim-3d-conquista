@@ -1,20 +1,22 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 const PersonalizadosPage = () => {
+  const { t } = useTranslation();
   return (
     <ServicePageTemplate
-      title="Personalizados"
-      subtitle="Projetos 3D Personalizados e Modelagem de Produtos"
-      description="Tem uma ideia única? Eu transformo em 3D. Desde modelagem de produtos específicos, totens, quiosques até projetos conceituais que fogem do padrão. Sua imaginação é o limite."
+      title={t('services.items.personalizados.pageTitle')}
+      subtitle={t('services.items.personalizados.pageSubtitle')}
+      description={t('services.items.personalizados.pageDescription')}
       features={[
-        'Modelagem de produtos com alta fidelidade',
-        'Prototipagem virtual rápida',
-        'Visualização de materiais e acabamentos',
-        'Soluções criativas para demandas específicas'
+        t('services.items.personalizados.feature1'),
+        t('services.items.personalizados.feature2'),
+        t('services.items.personalizados.feature3'),
+        t('services.items.personalizados.feature4')
       ]}
       category="Personalizados"
-      ctaText="Solicitar Orçamento Personalizado"
+      ctaText={t('services.items.personalizados.ctaText')}
     />
   );
 };

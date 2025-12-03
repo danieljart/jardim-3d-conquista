@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
@@ -26,6 +27,7 @@ const slideshowImages = [
 
 const Hero = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -52,7 +54,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
+    <section className="min-h-screen flex items-start md:items-center pt-20 md:pt-16 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90 z-10 mix-blend-multiply"></div>
 
@@ -68,31 +70,27 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px] z-20"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 py-20">
+      <div className="container mx-auto px-4 relative z-10 py-12 md:py-20">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 parallax parallax-slow">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in mb-2">
-              Crio projetos <span className="gradient-text">3D</span> que
-              <span className="gradient-text"> conquistam</span>
+          <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 parallax parallax-slow">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in mb-1">
+              <Trans i18nKey="hero.title">
+                Crio projetos <span className="gradient-text">3D</span> que
+                <span className="gradient-text"> conquistam</span>
+              </Trans>
             </h1>
-            <p className="mt-6 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
-              Não deixe seu negócio passar despercebido. Com meus designs exclusivos, sua empresa não apenas se destaca: ela <span className="font-bold">impacta</span>!
+            <p className="mt-2 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
+              <Trans i18nKey="hero.subtitle">
+                Não deixe seu negócio passar despercebido. Com meus designs exclusivos, sua empresa não apenas se destaca: ela <span className="font-bold">impacta</span>!
+              </Trans>
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
+            <div className="mt-4 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold text-lg border-none shadow-lg shadow-violet-900/30"
                 onClick={() => navigate('/contato')}
               >
-                Fale Comigo Agora! <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 font-semibold text-lg backdrop-blur-sm"
-                onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Conheça Minhas Soluções 3D
+                {t('hero.cta')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
@@ -102,11 +100,15 @@ const Hero = () => {
                 <img
                   key={currentImageIndex}
                   src={slideshowImages[currentImageIndex]}
-                  alt="Mockup de design 3D"
+                  alt={t('hero.alt')}
                   className="w-full h-full object-cover rounded group-hover:scale-105 transition-all duration-700 animate-fade-in"
                 />
                 <div className="absolute bottom-8 left-0 right-0 mx-auto w-4/5 glass-card p-4 rounded-lg shadow-lg border border-white/10 backdrop-blur-xl">
-                  <p className="text-white font-medium">Seu projeto, minha realidade 3D que <span className="font-bold">converte</span>.</p>
+                  <p className="text-white font-medium">
+                    <Trans i18nKey="hero.card">
+                      Seu projeto, minha realidade 3D que <span className="font-bold">converte</span>.
+                    </Trans>
+                  </p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>

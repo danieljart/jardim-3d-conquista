@@ -1,11 +1,2 @@
-﻿Laman 
-
-Esse projeto foi criado para transformar o escritório da Laman em um ambiente versátil, moderno e preparado para dois momentos completamente diferentes do dia a dia da empresa. A intenção desde o início era mostrar como a iluminação certa muda não só o clima do espaço, mas também a forma como ele é percebido.
-
-A primeira versão, registrada nessa imagem, usa iluminação RGB para criar um ambiente imersivo, criativo e cheio de personalidade. As cores dão vida ao escritório e reforçam o lado inovador e tecnológico da marca, criando um clima perfeito para brainstorming, reuniões criativas e momentos de descontração. A parede artística com textura azul adiciona profundidade e torna o espaço ainda mais expressivo.
-
-A segunda versão, com iluminação quente e mais formal, transforma completamente a atmosfera do ambiente. O mesmo escritório ganha uma presença mais elegante, séria e corporativa, ideal para atendimento, gravações, reuniões estratégicas e apresentações profissionais.
-
-Essas duas identidades coexistem dentro do mesmo projeto, permitindo que o espaço se adapte a diferentes necessidades com um simples toque de iluminação.
-
-O resultado é um escritório dinâmico, inteligente e com uma estética muito própria, que traduz exatamente a personalidade multifacetada da Laman.
+Laman
+Um escritório, duas atmosferas. O projeto para a Laman explora a versatilidade da iluminação para redefinir o espaço de trabalho. Na primeira configuração, o sistema RGB cria um ambiente imersivo e tecnológico, ideal para sessões criativas e "brainstorming". Na segunda, uma luz quente e sóbria transforma a sala em um cenário corporativo elegante para reuniões com clientes. O resultado é um espaço dinâmico que se adapta à função do momento, refletindo a natureza multifacetada da marca.

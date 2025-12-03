@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:wght@400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -44,7 +44,8 @@
   }
 
   body {
-    @apply bg-[#121212] text-slate-100 font-sans;
+    @apply bg-[#121212] text-slate-100;
+    font-family: 'TikTok Sans', sans-serif;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
 
@@ -54,7 +55,8 @@
   h4,
   h5,
   h6 {
-    @apply font-heading font-semibold text-white;
+    font-family: 'TikTok Sans', sans-serif;
+    @apply font-semibold text-white;
   }
 
   html {

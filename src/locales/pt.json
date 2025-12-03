@@ -1,0 +1,426 @@
+{
+    "nav": {
+        "home": "Início",
+        "services": "Serviços",
+        "about": "Sobre",
+        "contact": "Contato",
+        "whatsapp": "WhatsApp"
+    },
+    "hero": {
+        "title": "Transformo traços em <1>3D</1> que <3>impactam</3>",
+        "subtitle": "A arquitetura do seu negócio precisa ser vista antes de ser construída. Crio narrativas visuais que antecipam o futuro e fazem sua marca <1>liderar</1>.",
+        "cta": "Vamos tirar o projeto do papel",
+        "solutions": "Expertise em Visualização",
+        "card": "Do conceito à imagem que <1>vende</1>.",
+        "alt": "Visualização arquitetônica 3D"
+    },
+    "home": {
+        "videoSection": {
+            "title": "Imersão e Atmosfera em Movimento",
+            "subtitle": "Imagens estáticas contam uma parte da história. O vídeo transporta seu cliente para dentro dela. Veja como o 3D antecipa a experiência real do espaço.",
+            "tourTitle": "Tour Virtual - Loja Conceito",
+            "tourDesc": "Navegação interativa que permite vivenciar o fluxo e a materialidade do espaço antes da obra começar.",
+            "presentationTitle": "Cinematografia 3D - Fachada Comercial",
+            "presentationDesc": "Um olhar cinematográfico sobre a renovação da fachada, destacando a iluminação noturna e o impacto da nova comunicação visual.",
+            "footerText": "O vídeo e o tour virtual eliminam dúvidas, validam o design e servem como ferramentas poderosas de venda e marketing.",
+            "cta": "Quero orçar uma animação"
+        }
+    },
+    "services": {
+        "title": "Visualização Arquitetônica e Design 3D",
+        "subtitle": "Soluções visuais que antecipam o futuro do seu projeto.",
+        "viewProjects": "Ver Portfolio",
+        "requestQuote": "Solicitar orçamento",
+        "overviewTitle": "Áreas de Atuação",
+        "overviewSubtitle": "Da cenografia à arquitetura comercial: imagens que materializam negócios.",
+        "learnMore": "Detalhes",
+        "viewAll": "Ver todos os serviços",
+        "included": "O que está incluído",
+        "gallery": "Galeria de Projetos",
+        "items": {
+            "fachadas": {
+                "title": "Fachadas Comerciais",
+                "description": "O rosto do seu negócio. Projetos que atraem clientes da rua para dentro.",
+                "overviewDesc": "Revitalização e criação de fachadas 3D para destacar sua marca na paisagem urbana.",
+                "pageTitle": "Fachadas Comerciais",
+                "pageSubtitle": "Visualização Arquitetônica Externa",
+                "pageDescription": "A fachada é o primeiro vendedor da sua empresa.",
+                "feature1": "Previsibilidade estética e técnica",
+                "feature2": "Redução de erros de execução",
+                "feature3": "Alinhamento total com o branding",
+                "feature4": "Design focado em atração de público",
+                "ctaText": "Orçar minha fachada"
+            },
+            "cenografia": {
+                "title": "Cenografia e Eventos",
+                "overviewTitle": "Cenografia & Estandes",
+                "description": "Espaços efêmeros, impacto duradouro. Design para feiras e palcos.",
+                "overviewDesc": "Criação de estandes e ativações de marca que geram fluxo e engajamento em eventos.",
+                "pageTitle": "Cenografia",
+                "pageSubtitle": "Visualização de Eventos e Estandes",
+                "pageDescription": "Em eventos, você tem segundos para captar a atenção.",
+                "feature1": "Criatividade com viabilidade construtiva",
+                "feature2": "Estudo de fluxo e circulação",
+                "feature3": "Compreensão espacial para montadoras",
+                "feature4": "Iluminação cênica e atmosfera",
+                "ctaText": "Orçar projeto cenográfico"
+            },
+            "ambientes": {
+                "title": "Interiores",
+                "overviewTitle": "Design de Interiores",
+                "description": "Atmosfera e função. Visualização para varejo e corporativo.",
+                "overviewDesc": "Visualização de layouts que otimizam a experiência do usuário e a operação.",
+                "pageTitle": "Interiores",
+                "pageSubtitle": "Visualização de Interiores Comerciais",
+                "pageDescription": "O design de interiores define a permanência do cliente.",
+                "feature1": "Potencial de viralização social",
+                "feature2": "Estudos de iluminação (Light Design)",
+                "feature3": "Pontos focais de experiência",
+                "feature4": "Fortalecimento de marca no ambiente físico",
+                "ctaText": "Orçar projeto de interiores"
+            },
+            "personalizados": {
+                "title": "Projetos Especiais",
+                "description": "Troféus, totens e modelagem de produto.",
+                "overviewDesc": "Design de produto e peças exclusivas para premiações e PDV.",
+                "pageTitle": "Customização",
+                "pageSubtitle": "Modelagem de Produtos e Projetos Especiais",
+                "pageDescription": "Para demandas que fogem do padrão.",
+                "feature1": "Fidelidade geométrica e de materiais",
+                "feature2": "Prototipagem virtual",
+                "feature3": "Teste de variações de cor e textura",
+                "feature4": "Soluções para demandas complexas",
+                "ctaText": "Orçar projeto especial"
+            }
+        }
+    },
+    "about": {
+        "homeSection": {
+            "title": "Por que a visualização é essencial?",
+            "subtitle": "Mais do que imagens bonitas, entrego clareza para tomadas de decisão. Atuo como parceiro estratégico de arquitetos e marcas, traduzindo conceitos complexos em experiências visuais que aceleram aprovações e vendas.",
+            "cardTitle": "Design que gera valor de mercado",
+            "cardDesc": "Especialista em ArchViz comercial e cenografia. Uso tecnologia de ponta para criar imagens fotorrealistas que não apenas mostram o espaço, mas transmitem a atmosfera e o potencial de lucro do seu negócio.",
+            "expertise": {
+                "title": "Precisão técnica e olhar artístico:",
+                "desc": "O equilíbrio exato entre a fidelidade do projeto arquitetônico e a beleza da fotografia digital."
+            },
+            "custom": {
+                "title": "Narrativas personalizadas:",
+                "desc": "Cada render conta uma história única, alinhada estritamente ao branding e aos objetivos comerciais do cliente."
+            },
+            "results": {
+                "title": "Foco na conversão:",
+                "desc": "Imagens estratégicas que aceleram aprovações, atraem investidores e fortalecem a percepção da marca."
+            },
+            "stats": {
+                "projects": "Projetos entregues por ano:",
+                "projectsDesc": "Transformando briefs em realidade visual consistente.",
+                "measurable": "Impacto real:",
+                "measurableDesc": "Clientes relatam maior facilidade em vender ideias e aumento na percepção de valor dos espaços.",
+                "digital": "Workflow Digital:",
+                "digitalDesc": "Processo ágil e remoto, atendendo clientes em qualquer lugar com eficiência.",
+                "experience": "Anos de experiência:",
+                "experienceDesc": "Evolução constante nas técnicas de renderização e composição visual."
+            },
+            "focusTitle": "Pilares do meu processo criativo:",
+            "values": {
+                "commitment": "Comprometimento",
+                "commitmentDesc": "Imersão total na sua proposta",
+                "excellence": "Excelência",
+                "excellenceDesc": "Refinamento em cada textura e luz",
+                "customization": "Identidade",
+                "customizationDesc": "Projetos com a sua assinatura",
+                "strategy": "Estratégia",
+                "strategyDesc": "Imagens que funcionam para o negócio",
+                "punctuality": "Pontualidade",
+                "punctualityDesc": "Respeito absoluto aos cronogramas"
+            }
+        },
+        "page": {
+            "stats": {
+                "projects": "Projetos Entregues",
+                "clients": "Clientes Atendidos",
+                "experience": "Anos de Mercado",
+                "results": "Foco em Excelência"
+            },
+            "hero": {
+                "greeting": "Olá, eu sou",
+                "role": "Sou artista 3D especializado em ArchViz e Cenografia.",
+                "desc": "Atuo com fachadas comerciais, cenografia de eventos e ambientes internos. Crio narrativas visuais que unem estética apurada e estratégia comercial, tangibilizando o futuro do seu negócio.",
+                "cta": "Entrar em contato"
+            },
+            "story": {
+                "title": "Minha Trajetória",
+                "p1": "Comecei no design gráfico em 2018, mas foi na tridimensionalidade que encontrei a ferramenta perfeita para expressar ideias complexas.",
+                "p2": "Meu workflow integra ferramentas como Blender, D5 Render e SketchUp para modelagem e renderização avançada."
+            },
+            "skills": {
+                "title": "Expertise Técnica",
+                "design": "Design & CGI",
+                "audiovisual": "Pós-produção & Motion"
+            },
+            "why": {
+                "title": "Por que contratar um especialista?",
+                "results": {
+                    "title": "Visão Comercial",
+                    "desc": "Não faço arte pela arte. Cada render é pensado para vender seu espaço, fortalecer o branding e atrair o público certo para o seu negócio."
+                },
+                "communication": {
+                    "title": "Transparência no Processo",
+                    "desc": "Você não fica no escuro. Do \"white model\" (prova de forma) à imagem final, você acompanha e valida cada etapa, garantindo que o resultado final seja fiel à sua visão."
+                },
+                "presentationTitle": "Apresentação 3D - Fachada comercial",
+                "presentationDesc": "Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.",
+                "footerText": "Meus vídeos e tours virtuais 3D proporcionam uma experiência realista que antecipa a realização do seu projeto.",
+                "cta": "Quero falar com o Daniel AGORA!",
+                "experience": {
+                    "title": "Portfólio Sólido",
+                    "desc": "Mais de 100 projetos entregues. Fachadas que mudaram a cara de comércios, estandes que brilharam em feiras e interiores que acolhem. Meu portfólio é minha garantia de entrega."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "Vamos conversar sobre o seu projeto?",
+        "subtitle": "Pronto para transformar a imagem do seu negócio? Selecione os serviços e envie uma mensagem. Vamos definir a melhor estratégia visual para sua marca.",
+        "whatsapp": "WhatsApp",
+        "chat": "Conversar",
+        "instagram": "Instagram",
+        "follow": "Seguir",
+        "email": "E-mail",
+        "sendEmail": "Enviar e-mail",
+        "whyWork": "Por que escolher meu estúdio?",
+        "reasons": {
+            "personalized": {
+                "title": "Atendimento Direto",
+                "desc": "Processo 100% digital e sem burocracia, focado na sua conveniência."
+            },
+            "transparent": {
+                "title": "Transparência Total",
+                "desc": "Você visualiza e aprova cada etapa, do rascunho ao render final."
+            },
+            "efficient": {
+                "title": "Compromisso com Prazo",
+                "desc": "Cronogramas claros e entregas pontuais para não atrasar sua obra ou lançamento."
+            },
+            "measurable": {
+                "title": "Foco em Vendas",
+                "desc": "Projetos desenhados não apenas para serem bonitos, mas para converterem clientes."
+            }
+        },
+        "chatWhatsapp": "Iniciar conversa no WhatsApp",
+        "sendMessage": "Envie sua mensagem",
+        "form": {
+            "name": "Nome",
+            "namePlaceholder": "Seu nome",
+            "company": "Empresa / Ramo",
+            "companyPlaceholder": "Ex: Construtora, Restaurante, Eventos...",
+            "services": "Serviços de interesse",
+            "submit": "Enviar Mensagem"
+        },
+        "services": {
+            "fachadas": "Fachadas Comerciais",
+            "interiores": "Interiores Comerciais",
+            "comunicacao": "Comunicação Visual",
+            "identidade": "Identidade Visual",
+            "videos": "Animação e Tour Virtual",
+            "estandes": "Estandes e Cenografia"
+        },
+        "messageTemplate": {
+            "greeting": "Olá! Meu nome é",
+            "client": "Cliente",
+            "company": "da empresa",
+            "interest": "Tenho interesse em:",
+            "info": "Gostaria de mais informações e um orçamento."
+        },
+        "rights": "Todos os direitos reservados.",
+        "items": {
+            "fachadas": "Fachadas Comerciais",
+            "cenografia": "Cenografia e Eventos",
+            "ambientes": "Ambientes Instagramáveis",
+            "personalizados": "Projetos Personalizados"
+        }
+    },
+    "project": {
+        "notFound": "Projeto não encontrado",
+        "backToServices": "Voltar para Serviços",
+        "back": "Voltar",
+        "about": "Sobre o Projeto",
+        "cta": {
+            "title": "Vamos tirar o projeto do papel?",
+            "desc": "Entre em contato e vamos discutir como a visualização 3D pode agregar valor e clareza ao seu negócio.",
+            "button": "Falar no WhatsApp"
+        }
+    },
+    "notFound": {
+        "title": "404",
+        "message": "Oops! Página não encontrada",
+        "return": "Voltar para o Início"
+    },
+    "servicesPage": {
+        "title": "Expertise",
+        "subtitle": "Um leque completo de soluções visuais para arquitetura e marketing.",
+        "ctaTitle": "Vamos colaborar?",
+        "ctaDesc": "Cada projeto tem seu desafio. Conte-me o seu e eu mostro como o 3D pode resolvê-lo.",
+        "ctaButton": "Iniciar conversa",
+        "viewMore": "Detalhes"
+    },
+    "pricing": {
+        "title": "Vamos materializar sua ideia?",
+        "subtitle": "Esqueça as soluções padronizadas.",
+        "steps": {
+            "1": {
+                "title": "Briefing e Imersão",
+                "desc": "Compreendo a essência do seu projeto e os objetivos de negócio por trás do design."
+            },
+            "2": {
+                "title": "Modelagem e Estratégia",
+                "desc": "Definição de ângulos, iluminação e \"mood\" para valorizar o que o projeto tem de melhor."
+            },
+            "3": {
+                "title": "Renderização e Refino",
+                "desc": "Aplicação de texturas realistas e pós-produção para criar imagens com alma e profundidade."
+            },
+            "4": {
+                "title": "Entrega e Aprovação",
+                "desc": "Receba as imagens em alta resolução, prontas para encantar clientes e investidores."
+            }
+        },
+        "final": {
+            "title": "Parceria de longo prazo",
+            "desc": "O fim do render é o começo do seu sucesso.",
+            "button": "Solicitar cotação"
+        }
+    },
+    "testimonials": {
+        "title": "O que dizem meus parceiros",
+        "subtitle": "A melhor prova de valor não é a imagem, é o resultado que ela gera.",
+        "commitment": {
+            "title": "Minha filosofia de trabalho",
+            "quote": "\"Minha missão não é apenas fazer 'imagens bonitas', mas usar a visualização 3D como ferramenta de negócios. Estratégia visual, impacto imediato e clareza de comunicação: é assim que elevamos o padrão do seu projeto.\"",
+            "signature": "Daniel Jardim - Designer e Artista 3D"
+        },
+        "items": {
+            "1": {
+                "name": "Sara Silva",
+                "company": "Coonline Contabilidade",
+                "quote": "O projeto 3D da nossa fachada superou todas as expectativas. A implementação aumentou em 35% o número de novos clientes no primeiro trimestre após a renovação. Daniel soube entender exatamente o que buscávamos para nossa marca."
+            },
+            "2": {
+                "name": "Raul Aguilera",
+                "company": "Tudo Conveniência",
+                "quote": "Trabalhar com o Daniel foi uma experiência incrível. Ele entendeu exatamente o que queríamos para nossa nova identidade visual e traduziu isso perfeitamente para o 3D. A comunicação foi sempre clara e o resultado final nos deixou impressionados."
+            },
+            "3": {
+                "name": "Ricardo Mendes",
+                "company": "Docile Confeitaria",
+                "quote": "A modelagem 3D do nosso estande para a feira foi fundamental para nos destacarmos dos concorrentes. O resultado atraiu muito mais visitantes ao nosso espaço e gerou excelentes contatos comerciais. Já estamos planejando novos projetos juntos."
+            }
+        }
+    },
+    "portfolio": {
+        "title": "Portfólio Selecionado",
+        "subtitle": "Mais do que imagens, estes são cases de transformação de espaços e marcas.",
+        "instagram": "Acompanhe novidades no Instagram",
+        "transformation": {
+            "title": "O poder da visualização: Antes e Depois",
+            "desc": "Deslize para ver como transformamos um espaço vazio (ou existente) em uma experiência visual completa.",
+            "before": "Existente / Conceito",
+            "render": "Visualização 3D",
+            "renderDesc": "O projeto materializado",
+            "after": "Resultado Final",
+            "afterDesc": "Impacto real na percepção da marca"
+        },
+        "items": {
+            "1": {
+                "title": "Fachada 3D - FitOne Academia",
+                "category": "Fachada Comercial"
+            },
+            "2": {
+                "title": "Redesign Interior - Docile Confeitaria",
+                "category": "Layout Interno"
+            },
+            "3": {
+                "title": "Identidade Visual - Coonline",
+                "category": "Comunicação Visual"
+            },
+            "4": {
+                "title": "Tour Virtual - Espaço Corporativo",
+                "category": "Vídeo 3D"
+            },
+            "5": {
+                "title": "Letreiros em ACM - Centro Comercial",
+                "category": "Comunicação Visual"
+            },
+            "6": {
+                "title": "Projeto Completo - Lounge Bar",
+                "category": "Projeto Integrado"
+            }
+        }
+    },
+    "footer": {
+        "description": "Estúdio de ArchViz especializado em visualização comercial e cenografia de alto impacto.",
+        "services": "Serviços",
+        "usefulLinks": "Links Úteis",
+        "aboutUs": "Sobre",
+        "portfolio": "Portfólio",
+        "videos": "Vídeos e Tours",
+        "contact": "Contato",
+        "whatsapp": "WhatsApp",
+        "rights": "Todos os direitos reservados.",
+        "items": {
+            "fachadas": "Fachadas Comerciais",
+            "cenografia": "Cenografia e Eventos",
+            "ambientes": "Interiores Comerciais",
+            "personalizados": "Projetos Especiais"
+        }
+    },
+    "projects/ambientes/01/title": "Laman",
+    "projects/ambientes/01/description": "Um escritório, duas atmosferas. O projeto para a Laman explora a versatilidade da iluminação para redefinir o espaço de trabalho. Na primeira configuração, o sistema RGB cria um ambiente imersivo e tecnológico, ideal para sessões criativas e \"brainstorming\". Na segunda, uma luz quente e sóbria transforma a sala em um cenário corporativo elegante para reuniões com clientes. O resultado é um espaço dinâmico que se adapta à função do momento, refletindo a natureza multifacetada da marca.",
+    "projects/ambientes/02/title": "Finama",
+    "projects/ambientes/02/description": "A recepção do Colégio Finama foi projetada para comunicar autoridade institucional instantânea. O ponto focal é o logo em alto relevo, que ancora o espaço e reforça a marca. A paleta sóbria de cinzas, pontuada pelo vermelho institucional e mobiliário minimalista, transmite organização e excelência acadêmica. Um ambiente que acolhe pais e alunos com a seriedade e modernidade que a educação exige.",
+    "projects/ambientes/03/title": "Ferro, Morelli & Furtado",
+    "projects/ambientes/03/description": "Sobriedade e textura definem a recepção deste escritório jurídico. O revestimento em padrão chevron cria um ritmo visual sofisticado, servindo de fundo para a marca em letreiro metálico polido. A iluminação foi desenhada para valorizar os materiais e criar uma atmosfera de confiança e solidez, essenciais para a advocacia de alto nível.",
+    "projects/ambientes/04/title": "Clínica Ana Cecília Lima",
+    "projects/ambientes/04/description": "Na arquitetura de saúde, o acolhimento é prioridade. Para a Clínica Ana Cecília Lima, utilizamos painéis de madeira clara para aquecer o ambiente e reduzir a ansiedade típica de salas de espera. O letreiro em tom vinho e a iluminação difusa trazem sofisticação feminina e tranquilidade, alinhando o espaço físico à delicadeza do atendimento.",
+    "projects/ambientes/05/title": "Elen Koc’s Studio",
+    "projects/ambientes/05/description": "Minimalismo de alto impacto. O projeto para o Elen Koc’s Studio gira em torno do painel de mármore retroiluminado, que eleva instantaneamente o valor percebido do serviço. A combinação de pedra natural, detalhes em dourado e luz técnica cria uma atmosfera de luxo contemporâneo, essencial para um estúdio de beleza e estética.",
+    "projects/ambientes/06/title": "Estapar",
+    "projects/ambientes/06/description": "Eficiência e fluxo. O projeto para a área de autoatendimento da Estapar foca na experiência do usuário (UX) no ambiente físico. A sinalização visual clara e a paleta institucional guiam o cliente intuitivamente até os terminais, reduzindo filas e dúvidas. Um design funcional que integra a operação à estética moderna do shopping.",
+    "projects/cenografia/01/title": "Comprint",
+    "projects/cenografia/01/description": "Monumentalidade e tecnologia. O estande da Comprint foi desenhado para suportar o peso visual e físico de grandes maquinários industriais, sem perder a elegância. A estrutura aérea (sanca) serve como farol no pavilhão, guiando o visitante. O layout privilegia a circulação e a demonstração técnica, criando um ambiente de negócios robusto e confiável.",
+    "projects/cenografia/02/title": "Coca-Cola / Arena REMSA",
+    "projects/cenografia/02/description": "Imersão total na marca. Uma arena desenhada para ser \"instagramável\" e vibrante, onde a luz e os reflexos ampliam a presença do vermelho icônico da Coca-Cola. A iluminação de piso e os painéis de LED criam uma atmosfera envolvente que coloca o visitante dentro do universo da marca, transformando o espaço físico em uma experiência sensorial e midiática.",
+    "projects/cenografia/03/title": "Lounge VIP Motorola",
+    "projects/cenografia/03/description": "Futurismo e exclusividade. O Lounge VIP da Motorola utiliza camadas de neon e luz indireta para criar uma estética \"cyberpunk\" sofisticada. O design transforma o espaço em uma grande vitrine tecnológica, onde o bar e as áreas de estar convidam à permanência, enquanto a iluminação reforça o posicionamento inovador e jovem da marca.",
+    "projects/cenografia/04/title": "McCain & Forno de Minas",
+    "projects/cenografia/04/description": "Co-branding com harmonia. O desafio era unir duas gigantes da alimentação em um espaço coeso. Utilizamos cores quentes (amarelo e vermelho) e materiais acolhedores para evocar \"apetite\" e conforto. O estande funciona como uma grande cozinha de estar, ideal para degustações e relacionamento, reforçando o caráter afetivo das marcas.",
+    "projects/cenografia/05/title": "Schweppes",
+    "projects/cenografia/05/description": "Geometria urbana e frescor. O estande da Schweppes aposta no contraste forte entre amarelo e preto e em linhas diagonais que sugerem movimento. O painel inclinado atua como um \"outdoor\" tridimensional, atraindo o público para o bar central, palco da ativação da marca. Um design arrojado para um público adulto e contemporâneo.",
+    "projects/cenografia/06/title": "Docile",
+    "projects/cenografia/06/description": "Storytelling lúdico. O projeto transporta o visitante para dentro do universo da Docile através de formas orgânicas que remetem a doces e caldas. O uso intenso de cores vibrantes e iluminação de contorno cria um espaço de \"fantasia\" no meio da feira corporativa, gerando forte apelo visual e conexão emocional com a marca.",
+    "projects/fachadas/01/title": "Sacolão Abcintra",
+    "projects/fachadas/01/description": "O desafio era ressignificar o varejo de hortifruti no bairro. Apostamos no verde profundo e na madeira para comunicar frescor, higiene e organização instantaneamente. A fachada deixa de ser apenas uma entrada para se tornar um convite visual que antecipa a qualidade dos produtos, posicionando a marca como referência local.",
+    "projects/fachadas/02/title": "Fernando Perez / Órion Galeria",
+    "projects/fachadas/02/description": "Unidade na diversidade. O projeto une duas marcas distintas sob uma mesma linguagem arquitetônica sofisticada. Volumes puros, linhas retas e uma iluminação cênica noturna conferem ao edifício uma aura de exclusividade e galeria de arte, transmitindo confiança e alto padrão aos clientes.",
+    "projects/fachadas/03/title": "Amaral & Imperium",
+    "projects/fachadas/03/description": "Energia e contraste. Focada no setor automotivo, esta fachada utiliza o preto como base para fazer \"saltar\" o vermelho e o amarelo das marcas. A iluminação linear superior unifica o prédio, garantindo visibilidade máxima em vias rápidas e transmitindo a sensação de potência e velocidade.",
+    "projects/fachadas/04/title": "Vizion Car",
+    "projects/fachadas/04/description": "Arquitetura como totem urbano. A Vizion Car exigia uma presença noturna agressiva e moderna. Criamos uma fachada com volumes metálicos e iluminação vermelha estratégica que transforma a loja em um marco visual na avenida. O showroom funciona como uma vitrine iluminada, valorizando o produto (carros) como joias em exposição.",
+    "projects/fachadas/05/title": "Coonline Contabilidade",
+    "projects/fachadas/05/description": "Credibilidade corporativa. Para um escritório de contabilidade, a imagem precisa transmitir solidez. O uso do preto fosco e branco, linhas retas e comunicação visual limpa estabelece a Coonline como uma empresa moderna e confiável. O painel lateral comunica serviços essenciais sem poluir visualmente a arquitetura.",
+    "projects/fachadas/06/title": "Shineray Electric",
+    "projects/fachadas/06/description": "Mobilidade elétrica e estética urbana. O projeto traduz a tecnologia da Shineray através de painéis de ACM escuros e acentos em vermelho vibrante. A vitrine \"aquário\" integra o interior da loja à rua, convidando o público jovem a interagir com os produtos. Uma fachada que comunica inovação e energia limpa.",
+    "projects/personalizados/01/title": "Bodytech",
+    "projects/personalizados/01/description": "Design de premiação para alta performance. O troféu funde a iconografia do fitness (kettlebell) com a gestualidade humana, simbolizando superação. Acabamentos metálicos e cores vibrantes diferenciam as categorias, transformando o objeto em um símbolo de desejo e motivação interna.",
+    "projects/personalizados/02/title": "MAG Seguros",
+    "projects/personalizados/02/description": "Excelência corporativa materializada. Utilizando acrílico azul e bases espelhadas, criamos um troféu que reflete a identidade sólida da MAG Seguros. A geometria limpa e o foco na estrela central comunicam clareza e reconhecimento de mérito.",
+    "projects/personalizados/03/title": "SENAI",
+    "projects/personalizados/03/description": "Celebração de legado. Para os 70 anos do SENAI, o troféu une a transparência do acrílico (futuro) com o peso do dourado (história). A forma curva sugere evolução contínua, criando uma peça comemorativa que honra o passado enquanto aponta para a inovação.",
+    "projects/personalizados/04/title": "Cartão de Todos",
+    "projects/personalizados/04/description": "Simbologia e luz. O mascote da marca (a coruja) foi transformado em uma peça tridimensional iluminada, que se destaca em palcos e fotos. O uso de camadas de acrílico cria profundidade, tornando o troféu um objeto de decoração e orgulho para o franqueado ou colaborador premiado.",
+    "projects/personalizados/05/title": "Copa LDA",
+    "projects/personalizados/05/description": "Esporte e memória. Fugindo das taças tradicionais de metal, criamos uma silhueta moderna em acrílico e madeira. O design incorpora elementos visuais do futebol (o gramado, o brasão), criando um objeto de desejo que moderniza a estética das premiações esportivas amadoras.",
+    "projects/personalizados/06/title": "Medalhas Personalizadas",
+    "projects/personalizados/06/description": "Medalhas com design autoral. Elevamos o padrão da premiação criando medalhas que contam histórias. Do desenho do relevo à escolha da fita, cada detalhe é personalizado para refletir a identidade do evento. Utilizamos acrílico, metal e impressão UV para criar peças táteis, duráveis e colecionáveis."
+}

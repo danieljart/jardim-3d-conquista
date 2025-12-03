@@ -1,0 +1,494 @@
+>>> services.title
+[COMEÃ‡A COM]
+SoluÃ§Ãµes de design para a transformaÃ§Ã£o do seu negÃ³cio
+
+[MUDAR PARA]
+PT-BR: Visualização Arquitetônica e Design 3D
+EN: Architectural Visualization & 3D Design
+
+>>> services.subtitle
+[COMEÃ‡A COM]
+Transformo sua visÃ£o em realidade com projetos 3D de alta qualidade.
+
+[MUDAR PARA]
+PT-BR: Soluções visuais que antecipam o futuro do seu projeto.
+EN: Visual solutions that anticipate the future of your project.
+
+>>> services.viewProjects
+[COMEÃ‡A COM]
+Ver projetos
+
+[MUDAR PARA]
+PT-BR: Ver Portfolio
+EN: View Portfolio
+
+>>> services.requestQuote
+[COMEÃ‡A COM]
+Solicitar um orÃ§amento personalizado
+
+[MUDAR PARA]
+PT-BR: Solicitar orçamento
+EN: Request a quote
+
+>>> services.overviewTitle
+[COMEÃ‡A COM]
+O que eu faÃ§o
+
+[MUDAR PARA]
+PT-BR: Áreas de Atuação
+EN: What I Do
+
+>>> services.overviewSubtitle
+[COMEÃ‡A COM]
+SoluÃ§Ãµes completas em design 3D para transformar sua visÃ£o em realidade
+
+[MUDAR PARA]
+PT-BR: Da cenografia à arquitetura comercial: imagens que materializam negócios.
+EN: From scenography to commercial architecture: imagery that materializes business.
+
+>>> services.learnMore
+[COMEÃ‡A COM]
+Saiba mais
+
+[MUDAR PARA]
+PT-BR: Detalhes
+EN: Learn more
+
+>>> services.viewAll
+[COMEÃ‡A COM]
+Ver Todos os ServiÃ§os
+
+[MUDAR PARA]
+PT-BR: Ver todos os serviços
+EN: View all services
+
+>>> services.items.fachadas.title
+[COMEÃ‡A COM]
+Fachadas
+
+[MUDAR PARA]
+PT-BR: Fachadas Comerciais
+EN: Commercial Façades
+
+>>> services.items.fachadas.description
+[COMEÃ‡A COM]
+Projetos de fachadas comerciais impactantes.
+
+[MUDAR PARA]
+PT-BR: O rosto do seu negócio. Projetos que atraem clientes da rua para dentro.
+EN: The face of your business. Designs that draw customers in from the street.
+
+>>> services.items.fachadas.overviewDesc
+[COMEÃ‡A COM]
+Projetos 3D de fachadas comerciais que transformam a identidade visual do seu negÃ³cio.
+
+[MUDAR PARA]
+PT-BR: Revitalização e criação de fachadas 3D para destacar sua marca na paisagem urbana.
+EN: 3D revitalization and creation of façades to make your brand stand out in the urban landscape.
+
+>>> services.items.cenografia.title
+[COMEÃ‡A COM]
+Cenografia
+
+[MUDAR PARA]
+PT-BR: Cenografia e Eventos
+EN: Scenography & Events
+
+>>> services.items.cenografia.overviewTitle
+[COMEÃ‡A COM]
+Cenografia & Estandes
+
+[MUDAR PARA]
+PT-BR: Cenografia & Estandes
+EN: Scenography & Booths
+
+>>> services.items.cenografia.description
+[COMEÃ‡A COM]
+Estandes e cenografia para eventos memorÃ¡veis.
+
+[MUDAR PARA]
+PT-BR: Espaços efêmeros, impacto duradouro. Design para feiras e palcos.
+EN: Ephemeral spaces, lasting impact. Design for trade shows and stages.
+
+>>> services.items.cenografia.overviewDesc
+[COMEÃ‡A COM]
+CriaÃ§Ã£o de estandes para feiras, eventos e exposiÃ§Ãµes com impacto visual memorÃ¡vel.
+
+[MUDAR PARA]
+PT-BR: Criação de estandes e ativações de marca que geram fluxo e engajamento em eventos.
+EN: Creation of booths and brand activations that drive traffic and engagement at events.
+
+>>> services.items.ambientes.title
+[COMEÃ‡A COM]
+Ambientes
+
+[MUDAR PARA]
+PT-BR: Interiores
+EN: Interiors
+
+>>> services.items.ambientes.overviewTitle
+[COMEÃ‡A COM]
+Ambientes Internos
+
+[MUDAR PARA]
+PT-BR: Design de Interiores
+EN: Interior Design
+
+>>> services.items.ambientes.description
+[COMEÃ‡A COM]
+Design de interiores e ambientes otimizados.
+
+[MUDAR PARA]
+PT-BR: Atmosfera e função. Visualização para varejo e corporativo.
+EN: Atmosphere and function. Visualization for retail and corporate spaces.
+
+>>> services.items.ambientes.overviewDesc
+[COMEÃ‡A COM]
+Layouts internos funcionais que otimizam a experiÃªncia do cliente.
+
+[MUDAR PARA]
+PT-BR: Visualização de layouts que otimizam a experiência do usuário e a operação.
+EN: Visualization of layouts that optimize user experience and operations.
+
+>>> services.items.personalizados.title
+[COMEÃ‡A COM]
+Personalizados
+
+[MUDAR PARA]
+PT-BR: Projetos Especiais
+EN: Custom Projects
+
+>>> services.items.personalizados.description
+[COMEÃ‡A COM]
+PeÃ§as exclusivas e personalizadas para sua marca.
+
+[MUDAR PARA]
+PT-BR: Troféus, totens e modelagem de produto.
+EN: Trophies, kiosks, and product modeling.
+
+>>> services.items.personalizados.overviewDesc
+[COMEÃ‡A COM]
+TrofÃ©us, medalhas e peÃ§as em acrÃ­lico personalizadas para premiaÃ§Ãµes e brindes.
+
+[MUDAR PARA]
+PT-BR: Design de produto e peças exclusivas para premiações e PDV.
+EN: Product design and exclusive pieces for awards and POS.
+
+>>> services.items.fachadas.pageTitle
+[COMEÇA COM]
+Fachadas
+
+[MUDAR PARA]
+PT-BR: Fachadas Comerciais
+EN: Commercial Façades
+
+>>> services.items.fachadas.pageSubtitle
+[COMEÇA COM]
+Projetos 3D de Fachadas Comerciais
+
+[MUDAR PARA]
+PT-BR: Visualização Arquitetônica Externa
+EN: Exterior Architectural Visualization
+
+>>> services.items.fachadas.pageDescription
+[COMEÇA COM]
+A fachada é o cartão de visita do seu negócio.
+Com minha expertise em modelagem 3D, transformo a frente do seu estabelecimento em um elemento de atração que destaca sua marca e conquista clientes antes mesmo de entrarem.
+
+[MUDAR PARA]
+PT-BR: A fachada é o primeiro vendedor da sua empresa.
+Utilizo a visualização 3D para testar materiais, iluminação e letreiros, garantindo que o investimento na reforma traga o retorno visual e comercial esperado. Você vê o resultado antes de gastar com a obra.
+EN: The façade is your business's first salesperson.
+I use 3D visualization to test materials, lighting, and signage, ensuring that your renovation investment delivers the expected visual and commercial return. You see the result before spending on construction.
+
+>>> services.items.fachadas.feature1
+[COMEÇA COM]
+Visualização realista antes da execução
+
+[MUDAR PARA]
+PT-BR: Previsibilidade estética e técnica
+EN: Aesthetic and technical predictability
+
+>>> services.items.fachadas.feature2
+[COMEÇA COM]
+Otimização de custos com planejamento 3D
+
+[MUDAR PARA]
+PT-BR: Redução de erros de execução
+EN: Reduction of execution errors
+
+>>> services.items.fachadas.feature3
+[COMEÇA COM]
+Projeto alinhado com a identidade da sua marca
+
+[MUDAR PARA]
+PT-BR: Alinhamento total com o branding
+EN: Total alignment with branding
+
+>>> services.items.fachadas.feature4
+[COMEÇA COM]
+Aumento comprovado no fluxo de clientes
+
+[MUDAR PARA]
+PT-BR: Design focado em atração de público
+EN: Design focused on foot traffic attraction
+
+>>> services.items.fachadas.ctaText
+[COMEÇA COM]
+Solicitar Orçamento de Fachada
+
+[MUDAR PARA]
+PT-BR: Orçar minha fachada
+EN: Quote my façade
+
+>>> services.items.cenografia.pageTitle
+[COMEÇA COM]
+Cenografia
+
+[MUDAR PARA]
+PT-BR: Cenografia
+EN: Scenography
+
+>>> services.items.cenografia.pageSubtitle
+[COMEÇA COM]
+Projetos 3D para Eventos e Estandes
+
+[MUDAR PARA]
+PT-BR: Visualização de Eventos e Estandes
+EN: Event and Booth Visualization
+
+>>> services.items.cenografia.pageDescription
+[COMEÇA COM]
+Crie experiências memoráveis com cenografia 3D.
+Projetos para estandes, palcos e eventos corporativos que capturam a atenção e comunicam a mensagem da sua marca de forma impactante.
+
+[MUDAR PARA]
+PT-BR: Em eventos, você tem segundos para captar a atenção.
+Crio maquetes eletrônicas de estandes e palcos que permitem entender fluxos, pontos focais e a experiência do visitante. Ferramenta essencial para aprovar projetos com patrocinadores e organizadores.
+EN: At events, you have seconds to capture attention.
+I create digital mockups of booths and stages that allow you to understand flows, focal points, and the visitor experience. An essential tool for approving projects with sponsors and organizers.
+
+>>> services.items.cenografia.feature1
+[COMEÇA COM]
+Design criativo e funcional
+
+[MUDAR PARA]
+PT-BR: Criatividade com viabilidade construtiva
+EN: Creativity with constructive viability
+
+>>> services.items.cenografia.feature2
+[COMEÇA COM]
+Visualização de fluxos e circulação
+
+[MUDAR PARA]
+PT-BR: Estudo de fluxo e circulação
+EN: Flow and circulation study
+
+>>> services.items.cenografia.feature3
+[COMEÇA COM]
+Detalhamento técnico para montagem
+
+[MUDAR PARA]
+PT-BR: Compreensão espacial para montadoras
+EN: Spatial understanding for builders
+
+>>> services.items.cenografia.feature4
+[COMEÇA COM]
+Ambientação e iluminação cênica
+
+[MUDAR PARA]
+PT-BR: Iluminação cênica e atmosfera
+EN: Scenic lighting and atmosphere
+
+>>> services.items.cenografia.ctaText
+[COMEÇA COM]
+Solicitar Orçamento de Cenografia
+
+[MUDAR PARA]
+PT-BR: Orçar projeto cenográfico
+EN: Quote scenography project
+
+>>> services.items.ambientes.pageTitle
+[COMEÇA COM]
+Ambientes
+
+[MUDAR PARA]
+PT-BR: Interiores
+EN: Interiors
+
+>>> services.items.ambientes.pageSubtitle
+[COMEÇA COM]
+Projetos 3D de Ambientes Instagramáveis
+
+[MUDAR PARA]
+PT-BR: Visualização de Interiores Comerciais
+EN: Commercial Interior Visualization
+
+>>> services.items.ambientes.pageDescription
+[COMEÇA COM]
+Transforme espaços comuns em cenários perfeitos para fotos.
+Projetos focados na experiência do usuário e no compartilhamento social, ideais para bares, restaurantes, lojas e eventos.
+
+[MUDAR PARA]
+PT-BR: O design de interiores define a permanência do cliente.
+Desenvolvo visualizações para varejo, restaurantes e escritórios, focando em ergonomia visual, iluminação e na criação de espaços "instagramáveis" que geram mídia espontânea.
+EN: Interior design defines customer retention.
+I develop visualizations for retail, restaurants, and offices, focusing on visual ergonomics, lighting, and creating "instagrammable" spaces that generate organic media.
+
+>>> services.items.ambientes.feature1
+[COMEÇA COM]
+Design focado em fotografia e vídeo
+
+[MUDAR PARA]
+PT-BR: Potencial de viralização social
+EN: Social viral potential
+
+>>> services.items.ambientes.feature2
+[COMEÇA COM]
+Iluminação estratégica
+
+[MUDAR PARA]
+PT-BR: Estudos de iluminação (Light Design)
+EN: Lighting Design studies
+
+>>> services.items.ambientes.feature3
+[COMEÇA COM]
+Elementos interativos e "instagramáveis"
+
+[MUDAR PARA]
+PT-BR: Pontos focais de experiência
+EN: Experiential focal points
+
+>>> services.items.ambientes.feature4
+[COMEÇA COM]
+Viralização da sua marca nas redes sociais
+
+[MUDAR PARA]
+PT-BR: Fortalecimento de marca no ambiente físico
+EN: Brand strengthening in physical space
+
+>>> services.items.ambientes.ctaText
+[COMEÇA COM]
+Solicitar Orçamento de Ambiente
+
+[MUDAR PARA]
+PT-BR: Orçar projeto de interiores
+EN: Quote interior project
+
+>>> services.items.personalizados.pageTitle
+[COMEÇA COM]
+Personalizados
+
+[MUDAR PARA]
+PT-BR: Customização
+EN: Custom
+
+>>> services.items.personalizados.pageSubtitle
+[COMEÇA COM]
+Projetos 3D Personalizados e Modelagem de Produtos
+
+[MUDAR PARA]
+PT-BR: Modelagem de Produtos e Projetos Especiais
+EN: Product Modeling & Special Projects
+
+>>> services.items.personalizados.pageDescription
+[COMEÇA COM]
+Tem uma ideia única?
+Eu transformo em 3D. Desde modelagem de produtos específicos, totens, quiosques até projetos conceituais que fogem do padrão.
+Sua imaginação é o limite.
+
+[MUDAR PARA]
+PT-BR: Para demandas que fogem do padrão.
+Seja um troféu exclusivo, um quiosque de shopping ou um protótipo de produto. Faço a modelagem 3D detalhada para visualização de acabamentos e aprovação de design antes da produção em massa.
+EN: For non-standard demands.
+Whether it's an exclusive trophy, a mall kiosk, or a product prototype. I provide detailed 3D modeling to visualize finishes and approve designs before mass production.
+
+>>> services.items.personalizados.feature1
+[COMEÇA COM]
+Modelagem de produtos com alta fidelidade
+
+[MUDAR PARA]
+PT-BR: Fidelidade geométrica e de materiais
+EN: Geometric and material fidelity
+
+>>> services.items.personalizados.feature2
+[COMEÇA COM]
+Prototipagem virtual rápida
+
+[MUDAR PARA]
+PT-BR: Prototipagem virtual
+EN: Virtual prototyping
+
+>>> services.items.personalizados.feature3
+[COMEÇA COM]
+Visualização de materiais e acabamentos
+
+[MUDAR PARA]
+PT-BR: Teste de variações de cor e textura
+EN: Color and texture variation testing
+
+>>> services.items.personalizados.feature4
+[COMEÇA COM]
+Soluções criativas para demandas específicas
+
+[MUDAR PARA]
+PT-BR: Soluções para demandas complexas
+EN: Solutions for complex demands
+
+>>> services.items.personalizados.ctaText
+[COMEÇA COM]
+Solicitar Orçamento Personalizado
+
+[MUDAR PARA]
+PT-BR: Orçar projeto especial
+EN: Quote special project
+
+>>> servicesPage.title
+[COMEÇA COM]
+Meus Serviços
+
+[MUDAR PARA]
+PT-BR: Expertise
+EN: Expertise
+
+>>> servicesPage.subtitle
+[COMEÇA COM]
+Soluções completas em design 3D, cenografia e personalizados.
+Cada projeto é desenvolvido para gerar resultados reais para o seu negócio.
+
+[MUDAR PARA]
+PT-BR: Um leque completo de soluções visuais para arquitetura e marketing.
+EN: A complete range of visual solutions for architecture and marketing.
+
+>>> servicesPage.ctaTitle
+[COMEÇA COM]
+Tem um projeto em mente?
+
+[MUDAR PARA]
+PT-BR: Vamos colaborar?
+EN: Shall we collaborate?
+
+>>> servicesPage.ctaDesc
+[COMEÇA COM]
+Cada projeto é único.
+Vamos conversar sobre como posso transformar sua visão em realidade.
+
+[MUDAR PARA]
+PT-BR: Cada projeto tem seu desafio. Conte-me o seu e eu mostro como o 3D pode resolvê-lo.
+EN: Every project has its challenge. Tell me yours, and I'll show you how 3D can solve it.
+
+>>> servicesPage.ctaButton
+[COMEÇA COM]
+Solicitar Orçamento
+
+[MUDAR PARA]
+PT-BR: Iniciar conversa
+EN: Start conversation
+
+>>> servicesPage.viewMore
+[COMEÇA COM]
+Ver mais
+
+[MUDAR PARA]
+PT-BR: Detalhes
+EN: Details

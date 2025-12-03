@@ -1,0 +1,135 @@
+>>> projects/cenografia/01/title
+[COMEÇA COM]
+Comprint
+
+[MUDAR PARA]
+PT-BR: Comprint
+EN: Comprint
+
+>>> projects/cenografia/01/description
+[COMEÇA COM]
+Nesse projeto o objetivo era expor equipamentos industriais de grande porte sem perder organização, estética e clareza visual.
+Cada elemento foi planejado para valorizar tecnologia e performance.
+A paleta em vermelho e branco cria impacto imediato e reforça a identidade da marca.
+A estrutura superior iluminada funciona como assinatura visual do estande e garante reconhecimento à distância.
+O layout foi organizado para facilitar a demonstração dos maquinários, permitindo que o visitante circule, observe e interaja sem obstáculos.
+Os painéis informativos completam a narrativa e ajudam a comunicar confiança e experiência.
+O resultado é um estande sólido, profissional e extremamente eficiente para eventos de grande porte.
+
+[MUDAR PARA]
+PT-BR: Monumentalidade e tecnologia. O estande da Comprint foi desenhado para suportar o peso visual e físico de grandes maquinários industriais, sem perder a elegância. A estrutura aérea (sanca) serve como farol no pavilhão, guiando o visitante. O layout privilegia a circulação e a demonstração técnica, criando um ambiente de negócios robusto e confiável.
+EN: Monumentality and technology. The Comprint booth was designed to support the visual and physical weight of heavy industrial machinery without losing elegance. The overhead structure acts as a beacon in the exhibition hall, guiding visitors. The layout prioritizes circulation and technical demonstration, creating a robust and reliable business environment.
+
+>>> projects/cenografia/02/title
+[COMEÇA COM]
+Coca Coca/Arena REMSA
+
+[MUDAR PARA]
+PT-BR: Coca-Cola / Arena REMSA
+EN: Coca-Cola / REMSA Arena
+
+>>> projects/cenografia/02/description
+[COMEÇA COM]
+Esse projeto foi desenvolvido com o objetivo de criar uma atmosfera marcante, vibrante e totalmente dominada pela assinatura visual da Coca-Cola.
+A ideia era transformar o ambiente em uma experiência imersiva.
+A estrutura utiliza o vermelho icônico da marca em grandes proporções, combinada com elementos de iluminação que guiam o olhar e criam um fluxo dinâmico.
+O uso de materiais reflexivos e o contraste entre luz e sombra deixam o ambiente dramático e sofisticado.
+O espaço foi pensado para ser instagramável e funcional, permitindo circulação fluida e interação com os elementos da marca.
+A iluminação baixa no piso e os painéis de LED criam uma presença contínua, que envolve o visitante de todos os lados.
+O resultado é uma arena icônica, que traduz de maneira fiel o espírito vibrante da Coca-Cola e toda a energia de um grande evento.
+
+[MUDAR PARA]
+PT-BR: Imersão total na marca. Uma arena desenhada para ser "instagramável" e vibrante, onde a luz e os reflexos ampliam a presença do vermelho icônico da Coca-Cola. A iluminação de piso e os painéis de LED criam uma atmosfera envolvente que coloca o visitante dentro do universo da marca, transformando o espaço físico em uma experiência sensorial e midiática.
+EN: Total brand immersion. An arena designed to be "instagrammable" and vibrant, where light and reflections amplify the presence of Coca-Cola's iconic red. Floor lighting and LED panels create an enveloping atmosphere that places the visitor inside the brand's universe, transforming physical space into a sensory and media experience.
+
+>>> projects/cenografia/03/title
+[COMEÇA COM]
+Lounge VIP Motorola
+
+[MUDAR PARA]
+PT-BR: Lounge VIP Motorola
+EN: Motorola VIP Lounge
+
+>>> projects/cenografia/03/description
+[COMEÇA COM]
+A criação desse lounge nasceu da ideia de transformar o espaço em uma experiência sensorial totalmente alinhada com o universo tecnológico da Motorola.
+A proposta era criar um ambiente que misturasse exclusividade, modernidade e uma identidade visual marcante.
+Os neons coloridos, distribuídos em camadas, fazem o primeiro impacto visual acontecer.
+Cada luz foi pensada para reforçar o conceito de inovação e criar um clima vibrante, sofisticado e jovem.
+A composição das vitrines iluminadas valoriza os produtos e transforma o espaço em uma grande vitrine de tecnologia.
+O bar integrado, os acabamentos quentes e o painel principal com elementos de marca criam um equilíbrio entre conforto e futurismo.
+Tudo foi projetado para que o visitante sinta que está em um espaço premium, feito para receber, celebrar e fortalecer a marca.
+O resultado é um lounge imersivo, fotogênico e cheio de personalidade, pensado para ser lembrado desde o primeiro minuto.
+
+[MUDAR PARA]
+PT-BR: Futurismo e exclusividade. O Lounge VIP da Motorola utiliza camadas de neon e luz indireta para criar uma estética "cyberpunk" sofisticada. O design transforma o espaço em uma grande vitrine tecnológica, onde o bar e as áreas de estar convidam à permanência, enquanto a iluminação reforça o posicionamento inovador e jovem da marca.
+EN: Futurism and exclusivity. The Motorola VIP Lounge uses layers of neon and indirect light to create a sophisticated "cyberpunk" aesthetic. The design transforms the space into a large technological showcase, where the bar and seating areas invite guests to stay, while the lighting reinforces the brand's innovative and youthful positioning.
+
+>>> projects/cenografia/04/title
+[COMEÇA COM]
+McCain & Forno de Minas
+
+[MUDAR PARA]
+PT-BR: McCain & Forno de Minas
+EN: McCain & Forno de Minas
+
+>>> projects/cenografia/04/description
+[COMEÇA COM]
+Esse projeto foi criado para unir duas marcas muito queridas do público dentro de um ambiente acolhedor, vibrante e cheio de personalidade.
+A intenção era transformar o estande em um espaço que transmitisse sabor, conforto e experiência logo no primeiro olhar.
+A estrutura em amarelo e vermelho cria um impacto imediato e traduz visualmente o calor, a energia e a proximidade das marcas com o público.
+A iluminação quente contorna o estande inteiro e reforça essa atmosfera convidativa, deixando tudo visualmente envolvente e atraente.
+O mobiliário confortável, os detalhes decorativos e o uso de vegetação ajudam a criar um clima leve e agradável, perfeito para degustações, encontros e ativações durante o evento.
+A comunicação visual distribuída pelo espaço fortalece o storytelling e mantém o visitante imerso no universo gastronômico de cada marca.
+O resultado é um estande que combina estética, funcionalidade e experiência, gerando um ambiente que realmente representa o sabor e a conexão das marcas com o público.
+
+[MUDAR PARA]
+PT-BR: Co-branding com harmonia. O desafio era unir duas gigantes da alimentação em um espaço coeso. Utilizamos cores quentes (amarelo e vermelho) e materiais acolhedores para evocar "apetite" e conforto. O estande funciona como uma grande cozinha de estar, ideal para degustações e relacionamento, reforçando o caráter afetivo das marcas.
+EN: Co-branding with harmony. The challenge was to unite two food giants in a cohesive space. We used warm colors (yellow and red) and welcoming materials to evoke "appetite" and comfort. The booth functions as a large living kitchen, ideal for tastings and relationship building, reinforcing the affective character of the brands.
+
+>>> projects/cenografia/05/title
+[COMEÇA COM]
+Schweppes
+
+[MUDAR PARA]
+PT-BR: Schweppes
+EN: Schweppes
+
+>>> projects/cenografia/05/description
+[COMEÇA COM]
+Esse projeto foi pensado para traduzir a essência refrescante, moderna e cheia de personalidade da Schweppes.
+A ideia era criar um estande chamativo, leve e visualmente forte, que se destacasse no evento e despertasse curiosidade instantânea.
+A paleta em amarelo e preto cria identidade imediata e deixa o estande com um visual inesquecível.
+O painel frontal inclinado se tornou um dos grandes destaques da estrutura, funcionando como assinatura visual e atraindo atenção de longe.
+As linhas diagonais e a composição geométrica reforçam o estilo urbano e contemporâneo da marca.
+O bar central foi planejado como ponto principal da experiência, criando um ambiente descontraído para degustações e interação com o público.
+A iluminação suave e os detalhes tipográficos completam a atmosfera moderna e reforçam o posicionamento da marca.
+Com circulação aberta e espaços bem integrados, o estande cria uma experiência fluida, confortável e totalmente conectada com o público.
+O resultado é um estande marcante, fotogênico e com uma personalidade visual muito forte.
+
+[MUDAR PARA]
+PT-BR: Geometria urbana e frescor. O estande da Schweppes aposta no contraste forte entre amarelo e preto e em linhas diagonais que sugerem movimento. O painel inclinado atua como um "outdoor" tridimensional, atraindo o público para o bar central, palco da ativação da marca. Um design arrojado para um público adulto e contemporâneo.
+EN: Urban geometry and freshness. The Schweppes booth bets on the strong contrast between yellow and black and diagonal lines that suggest movement. The inclined panel acts as a three-dimensional billboard, drawing the audience to the central bar, the stage for brand activation. A bold design for an adult, contemporary audience.
+
+>>> projects/cenografia/06/title
+[COMEÇA COM]
+Docile
+
+[MUDAR PARA]
+PT-BR: Docile
+EN: Docile
+
+>>> projects/cenografia/06/description
+[COMEÇA COM]
+Esse projeto foi criado para transportar o público para dentro do mundo doce da Docile.
+Desde o início a proposta foi construir um estande que despertasse memória afetiva, alegria e curiosidade, usando cor, forma e movimento para contar a história da marca de maneira leve e envolvente.
+A estrutura principal é toda trabalhada em curvas vibrantes que lembram caldas, confeitos e embalagens coloridas.
+As luzes contornando o estande reforçam esse visual divertido e deixam tudo ainda mais chamativo, criando um impacto imediato nos corredores da feira.
+O espaço interno foi pensado para ser interativo e acolhedor.
+Os expositores exibem os produtos de forma lúdica, o mobiliário traz um clima descontraído e as áreas de circulação são amplas, incentivando o visitante a caminhar e explorar cada detalhe visual.
+A grande composição gráfica ao fundo e o letreiro circular no topo ajudam a construir uma presença forte e marcante, reforçando a identidade da Docile e fazendo com que o estande seja reconhecido rapidamente de qualquer ponto do evento.
+O resultado é um ambiente divertido, cheio de energia e totalmente alinhado ao universo doce da marca, criando uma experiência que conecta o público ao lado mais leve e saboroso da Docile.
+
+[MUDAR PARA]
+PT-BR: Storytelling lúdico. O projeto transporta o visitante para dentro do universo da Docile através de formas orgânicas que remetem a doces e caldas. O uso intenso de cores vibrantes e iluminação de contorno cria um espaço de "fantasia" no meio da feira corporativa, gerando forte apelo visual e conexão emocional com a marca.
+EN: Playful storytelling. The project transports the visitor inside the Docile universe through organic shapes that resemble sweets and syrups. The intense use of vibrant colors and contour lighting creates a "fantasy" space in the middle of the corporate trade show, generating strong visual appeal and emotional connection with the brand.

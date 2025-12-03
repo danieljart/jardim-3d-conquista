@@ -1,0 +1,592 @@
+>>> hero.title
+[COMEÇA COM]
+Crio projetos <1>3D</1> que <3>conquistam</3>
+
+[MUDAR PARA]
+PT-BR: Transformo traços em <1>3D</1> que <3>impactam</3>
+EN: Crafting <1>3D</1> visuals that <3>captivate</3>
+
+>>> hero.subtitle
+[COMEÇA COM]
+NÃ£o deixe seu negÃ³cio passar despercebido.
+Com meus designs exclusivos, sua empresa nÃ£o apenas se destaca: ela <1>impacta</1>!
+
+[MUDAR PARA]
+PT-BR: A arquitetura do seu negócio precisa ser vista antes de ser construída. Crio narrativas visuais que antecipam o futuro e fazem sua marca <1>liderar</1>.
+EN: Don't let your vision remain unseen. I create immersive visual storytelling that makes your brand not just visible, but <1>unforgettable</1>.
+
+>>> hero.cta
+[COMEÇA COM]
+Fale Comigo Agora!
+
+[MUDAR PARA]
+PT-BR: Vamos tirar o projeto do papel
+EN: Let's visualize your project
+
+>>> hero.solutions
+[COMEÇA COM]
+ConheÃ§a Minhas SoluÃ§Ãµes 3D
+
+[MUDAR PARA]
+PT-BR: Expertise em Visualização
+EN: Visualization Expertise
+
+>>> hero.card
+[COMEÇA COM]
+Seu projeto, minha realidade 3D que <1>converte</1>.
+
+[MUDAR PARA]
+PT-BR: Do conceito à imagem que <1>vende</1>.
+EN: From concept to visuals that <1>persuade</1>.
+
+>>> hero.alt
+[COMEÇA COM]
+Mockup de design 3D
+
+[MUDAR PARA]
+PT-BR: Visualização arquitetônica 3D
+EN: Architectural 3D visualization
+
+>>> about.homeSection.title
+[COMEÇA COM]
+Por que optar pelos meus serviÃ§os?
+
+[MUDAR PARA]
+PT-BR: Por que a visualização é essencial?
+EN: Why choose high-end visualization?
+
+>>> about.homeSection.subtitle
+[COMEÇA COM]
+Sou mais que um designer;
+sou seu parceiro estratÃ©gico na busca por resultados superiores. Com dedicaÃ§Ã£o, expertise tÃ©cnica e paixÃ£o pela inovaÃ§Ã£o, transformo suas ideias em valor tangÃ­vel para seu negÃ³cio.
+
+[MUDAR PARA]
+PT-BR: Mais do que imagens bonitas, entrego clareza para tomadas de decisão. Atuo como parceiro estratégico de arquitetos e marcas, traduzindo conceitos complexos em experiências visuais que aceleram aprovações e vendas.
+EN: More than a designer, I am your strategic partner in visual communication. I translate complex concepts into tangible assets, using technical expertise and artistic vision to help you sell your ideas before they are built.
+
+>>> about.homeSection.cardTitle
+[COMEÇA COM]
+A essÃªncia do design que entrega valor real
+
+[MUDAR PARA]
+PT-BR: Design que gera valor de mercado
+EN: Design that drives real value
+
+>>> about.homeSection.cardDesc
+[COMEÇA COM]
+Com experiÃªncia no mercado, sou referÃªncia em modelagem e design 3D para ambientes comerciais.
+Utilizo ferramentas avanÃ§adas para criar soluÃ§Ãµes que encantam visualmente e geram resultados concretos.
+
+[MUDAR PARA]
+PT-BR: Especialista em ArchViz comercial e cenografia. Uso tecnologia de ponta para criar imagens fotorrealistas que não apenas mostram o espaço, mas transmitem a atmosfera e o potencial de lucro do seu negócio.
+EN: Specializing in commercial ArchViz and scenography. I leverage advanced CGI tools to create photorealistic solutions that do more than display a space; they convey the mood, atmosphere, and commercial potential of your project.
+
+>>> about.homeSection.expertise.title
+[COMEÇA COM]
+Expertise tÃ©cnica e estÃ©tica:
+
+[MUDAR PARA]
+PT-BR: Precisão técnica e olhar artístico:
+EN: Technical precision & artistic eye:
+
+>>> about.homeSection.expertise.desc
+[COMEÇA COM]
+Combino conhecimento tÃ©cnico em 3D com visÃ£o artÃ­stica para projetos precisos e impactantes.
+
+[MUDAR PARA]
+PT-BR: O equilíbrio exato entre a fidelidade do projeto arquitetônico e a beleza da fotografia digital.
+EN: Merging rigorous 3D technical skills with a photographer's approach to composition and lighting.
+
+>>> about.homeSection.custom.title
+[COMEÇA COM]
+SoluÃ§Ãµes sob medida:
+
+[MUDAR PARA]
+PT-BR: Narrativas personalizadas:
+EN: Bespoke solutions:
+
+>>> about.homeSection.custom.desc
+[COMEÇA COM]
+Crio projetos 100% personalizados, alinhados com seus objetivos e marca.
+
+[MUDAR PARA]
+PT-BR: Cada render conta uma história única, alinhada estritamente ao branding e aos objetivos comerciais do cliente.
+EN: I create 100% custom visuals tailored to your brand's narrative and specific business goals.
+
+>>> about.homeSection.results.title
+[COMEÇA COM]
+Foco em resultados:
+
+[MUDAR PARA]
+PT-BR: Foco na conversão:
+EN: Result-driven visuals:
+
+>>> about.homeSection.results.desc
+[COMEÇA COM]
+Entrego estratÃ©gia.
+Minhas soluÃ§Ãµes 3D aumentam a visibilidade da sua marca e fortalecem sua presenÃ§a no mercado.
+
+[MUDAR PARA]
+PT-BR: Imagens estratégicas que aceleram aprovações, atraem investidores e fortalecem a percepção da marca.
+EN: I deliver strategy. My 3D solutions are designed to enhance brand visibility and strengthen market presence.
+
+>>> about.homeSection.stats.projects
+[COMEÇA COM]
+Projetos concluÃ­dos anualmente:
+
+[MUDAR PARA]
+PT-BR: Projetos entregues por ano:
+EN: Projects delivered annually:
+
+>>> about.homeSection.stats.projectsDesc
+[COMEÇA COM]
+Contribuindo para a transformaÃ§Ã£o de negÃ³cios e a satisfaÃ§Ã£o de clientes.
+
+[MUDAR PARA]
+PT-BR: Transformando briefs em realidade visual consistente.
+EN: Consistently turning briefs into compelling visual realities.
+
+>>> about.homeSection.stats.measurable
+[COMEÇA COM]
+Resultados mensurÃ¡veis:
+
+[MUDAR PARA]
+PT-BR: Impacto real:
+EN: Measurable impact:
+
+>>> about.homeSection.stats.measurableDesc
+[COMEÇA COM]
+Meus clientes constatam o impacto real do design na visibilidade e performance de seus negÃ³cios.
+
+[MUDAR PARA]
+PT-BR: Clientes relatam maior facilidade em vender ideias e aumento na percepção de valor dos espaços.
+EN: Clients report faster approvals and increased value perception through high-quality CGI.
+
+>>> about.homeSection.stats.digital
+[COMEÇA COM]
+Digital:
+
+[MUDAR PARA]
+PT-BR: Workflow Digital:
+EN: Digital Workflow:
+
+>>> about.homeSection.stats.digitalDesc
+[COMEÇA COM]
+Atendimento completamente digital e eficiente para sua comodidade.
+
+[MUDAR PARA]
+PT-BR: Processo ágil e remoto, atendendo clientes em qualquer lugar com eficiência.
+EN: Fully remote, seamless communication process designed for efficiency and convenience.
+
+>>> about.homeSection.stats.experience
+[COMEÇA COM]
+Anos de experiÃªncia profissional:
+
+[MUDAR PARA]
+PT-BR: Anos de experiência:
+EN: Years of experience:
+
+>>> about.homeSection.stats.experienceDesc
+[COMEÇA COM]
+DedicaÃ§Ã£o contÃ­nua ao aprimoramento e Ã  aplicaÃ§Ã£o das melhores prÃ¡ticas de design.
+
+[MUDAR PARA]
+PT-BR: Evolução constante nas técnicas de renderização e composição visual.
+EN: Continuous dedication to mastering the latest rendering techniques and design standards.
+
+>>> about.homeSection.focusTitle
+[COMEÇA COM]
+Ao optar pelos meus serviÃ§os, seu sucesso Ã© o foco:
+
+[MUDAR PARA]
+PT-BR: Pilares do meu processo criativo:
+EN: The pillars of my workflow:
+
+>>> about.homeSection.values.commitment
+[COMEÇA COM]
+Compromisso
+
+[MUDAR PARA]
+PT-BR: Comprometimento
+EN: Commitment
+
+>>> about.homeSection.values.commitmentDesc
+[COMEÇA COM]
+DedicaÃ§Ã£o total ao seu projeto
+
+[MUDAR PARA]
+PT-BR: Imersão total na sua proposta
+EN: Full dedication to your vision
+
+>>> about.homeSection.values.excellence
+[COMEÇA COM]
+ExcelÃªncia
+
+[MUDAR PARA]
+PT-BR: Excelência
+EN: Excellence
+
+>>> about.homeSection.values.excellenceDesc
+[COMEÇA COM]
+PadrÃ£o superior em cada detalhe
+
+[MUDAR PARA]
+PT-BR: Refinamento em cada textura e luz
+EN: Superior quality in every detail
+
+>>> about.homeSection.values.customization
+[COMEÇA COM]
+PersonalizaÃ§Ã£o
+
+[MUDAR PARA]
+PT-BR: Identidade
+EN: Customization
+
+>>> about.homeSection.values.customizationDesc
+[COMEÇA COM]
+Foco nas suas necessidades
+
+[MUDAR PARA]
+PT-BR: Projetos com a sua assinatura
+EN: Tailored to your specific needs
+
+>>> about.homeSection.values.strategy
+[COMEÇA COM]
+EstratÃ©gia
+
+[MUDAR PARA]
+PT-BR: Estratégia
+EN: Strategy
+
+>>> about.homeSection.values.strategyDesc
+[COMEÇA COM]
+SoluÃ§Ãµes que geram resultados
+
+[MUDAR PARA]
+PT-BR: Imagens que funcionam para o negócio
+EN: Visuals that drive results
+
+>>> about.homeSection.values.punctuality
+[COMEÇA COM]
+Pontualidade
+
+[MUDAR PARA]
+PT-BR: Pontualidade
+EN: Reliability
+
+>>> about.homeSection.values.punctualityDesc
+[COMEÇA COM]
+Entrega sempre no prazo
+
+[MUDAR PARA]
+PT-BR: Respeito absoluto aos cronogramas
+EN: Always delivering on schedule
+
+>>> home.videoSection.title
+[COMEÇA COM]
+Experiência e Qualidade em Cada Detalhe
+
+[MUDAR PARA]
+PT-BR: Imersão e Atmosfera em Movimento
+EN: Experience and Quality in Every Detail
+
+>>> home.videoSection.subtitle
+[COMEÇA COM]
+Palavras convencem, mas resultados transformam. Veja como meu trabalho 3D proporciona uma transformação radical para seu negócio.
+
+[MUDAR PARA]
+PT-BR: Imagens estáticas contam uma parte da história. O vídeo transporta seu cliente para dentro dela. Veja como o 3D antecipa a experiência real do espaço.
+EN: Words convince, but visuals transform. See how my 3D work provides a radical transformation for your business, creating an immersive preview of the final built environment.
+
+>>> home.videoSection.tourTitle
+[COMEÇA COM]
+Tour virtual - Loja conceito
+
+[MUDAR PARA]
+PT-BR: Tour Virtual - Loja Conceito
+EN: Virtual Tour - Concept Store
+
+>>> home.videoSection.tourDesc
+[COMEÇA COM]
+Tour virtual interativo que permite explorar cada detalhe do espaço antes da construção.
+
+[MUDAR PARA]
+PT-BR: Navegação interativa que permite vivenciar o fluxo e a materialidade do espaço antes da obra começar.
+EN: Interactive virtual tour allowing full exploration of the space and details prior to construction.
+
+>>> home.videoSection.presentationTitle
+[COMEÇA COM]
+Apresentação 3D - Fachada comercial
+
+[MUDAR PARA]
+PT-BR: Cinematografia 3D - Fachada Comercial
+EN: 3D Cinematography - Commercial Façade
+
+>>> home.videoSection.presentationDesc
+[COMEÇA COM]
+Vídeo demonstrativo das transformações de uma fachada comercial, destacando detalhes e comunicação visual.
+
+[MUDAR PARA]
+PT-BR: Um olhar cinematográfico sobre a renovação da fachada, destacando a iluminação noturna e o impacto da nova comunicação visual.
+EN: A cinematic showcase of the commercial façade transformation, highlighting architectural details and visual communication.
+
+>>> home.videoSection.footerText
+[COMEÇA COM]
+Meus vídeos e tours virtuais 3D proporcionam uma experiência realista que antecipa a realização do seu projeto.
+
+[MUDAR PARA]
+PT-BR: O vídeo e o tour virtual eliminam dúvidas, validam o design e servem como ferramentas poderosas de venda e marketing.
+EN: My 3D videos and virtual tours provide a realistic immersive experience that anticipates the realization of your project.
+
+>>> home.videoSection.cta
+[COMEÇA COM]
+Quero falar com o Daniel AGORA!
+
+[MUDAR PARA]
+PT-BR: Quero orçar uma animação
+EN: I want to discuss a project
+
+>>> pricing.title
+[COMEÇA COM]
+Seu projeto 3D exclusivo começa agora!
+
+[MUDAR PARA]
+PT-BR: Vamos materializar sua ideia?
+EN: Your exclusive 3D project starts now!
+
+>>> pricing.subtitle
+[COMEÇA COM]
+Chega de soluções genéricas.
+Seu negócio merece um projeto 3D único, pensado para seus desafios e ambições.
+Meu processo é 100% focado em você, do primeiro bate-papo à entrega de um resultado que vai te surpreender.
+Vamos criar juntos?
+
+[MUDAR PARA]
+PT-BR: Esqueça as soluções padronizadas.
+Seu empreendimento merece uma visualização única, pensada para comunicar o valor da sua marca.
+Meu workflow é colaborativo e focado, garantindo que a entrega final supere a expectativa técnica e estética.
+Vamos começar?
+EN: No more generic solutions.
+Your business deserves unique 3D imagery, tailored to your specific challenges and ambitions.
+My process is 100% client-focused, from the initial briefing to delivering results that will exceed expectations.
+Shall we create something together?
+
+>>> pricing.steps.1.title
+[COMEÇA COM]
+Sua visão, nosso ponto de partida
+
+[MUDAR PARA]
+PT-BR: Briefing e Imersão
+EN: Vision & Briefing
+
+>>> pricing.steps.1.desc
+[COMEÇA COM]
+Entendemos seus sonhos e metas a fundo.
+
+[MUDAR PARA]
+PT-BR: Compreendo a essência do seu projeto e os objetivos de negócio por trás do design.
+EN: We deep dive into your goals and the vision behind the project.
+
+>>> pricing.steps.2.title
+[COMEÇA COM]
+Estratégia 3D vencedora
+
+[MUDAR PARA]
+PT-BR: Modelagem e Estratégia
+EN: 3D Strategy & Modeling
+
+>>> pricing.steps.2.desc
+[COMEÇA COM]
+Criamos a solução perfeita para seu sucesso, com orçamento justo.
+
+[MUDAR PARA]
+PT-BR: Definição de ângulos, iluminação e "mood" para valorizar o que o projeto tem de melhor.
+EN: Creating the perfect visual solution for your success, optimized for impact.
+
+>>> pricing.steps.3.title
+[COMEÇA COM]
+Magia em ação
+
+[MUDAR PARA]
+PT-BR: Renderização e Refino
+EN: Rendering & Magic
+
+>>> pricing.steps.3.desc
+[COMEÇA COM]
+Nosso time de craques transforma sua ideia em 3D espetacular.
+
+[MUDAR PARA]
+PT-BR: Aplicação de texturas realistas e pós-produção para criar imagens com alma e profundidade.
+EN: Transforming the concept into spectacular, photorealistic 3D imagery.
+
+>>> pricing.steps.4.title
+[COMEÇA COM]
+Você no comando
+
+[MUDAR PARA]
+PT-BR: Entrega e Aprovação
+EN: Delivery & Control
+
+>>> pricing.steps.4.desc
+[COMEÇA COM]
+Acompanhe tudo e aprove cada detalhe. Sua satisfação é lei.
+
+[MUDAR PARA]
+PT-BR: Receba as imagens em alta resolução, prontas para encantar clientes e investidores.
+EN: Review the details and receive the final high-res assets. Your satisfaction is paramount.
+
+>>> pricing.final.title
+[COMEÇA COM]
+Resultado entregue, parceria que fica
+
+[MUDAR PARA]
+PT-BR: Parceria de longo prazo
+EN: Delivered results, lasting partnership
+
+>>> pricing.final.desc
+[COMEÇA COM]
+Seu projeto impecável e meu suporte total para o que vier.
+Nossa parceria não termina na entrega: estou sempre pronto para ajustes futuros ou novas ideias que possam surgir para o seu negócio.
+
+[MUDAR PARA]
+PT-BR: O fim do render é o começo do seu sucesso.
+Continuo à disposição para futuros desdobramentos, novas vistas ou atualizações do projeto conforme seu negócio evolui.
+EN: Impeccable projects and full support for what comes next.
+Our partnership doesn't end at delivery: I'm always ready for future adjustments or new ideas as your business grows.
+
+>>> pricing.final.button
+[COMEÇA COM]
+Quero meu projeto 3D vencedor!
+
+[MUDAR PARA]
+PT-BR: Solicitar cotação
+EN: Request a quote
+
+>>> testimonials.title
+[COMEÇA COM]
+Depoimentos de clientes satisfeitos
+
+[MUDAR PARA]
+PT-BR: O que dizem meus parceiros
+EN: Client Testimonials
+
+>>> testimonials.subtitle
+[COMEÇA COM]
+A maior validação da minha excelência profissional reside na satisfação dos clientes que confiaram em meu trabalho.
+Leia seus testemunhos.
+
+[MUDAR PARA]
+PT-BR: A melhor prova de valor não é a imagem, é o resultado que ela gera.
+Veja como meus renders ajudaram empresas a crescer.
+EN: The greatest validation of my work lies in the success of the clients who trusted me.
+Read their stories.
+
+>>> testimonials.commitment.title
+[COMEÇA COM]
+Meu compromisso com você
+
+[MUDAR PARA]
+PT-BR: Minha filosofia de trabalho
+EN: My commitment to you
+
+>>> testimonials.commitment.quote
+[COMEÇA COM]
+"Minha missão é aplicar todo o potencial da criatividade visual para impulsionar os resultados do seu negócio. Trata-se de estratégia, impacto e crescimento sustentável. Conte com minha dedicação para elevar sua empresa a um novo patamar."
+
+[MUDAR PARA]
+PT-BR: "Minha missão não é apenas fazer 'imagens bonitas', mas usar a visualização 3D como ferramenta de negócios. Estratégia visual, impacto imediato e clareza de comunicação: é assim que elevamos o padrão do seu projeto."
+EN: "My mission is to apply the full potential of visual creativity to drive your business results. It's about strategy, impact, and sustainable growth. Count on my dedication to take your brand to the next level."
+
+>>> testimonials.commitment.signature
+[COMEÇA COM]
+Daniel Jardim - Seu especialista em 3D para resultados máximos
+
+[MUDAR PARA]
+PT-BR: Daniel Jardim - Designer e Artista 3D
+EN: Daniel Jardim - 3D Artist & Designer
+
+>>> portfolio.title
+[COMEÇA COM]
+Meus clientes já estão lucrando mais. Veja como:
+
+[MUDAR PARA]
+PT-BR: Portfólio Selecionado
+EN: Selected Works
+
+>>> portfolio.subtitle
+[COMEÇA COM]
+Estes não são apenas projetos bonitos. São cases de sucesso.
+Inspire-se e imagine o que posso fazer pelo seu negócio.
+
+[MUDAR PARA]
+PT-BR: Mais do que imagens, estes são cases de transformação de espaços e marcas.
+Explore a coleção.
+EN: These aren't just beautiful images. They are success stories.
+Get inspired and imagine what we can create for your business.
+
+>>> portfolio.instagram
+[COMEÇA COM]
+Veja mais projetos em meu Instagram
+
+[MUDAR PARA]
+PT-BR: Acompanhe novidades no Instagram
+EN: Follow more projects on Instagram
+
+>>> portfolio.transformation.title
+[COMEÇA COM]
+Veja a transformação real com meu 3D!
+
+[MUDAR PARA]
+PT-BR: O poder da visualização: Antes e Depois
+EN: The power of visualization: Before & After
+
+>>> portfolio.transformation.desc
+[COMEÇA COM]
+Compare o antes e depois e comprove o impacto visual que posso criar para seu negócio.
+Os resultados falam por si.
+
+[MUDAR PARA]
+PT-BR: Deslize para ver como transformamos um espaço vazio (ou existente) em uma experiência visual completa.
+A materialização da ideia é o primeiro passo para a obra.
+EN: Compare the before and after to see the visual impact I can create for your business.
+The results speak for themselves.
+
+>>> portfolio.transformation.before
+[COMEÇA COM]
+Antes
+
+[MUDAR PARA]
+PT-BR: Existente / Conceito
+EN: Before / Concept
+
+>>> portfolio.transformation.render
+[COMEÇA COM]
+Meu Render 3D
+
+[MUDAR PARA]
+PT-BR: Visualização 3D
+EN: 3D Visualization
+
+>>> portfolio.transformation.renderDesc
+[COMEÇA COM]
+Visualização realista do resultado
+
+[MUDAR PARA]
+PT-BR: O projeto materializado
+EN: Photorealistic preview
+
+>>> portfolio.transformation.after
+[COMEÇA COM]
+Depois
+
+[MUDAR PARA]
+PT-BR: Resultado Final
+EN: After
+
+>>> portfolio.transformation.afterDesc
+[COMEÇA COM]
+60% de aumento no fluxo de clientes
+
+[MUDAR PARA]
+PT-BR: Impacto real na percepção da marca
+EN: Real impact on brand perception

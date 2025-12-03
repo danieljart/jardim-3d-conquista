@@ -1,13 +1,21 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
+
     const navigate = useNavigate();
+    const { t, i18n } = useTranslation();
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'en' ? 'pt' : 'en';
+        i18n.changeLanguage(newLang);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,9 +26,9 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: "Início", path: "/" },
-        { name: "Serviços", path: "/servicos" },
-        { name: "Sobre", path: "/sobre" },
+        { name: t('nav.home'), path: "/" },
+        { name: t('nav.services'), path: "/servicos" },
+        { name: t('nav.about'), path: "/sobre" },
     ];
 
     const handleContactClick = () => {
@@ -57,17 +65,37 @@ const Navbar = () => {
                         className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full px-6"
                         onClick={handleContactClick}
                     >
-                        Contato
+                        {t('nav.contact')}
+                    </Button>
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={toggleLanguage}
+                        className="text-white hover:text-indigo-400 hover:bg-white/10"
+                    >
+                        <Globe size={20} />
+                        <span className="sr-only">Toggle language</span>
                     </Button>
                 </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden text-white"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                {/* Mobile Controls */}
+                <div className="md:hidden flex items-center gap-2">
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={toggleLanguage}
+                        className="text-white hover:text-indigo-400 hover:bg-white/10"
+                    >
+                        <Globe size={20} />
+                        <span className="sr-only">Toggle language</span>
+                    </Button>
+                    <button
+                        className="text-white p-2"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Menu */}
@@ -88,7 +116,7 @@ const Navbar = () => {
                         className="bg-indigo-600 hover:bg-indigo-700 text-white w-full mt-2"
                         onClick={handleContactClick}
                     >
-                        Falar no WhatsApp
+                        {t('nav.whatsapp')}
                     </Button>
                 </div>
             )}

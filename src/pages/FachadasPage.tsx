@@ -1,20 +1,22 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 const FachadasPage = () => {
+  const { t } = useTranslation();
   return (
     <ServicePageTemplate
-      title="Fachadas"
-      subtitle="Projetos 3D de Fachadas Comerciais"
-      description="A fachada é o cartão de visita do seu negócio. Com minha expertise em modelagem 3D, transformo a frente do seu estabelecimento em um elemento de atração que destaca sua marca e conquista clientes antes mesmo de entrarem."
+      title={t('services.items.fachadas.pageTitle')}
+      subtitle={t('services.items.fachadas.pageSubtitle')}
+      description={t('services.items.fachadas.pageDescription')}
       features={[
-        'Visualização realista antes da execução',
-        'Otimização de custos com planejamento 3D',
-        'Projeto alinhado com a identidade da sua marca',
-        'Aumento comprovado no fluxo de clientes'
+        t('services.items.fachadas.feature1'),
+        t('services.items.fachadas.feature2'),
+        t('services.items.fachadas.feature3'),
+        t('services.items.fachadas.feature4')
       ]}
       category="Fachadas"
-      ctaText="Solicitar Orçamento de Fachada"
+      ctaText={t('services.items.fachadas.ctaText')}
     />
   );
 };

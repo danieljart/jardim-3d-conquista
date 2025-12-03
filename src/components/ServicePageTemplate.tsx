@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import FloatingButton from './FloatingButton';
@@ -26,6 +27,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
     category,
     ctaText = "Solicitar Orçamento"
 }) => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     // Filter projects by category
@@ -40,13 +42,13 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
 
             <Navbar />
 
-            <main className="pt-24 pb-16 relative z-10">
+            <main className="pt-20 pb-8 md:pt-24 md:pb-16 relative z-10">
                 {/* Hero Section */}
-                <section className="container mx-auto px-4 mb-16 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                <section className="container mx-auto px-4 mb-8 md:mb-16 text-center">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
                         {title}
                     </h1>
-                    <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
+                    <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-4 md:mb-8 rounded-full"></div>
                     <p className="text-xl text-indigo-200 font-medium mb-4">{subtitle}</p>
                     <p className="text-lg text-white/80 max-w-3xl mx-auto mb-10">
                         {description}
@@ -62,9 +64,9 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                 </section>
 
                 {/* Features Section */}
-                <section className="container mx-auto px-4 mb-20">
-                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12">
-                        <h2 className="text-2xl font-bold mb-8 text-white text-center">O que está incluído</h2>
+                <section className="container mx-auto px-4 mb-8 md:mb-20">
+                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-12">
+                        <h2 className="text-2xl font-bold mb-6 md:mb-8 text-white text-center">{t('services.included')}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {features.map((feature, index) => (
                                 <div key={index} className="flex items-start">
@@ -81,8 +83,8 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
 
 
                 {/* Gallery Section */}
-                <section className="container mx-auto px-4 mb-20">
-                    <h2 className="text-3xl font-bold mb-10 text-white text-center">Galeria de Projetos</h2>
+                <section className="container mx-auto px-4 mb-8 md:mb-20">
+                    <h2 className="text-3xl font-bold mb-8 md:mb-10 text-white text-center">{t('services.gallery')}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {categoryProjects.map((item) => (
                             <Card
@@ -98,7 +100,9 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
                                         <div>
-                                            <span className="text-indigo-400 text-sm font-medium mb-1 block">{item.category}</span>
+                                            <span className="text-indigo-400 text-sm font-medium mb-1 block">
+                                                {t(`services.items.${item.categorySlug}.title`)}
+                                            </span>
                                             <h3 className="text-white text-xl font-bold">{item.title}</h3>
                                         </div>
                                     </div>
@@ -107,7 +111,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                         ))}
                         {categoryProjects.length === 0 && (
                             <div className="col-span-full text-center text-white/50 py-12">
-                                Nenhum projeto encontrado nesta categoria.
+                                {t('project.notFound')}
                             </div>
                         )}
                     </div>

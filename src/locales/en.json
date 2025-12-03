@@ -1,0 +1,372 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact",
+        "whatsapp": "WhatsApp"
+    },
+    "hero": {
+        "title": "Crafting <1>3D</1> visuals that <3>captivate</3>",
+        "subtitle": "Don't let your vision remain unseen. I create immersive visual storytelling that makes your brand not just visible, but <1>unforgettable</1>.",
+        "cta": "Let's visualize your project",
+        "solutions": "Visualization Expertise",
+        "card": "From concept to visuals that <1>persuade</1>.",
+        "alt": "Architectural 3D visualization"
+    },
+    "services": {
+        "title": "Architectural Visualization & 3D Design",
+        "subtitle": "Visual solutions that anticipate the future of your project.",
+        "viewProjects": "View Portfolio",
+        "requestQuote": "Request a quote",
+        "overviewTitle": "What I Do",
+        "overviewSubtitle": "From scenography to commercial architecture: imagery that materializes business.",
+        "learnMore": "Learn more",
+        "viewAll": "View all services",
+        "included": "What's included",
+        "gallery": "Project Gallery",
+        "items": {
+            "fachadas": {
+                "title": "Commercial Façades",
+                "description": "The face of your business. Designs that draw customers in from the street.",
+                "overviewDesc": "3D revitalization and creation of façades to make your brand stand out in the urban landscape.",
+                "pageTitle": "Commercial Façades",
+                "pageSubtitle": "Exterior Architectural Visualization",
+                "pageDescription": "The façade is your business's first salesperson.",
+                "feature1": "Aesthetic and technical predictability",
+                "feature2": "Reduction of execution errors",
+                "feature3": "Total alignment with branding",
+                "feature4": "Design focused on foot traffic attraction",
+                "ctaText": "Quote my façade"
+            },
+            "cenografia": {
+                "title": "Scenography & Events",
+                "overviewTitle": "Scenography & Booths",
+                "description": "Ephemeral spaces, lasting impact. Design for trade shows and stages.",
+                "overviewDesc": "Creation of booths and brand activations that drive traffic and engagement at events.",
+                "pageTitle": "Scenography",
+                "pageSubtitle": "Event and Booth Visualization",
+                "pageDescription": "At events, you have seconds to capture attention.",
+                "feature1": "Creativity with constructive viability",
+                "feature2": "Flow and circulation study",
+                "feature3": "Spatial understanding for builders",
+                "feature4": "Scenic lighting and atmosphere",
+                "ctaText": "Quote scenography project"
+            },
+            "ambientes": {
+                "title": "Interiors",
+                "overviewTitle": "Interior Design",
+                "description": "Atmosphere and function. Visualization for retail and corporate spaces.",
+                "overviewDesc": "Visualization of layouts that optimize user experience and operations.",
+                "pageTitle": "Interiors",
+                "pageSubtitle": "Commercial Interior Visualization",
+                "pageDescription": "Interior design defines customer retention.",
+                "feature1": "Social viral potential",
+                "feature2": "Lighting Design studies",
+                "feature3": "Experiential focal points",
+                "feature4": "Brand strengthening in physical space",
+                "ctaText": "Quote interior project"
+            },
+            "personalizados": {
+                "title": "Custom Projects",
+                "description": "Trophies, kiosks, and product modeling.",
+                "overviewDesc": "Product design and exclusive pieces for awards and POS.",
+                "pageTitle": "Custom",
+                "pageSubtitle": "Product Modeling & Special Projects",
+                "pageDescription": "For non-standard demands.",
+                "feature1": "Geometric and material fidelity",
+                "feature2": "Virtual prototyping",
+                "feature3": "Color and texture variation testing",
+                "feature4": "Solutions for complex demands",
+                "ctaText": "Quote special project"
+            }
+        }
+    },
+    "footer": {
+        "description": "ArchViz studio specializing in high-impact commercial visualization and scenography.",
+        "services": "Services",
+        "usefulLinks": "Useful Links",
+        "aboutUs": "About",
+        "portfolio": "Portfolio",
+        "videos": "Videos & Tours",
+        "contact": "Contact",
+        "whatsapp": "WhatsApp",
+        "rights": "All rights reserved.",
+        "items": {
+            "fachadas": "Commercial Façades",
+            "cenografia": "Scenography & Events",
+            "ambientes": "Commercial Interiors",
+            "personalizados": "Special Projects"
+        }
+    },
+    "about": {
+        "homeSection": {
+            "title": "Why choose high-end visualization?",
+            "subtitle": "More than a designer, I am your strategic partner in visual communication. I translate complex concepts into tangible assets, using technical expertise and artistic vision to help you sell your ideas before they are built.",
+            "cardTitle": "Design that drives real value",
+            "cardDesc": "Specializing in commercial ArchViz and scenography. I leverage advanced CGI tools to create photorealistic solutions that do more than display a space; they convey the mood, atmosphere, and commercial potential of your project.",
+            "expertise": {
+                "title": "Technical precision & artistic eye:",
+                "desc": "Merging rigorous 3D technical skills with a photographer's approach to composition and lighting."
+            },
+            "custom": {
+                "title": "Bespoke solutions:",
+                "desc": "I create 100% custom visuals tailored to your brand's narrative and specific business goals."
+            },
+            "results": {
+                "title": "Result-driven visuals:",
+                "desc": "I deliver strategy. My 3D solutions are designed to enhance brand visibility and strengthen market presence."
+            },
+            "stats": {
+                "projects": "Projects delivered annually:",
+                "projectsDesc": "Consistently turning briefs into compelling visual realities.",
+                "measurable": "Measurable impact:",
+                "measurableDesc": "Clients report faster approvals and increased value perception through high-quality CGI.",
+                "digital": "Digital Workflow:",
+                "digitalDesc": "Fully remote, seamless communication process designed for efficiency and convenience.",
+                "experience": "Years of experience:",
+                "experienceDesc": "Continuous dedication to mastering the latest rendering techniques and design standards."
+            },
+            "focusTitle": "The pillars of my workflow:",
+            "values": {
+                "commitment": "Commitment",
+                "commitmentDesc": "Full dedication to your vision",
+                "excellence": "Excellence",
+                "excellenceDesc": "Superior quality in every detail",
+                "customization": "Customization",
+                "customizationDesc": "Tailored to your specific needs",
+                "strategy": "Strategy",
+                "strategyDesc": "Visuals that drive results",
+                "punctuality": "Reliability",
+                "punctualityDesc": "Always delivering on schedule"
+            }
+        },
+        "page": {
+            "stats": {
+                "projects": "Projects Delivered",
+                "clients": "Satisfied Clients",
+                "experience": "Years of Experience",
+                "results": "Focus on Results"
+            },
+            "hero": {
+                "greeting": "Hi, I'm",
+                "role": "I am a 3D Artist specializing in ArchViz and Scenography.",
+                "desc": "I work with commercial façades, event scenography, and interiors. I create visual narratives that merge refined aesthetics with commercial strategy, making the future of your business tangible today.",
+                "cta": "Let's talk"
+            },
+            "story": {
+                "title": "My Journey",
+                "p1": "I started in graphic design in 2018, but it was in the three-dimensional realm that I found the perfect tool to express complex ideas.",
+                "p2": "My workflow integrates tools like Blender, D5 Render, and SketchUp for advanced modeling and rendering."
+            },
+            "skills": {
+                "title": "Technical Skills",
+                "design": "Design & CGI",
+                "audiovisual": "Post-production & Motion"
+            },
+            "why": {
+                "title": "Why work with me?",
+                "results": {
+                    "title": "Commercial Focus",
+                    "desc": "I don't just make art. Every render is crafted to sell your space, strengthen your branding, and attract the right audience to your business."
+                },
+                "communication": {
+                    "title": "Clear Communication",
+                    "desc": "You are never left in the dark. From the \"white model\" to the final image, you track and validate every step, ensuring the result remains true to your vision."
+                },
+                "experience": {
+                    "title": "Proven Experience",
+                    "desc": "Over 100 projects delivered. Façades that revamped businesses, booths that stood out at trade shows, and interiors that welcome. My portfolio is my guarantee of delivery."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "Let's discuss your project?",
+        "subtitle": "Ready to transform your business image? Select the services and send a message. Let's define the best visual strategy for your brand.",
+        "whatsapp": "WhatsApp",
+        "chat": "Chat",
+        "instagram": "Instagram",
+        "follow": "Follow",
+        "email": "E-mail",
+        "sendEmail": "Send e-mail",
+        "whyWork": "Why choose my studio?",
+        "reasons": {
+            "personalized": {
+                "title": "Direct Communication",
+                "desc": "100% digital process, hassle-free and focused on your convenience."
+            },
+            "transparent": {
+                "title": "Full Transparency",
+                "desc": "You view and approve every step, from draft to final render."
+            },
+            "efficient": {
+                "title": "Deadline Commitment",
+                "desc": "Clear schedules and punctual deliveries so your construction or launch is never delayed."
+            },
+            "measurable": {
+                "title": "Sales Focus",
+                "desc": "Projects designed not just to be beautiful, but to convert customers."
+            }
+        },
+        "chatWhatsapp": "Start WhatsApp Chat",
+        "sendMessage": "Send your message",
+        "form": {
+            "name": "Name",
+            "namePlaceholder": "Your name",
+            "company": "Company / Industry",
+            "companyPlaceholder": "Ex: Developer, Restaurant, Events...",
+            "services": "Services of interest",
+            "submit": "Send Message"
+        },
+        "services": {
+            "fachadas": "Commercial Façades",
+            "interiores": "Commercial Interiors",
+            "comunicacao": "Visual Communication",
+            "identidade": "Visual Identity",
+            "videos": "Animation & Virtual Tour",
+            "estandes": "Booths & Scenography"
+        },
+        "messageTemplate": {
+            "greeting": "Hello! My name is",
+            "client": "Client",
+            "company": "from company",
+            "interest": "I am interested in:",
+            "info": "I would like more information and a quote."
+        }
+    },
+    "project": {
+        "notFound": "Project not found",
+        "backToServices": "Back to Services",
+        "back": "Back",
+        "about": "About the Project",
+        "cta": {
+            "title": "Ready to bring your project to life?",
+            "desc": "Contact me and let's discuss how 3D visualization can add value and clarity to your business.",
+            "button": "Chat on WhatsApp"
+        }
+    },
+    "notFound": {
+        "title": "404",
+        "message": "Oops! Page not found",
+        "return": "Back to Home"
+    },
+    "home": {
+        "videoSection": {
+            "title": "Experience and Quality in Every Detail",
+            "subtitle": "Words convince, but visuals transform. See how my 3D work provides a radical transformation for your business, creating an immersive preview of the final built environment.",
+            "tourTitle": "Virtual Tour - Concept Store",
+            "tourDesc": "Interactive virtual tour allowing full exploration of the space and details prior to construction.",
+            "presentationTitle": "3D Cinematography - Commercial Façade",
+            "presentationDesc": "A cinematic showcase of the commercial façade transformation, highlighting architectural details and visual communication.",
+            "footerText": "My 3D videos and virtual tours provide a realistic immersive experience that anticipates the realization of your project.",
+            "cta": "I want to discuss a project"
+        }
+    },
+    "pricing": {
+        "title": "Your exclusive 3D project starts now!",
+        "subtitle": "No more generic solutions.",
+        "steps": {
+            "1": {
+                "title": "Vision & Briefing",
+                "desc": "We deep dive into your goals and the vision behind the project."
+            },
+            "2": {
+                "title": "3D Strategy & Modeling",
+                "desc": "Creating the perfect visual solution for your success, optimized for impact."
+            },
+            "3": {
+                "title": "Rendering & Magic",
+                "desc": "Transforming the concept into spectacular, photorealistic 3D imagery."
+            },
+            "4": {
+                "title": "Delivery & Control",
+                "desc": "Review the details and receive the final high-res assets. Your satisfaction is paramount."
+            }
+        },
+        "final": {
+            "title": "Delivered results, lasting partnership",
+            "desc": "Impeccable projects and full support for what comes next.",
+            "button": "Request a quote"
+        }
+    },
+    "testimonials": {
+        "title": "Client Testimonials",
+        "subtitle": "The greatest validation of my work lies in the success of the clients who trusted me.",
+        "commitment": {
+            "title": "My commitment to you",
+            "quote": "\"My mission is to apply the full potential of visual creativity to drive your business results. It's about strategy, impact, and sustainable growth. Count on my dedication to take your brand to the next level.\"",
+            "signature": "Daniel Jardim - 3D Artist & Designer"
+        }
+    },
+    "portfolio": {
+        "title": "Selected Works",
+        "subtitle": "These aren't just beautiful images. They are success stories.",
+        "instagram": "Follow more projects on Instagram",
+        "transformation": {
+            "title": "The power of visualization: Before & After",
+            "desc": "Compare the before and after to see the visual impact I can create for your business.",
+            "before": "Before / Concept",
+            "render": "3D Visualization",
+            "renderDesc": "Photorealistic preview",
+            "after": "After",
+            "afterDesc": "Real impact on brand perception"
+        }
+    },
+    "projects/ambientes/01/title": "Laman",
+    "projects/ambientes/01/description": "One office, two atmospheres. The Laman project explores lighting versatility to redefine the workspace. In the first configuration, the RGB system creates an immersive, tech-forward environment ideal for creative sessions and brainstorming. In the second, warm, sober lighting transforms the room into an elegant corporate setting for client meetings. The result is a dynamic space that adapts to the function of the moment, reflecting the brand's multifaceted nature.",
+    "projects/ambientes/02/title": "Finama",
+    "projects/ambientes/02/description": "The Finama College reception was designed to communicate instant institutional authority. The focal point is the embossed logo, anchoring the space and reinforcing the brand. A sober palette of greys, punctuated by institutional red and minimalist furniture, conveys organization and academic excellence. An environment that welcomes parents and students with the seriousness and modernity that education demands.",
+    "projects/ambientes/03/title": "Ferro, Morelli & Furtado",
+    "projects/ambientes/03/description": "Sobriety and texture define this law firm's reception. The chevron pattern cladding creates a sophisticated visual rhythm, serving as a backdrop for the brand in polished metal signage. The lighting was designed to enhance materials and create an atmosphere of trust and solidity, essential for high-level legal practice.",
+    "projects/ambientes/04/title": "Ana Cecília Lima Clinic",
+    "projects/ambientes/04/description": "In healthcare architecture, warmth is a priority. For the Ana Cecília Lima Clinic, we used light wood panels to warm the environment and reduce the anxiety typical of waiting rooms. The wine-colored signage and diffuse lighting bring feminine sophistication and tranquility, aligning the physical space with the delicacy of the service.",
+    "projects/ambientes/05/title": "Elen Koc’s Studio",
+    "projects/ambientes/05/description": "High-impact minimalism. The project for Elen Koc’s Studio revolves around the backlit marble panel, which instantly elevates the perceived value of the service. The combination of natural stone, gold details, and technical lighting creates an atmosphere of contemporary luxury, essential for a beauty and aesthetics studio.",
+    "projects/ambientes/06/title": "Estapar",
+    "projects/ambientes/06/description": "Efficiency and flow. The project for Estapar's self-service area focuses on User Experience (UX) in the physical environment. Clear visual signage and the institutional palette intuitively guide the customer to the terminals, reducing queues and confusion. A functional design that integrates operations with the mall's modern aesthetic.",
+    "projects/cenografia/01/title": "Comprint",
+    "projects/cenografia/01/description": "Monumentality and technology. The Comprint booth was designed to support the visual and physical weight of heavy industrial machinery without losing elegance. The overhead structure acts as a beacon in the exhibition hall, guiding visitors. The layout prioritizes circulation and technical demonstration, creating a robust and reliable business environment.",
+    "projects/cenografia/02/title": "Coca-Cola / REMSA Arena",
+    "projects/cenografia/02/description": "Total brand immersion. An arena designed to be \"instagrammable\" and vibrant, where light and reflections amplify the presence of Coca-Cola's iconic red. Floor lighting and LED panels create an enveloping atmosphere that places the visitor inside the brand's universe, transforming physical space into a sensory and media experience.",
+    "projects/cenografia/03/title": "Motorola VIP Lounge",
+    "projects/cenografia/03/description": "Futurism and exclusivity. The Motorola VIP Lounge uses layers of neon and indirect light to create a sophisticated \"cyberpunk\" aesthetic. The design transforms the space into a large technological showcase, where the bar and seating areas invite guests to stay, while the lighting reinforces the brand's innovative and youthful positioning.",
+    "projects/cenografia/04/title": "McCain & Forno de Minas",
+    "projects/cenografia/04/description": "Co-branding with harmony. The challenge was to unite two food giants in a cohesive space. We used warm colors (yellow and red) and welcoming materials to evoke \"appetite\" and comfort. The booth functions as a large living kitchen, ideal for tastings and relationship building, reinforcing the affective character of the brands.",
+    "projects/cenografia/05/title": "Schweppes",
+    "projects/cenografia/05/description": "Urban geometry and freshness. The Schweppes booth bets on the strong contrast between yellow and black and diagonal lines that suggest movement. The inclined panel acts as a three-dimensional billboard, drawing the audience to the central bar, the stage for brand activation. A bold design for an adult, contemporary audience.",
+    "projects/cenografia/06/title": "Docile",
+    "projects/cenografia/06/description": "Playful storytelling. The project transports the visitor inside the Docile universe through organic shapes that resemble sweets and syrups. The intense use of vibrant colors and contour lighting creates a \"fantasy\" space in the middle of the corporate trade show, generating strong visual appeal and emotional connection with the brand.",
+    "projects/fachadas/01/title": "Sacolão Abcintra",
+    "projects/fachadas/01/description": "The challenge was to redefine neighborhood produce retail. We bet on deep greens and wood textures to instantly communicate freshness, hygiene, and organization. The façade goes from being just an entrance to a visual invitation that anticipates product quality, positioning the brand as a local reference.",
+    "projects/fachadas/02/title": "Fernando Perez / Órion Gallery",
+    "projects/fachadas/02/description": "Unity in diversity. The project unites two distinct brands under a single sophisticated architectural language. Pure volumes, straight lines, and scenic night lighting give the building an aura of exclusivity and art gallery, conveying trust and high standards to clients.",
+    "projects/fachadas/03/title": "Amaral & Imperium",
+    "projects/fachadas/03/description": "Energy and contrast. Focused on the automotive sector, this façade uses black as a base to make the brands' red and yellow \"pop\". The upper linear lighting unifies the building, ensuring maximum visibility on fast roads and conveying a sense of power and speed.",
+    "projects/fachadas/04/title": "Vizion Car",
+    "projects/fachadas/04/description": "Architecture as an urban totem. Vizion Car demanded an aggressive and modern night presence. We created a façade with metallic volumes and strategic red lighting that transforms the store into a visual landmark on the avenue. The showroom acts as an illuminated display case, showcasing the product (cars) like jewels.",
+    "projects/fachadas/05/title": "Coonline Accounting",
+    "projects/fachadas/05/description": "Corporate credibility. For an accounting firm, the image must convey solidity. The use of matte black and white, straight lines, and clean visual communication establishes Coonline as a modern and trustworthy company. The side panel communicates essential services without visually cluttering the architecture.",
+    "projects/fachadas/06/title": "Shineray Electric",
+    "projects/fachadas/06/description": "Electric mobility and urban aesthetics. The project translates Shineray's technology through dark ACM panels and vibrant red accents. The \"aquarium\" window integrates the store interior with the street, inviting a young audience to interact with the products. A façade that communicates innovation and clean energy.",
+    "projects/personalizados/01/title": "Bodytech",
+    "projects/personalizados/01/description": "Award design for high performance. The trophy merges fitness iconography (kettlebell) with human gestures, symbolizing triumph. Metallic finishes and vibrant colors differentiate categories, transforming the object into a symbol of desire and internal motivation.",
+    "projects/personalizados/02/title": "MAG Seguros",
+    "projects/personalizados/02/description": "Materialized corporate excellence. Using blue acrylic and mirrored bases, we created a trophy that reflects MAG Seguros' solid identity. The clean geometry and focus on the central star communicate clarity and recognition of merit.",
+    "projects/personalizados/03/title": "SENAI",
+    "projects/personalizados/03/description": "Celebrating a legacy. For SENAI's 70th anniversary, the trophy unites the transparency of acrylic (future) with the weight of gold (history). The curved shape suggests continuous evolution, creating a commemorative piece that honors the past while pointing towards innovation.",
+    "projects/personalizados/04/title": "Cartão de Todos",
+    "projects/personalizados/04/description": "Symbology and light. The brand's mascot (the owl) was transformed into an illuminated three-dimensional piece that stands out on stages and in photos. The use of acrylic layers creates depth, making the trophy an object of decoration and pride for the awarded franchisee or employee.",
+    "projects/personalizados/05/title": "LDA Cup",
+    "projects/personalizados/05/description": "Sport and memory. Moving away from traditional metal cups, we created a modern silhouette in acrylic and wood. The design incorporates visual elements of soccer (the turf, the crest), creating an object of desire that modernizes the aesthetic of amateur sports awards.",
+    "projects/personalizados/06/title": "Custom Medals",
+    "projects/personalizados/06/description": "Authorial design medals. We raise the standard of awards by creating medals that tell stories. From the relief design to the ribbon choice, every detail is customized to reflect the event's identity. We use acrylic, metal, and UV printing to create tactile, durable, and collectible pieces.",
+    "servicesPage": {
+        "title": "Expertise",
+        "subtitle": "A complete range of visual solutions for architecture and marketing.",
+        "ctaTitle": "Shall we collaborate?",
+        "ctaDesc": "Every project has its challenge. Tell me yours, and I'll show you how 3D can solve it.",
+        "ctaButton": "Start conversation",
+        "viewMore": "Details"
+    }
+}

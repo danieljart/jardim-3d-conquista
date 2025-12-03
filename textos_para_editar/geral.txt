@@ -1,0 +1,168 @@
+>>> nav.home
+[COMEÇA COM]
+Início
+
+[MUDAR PARA]
+PT-BR: Início
+EN: Home
+
+>>> nav.services
+[COMEÇA COM]
+Serviços
+
+[MUDAR PARA]
+PT-BR: Serviços
+EN: Services
+
+>>> nav.about
+[COMEÇA COM]
+Sobre
+
+[MUDAR PARA]
+PT-BR: Sobre
+EN: About
+
+>>> nav.contact
+[COMEÇA COM]
+Contato
+
+[MUDAR PARA]
+PT-BR: Contato
+EN: Contact
+
+>>> nav.whatsapp
+[COMEÇA COM]
+Falar no WhatsApp
+
+[MUDAR PARA]
+PT-BR: WhatsApp
+EN: WhatsApp
+
+>>> footer.description
+[COMEÇA COM]
+Estúdio de design 3D especializado em transformar espaços comerciais e criar experiências visuais impactantes.
+
+[MUDAR PARA]
+PT-BR: Estúdio de ArchViz especializado em visualização comercial e cenografia de alto impacto.
+EN: ArchViz studio specializing in high-impact commercial visualization and scenography.
+
+>>> footer.services
+[COMEÇA COM]
+Serviços
+
+[MUDAR PARA]
+PT-BR: Serviços
+EN: Services
+
+>>> footer.usefulLinks
+[COMEÇA COM]
+Links Úteis
+
+[MUDAR PARA]
+PT-BR: Links Úteis
+EN: Useful Links
+
+>>> footer.aboutUs
+[COMEÇA COM]
+Sobre Nós
+
+[MUDAR PARA]
+PT-BR: Sobre
+EN: About
+
+>>> footer.portfolio
+[COMEÇA COM]
+Portfólio
+
+[MUDAR PARA]
+PT-BR: Portfólio
+EN: Portfolio
+
+>>> footer.videos
+[COMEÇA COM]
+Vídeos e Tours
+
+[MUDAR PARA]
+PT-BR: Vídeos e Tours
+EN: Videos & Tours
+
+>>> footer.contact
+[COMEÇA COM]
+Contato
+
+[MUDAR PARA]
+PT-BR: Contato
+EN: Contact
+
+>>> footer.whatsapp
+[COMEÇA COM]
+Fale no WhatsApp
+
+[MUDAR PARA]
+PT-BR: WhatsApp
+EN: WhatsApp
+
+>>> footer.rights
+[COMEÇA COM]
+Todos os direitos reservados.
+
+[MUDAR PARA]
+PT-BR: Todos os direitos reservados.
+EN: All rights reserved.
+
+>>> footer.items.fachadas
+[COMEÇA COM]
+Fachadas Comerciais
+
+[MUDAR PARA]
+PT-BR: Fachadas Comerciais
+EN: Commercial Façades
+
+>>> footer.items.cenografia
+[COMEÇA COM]
+Cenografia e Eventos
+
+[MUDAR PARA]
+PT-BR: Cenografia e Eventos
+EN: Scenography & Events
+
+>>> footer.items.ambientes
+[COMEÇA COM]
+Ambientes Instagramáveis
+
+[MUDAR PARA]
+PT-BR: Interiores Comerciais
+EN: Commercial Interiors
+
+>>> footer.items.personalizados
+[COMEÇA COM]
+Projetos Personalizados
+
+[MUDAR PARA]
+PT-BR: Projetos Especiais
+EN: Special Projects
+
+>>> notFound.title
+[COMEÇA COM]
+404
+
+[MUDAR PARA]
+PT-BR: 404
+EN: 404
+
+>>> notFound.message
+[COMEÇA COM]
+Oops!
+Página não encontrada
+
+[MUDAR PARA]
+PT-BR: Oops! Página não encontrada
+EN: Oops! Page not found
+
+>>> notFound.return
+[COMEÇA COM]
+Voltar para o Início
+
+[MUDAR PARA]
+PT-BR: Voltar para o Início
+EN: Back to Home

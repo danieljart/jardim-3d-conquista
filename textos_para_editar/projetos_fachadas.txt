@@ -1,0 +1,128 @@
+>>> projects/fachadas/01/title
+[COMEÇA COM]
+Sacolão Abcintra
+
+[MUDAR PARA]
+PT-BR: Sacolão Abcintra
+EN: Sacolão Abcintra
+
+>>> projects/fachadas/01/description
+[COMEÇA COM]
+A criação dessa fachada nasceu da ideia de transformar o sacolão em um ponto de referência visual no bairro.
+Desde o início o objetivo foi trazer uma sensação de frescor, organização e confiança antes mesmo do cliente entrar no espaço.
+A paleta em verde profundo cria um vínculo imediato com o universo natural, enquanto o painel amadeirado traz aconchego e reforça a ideia de produto fresco e selecionado.
+Essa combinação deixa o ambiente visualmente leve e transmite qualidade de forma simples e direta.
+O letreiro iluminado e o slogan distribuído em toda a extensão da fachada foram pensados para facilitar a leitura à distância e posicionar o sacolão como um lugar completo, onde o cliente encontra variedade e economia todos os dias.
+O resultado é uma fachada moderna, convidativa e com presença forte na rua, criando exatamente o impacto que a marca precisava para se destacar na região.
+
+[MUDAR PARA]
+PT-BR: O desafio era ressignificar o varejo de hortifruti no bairro. Apostamos no verde profundo e na madeira para comunicar frescor, higiene e organização instantaneamente. A fachada deixa de ser apenas uma entrada para se tornar um convite visual que antecipa a qualidade dos produtos, posicionando a marca como referência local.
+EN: The challenge was to redefine neighborhood produce retail. We bet on deep greens and wood textures to instantly communicate freshness, hygiene, and organization. The façade goes from being just an entrance to a visual invitation that anticipates product quality, positioning the brand as a local reference.
+
+>>> projects/fachadas/02/title
+[COMEÇA COM]
+Fernando Perez / Órion Galeria
+
+[MUDAR PARA]
+PT-BR: Fernando Perez / Órion Galeria
+EN: Fernando Perez / Órion Gallery
+
+>>> projects/fachadas/02/description
+[COMEÇA COM]
+Esse projeto foi pensado para unir duas marcas diferentes em uma composição visual  nica e harmoniosa.
+Desde o in cio a proposta era criar uma fachada sofisticada, que transmitisse profissionalismo e uma sensa  o de exclusividade.
+O uso de volumes marcados, linhas limpas e texturas elegantes ajudou a construir um visual moderno.
+A iluminação teve papel fundamental: os fachos de luz distribuídos no painel principal criam um efeito c nico que valoriza a entrada e d  vida   fachada durante a noite.
+A linguagem visual foi planejada para transmitir confiança, cuidado e uma experiência premium desde o primeiro contato.
+Cada detalhe reforça a ideia de um espaço refinado e extremamente bem projetado.
+O resultado   uma fachada que se destaca pela elegância e entrega exatamente a sensa  o de qualidade que as duas marcas carregam.
+
+[MUDAR PARA]
+PT-BR: Unidade na diversidade. O projeto une duas marcas distintas sob uma mesma linguagem arquitetônica sofisticada. Volumes puros, linhas retas e uma iluminação cênica noturna conferem ao edifício uma aura de exclusividade e galeria de arte, transmitindo confiança e alto padrão aos clientes.
+EN: Unity in diversity. The project unites two distinct brands under a single sophisticated architectural language. Pure volumes, straight lines, and scenic night lighting give the building an aura of exclusivity and art gallery, conveying trust and high standards to clients.
+
+>>> projects/fachadas/03/title
+[COMEÇA COM]
+Amaral & Imperium
+
+[MUDAR PARA]
+PT-BR: Amaral & Imperium
+EN: Amaral & Imperium
+
+>>> projects/fachadas/03/description
+[COMEÇA COM]
+Aqui a proposta era clara: criar uma fachada forte, chamativa e que transmitisse energia logo de cara.
+As duas marcas trabalham com um pblico direto e exigente, ento o design precisava refletir dinamismo e identidade.
+A paleta com preto, vermelho e amarelo refora a ideia de potncia, velocidade e movimento, caractersticas muito presentes no universo automotivo.
+A iluminao contnua na parte superior cria um recorte visual moderno e destaca toda a extenso da fachada, mesmo em ruas mais movimentadas.
+As duas marcas foram organizadas de forma equilibrada, garantindo presena e identidade individual, mas sem perder a unidade visual do conjunto.
+O layout preto com letreiros luminosos cria um contraste que d vida ao projeto e torna a comunicao extremamente clara.
+O resultado  uma fachada impossvel de ignorar, marcante e totalmente alinhada com o segmento.
+
+[MUDAR PARA]
+PT-BR: Energia e contraste. Focada no setor automotivo, esta fachada utiliza o preto como base para fazer "saltar" o vermelho e o amarelo das marcas. A iluminação linear superior unifica o prédio, garantindo visibilidade máxima em vias rápidas e transmitindo a sensação de potência e velocidade.
+EN: Energy and contrast. Focused on the automotive sector, this façade uses black as a base to make the brands' red and yellow "pop". The upper linear lighting unifies the building, ensuring maximum visibility on fast roads and conveying a sense of power and speed.
+
+>>> projects/fachadas/04/title
+[COMEÇA COM]
+Vizion Car
+
+[MUDAR PARA]
+PT-BR: Vizion Car
+EN: Vizion Car
+
+>>> projects/fachadas/04/description
+[COMEÇA COM]
+Esse projeto foi construdo para ser um marco visual.
+A Vizion Car buscava um design moderno, ousado e que transmitisse inovao, ento a fachada precisava ter personalidade e presena forte, especialmente  noite.
+A composio usa volumes altos, painis metlicos texturizados e iluminao vermelha estratgica que cria um clima futurista.
+Os elementos grficos que se repetem no revestimento trazem ritmo visual e reforam a identidade da marca.
+O grande showroom gradeado permite que os veculos sejam exibidos como protagonistas, valorizados pela luz externa e pelo design da estrutura.
+Toda a fachada funciona quase como um totem urbano, destacando o negcio em qualquer horrio.
+O resultado  uma fachada intensa, moderna e com um impacto visual que conversa diretamente com o posicionamento da marca.
+
+[MUDAR PARA]
+PT-BR: Arquitetura como totem urbano. A Vizion Car exigia uma presença noturna agressiva e moderna. Criamos uma fachada com volumes metálicos e iluminação vermelha estratégica que transforma a loja em um marco visual na avenida. O showroom funciona como uma vitrine iluminada, valorizando o produto (carros) como joias em exposição.
+EN: Architecture as an urban totem. Vizion Car demanded an aggressive and modern night presence. We created a façade with metallic volumes and strategic red lighting that transforms the store into a visual landmark on the avenue. The showroom acts as an illuminated display case, showcasing the product (cars) like jewels.
+
+>>> projects/fachadas/05/title
+[COMEÇA COM]
+Coonline Contabilidade
+
+[MUDAR PARA]
+PT-BR: Coonline Contabilidade
+EN: Coonline Accounting
+
+>>> projects/fachadas/05/description
+[COMEÇA COM]
+A criao dessa fachada tinha um objetivo muito claro: transmitir seriedade, modernidade e credibilidade.
+O escritrio precisava de um visual que representasse profissionalismo antes mesmo do cliente cruzar a porta.
+O preto fosco em contraste com o branco cria uma identidade corporativa forte e elegante.
+A marca ganhou destaque com iluminao suave, garantindo uma leitura clara e um toque de sofisticao na entrada.
+O painel lateral refora os principais servios da empresa, ajudando a comunicar o valor da Coonline j no primeiro olhar.
+A fachada, apesar de limpa e moderna, tem presena marcante e posiciona a empresa como referncia no segmento.
+O resultado  um visual slido, confivel e alinhado com o pblico corporativo.
+
+[MUDAR PARA]
+PT-BR: Credibilidade corporativa. Para um escritório de contabilidade, a imagem precisa transmitir solidez. O uso do preto fosco e branco, linhas retas e comunicação visual limpa estabelece a Coonline como uma empresa moderna e confiável. O painel lateral comunica serviços essenciais sem poluir visualmente a arquitetura.
+EN: Corporate credibility. For an accounting firm, the image must convey solidity. The use of matte black and white, straight lines, and clean visual communication establishes Coonline as a modern and trustworthy company. The side panel communicates essential services without visually cluttering the architecture.
+
+>>> projects/fachadas/06/title
+[COMEÇA COM]
+Shineray Electric
+
+[MUDAR PARA]
+PT-BR: Shineray Electric
+EN: Shineray Electric
+
+>>> projects/fachadas/06/description
+[COMEÇA COM]
+Esse projeto foi desenvolvido para destacar a linha elétrica da Shineray com uma linguagem moderna e urbana.
+A fachada precisava transmitir inovação e tecnologia de forma direta.
+Utilizamos painéis em ACM preto e cinza para criar um fundo sóbrio, que destaca o logo iluminado e os detalhes em verde neon, cor característica da marca.
+A vitrine ampla permite total visualização das motos, tornando o interior uma extensão da própria fachada.
+O resultado é uma fachada moderna, atrativa e com uma identidade visual clara e marcante, que posiciona a Shineray de maneira contemporânea, conectada com o público jovem e com o novo mercado de mobilidade elétrica.
+
+[MUDAR PARA]
+PT-BR: Mobilidade elétrica e estética urbana. O projeto traduz a tecnologia da Shineray através de painéis de ACM escuros e acentos em vermelho vibrante. A vitrine "aquário" integra o interior da loja à rua, convidando o público jovem a interagir com os produtos. Uma fachada que comunica inovação e energia limpa.
+EN: Electric mobility and urban aesthetics. The project translates Shineray's technology through dark ACM panels and vibrant red accents. The "aquarium" window integrates the store interior with the street, inviting a young audience to interact with the products. A façade that communicates innovation and clean energy.

@@ -1,20 +1,22 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 const CenografiaPage = () => {
+  const { t } = useTranslation();
   return (
     <ServicePageTemplate
-      title="Cenografia"
-      subtitle="Projetos 3D para Eventos e Estandes"
-      description="Crie experiências memoráveis com cenografia 3D. Projetos para estandes, palcos e eventos corporativos que capturam a atenção e comunicam a mensagem da sua marca de forma impactante."
+      title={t('services.items.cenografia.pageTitle')}
+      subtitle={t('services.items.cenografia.pageSubtitle')}
+      description={t('services.items.cenografia.pageDescription')}
       features={[
-        'Design criativo e funcional',
-        'Visualização de fluxos e circulação',
-        'Detalhamento técnico para montagem',
-        'Ambientação e iluminação cênica'
+        t('services.items.cenografia.feature1'),
+        t('services.items.cenografia.feature2'),
+        t('services.items.cenografia.feature3'),
+        t('services.items.cenografia.feature4')
       ]}
       category="Cenografia"
-      ctaText="Solicitar Orçamento de Cenografia"
+      ctaText={t('services.items.cenografia.ctaText')}
     />
   );
 };

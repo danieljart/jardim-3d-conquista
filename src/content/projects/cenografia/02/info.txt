@@ -1,9 +1,2 @@
-﻿Coca Coca/Arena REMSA
-
-Esse projeto foi desenvolvido com o objetivo de criar uma atmosfera marcante, vibrante e totalmente dominada pela assinatura visual da Coca-Cola. A ideia era transformar o ambiente em uma experiência imersiva.
-
-A estrutura utiliza o vermelho icônico da marca em grandes proporções, combinada com elementos de iluminação que guiam o olhar e criam um fluxo dinâmico. O uso de materiais reflexivos e o contraste entre luz e sombra deixam o ambiente dramático e sofisticado.
-
-O espaço foi pensado para ser instagramável e funcional, permitindo circulação fluida e interação com os elementos da marca. A iluminação baixa no piso e os painéis de LED criam uma presença contínua, que envolve o visitante de todos os lados.
-
-O resultado é uma arena icônica, que traduz de maneira fiel o espírito vibrante da Coca-Cola e toda a energia de um grande evento.
+Coca-Cola / Arena REMSA
+Imersão total na marca. Uma arena desenhada para ser "instagramável" e vibrante, onde a luz e os reflexos ampliam a presença do vermelho icônico da Coca-Cola. A iluminação de piso e os painéis de LED criam uma atmosfera envolvente que coloca o visitante dentro do universo da marca, transformando o espaço físico em uma experiência sensorial e midiática.

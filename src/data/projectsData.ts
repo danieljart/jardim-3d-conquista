@@ -1,16 +1,21 @@
 export interface Project {
     id: number;
-    title: string;
+    title: string; // Default/PT title
+    title_en?: string; // English title
     category: string;
-    description: string;
+    categorySlug: string; // Added for translation
+    description: string; // Default/PT description
+    description_en?: string; // English description
     images: string[];
 }
 
 // Helper to capitalize category
 const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
-// Load info.txt files
+// Load info.txt files (Portuguese)
 const infoFiles = import.meta.glob('/src/content/projects/*/*/info.txt', { eager: true, query: '?raw', import: 'default' });
+// Load info_en.txt files (English)
+const infoFilesEn = import.meta.glob('/src/content/projects/*/*/info_en.txt', { eager: true, query: '?raw', import: 'default' });
 // Load images
 const imageFiles = import.meta.glob('/src/content/projects/*/*/*.{jpg,jpeg,png,webp,svg}', { eager: true, import: 'default' });
 
@@ -25,30 +30,11 @@ for (const path in infoFiles) {
     const categorySlug = parts[parts.length - 3];
     const idStr = parts[parts.length - 2];
 
-    // Create a unique ID based on category and folder number to avoid collisions if needed, 
-    // but for now we'll try to parse the folder name as ID. 
-    // If the user uses "01" in multiple categories, we might have ID collisions if we just use parseInt(idStr).
-    // However, the previous system used simple numbers. 
-    // Let's generate a unique ID hash or just use a large number offset for categories?
-    // Or better: keep the ID as number but ensure unique folders?
-    // The user asked for "01", "02". If "fachadas/01" and "interiores/01" exist, they have same ID.
-    // This breaks routing /projeto/:id.
-    // We should probably use a string ID like "fachadas-01" or generate a unique numeric ID.
-    // Let's generate a unique numeric ID by hashing or just assigning sequentially? 
-    // Sequential assignment based on load order is flaky.
-    // Let's try to parse the folder name. If collisions, we have a problem.
-    // BUT, the user might just want to number them sequentially across the board?
-    // Or maybe we change the route to /projeto/:category/:id?
-    // The user asked for "criar os diretorios... e um txt".
-    // Let's assume for now the user will manage unique IDs or we change the route.
-    // Changing route to /projeto/:category/:id is safer but breaks existing links if any (none yet except what I just added).
-    // Actually, I just added /projeto/:id.
-    // Let's change the route to /projeto/:category/:id to be safe and robust.
+    // Try to load English content
+    const enPath = path.replace('info.txt', 'info_en.txt');
+    const contentEn = infoFilesEn[enPath] as string | undefined;
 
-    // WAIT, I can't easily change the route structure without updating all links again.
-    // Let's try to generate a unique ID. 
-    // Maybe (categoryIndex * 1000) + projectNumber?
-    // categories: 'fachadas', 'interiores', 'cenografia', 'ambientes', 'personalizados'
+    // Generate ID
     const categories = ['fachadas', 'interiores', 'cenografia', 'ambientes', 'personalizados'];
     const catIndex = categories.indexOf(categorySlug.toLowerCase());
     const projectNum = parseInt(idStr, 10);
@@ -61,9 +47,19 @@ for (const path in infoFiles) {
         id = 9000 + projectNum;
     }
 
+    // Parse Portuguese content
     const lines = content.split('\n');
     const title = lines[0].trim();
     const description = lines.slice(1).join('\n').trim();
+
+    // Parse English content if available
+    let title_en = undefined;
+    let description_en = undefined;
+    if (contentEn) {
+        const linesEn = contentEn.split('\n');
+        title_en = linesEn[0].trim();
+        description_en = linesEn.slice(1).join('\n').trim();
+    }
 
     // Find images for this project
     const projectImages: string[] = [];
@@ -88,8 +84,11 @@ for (const path in infoFiles) {
     projects.push({
         id, // This ID is now e.g. 1001, 2001, etc.
         title,
+        title_en,
         category,
+        categorySlug, // Add slug for translation lookups
         description,
+        description_en,
         images: projectImages
     });
 }

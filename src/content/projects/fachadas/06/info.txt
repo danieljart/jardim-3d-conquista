@@ -1,7 +1,2 @@
-﻿Shineray Electric
-
-Esse projeto foi desenvolvido para destacar a linha elétrica da Shineray com uma linguagem moderna e urbana. A fachada precisava transmitir inovação e tecnologia de forma direta.
-
-Utilizamos painéis em ACM preto e cinza para criar um fundo sóbrio, que destaca o logo iluminado e os detalhes em verde neon, cor característica da marca. A vitrine ampla permite total visualização das motos, tornando o interior uma extensão da própria fachada.
-
-O resultado é uma fachada moderna, atrativa e com uma identidade visual clara e marcante, que posiciona a Shineray de maneira contemporânea, conectada com o público jovem e com o novo mercado de mobilidade elétrica.
+Shineray Electric
+Mobilidade elétrica e estética urbana. O projeto traduz a tecnologia da Shineray através de painéis de ACM escuros e acentos em vermelho vibrante. A vitrine "aquário" integra o interior da loja à rua, convidando o público jovem a interagir com os produtos. Uma fachada que comunica inovação e energia limpa.

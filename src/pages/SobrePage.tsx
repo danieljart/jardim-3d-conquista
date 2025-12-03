@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProjectCTA from '@/components/ProjectCTA';
 import FloatingButton from '@/components/FloatingButton';
 import { Award, Users, Clock, Target } from 'lucide-react';
 import profileImage from '@/assets/daniel-profile.jpg';
@@ -14,16 +16,18 @@ const stats = [
 ];
 
 const SobrePage = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
+  const stats = [
+    { icon: Award, value: '100+', label: t('about.page.stats.projects') },
+    { icon: Users, value: '80+', label: t('about.page.stats.clients') },
+    { icon: Clock, value: '5+', label: t('about.page.stats.experience') },
+    { icon: Target, value: '100%', label: t('about.page.stats.results') },
+  ];
+
   const handleContactClick = () => {
-    navigate('/');
-    setTimeout(() => {
-      const contactSection = document.getElementById('contato');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    navigate('/contato');
   };
 
   return (
@@ -35,50 +39,50 @@ const SobrePage = () => {
 
       <Navbar />
 
-      <main className="pt-24 pb-16 relative z-10">
+      <main className="pt-20 pb-8 md:pt-24 md:pb-16 relative z-10">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 mb-16">
+        <section className="container mx-auto px-4 mb-8 md:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Olá, eu sou o<br />
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
+                {t('about.page.hero.greeting')}<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">
                   Daniel Jardim
                 </span>
               </h1>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mb-8 rounded-full"></div>
-              <p className="text-xl text-white/80 mb-6">
-                Sou designer 3D especializado em transformar ideias em visualizações profissionais.
-                Desde 2018 atuo no design e, a partir de 2022, me aprofundei totalmente no 3D
-                para criar projetos que elevam marcas, ambientes e produtos.
+              <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mb-4 md:mb-8 rounded-full"></div>
+              <p className="text-xl text-white/80 mb-3">
+                {t('about.page.hero.role')}
               </p>
-              <p className="text-white/70 mb-8">
-                Trabalho com fachadas comerciais, cenografia, interiores e peças personalizadas,
-                criando soluções que unem estética, estratégia e resultado real para negócios.
+              <p className="text-white/70 mb-6">
+                {t('about.page.hero.desc')}
               </p>
               <button
                 onClick={handleContactClick}
                 className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium shadow-lg"
               >
-                Vamos Conversar
+                {t('about.page.hero.cta')}
               </button>
             </div>
-            <div className="relative">
-              <div className="aspect-square bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden p-2">
-                <img
-                  src={profileImage}
-                  alt="Daniel Jardim"
-                  className="w-full h-full object-cover rounded-xl opacity-90"
-                />
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-md group">
+                <div className="w-full h-auto glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500">
+                  <img
+                    src={profileImage}
+                    alt="Daniel Jardim"
+                    className="w-full h-auto object-cover rounded group-hover:scale-105 transition-all duration-700 animate-fade-in"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>
+                <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse delay-1000"></div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-full blur-3xl opacity-50"></div>
             </div>
           </div>
         </section>
 
         {/* Stats Section */}
-        <section className="container mx-auto px-4 mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <section className="container mx-auto px-4 mb-8 md:mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
@@ -98,31 +102,27 @@ const SobrePage = () => {
         </section>
 
         {/* My Story Section */}
-        <section className="container mx-auto px-4 mb-16">
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12">
-            <h2 className="text-3xl font-bold mb-6 text-white text-center">Minha Trajetória</h2>
+        <section className="container mx-auto px-4 mb-8 md:mb-16">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-12">
+            <h2 className="text-3xl font-bold mb-6 md:mb-8 text-white text-center">{t('about.page.story.title')}</h2>
             <div className="max-w-3xl mx-auto space-y-6 text-white/80 text-center">
               <p>
-                Iniciei no design em 2018 e segui evoluindo até encontrar no 3D minha principal área de domínio.
-                Desde 2022, dedico meu trabalho à criação de ambientes, fachadas, cenografias e produtos em 3D
-                que tornam projetos mais claros, profissionais e impactantes.
+                {t('about.page.story.p1')}
               </p>
               <p>
-                Domino ferramentas como Blender, D5 Render, SketchUp, CorelDRAW e outras soluções voltadas
-                para visualização, prototipagem e comunicação visual. Essa combinação de design e 3D me permite
-                entregar projetos completos, com estética refinada e foco no que realmente importa: resultado para o cliente.
+                {t('about.page.story.p2')}
               </p>
             </div>
           </div>
         </section>
 
         {/* Skills Section */}
-        <section className="container mx-auto px-4 mb-16">
-          <h2 className="text-3xl font-bold mb-12 text-white text-center">Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <section className="container mx-auto px-4 mb-8 md:mb-16">
+          <h2 className="text-3xl font-bold mb-8 md:mb-12 text-white text-center">{t('about.page.skills.title')}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
             {/* Design & 3D */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-2">Design & 3D</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-2">{t('about.page.skills.design')}</h3>
               <div className="space-y-4">
                 {[
                   { name: 'Blender 3D', level: 5 },
@@ -148,7 +148,7 @@ const SobrePage = () => {
 
             {/* Audiovisual */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-2">Audiovisual</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-2">{t('about.page.skills.audiovisual')}</h3>
               <div className="space-y-4">
                 {[
                   { name: 'Premiere', level: 5 },
@@ -173,34 +173,33 @@ const SobrePage = () => {
         </section>
 
         {/* Why Choose Me Section */}
-        <section className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-white text-center">
-            Por que trabalhar comigo?
+        <section className="container mx-auto px-4 mb-8 md:mb-16">
+          <h2 className="text-3xl font-bold mb-8 md:mb-12 text-white text-center">
+            {t('about.page.why.title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-bold mb-3 text-white">Foco em Resultados</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">{t('about.page.why.results.title')}</h3>
               <p className="text-white/70">
-                Cada projeto é pensado para destacar sua marca e gerar retorno real,
-                seja atraindo clientes, fortalecendo identidade visual ou facilitando a comunicação do seu negócio.
+                {t('about.page.why.results.desc')}
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-bold mb-3 text-white">Comunicação Clara</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">{t('about.page.why.communication.title')}</h3>
               <p className="text-white/70">
-                Você acompanha todas as etapas do processo. Ajustes, feedbacks e melhorias
-                são feitos com transparência para garantir que tudo saia como você imaginou.
+                {t('about.page.why.communication.desc')}
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-xl font-bold mb-3 text-white">Experiência Comprovada</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">{t('about.page.why.experience.title')}</h3>
               <p className="text-white/70">
-                Mais de 100 projetos entregues entre fachadas, ambientes internos, cenografia e peças personalizadas.
-                Meu portfólio mostra na prática como o 3D transforma ideias em soluções visuais eficientes.
+                {t('about.page.why.experience.desc')}
               </p>
             </div>
           </div>
         </section>
+
+        <ProjectCTA />
       </main>
 
       <Footer />

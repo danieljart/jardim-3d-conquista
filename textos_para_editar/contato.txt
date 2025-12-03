@@ -1,0 +1,289 @@
+>>> contact.title
+[COMEÇA COM]
+Vamos conversar sobre o seu projeto?
+
+[MUDAR PARA]
+PT-BR: Vamos conversar sobre o seu projeto?
+EN: Let's discuss your project?
+
+>>> contact.subtitle
+[COMEÇA COM]
+Pronto para dar o próximo passo e transformar a imagem do seu negócio?
+Selecione os serviços de seu interesse e envie uma mensagem direta.
+Estou ansioso para entender suas ideias e propor a melhor solução 3D para você!
+
+[MUDAR PARA]
+PT-BR: Pronto para transformar a imagem do seu negócio? Selecione os serviços e envie uma mensagem. Vamos definir a melhor estratégia visual para sua marca.
+EN: Ready to transform your business image? Select the services and send a message. Let's define the best visual strategy for your brand.
+
+>>> contact.whatsapp
+[COMEÇA COM]
+WhatsApp
+
+[MUDAR PARA]
+PT-BR: WhatsApp
+EN: WhatsApp
+
+>>> contact.chat
+[COMEÇA COM]
+Conversar
+
+[MUDAR PARA]
+PT-BR: Conversar
+EN: Chat
+
+>>> contact.instagram
+[COMEÇA COM]
+Instagram
+
+[MUDAR PARA]
+PT-BR: Instagram
+EN: Instagram
+
+>>> contact.follow
+[COMEÇA COM]
+Seguir
+
+[MUDAR PARA]
+PT-BR: Seguir
+EN: Follow
+
+>>> contact.email
+[COMEÇA COM]
+E-mail
+
+[MUDAR PARA]
+PT-BR: E-mail
+EN: E-mail
+
+>>> contact.sendEmail
+[COMEÇA COM]
+Enviar e-mail
+
+[MUDAR PARA]
+PT-BR: Enviar e-mail
+EN: Send e-mail
+
+>>> contact.whyWork
+[COMEÇA COM]
+Por que trabalhar comigo?
+
+[MUDAR PARA]
+PT-BR: Por que escolher meu estúdio?
+EN: Why choose my studio?
+
+>>> contact.reasons.personalized.title
+[COMEÇA COM]
+Atendimento personalizado e flexível
+
+[MUDAR PARA]
+PT-BR: Atendimento Direto
+EN: Direct Communication
+
+>>> contact.reasons.personalized.desc
+[COMEÇA COM]
+100% digital, com comunicação ágil e eficiente para sua conveniência.
+
+[MUDAR PARA]
+PT-BR: Processo 100% digital e sem burocracia, focado na sua conveniência.
+EN: 100% digital process, hassle-free and focused on your convenience.
+
+>>> contact.reasons.transparent.title
+[COMEÇA COM]
+Processo transparente
+
+[MUDAR PARA]
+PT-BR: Transparência Total
+EN: Full Transparency
+
+>>> contact.reasons.transparent.desc
+[COMEÇA COM]
+Acompanhamento em cada etapa do projeto, com abertura para ajustes e revisões quando necessário.
+
+[MUDAR PARA]
+PT-BR: Você visualiza e aprova cada etapa, do rascunho ao render final.
+EN: You view and approve every step, from draft to final render.
+
+>>> contact.reasons.efficient.title
+[COMEÇA COM]
+Entrega rápida e eficiente
+
+[MUDAR PARA]
+PT-BR: Compromisso com Prazo
+EN: Deadline Commitment
+
+>>> contact.reasons.efficient.desc
+[COMEÇA COM]
+Compromisso com prazos claramente definidos para melhor planejamento do seu projeto.
+
+[MUDAR PARA]
+PT-BR: Cronogramas claros e entregas pontuais para não atrasar sua obra ou lançamento.
+EN: Clear schedules and punctual deliveries so your construction or launch is never delayed.
+
+>>> contact.reasons.measurable.title
+[COMEÇA COM]
+Resultados mensuráveis
+
+[MUDAR PARA]
+PT-BR: Foco em Vendas
+EN: Sales Focus
+
+>>> contact.reasons.measurable.desc
+[COMEÇA COM]
+Mais de 50 projetos entregues com comprovado aumento de engajamento e conversão.
+
+[MUDAR PARA]
+PT-BR: Projetos desenhados não apenas para serem bonitos, mas para converterem clientes.
+EN: Projects designed not just to be beautiful, but to convert customers.
+
+>>> contact.chatWhatsapp
+[COMEÇA COM]
+Conversar no WhatsApp
+
+[MUDAR PARA]
+PT-BR: Iniciar conversa no WhatsApp
+EN: Start WhatsApp Chat
+
+>>> contact.sendMessage
+[COMEÇA COM]
+Envie sua mensagem
+
+[MUDAR PARA]
+PT-BR: Envie sua mensagem
+EN: Send your message
+
+>>> contact.form.name
+[COMEÇA COM]
+Nome
+
+[MUDAR PARA]
+PT-BR: Nome
+EN: Name
+
+>>> contact.form.namePlaceholder
+[COMEÇA COM]
+Seu nome
+
+[MUDAR PARA]
+PT-BR: Seu nome
+EN: Your name
+
+>>> contact.form.company
+[COMEÇA COM]
+Empresa e nicho de atuação
+
+[MUDAR PARA]
+PT-BR: Empresa / Ramo
+EN: Company / Industry
+
+>>> contact.form.companyPlaceholder
+[COMEÇA COM]
+Ex: Loja de roupas, Restaurante...
+
+[MUDAR PARA]
+PT-BR: Ex: Construtora, Restaurante, Eventos...
+EN: Ex: Developer, Restaurant, Events...
+
+>>> contact.form.services
+[COMEÇA COM]
+Serviços de interesse
+
+[MUDAR PARA]
+PT-BR: Serviços de interesse
+EN: Services of interest
+
+>>> contact.form.submit
+[COMEÇA COM]
+Enviar e Iniciar Conversa
+
+[MUDAR PARA]
+PT-BR: Enviar Mensagem
+EN: Send Message
+
+>>> contact.services.fachadas
+[COMEÇA COM]
+Fachadas 3D Impactantes
+
+[MUDAR PARA]
+PT-BR: Fachadas Comerciais
+EN: Commercial Façades
+
+>>> contact.services.interiores
+[COMEÇA COM]
+Interiores 3D Funcionais
+
+[MUDAR PARA]
+PT-BR: Interiores Comerciais
+EN: Commercial Interiors
+
+>>> contact.services.comunicacao
+[COMEÇA COM]
+Comunicação Visual 3D
+
+[MUDAR PARA]
+PT-BR: Comunicação Visual
+EN: Visual Communication
+
+>>> contact.services.identidade
+[COMEÇA COM]
+Identidade Visual 3D
+
+[MUDAR PARA]
+PT-BR: Identidade Visual
+EN: Visual Identity
+
+>>> contact.services.videos
+[COMEÇA COM]
+Vídeos e Tours Virtuais 3D
+
+[MUDAR PARA]
+PT-BR: Animação e Tour Virtual
+EN: Animation & Virtual Tour
+
+>>> contact.services.estandes
+[COMEÇA COM]
+Estandes para Feiras e Eventos
+
+[MUDAR PARA]
+PT-BR: Estandes e Cenografia
+EN: Booths & Scenography
+
+>>> contact.messageTemplate.greeting
+[COMEÇA COM]
+Olá! Meu nome é
+
+[MUDAR PARA]
+PT-BR: Olá! Meu nome é
+EN: Hello! My name is
+
+>>> contact.messageTemplate.client
+[COMEÇA COM]
+Cliente
+
+[MUDAR PARA]
+PT-BR: Cliente
+EN: Client
+
+>>> contact.messageTemplate.company
+[COMEÇA COM]
+da empresa
+
+[MUDAR PARA]
+PT-BR: da empresa
+EN: from company
+
+>>> contact.messageTemplate.interest
+[COMEÇA COM]
+Tenho interesse nos seguintes serviços:
+
+[MUDAR PARA]
+PT-BR: Tenho interesse em:
+EN: I am interested in:
+
+>>> contact.messageTemplate.info
+[COMEÇA COM]
+Gostaria de mais informações sobre os serviços disponíveis.
+
+[MUDAR PARA]
+PT-BR: Gostaria de mais informações e um orçamento.
+EN: I would like more information and a quote.

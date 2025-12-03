@@ -1,0 +1,125 @@
+>>> projects/personalizados/01/title
+[COMEÇA COM]
+Bodytech
+
+[MUDAR PARA]
+PT-BR: Bodytech
+EN: Bodytech
+
+>>> projects/personalizados/01/description
+[COMEÇA COM]
+Esses troféus foram desenvolvidos com foco em transmitir energia, desafio e superação.
+A silhueta da kettlebell unida à mão estilizada cria uma imagem poderosa e simbólica, perfeita para competições internas e programas de incentivo.
+Cada versão recebe um acabamento próprio, com cores que variam entre tons metálicos e vibrantes.
+A tipografia com pinceladas dá movimento ao conjunto e reforça a ideia de ação e intensidade.
+O resultado é um troféu robusto, moderno e motivador.
+
+[MUDAR PARA]
+PT-BR: Design de premiação para alta performance. O troféu funde a iconografia do fitness (kettlebell) com a gestualidade humana, simbolizando superação. Acabamentos metálicos e cores vibrantes diferenciam as categorias, transformando o objeto em um símbolo de desejo e motivação interna.
+EN: Award design for high performance. The trophy merges fitness iconography (kettlebell) with human gestures, symbolizing triumph. Metallic finishes and vibrant colors differentiate categories, transforming the object into a symbol of desire and internal motivation.
+
+>>> projects/personalizados/02/title
+[COMEÇA COM]
+MAG Seguros
+
+[MUDAR PARA]
+PT-BR: MAG Seguros
+EN: MAG Seguros
+
+>>> projects/personalizados/02/description
+[COMEÇA COM]
+Esse troféu foi projetado para premiações internas da MAG Seguros, trazendo uma estética moderna, limpa e extremamente corporativa.
+A estrela em acrílico azul funciona como elemento principal do design, transmitindo destaque, excelência e reconhecimento.
+A base espelhada reforça a sofisticação e cria reflexos que valorizam o conjunto, enquanto as medalhas personalizadas completam o visual com coerência e identidade.
+Uma peça pensada para eventos, homenagens e celebrações internas.
+
+[MUDAR PARA]
+PT-BR: Excelência corporativa materializada. Utilizando acrílico azul e bases espelhadas, criamos um troféu que reflete a identidade sólida da MAG Seguros. A geometria limpa e o foco na estrela central comunicam clareza e reconhecimento de mérito.
+EN: Materialized corporate excellence. Using blue acrylic and mirrored bases, we created a trophy that reflects MAG Seguros' solid identity. The clean geometry and focus on the central star communicate clarity and recognition of merit.
+
+>>> projects/personalizados/03/title
+[COMEÇA COM]
+SENAI
+
+[MUDAR PARA]
+PT-BR: SENAI
+EN: SENAI
+
+>>> projects/personalizados/03/description
+[COMEÇA COM]
+Esse troféu foi desenvolvido para celebrar um marco histórico do SENAI, unindo inovação, elegância e um visual memorável.
+A peça combina acrílico cristal com um disco dourado central, criando contraste entre leveza e prestígio.
+O número 70 em destaque reforça a importância da data e dá à premiação uma presença imponente.
+A silhueta curva da estrutura traz dinamismo e sugere movimento, simbolizando evolução e modernidade.
+Na base, o acabamento escuro com placa metálica complementa o design e deixa o troféu com um aspecto premium.
+A medalha acompanha o conjunto e segue o mesmo padrão visual, criando uma identidade forte e coesa para o evento.
+O resultado é um troféu elegante, sofisticado e especialmente pensado para um momento único na história do SENAI.
+
+[MUDAR PARA]
+PT-BR: Celebração de legado. Para os 70 anos do SENAI, o troféu une a transparência do acrílico (futuro) com o peso do dourado (história). A forma curva sugere evolução contínua, criando uma peça comemorativa que honra o passado enquanto aponta para a inovação.
+EN: Celebrating a legacy. For SENAI's 70th anniversary, the trophy unites the transparency of acrylic (future) with the weight of gold (history). The curved shape suggests continuous evolution, creating a commemorative piece that honors the past while pointing towards innovation.
+
+>>> projects/personalizados/04/title
+[COMEÇA COM]
+Cartão de Todos
+
+[MUDAR PARA]
+PT-BR: Cartão de Todos
+EN: Cartão de Todos
+
+>>> projects/personalizados/04/description
+[COMEÇA COM]
+Esse projeto foi criado para representar um marco muito especial.
+A coruja em acrílico iluminado simboliza sabedoria, cuidado e dedicação, trazendo uma identidade lúdica e ao mesmo tempo profissional.
+A mistura entre o verde vibrante e o branco dá destaque ao número da conquista, deixando o troféu com uma presença forte e memorável.
+O design foi pensado para ser visto de longe, com camadas recortadas e um brilho que reforça a importância da premiação.
+A base sólida completa o conjunto e transforma o troféu em uma peça de destaque, perfeita para vitrines, eventos e cerimônias de homenagem.
+
+[MUDAR PARA]
+PT-BR: Simbologia e luz. O mascote da marca (a coruja) foi transformado em uma peça tridimensional iluminada, que se destaca em palcos e fotos. O uso de camadas de acrílico cria profundidade, tornando o troféu um objeto de decoração e orgulho para o franqueado ou colaborador premiado.
+EN: Symbology and light. The brand's mascot (the owl) was transformed into an illuminated three-dimensional piece that stands out on stages and in photos. The use of acrylic layers creates depth, making the trophy an object of decoration and pride for the awarded franchisee or employee.
+
+>>> projects/personalizados/05/title
+[COMEÇA COM]
+Copa LDA
+
+[MUDAR PARA]
+PT-BR: Copa LDA
+EN: LDA Cup
+
+>>> projects/personalizados/05/description
+[COMEÇA COM]
+O conceito desse troféu foi unir leveza com identidade esportiva.
+A estrutura em acrílico simula uma taça moderna, com linhas limpas que destacam o brasão da Copa LDA.
+A fotografia sobre o gramado foi pensada para reforçar esse ar competitivo, trazendo a sensação real de estar no estádio.
+A base de madeira contrasta com o acrílico transparente, criando equilíbrio entre rusticidade e modernidade.
+As medalhas personalizadas completam o kit e dão ainda mais valor à premiação.
+É uma peça elegante, marcante e perfeita para registrar conquistas esportivas.
+
+[MUDAR PARA]
+PT-BR: Esporte e memória. Fugindo das taças tradicionais de metal, criamos uma silhueta moderna em acrílico e madeira. O design incorpora elementos visuais do futebol (o gramado, o brasão), criando um objeto de desejo que moderniza a estética das premiações esportivas amadoras.
+EN: Sport and memory. Moving away from traditional metal cups, we created a modern silhouette in acrylic and wood. The design incorporates visual elements of soccer (the turf, the crest), creating an object of desire that modernizes the aesthetic of amateur sports awards.
+
+>>> projects/personalizados/06/title
+[COMEÇA COM]
+Medalhas Personalizadas
+
+[MUDAR PARA]
+PT-BR: Medalhas Personalizadas
+EN: Custom Medals
+
+>>> projects/personalizados/06/description
+[COMEÇA COM]
+As medalhas personalizadas são desenvolvidas para transformar cada conquista em algo especial.
+Cada peça nasce de um conceito visual pensado para representar o evento, a instituição ou a história por trás da premiação.
+O objetivo é que quem recebe sinta orgulho, pertencimento e importância naquele momento.
+A criação começa pelo desenho principal, onde definimos o estilo da arte, os símbolos, as cores e toda a personalidade da marca.
+Em seguida trabalhamos o formato do acrílico, espessura, camadas, profundidade e o acabamento final.
+Tudo é pensado para que a medalha seja leve, resistente e com presença.
+As fitas também seguem a identidade do projeto, com cores que combinam com o tema e ajudam a destacar ainda mais a peça.
+Cada detalhe importa, desde o tipo de impressão até o brilho do material, garantindo um resultado profissional e marcante.
+O resultado são medalhas únicas, modernas e totalmente personalizadas, perfeitas para eventos esportivos, competições acadêmicas, programas internos de empresas, artes marciais, aniversários e qualquer celebração que mereça ser registrada de forma especial.
+
+[MUDAR PARA]
+PT-BR: Medalhas com design autoral. Elevamos o padrão da premiação criando medalhas que contam histórias. Do desenho do relevo à escolha da fita, cada detalhe é personalizado para refletir a identidade do evento. Utilizamos acrílico, metal e impressão UV para criar peças táteis, duráveis e colecionáveis.
+EN: Authorial design medals. We raise the standard of awards by creating medals that tell stories. From the relief design to the ribbon choice, every detail is customized to reflect the event's identity. We use acrylic, metal, and UV printing to create tactile, durable, and collectible pieces.

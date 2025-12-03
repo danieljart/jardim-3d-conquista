@@ -1,0 +1,178 @@
+>>> about.page.stats.projects
+[COMEÇA COM]
+Projetos Entregues
+
+[MUDAR PARA]
+PT-BR: Projetos Entregues
+EN: Projects Delivered
+
+>>> about.page.stats.clients
+[COMEÇA COM]
+Clientes Satisfeitos
+
+[MUDAR PARA]
+PT-BR: Clientes Atendidos
+EN: Satisfied Clients
+
+>>> about.page.stats.experience
+[COMEÇA COM]
+Anos de Experiência
+
+[MUDAR PARA]
+PT-BR: Anos de Mercado
+EN: Years of Experience
+
+>>> about.page.stats.results
+[COMEÇA COM]
+Foco em Resultados
+
+[MUDAR PARA]
+PT-BR: Foco em Excelência
+EN: Focus on Results
+
+>>> about.page.hero.greeting
+[COMEÇA COM]
+Olá, eu sou o
+
+[MUDAR PARA]
+PT-BR: Olá, eu sou Daniel Jardim!	
+EN: Hi, I'm Daniel Jardim!
+
+>>> about.page.hero.role
+[COMEÇA COM]
+Sou designer 3D especializado em transformar ideias em visualizações profissionais.
+Desde 2018 atuo no design e, a partir de 2022, me aprofundei totalmente no 3D para criar projetos que elevam marcas, ambientes e produtos.
+
+[MUDAR PARA]
+PT-BR: Sou artista 3D especializado em ArchViz e Cenografia.
+Minha atuação foca em traduzir a linguagem arquitetônica para imagens que comunicam, vendem e encantam. Desde 2018 no design, hoje dedico minha expertise técnica para elevar a apresentação de marcas e espaços.
+EN: I am a 3D Artist specializing in ArchViz and Scenography.
+My work focuses on translating architectural language into imagery that communicates, sells, and captivates. With a design background since 2018, I now dedicate my technical expertise to elevating the presentation of brands and spaces.
+
+>>> about.page.hero.desc
+[COMEÇA COM]
+Trabalho com fachadas comerciais, cenografia, interiores e peças personalizadas, criando soluções que unem estética, estratégia e resultado real para negócios.
+
+[MUDAR PARA]
+PT-BR: Atuo com fachadas comerciais, cenografia de eventos e ambientes internos. Crio narrativas visuais que unem estética apurada e estratégia comercial, tangibilizando o futuro do seu negócio.
+EN: I work with commercial façades, event scenography, and interiors. I create visual narratives that merge refined aesthetics with commercial strategy, making the future of your business tangible today.
+
+>>> about.page.hero.cta
+[COMEÇA COM]
+Vamos Conversar
+
+[MUDAR PARA]
+PT-BR: Entrar em contato
+EN: Let's talk
+
+>>> about.page.story.title
+[COMEÇA COM]
+Minha Trajetória
+
+[MUDAR PARA]
+PT-BR: Minha Trajetória
+EN: My Journey
+
+>>> about.page.story.p1
+[COMEÇA COM]
+Iniciei no design em 2018 e segui evoluindo até encontrar no 3D minha principal área de domínio.
+Desde 2022, dedico meu trabalho à criação de ambientes, fachadas, cenografias e produtos em 3D que tornam projetos mais claros, profissionais e impactantes.
+
+[MUDAR PARA]
+PT-BR: Comecei no design gráfico em 2018, mas foi na tridimensionalidade que encontrei a ferramenta perfeita para expressar ideias complexas.
+Desde 2022, meu estúdio se dedica a criar visualizações de arquitetura e cenografia que eliminam a incerteza do processo criativo, tornando projetos claros, profissionais e visualmente impactantes.
+EN: I started in graphic design in 2018, but it was in the three-dimensional realm that I found the perfect tool to express complex ideas.
+Since 2022, my studio has been dedicated to creating architectural and scenographic visualizations that remove uncertainty from the creative process, making projects clear, professional, and visually striking.
+
+>>> about.page.story.p2
+[COMEÇA COM]
+Domino ferramentas como Blender, D5 Render, SketchUp, CorelDRAW e outras soluções voltadas para visualização, prototipagem e comunicação visual.
+Essa combinação de design e 3D me permite entregar projetos completos, com estética refinada e foco no que realmente importa: resultado para o cliente.
+
+[MUDAR PARA]
+PT-BR: Meu workflow integra ferramentas como Blender, D5 Render e SketchUp para modelagem e renderização avançada.
+Essa base técnica sólida, somada ao olhar de design, me permite entregar não apenas "imagens", mas ativos digitais de alto valor que resolvem problemas reais de comunicação e vendas para meus clientes.
+EN: My workflow integrates tools like Blender, D5 Render, and SketchUp for advanced modeling and rendering.
+This solid technical foundation, combined with a design-oriented eye, allows me to deliver not just "images," but high-value digital assets that solve real communication and sales problems for my clients.
+
+>>> about.page.skills.title
+[COMEÇA COM]
+Skills
+
+[MUDAR PARA]
+PT-BR: Expertise Técnica
+EN: Technical Skills
+
+>>> about.page.skills.design
+[COMEÇA COM]
+Design & 3D
+
+[MUDAR PARA]
+PT-BR: Design & CGI
+EN: Design & CGI
+
+>>> about.page.skills.audiovisual
+[COMEÇA COM]
+Audiovisual
+
+[MUDAR PARA]
+PT-BR: Pós-produção & Motion
+EN: Post-production & Motion
+
+>>> about.page.why.title
+[COMEÇA COM]
+Por que trabalhar comigo?
+
+[MUDAR PARA]
+PT-BR: Por que contratar um especialista?
+EN: Why work with me?
+
+>>> about.page.why.results.title
+[COMEÇA COM]
+Foco em Resultados
+
+[MUDAR PARA]
+PT-BR: Visão Comercial
+EN: Commercial Focus
+
+>>> about.page.why.results.desc
+[COMEÇA COM]
+Cada projeto é pensado para destacar sua marca e gerar retorno real, seja atraindo clientes, fortalecendo identidade visual ou facilitando a comunicação do seu negócio.
+
+[MUDAR PARA]
+PT-BR: Não faço arte pela arte. Cada render é pensado para vender seu espaço, fortalecer o branding e atrair o público certo para o seu negócio.
+EN: I don't just make art. Every render is crafted to sell your space, strengthen your branding, and attract the right audience to your business.
+
+>>> about.page.why.communication.title
+[COMEÇA COM]
+Comunicação Clara
+
+[MUDAR PARA]
+PT-BR: Transparência no Processo
+EN: Clear Communication
+
+>>> about.page.why.communication.desc
+[COMEÇA COM]
+Você acompanha todas as etapas do processo.
+Ajustes, feedbacks e melhorias são feitos com transparência para garantir que tudo saia como você imaginou.
+
+[MUDAR PARA]
+PT-BR: Você não fica no escuro. Do "white model" (prova de forma) à imagem final, você acompanha e valida cada etapa, garantindo que o resultado final seja fiel à sua visão.
+EN: You are never left in the dark. From the "white model" to the final image, you track and validate every step, ensuring the result remains true to your vision.
+
+>>> about.page.why.experience.title
+[COMEÇA COM]
+Experiência Comprovada
+
+[MUDAR PARA]
+PT-BR: Portfólio Sólido
+EN: Proven Experience
+
+>>> about.page.why.experience.desc
+[COMEÇA COM]
+Mais de 100 projetos entregues entre fachadas, ambientes internos, cenografia e peças personalizadas.
+Meu portfólio mostra na prática como o 3D transforma ideias em soluções visuais eficientes.
+
+[MUDAR PARA]
+PT-BR: Mais de 100 projetos entregues. Fachadas que mudaram a cara de comércios, estandes que brilharam em feiras e interiores que acolhem. Meu portfólio é minha garantia de entrega.
+EN: Over 100 projects delivered. Façades that revamped businesses, booths that stood out at trade shows, and interiors that welcome. My portfolio is my guarantee of delivery.

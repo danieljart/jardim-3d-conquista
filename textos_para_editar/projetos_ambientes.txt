@@ -1,0 +1,122 @@
+>>> projects/ambientes/01/title
+[COMEÇA COM]
+Laman
+
+[MUDAR PARA]
+PT-BR: Laman
+EN: Laman
+
+>>> projects/ambientes/01/description
+[COMEÇA COM]
+Esse projeto foi criado para transformar o escritório da Laman em um ambiente versátil, moderno e preparado para dois momentos completamente diferentes do dia a dia da empresa.
+A intenção desde o início era mostrar como a iluminação certa muda não só o clima do espaço, mas também a forma como ele é percebido.
+A primeira versão, registrada nessa imagem, usa iluminação RGB para criar um ambiente imersivo, criativo e cheio de personalidade.
+As cores dão vida ao escritório e reforçam o lado inovador e tecnológico da marca, criando um clima perfeito para brainstorming, reuniões criativas e momentos de descontração.
+A parede artística com textura azul adiciona profundidade e torna o espaço ainda mais expressivo.
+A segunda versão, com iluminação quente e mais formal, transforma completamente a atmosfera do ambiente.
+O mesmo escritório ganha uma presença mais elegante, séria e corporativa, ideal para atendimento, gravações, reuniões estratégicas e apresentações profissionais.
+Essas duas identidades coexistem dentro do mesmo projeto, permitindo que o espaço se adapte a diferentes necessidades com um simples toque de iluminação.
+O resultado é um escritório dinâmico, inteligente e com uma estética muito própria, que traduz exatamente a personalidade multifacetada da Laman.
+
+[MUDAR PARA]
+PT-BR: Um escritório, duas atmosferas. O projeto para a Laman explora a versatilidade da iluminação para redefinir o espaço de trabalho. Na primeira configuração, o sistema RGB cria um ambiente imersivo e tecnológico, ideal para sessões criativas e "brainstorming". Na segunda, uma luz quente e sóbria transforma a sala em um cenário corporativo elegante para reuniões com clientes. O resultado é um espaço dinâmico que se adapta à função do momento, refletindo a natureza multifacetada da marca.
+EN: One office, two atmospheres. The Laman project explores lighting versatility to redefine the workspace. In the first configuration, the RGB system creates an immersive, tech-forward environment ideal for creative sessions and brainstorming. In the second, warm, sober lighting transforms the room into an elegant corporate setting for client meetings. The result is a dynamic space that adapts to the function of the moment, reflecting the brand's multifaceted nature.
+
+>>> projects/ambientes/02/title
+[COMEÇA COM]
+Finama
+
+[MUDAR PARA]
+PT-BR: Finama
+EN: Finama
+
+>>> projects/ambientes/02/description
+[COMEÇA COM]
+A proposta para a recepção do Colégio Finama era criar um ambiente que transmitisse credibilidade, organização e uma identidade institucional forte já no primeiro contato.
+O símbolo em alto relevo na parede se torna o protagonista do espaço, reforçando autoridade e representanto os valores do colégio.
+A combinação entre o vermelho, o cinza e o acabamento fosco cria elegância, enquanto o mobiliário minimalista mantém o ambiente limpo e funcional.
+Cada detalhe foi pensado para causar uma boa impressão e fortalecer a imagem do colégio como uma instituição moderna, séria e comprometida com excelência.
+O resultado é uma recepção sofisticada, clara e visualmente marcante.
+
+[MUDAR PARA]
+PT-BR: A recepção do Colégio Finama foi projetada para comunicar autoridade institucional instantânea. O ponto focal é o logo em alto relevo, que ancora o espaço e reforça a marca. A paleta sóbria de cinzas, pontuada pelo vermelho institucional e mobiliário minimalista, transmite organização e excelência acadêmica. Um ambiente que acolhe pais e alunos com a seriedade e modernidade que a educação exige.
+EN: The Finama College reception was designed to communicate instant institutional authority. The focal point is the embossed logo, anchoring the space and reinforcing the brand. A sober palette of greys, punctuated by institutional red and minimalist furniture, conveys organization and academic excellence. An environment that welcomes parents and students with the seriousness and modernity that education demands.
+
+>>> projects/ambientes/03/title
+[COMEÇA COM]
+Ferro, Morelli & Furtado
+
+[MUDAR PARA]
+PT-BR: Ferro, Morelli & Furtado
+EN: Ferro, Morelli & Furtado
+
+>>> projects/ambientes/03/description
+[COMEÇA COM]
+Para esse projeto, a ideia era construir um ambiente elegante e contemporâneo que reforçasse a credibilidade do escritório.
+A parede com revestimento em padrão chevron cria ritmo visual e traz uma sensação de requinte imediata.
+O letreiro metálico polido traz brilho na medida certa, transmitindo profissionalismo e presença.
+A iluminação suave valoriza o acabamento e dá profundidade ao espaço sem pesar.
+O resultado é uma recepção elegante, moderna e com a seriedade que um escritório jurídico de alto nível exige.
+
+[MUDAR PARA]
+PT-BR: Sobriedade e textura definem a recepção deste escritório jurídico. O revestimento em padrão chevron cria um ritmo visual sofisticado, servindo de fundo para a marca em letreiro metálico polido. A iluminação foi desenhada para valorizar os materiais e criar uma atmosfera de confiança e solidez, essenciais para a advocacia de alto nível.
+EN: Sobriety and texture define this law firm's reception. The chevron pattern cladding creates a sophisticated visual rhythm, serving as a backdrop for the brand in polished metal signage. The lighting was designed to enhance materials and create an atmosphere of trust and solidity, essential for high-level legal practice.
+
+>>> projects/ambientes/04/title
+[COMEÇA COM]
+Clínica Ana Cecília Lima
+
+[MUDAR PARA]
+PT-BR: Clínica Ana Cecília Lima
+EN: Ana Cecília Lima Clinic
+
+>>> projects/ambientes/04/description
+[COMEÇA COM]
+Esse projeto foi pensado para transmitir cuidado, acolhimento e uma estética suave que conversasse com a área de atuação da clínica.
+A composição de painéis amadeirados cria um ambiente confortável e com textura rica, enquanto o letreiro em tom vinho adiciona personalidade e elegância.
+A tipografia delicada e a iluminação suave reforçam a sensação de tranquilidade e profissionalismo.
+O resultado final é um espaço agradável, acolhedor e totalmente alinhado com a identidade da profissional.
+
+[MUDAR PARA]
+PT-BR: Na arquitetura de saúde, o acolhimento é prioridade. Para a Clínica Ana Cecília Lima, utilizamos painéis de madeira clara para aquecer o ambiente e reduzir a ansiedade típica de salas de espera. O letreiro em tom vinho e a iluminação difusa trazem sofisticação feminina e tranquilidade, alinhando o espaço físico à delicadeza do atendimento.
+EN: In healthcare architecture, warmth is a priority. For the Ana Cecília Lima Clinic, we used light wood panels to warm the environment and reduce the anxiety typical of waiting rooms. The wine-colored signage and diffuse lighting bring feminine sophistication and tranquility, aligning the physical space with the delicacy of the service.
+
+>>> projects/ambientes/05/title
+[COMEÇA COM]
+Elen Koc’s Studio
+
+[MUDAR PARA]
+PT-BR: Elen Koc’s Studio
+EN: Elen Koc’s Studio
+
+>>> projects/ambientes/05/description
+[COMEÇA COM]
+Esse ambiente foi criado para transmitir leveza, organização e um estilo moderno que combina com a proposta do estúdio.
+O painel de mármore iluminado funciona como elemento principal do espaço, trazendo sofisticação e criando um ponto focal elegante.
+Os detalhes em dourado adicionam personalidade e fazem o estúdio ganhar destaque visual sem exagero.
+A iluminação embutida reforça a limpeza do design e valoriza o acabamento das paredes.
+O resultado é um ambiente minimalista e ao mesmo tempo marcante, perfeito para receber clientes e transmitir profissionalismo.
+
+[MUDAR PARA]
+PT-BR: Minimalismo de alto impacto. O projeto para o Elen Koc’s Studio gira em torno do painel de mármore retroiluminado, que eleva instantaneamente o valor percebido do serviço. A combinação de pedra natural, detalhes em dourado e luz técnica cria uma atmosfera de luxo contemporâneo, essencial para um estúdio de beleza e estética.
+EN: High-impact minimalism. The project for Elen Koc’s Studio revolves around the backlit marble panel, which instantly elevates the perceived value of the service. The combination of natural stone, gold details, and technical lighting creates an atmosphere of contemporary luxury, essential for a beauty and aesthetics studio.
+
+>>> projects/ambientes/06/title
+[COMEÇA COM]
+Estapar
+
+[MUDAR PARA]
+PT-BR: Estapar
+EN: Estapar
+
+>>> projects/ambientes/06/description
+[COMEÇA COM]
+Nesse projeto, o objetivo era criar uma área de autoatendimento clara, organizada e eficiente.
+A composição em preto e verde traz modernidade e reforça a identidade da marca, enquanto o design limpo facilita a leitura das informações.
+As máquinas foram distribuídas para que o visitante encontre o serviço que precisa sem esforço.
+Os painéis superiores ajudam na orientação e tornam o ambiente muito mais intuitivo, reduzindo dúvidas e agilizando o fluxo.
+O resultado é um espaço funcional, moderno e visualmente bem resolvido, que melhora a experiência dos usuários e reforça a presença da marca dentro do shopping.
+
+[MUDAR PARA]
+PT-BR: Eficiência e fluxo. O projeto para a área de autoatendimento da Estapar foca na experiência do usuário (UX) no ambiente físico. A sinalização visual clara e a paleta institucional guiam o cliente intuitivamente até os terminais, reduzindo filas e dúvidas. Um design funcional que integra a operação à estética moderna do shopping.
+EN: Efficiency and flow. The project for Estapar's self-service area focuses on User Experience (UX) in the physical environment. Clear visual signage and the institutional palette intuitively guide the customer to the terminals, reducing queues and confusion. A functional design that integrates operations with the mall's modern aesthetic.

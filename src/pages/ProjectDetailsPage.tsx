@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ProjectDetailsPage = () => {
+    const { t, i18n } = useTranslation();
     const { id } = useParams();
     const navigate = useNavigate();
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [AutoHeight()]);
@@ -26,9 +28,9 @@ const ProjectDetailsPage = () => {
     if (!project) {
         return (
             <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
-                <h1 className="text-2xl font-bold mb-4">Projeto não encontrado</h1>
+                <h1 className="text-2xl font-bold mb-4">{t('project.notFound')}</h1>
                 <Button onClick={() => navigate('/servicos')} variant="outline">
-                    Voltar para Serviços
+                    {t('project.backToServices')}
                 </Button>
             </div>
         );
@@ -81,7 +83,7 @@ const ProjectDetailsPage = () => {
 
             <Navbar />
 
-            <main className="pt-24 pb-16 relative z-10">
+            <main className="pt-20 pb-8 md:pt-24 md:pb-16 relative z-10">
                 <div className="container mx-auto px-4 flex flex-col gap-2">
                     <div className="flex justify-start">
                         <Button
@@ -89,7 +91,7 @@ const ProjectDetailsPage = () => {
                             variant="ghost"
                             className="text-white/70 hover:text-white pl-0 hover:bg-transparent"
                         >
-                            <ArrowLeft className="mr-2 h-4 w-4" /> Voltar
+                            <ArrowLeft className="mr-2 h-4 w-4" /> {t('project.back')}
                         </Button>
                     </div>
 
@@ -97,7 +99,7 @@ const ProjectDetailsPage = () => {
                         {/* Image Section */}
                         <div className="flex flex-col gap-2">
                             {/* Main Slider */}
-                            <div className={`relative group overflow-hidden rounded-2xl flex items-center justify-center ${isVertical ? 'h-[calc(100vh-12rem)] min-h-[600px]' : 'h-auto'}`}>
+                            <div className="relative group overflow-hidden rounded-2xl flex items-center justify-center h-auto">
                                 <div className="w-full h-full" ref={emblaRef}>
                                     <div className="flex h-full">
                                         {project.images.map((img, index) => (
@@ -105,7 +107,7 @@ const ProjectDetailsPage = () => {
                                                 <img
                                                     src={img}
                                                     alt={`${project.title} - Imagem ${index + 1}`}
-                                                    className="max-w-full max-h-full object-contain rounded-2xl"
+                                                    className="w-full h-auto object-contain rounded-2xl"
                                                     onLoad={(e) => handleImageLoad(index, e)}
                                                 />
                                             </div>
@@ -151,28 +153,28 @@ const ProjectDetailsPage = () => {
                         </div>
 
                         {/* Description */}
-                        <div className={`bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 flex flex-col overflow-hidden ${isVertical ? 'h-full' : 'h-auto'}`}>
+                        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-12 flex flex-col overflow-hidden h-auto">
                             <div className="mb-6">
                                 <span className="inline-block px-4 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-medium mb-4 border border-indigo-500/30">
-                                    {project.category}
+                                    {t(`services.items.${project.categorySlug}.title`)}
                                 </span>
                                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                                    {project.title}
+                                    {i18n.language === 'en' && project.title_en ? project.title_en : project.title}
                                 </h1>
                                 <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 rounded-full"></div>
                             </div>
 
                             <div className="pr-4">
-                                <h2 className="text-xl font-bold text-white mb-4">Sobre o Projeto</h2>
+                                <h2 className="text-xl font-bold text-white mb-4">{t('project.about')}</h2>
                                 <p className="text-white/80 text-lg leading-relaxed whitespace-pre-line">
-                                    {project.description}
+                                    {i18n.language === 'en' && project.description_en ? project.description_en : project.description}
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="mt-16">
+                <div className="mt-8 md:mt-16">
                     <ProjectCTA />
                 </div>
             </main>

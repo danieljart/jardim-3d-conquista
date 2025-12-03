@@ -1,15 +1,17 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 text-white border-t border-white/10">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-6 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Daniel Jardim - 3D</h3>
             <p className="text-white/80 mb-4">
-              Estúdio de design 3D especializado em transformar espaços comerciais e criar experiências visuais impactantes.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -49,41 +51,41 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Serviços</h4>
+            <h4 className="font-semibold mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2 text-white/80">
               <li>
-                <a href="/servicos/fachadas" className="hover:text-indigo-400 transition-colors">Fachadas Comerciais</a>
+                <a href="/servicos/fachadas" className="hover:text-indigo-400 transition-colors">{t('footer.items.fachadas')}</a>
               </li>
               <li>
-                <a href="/servicos/cenografia" className="hover:text-indigo-400 transition-colors">Cenografia e Eventos</a>
+                <a href="/servicos/cenografia" className="hover:text-indigo-400 transition-colors">{t('footer.items.cenografia')}</a>
               </li>
               <li>
-                <a href="/servicos/ambientes" className="hover:text-indigo-400 transition-colors">Ambientes Instagramáveis</a>
+                <a href="/servicos/ambientes" className="hover:text-indigo-400 transition-colors">{t('footer.items.ambientes')}</a>
               </li>
               <li>
-                <a href="/servicos/personalizados" className="hover:text-indigo-400 transition-colors">Projetos Personalizados</a>
+                <a href="/servicos/personalizados" className="hover:text-indigo-400 transition-colors">{t('footer.items.personalizados')}</a>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Links Úteis</h4>
+            <h4 className="font-semibold mb-4">{t('footer.usefulLinks')}</h4>
             <ul className="space-y-2 text-white/80">
               <li>
-                <a href="/sobre" className="hover:text-indigo-400 transition-colors">Sobre Nós</a>
+                <a href="/sobre" className="hover:text-indigo-400 transition-colors">{t('footer.aboutUs')}</a>
               </li>
               <li>
-                <a href="/galeria" className="hover:text-indigo-400 transition-colors">Portfólio</a>
+                <a href="/galeria" className="hover:text-indigo-400 transition-colors">{t('footer.portfolio')}</a>
               </li>
               <li>
-                <a href="/#videos" className="hover:text-indigo-400 transition-colors">Vídeos e Tours</a>
+                <a href="/#videos" className="hover:text-indigo-400 transition-colors">{t('footer.videos')}</a>
               </li>
               <li>
-                <a href="/#contato" className="hover:text-indigo-400 transition-colors">Contato</a>
+                <a href="/#contato" className="hover:text-indigo-400 transition-colors">{t('footer.contact')}</a>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Contato</h4>
+            <h4 className="font-semibold mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-3 text-white/80">
               <li className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -120,13 +122,13 @@ const Footer = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
-                  Fale no WhatsApp
+                  {t('footer.whatsapp')}
                 </a>
               </li>
             </ul>          </div>
         </div>
-        <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} Daniel Jardim - 3D. Todos os direitos reservados.</p>
+        <div className="border-t border-white/10 mt-8 md:mt-12 pt-4 md:pt-8 text-center text-white/60 text-sm">
+          <p>&copy; {new Date().getFullYear()} Daniel Jardim - 3D. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,55 @@
+>>> project.notFound
+[COMEÇA COM]
+Projeto não encontrado
+
+[MUDAR PARA]
+PT-BR: Projeto não encontrado
+EN: Project not found
+
+>>> project.backToServices
+[COMEÇA COM]
+Voltar para Serviços
+
+[MUDAR PARA]
+PT-BR: Voltar para Serviços
+EN: Back to Services
+
+>>> project.back
+[COMEÇA COM]
+Voltar
+
+[MUDAR PARA]
+PT-BR: Voltar
+EN: Back
+
+>>> project.about
+[COMEÇA COM]
+Sobre o Projeto
+
+[MUDAR PARA]
+PT-BR: Sobre o Projeto
+EN: About the Project
+
+>>> project.cta.title
+[COMEÇA COM]
+Pronto para transformar seu projeto?
+
+[MUDAR PARA]
+PT-BR: Vamos tirar o projeto do papel?
+EN: Ready to bring your project to life?
+
+>>> project.cta.desc
+[COMEÇA COM]
+Entre em contato agora e vamos discutir como posso ajudar a elevar o nível visual do seu negócio.
+
+[MUDAR PARA]
+PT-BR: Entre em contato e vamos discutir como a visualização 3D pode agregar valor e clareza ao seu negócio.
+EN: Contact me and let's discuss how 3D visualization can add value and clarity to your business.
+
+>>> project.cta.button
+[COMEÇA COM]
+Falar no WhatsApp
+
+[MUDAR PARA]
+PT-BR: Falar no WhatsApp
+EN: Chat on WhatsApp
