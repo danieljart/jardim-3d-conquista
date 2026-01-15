@@ -5,6 +5,28 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import pt from './locales/pt.json';
 import en from './locales/en.json';
 
+const BRAZIL_TIMEZONES = new Set<string>([
+    'America/Sao_Paulo',
+    'America/Fortaleza',
+    'America/Recife',
+    'America/Maceio',
+    'America/Araguaina',
+    'America/Bahia',
+    'America/Belem',
+    'America/Boa_Vista',
+    'America/Campo_Grande',
+    'America/Cuiaba',
+    'America/Manaus',
+    'America/Porto_Velho',
+    'America/Rio_Branco',
+    'America/Noronha',
+]);
+
+const isBrazilTimezone = () => {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return typeof tz === 'string' && BRAZIL_TIMEZONES.has(tz);
+};
+
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -25,12 +47,11 @@ i18n
         detection: {
             order: ['navigator'],
             caches: [],
-            convertDetectedLanguage: (lng: string) => {
-                // Força português para qualquer variante pt (pt-BR, pt-PT, etc)
-                if (lng.startsWith('pt')) {
-                    return 'pt';
-                }
-                return lng;
+            convertDetectedLanguage: (_lng: string) => {
+                // Regra do site:
+                // - Usuários no Brasil: sempre PT
+                // - Fora do Brasil: sempre EN
+                return isBrazilTimezone() ? 'pt' : 'en';
             },
         },
     });
