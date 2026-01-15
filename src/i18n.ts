@@ -23,8 +23,8 @@ i18n
             escapeValue: false, // react already safes from xss
         },
         detection: {
-            order: ['navigator', 'htmlTag', 'path', 'subdomain'],
-            caches: ['localStorage'],
+            order: ['navigator'],
+            caches: [],
             convertDetectedLanguage: (lng: string) => {
                 // Força português para qualquer variante pt (pt-BR, pt-PT, etc)
                 if (lng.startsWith('pt')) {
