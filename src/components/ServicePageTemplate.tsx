@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -9,51 +9,15 @@ import { ArrowRight, Check } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import ProjectCTA from './ProjectCTA';
 import { projectsData } from '@/data/projectsData';
-import OptimizedImage from './OptimizedImage';
 
 interface ServicePageProps {
     title: string;
     subtitle: string;
     description: string;
     features: string[];
-    category: string;
+    category: string; // Added category prop
     ctaText?: string;
 }
-
-// Memoized project card component
-const ProjectCard = memo(({ 
-    item, 
-    onNavigate,
-    categoryTitle 
-}: { 
-    item: { id: number | string; title: string; images: string[]; categorySlug: string };
-    onNavigate: (id: number | string) => void;
-    categoryTitle: string;
-}) => (
-    <Card
-        className="bg-white/5 border-white/10 overflow-hidden hover:shadow-xl hover:shadow-indigo-900/20 transition-all duration-300 group cursor-pointer"
-        onClick={() => onNavigate(item.id)}
-    >
-        <div className="h-64 overflow-hidden relative">
-            <OptimizedImage
-                src={item.images[0]}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                containerClassName="w-full h-full"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
-                <div>
-                    <span className="text-indigo-400 text-sm font-medium mb-1 block">
-                        {categoryTitle}
-                    </span>
-                    <h3 className="text-white text-xl font-bold">{item.title}</h3>
-                </div>
-            </div>
-        </div>
-    </Card>
-));
-
-ProjectCard.displayName = 'ProjectCard';
 
 const ServicePageTemplate: React.FC<ServicePageProps> = ({
     title,
@@ -68,10 +32,6 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
 
     // Filter projects by category
     const categoryProjects = projectsData.filter(p => p.category === category);
-
-    const handleNavigate = (id: string) => {
-        navigate(`/projeto/${id}`);
-    };
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
@@ -120,17 +80,34 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                     </div>
                 </section>
 
+
+
                 {/* Gallery Section */}
                 <section className="container mx-auto px-4 mb-8 md:mb-20">
                     <h2 className="text-3xl font-bold mb-8 md:mb-10 text-white text-center">{t('services.gallery')}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {categoryProjects.map((item) => (
-                            <ProjectCard
+                            <Card
                                 key={item.id}
-                                item={item}
-                                onNavigate={handleNavigate}
-                                categoryTitle={t(`services.items.${item.categorySlug}.title`)}
-                            />
+                                className="bg-white/5 border-white/10 overflow-hidden hover:shadow-xl hover:shadow-indigo-900/20 transition-all duration-300 group cursor-pointer"
+                                onClick={() => navigate(`/projeto/${item.id}`)}
+                            >
+                                <div className="h-64 overflow-hidden relative">
+                                    <img
+                                        src={item.images[0]} // Use first image as thumbnail
+                                        alt={item.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
+                                        <div>
+                                            <span className="text-indigo-400 text-sm font-medium mb-1 block">
+                                                {t(`services.items.${item.categorySlug}.title`)}
+                                            </span>
+                                            <h3 className="text-white text-xl font-bold">{item.title}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Card>
                         ))}
                         {categoryProjects.length === 0 && (
                             <div className="col-span-full text-center text-white/50 py-12">
