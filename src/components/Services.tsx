@@ -1,13 +1,52 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Sparkles, ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
+import OptimizedImage from './OptimizedImage';
 
 // Import images
 import fachadasImg from '@/content/projects/fachadas/Scene 0.png';
 import cenografiaImg from '@/content/projects/cenografia/1.jpeg';
 import ambientesImg from '@/content/projects/ambientes/danieljardim.3d_1727818425_3469514874563525172_58748782469.jpg';
 import personalizadosImg from '@/content/projects/personalizados/danieljardim.3d_1692115206_3170014560966158750_58748782469.jpg';
+
+// Memoized service card component
+const ServiceCard = memo(({ 
+  service, 
+  index, 
+  onNavigate,
+  viewProjectsText 
+}: { 
+  service: { title: string; description: string; image: string; slug: string };
+  index: number;
+  onNavigate: (slug: string) => void;
+  viewProjectsText: string;
+}) => (
+  <div
+    onClick={() => onNavigate(service.slug)}
+    className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 h-full cursor-pointer hover:shadow-xl hover:shadow-indigo-900/20"
+  >
+    <div className="h-48 overflow-hidden relative">
+      <OptimizedImage
+        src={service.image}
+        alt={service.title}
+        priority={index < 2} // Load first 2 images immediately
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        containerClassName="w-full h-full"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+    </div>
+    <div className="p-6 relative">
+      <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-indigo-300 transition-colors">{service.title}</h3>
+      <p className="text-white/70 text-sm mb-4">{service.description}</p>
+      <div className="flex items-center text-indigo-400 text-sm font-medium">
+        {viewProjectsText} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+      </div>
+    </div>
+  </div>
+));
+
+ServiceCard.displayName = 'ServiceCard';
 
 const Services = () => {
   const navigate = useNavigate();
@@ -40,6 +79,10 @@ const Services = () => {
     }
   ];
 
+  const handleNavigate = (slug: string) => {
+    navigate(slug);
+  };
+
   return (
     <section id="servicos" className="py-6 md:py-24 bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
       <div className="absolute top-0 left-0 w-full h-full">
@@ -58,27 +101,13 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div
+            <ServiceCard
               key={index}
-              onClick={() => navigate(service.slug)}
-              className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 h-full cursor-pointer hover:shadow-xl hover:shadow-indigo-900/20"
-            >
-              <div className="h-48 overflow-hidden relative">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
-              </div>
-              <div className="p-6 relative">
-                <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-indigo-300 transition-colors">{service.title}</h3>
-                <p className="text-white/70 text-sm mb-4">{service.description}</p>
-                <div className="flex items-center text-indigo-400 text-sm font-medium">
-                  {t('services.viewProjects')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </div>
+              service={service}
+              index={index}
+              onNavigate={handleNavigate}
+              viewProjectsText={t('services.viewProjects')}
+            />
           ))}
         </div>
 
