@@ -5,6 +5,8 @@ import Footer from './Footer';
 import FloatingButton from './FloatingButton';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import ShimmerButton from "@/components/ui/shimmer-button";
+import { MagicCard } from "@/components/ui/magic-card";
 import { ArrowRight, Check } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import ProjectCTA from './ProjectCTA';
@@ -43,39 +45,44 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
             <Navbar />
 
             <main className="pt-20 pb-8 md:pt-24 md:pb-16 relative z-10">
-                {/* Hero Section */}
-                <section className="container mx-auto px-4 mb-8 md:mb-16 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
-                        {title}
-                    </h1>
-                    <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-4 md:mb-8 rounded-full"></div>
-                    <p className="text-xl text-indigo-200 font-medium mb-4">{subtitle}</p>
-                    <p className="text-lg text-white/80 max-w-3xl mx-auto mb-10">
-                        {description}
-                    </p>
+                {/* Hero Section - Two Column Layout */}
+                <section className="container mx-auto px-4 mb-8 md:mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                        {/* Left Column: Title, Subtitle, Description, CTA */}
+                        <div className="flex flex-col justify-center text-center lg:text-left">
+                            <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
+                                {title}
+                            </h1>
+                            <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto lg:mx-0 mb-4 md:mb-6 rounded-full"></div>
+                            <p className="text-xl text-indigo-200 font-medium mb-4">{subtitle}</p>
+                            <p className="text-lg text-white/80 mb-8">
+                                {description}
+                            </p>
 
-                    <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold text-lg border-none shadow-lg shadow-indigo-900/30"
-                        onClick={() => navigate('/contato')}
-                    >
-                        {ctaText} <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                </section>
+                            <ShimmerButton
+                                className="shadow-lg shadow-indigo-900/30 mx-auto lg:mx-0"
+                                background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
+                                onClick={() => navigate('/contato')}
+                            >
+                                <span className="flex items-center text-lg font-semibold text-white">
+                                    {ctaText} <ArrowRight className="ml-2 h-5 w-5" />
+                                </span>
+                            </ShimmerButton>
+                        </div>
 
-                {/* Features Section */}
-                <section className="container mx-auto px-4 mb-8 md:mb-20">
-                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-12">
-                        <h2 className="text-2xl font-bold mb-6 md:mb-8 text-white text-center">{t('services.included')}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {features.map((feature, index) => (
-                                <div key={index} className="flex items-start">
-                                    <div className="mr-4 mt-1 bg-indigo-500/20 p-1 rounded-full">
-                                        <Check className="h-5 w-5 text-indigo-400" />
+                        {/* Right Column: Features Card */}
+                        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col justify-center">
+                            <h2 className="text-2xl font-bold mb-6 text-white text-center lg:text-left">{t('services.included')}</h2>
+                            <div className="grid grid-cols-1 gap-4">
+                                {features.map((feature, index) => (
+                                    <div key={index} className="flex items-start">
+                                        <div className="mr-4 mt-1 bg-indigo-500/20 p-1 rounded-full shrink-0">
+                                            <Check className="h-5 w-5 text-indigo-400" />
+                                        </div>
+                                        <p className="text-white/90">{feature}</p>
                                     </div>
-                                    <p className="text-white/90">{feature}</p>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -87,10 +94,11 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                     <h2 className="text-3xl font-bold mb-8 md:mb-10 text-white text-center">{t('services.gallery')}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {categoryProjects.map((item) => (
-                            <Card
+                            <MagicCard
                                 key={item.id}
-                                className="bg-white/5 border-white/10 overflow-hidden hover:shadow-xl hover:shadow-indigo-900/20 transition-all duration-300 group cursor-pointer"
+                                className="bg-white/5 backdrop-blur-md border border-white/10 overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group cursor-pointer hover:-translate-y-1"
                                 onClick={() => navigate(`/projeto/${item.id}`)}
+                                gradientColor="#6366f1"
                             >
                                 <div className="h-64 overflow-hidden relative">
                                     <img
@@ -107,7 +115,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                                         </div>
                                     </div>
                                 </div>
-                            </Card>
+                            </MagicCard>
                         ))}
                         {categoryProjects.length === 0 && (
                             <div className="col-span-full text-center text-white/50 py-12">

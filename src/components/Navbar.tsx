@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -61,12 +62,15 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Button
-                        className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full px-6"
+                    <ShimmerButton
+                        background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
+                        className="rounded-full h-10 px-6"
                         onClick={handleContactClick}
                     >
-                        {t('nav.contact')}
-                    </Button>
+                        <span className="text-white font-medium text-sm">
+                            {t('nav.contact')}
+                        </span>
+                    </ShimmerButton>
                     <Button
                         variant="ghost"
                         size="icon"
@@ -112,12 +116,15 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Button
-                        className="bg-indigo-600 hover:bg-indigo-700 text-white w-full mt-2"
+                    <ShimmerButton
+                        background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
+                        className="w-full mt-2"
                         onClick={handleContactClick}
                     >
-                        {t('nav.whatsapp')}
-                    </Button>
+                        <span className="text-white font-medium">
+                            {t('nav.whatsapp')}
+                        </span>
+                    </ShimmerButton>
                 </div>
             )}
         </nav>
