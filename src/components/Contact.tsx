@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Phone, MessageSquare, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
@@ -54,42 +55,46 @@ const Contact = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-12">
           <Card className="hover:shadow-lg transition-shadow bg-[#151515] border-[#252525] text-white hover:border-white/20">
-            <CardContent className="p-3 md:p-6 flex flex-row md:flex-col items-center md:justify-center text-left md:text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center shrink-0 mr-3 md:mr-0 md:mb-4">
-                <MessageSquare className="h-5 w-5 md:h-6 md:w-6 text-white" />
+            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center shrink-0 mb-4">
+                <MessageSquare className="h-6 w-6 text-white" />
               </div>
-              <div className="flex flex-col md:items-center mr-auto md:mr-0 min-w-0">
-                <h3 className="font-semibold text-white text-sm md:text-base md:mb-2">{t('contact.whatsapp')}</h3>
-                <p className="text-white/80 text-xs md:text-base md:mb-4">(11) 94972-3280</p>
+              <div className="flex flex-col items-center mb-4">
+                <h3 className="font-semibold text-white text-base mb-2">{t('contact.whatsapp')}</h3>
+                <p className="text-white/80 text-base">(11) 94972-3280</p>
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                className="ml-3 md:ml-0 md:mt-auto border-white/20 text-white hover:bg-white/10 text-xs md:text-sm h-8 md:h-9 shrink-0"
+              <ShimmerButton
+                background="white"
+                shimmerColor="#4f46e5"
+                className="mt-auto shadow-md w-full md:w-auto text-sm h-9 shrink-0"
                 onClick={() => window.open('https://wa.me/5511949723280', '_blank')}
               >
-                {t('contact.chat')}
-              </Button>
+                <span className="text-indigo-900 font-bold">
+                  {t('contact.chat')}
+                </span>
+              </ShimmerButton>
             </CardContent>
           </Card>
 
           <Card className="hover:shadow-lg transition-shadow bg-[#151515] border-[#252525] text-white hover:border-white/20">
-            <CardContent className="p-3 md:p-6 flex flex-row md:flex-col items-center md:justify-center text-left md:text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center shrink-0 mr-3 md:mr-0 md:mb-4">
-                <Phone className="h-5 w-5 md:h-6 md:w-6 text-white" />
+            <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-center shrink-0 mb-4">
+                <Phone className="h-6 w-6 text-white" />
               </div>
-              <div className="flex flex-col md:items-center mr-auto md:mr-0 min-w-0">
-                <h3 className="font-semibold text-white text-sm md:text-base md:mb-2">{t('contact.instagram')}</h3>
-                <p className="text-white/80 text-xs md:text-base md:mb-4">@danieljardim.3d</p>
+              <div className="flex flex-col items-center mb-4">
+                <h3 className="font-semibold text-white text-base mb-2">{t('contact.instagram')}</h3>
+                <p className="text-white/80 text-base">@danieljardim.3d</p>
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                className="ml-3 md:ml-0 md:mt-auto border-white/20 text-white hover:bg-white/10 text-xs md:text-sm h-8 md:h-9 shrink-0"
+              <ShimmerButton
+                background="transparent"
+                shimmerColor="#ffffff"
+                className="mt-auto border border-white/20 text-white w-full md:w-auto text-sm h-9 shrink-0 shadow-none hover:bg-white/10"
                 onClick={() => window.open('https://instagram.com/danieljardim.3d', '_blank')}
               >
-                {t('contact.follow')}
-              </Button>
+                <span className="text-white font-medium">
+                  {t('contact.follow')}
+                </span>
+              </ShimmerButton>
             </CardContent>
           </Card>
 
@@ -102,14 +107,16 @@ const Contact = () => {
                 <h3 className="font-semibold text-white text-sm md:text-base md:mb-2">{t('contact.email')}</h3>
                 <p className="text-white/80 text-xs md:text-base md:mb-4 break-all">ddedesign1809@gmail.com</p>
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                className="ml-3 md:ml-0 md:mt-auto border-white/20 text-white hover:bg-white/10 text-xs md:text-sm h-8 md:h-9 shrink-0"
+              <ShimmerButton
+                background="transparent"
+                shimmerColor="#ffffff"
+                className="ml-3 md:ml-0 md:mt-auto border border-white/20 text-white text-xs md:text-sm h-8 md:h-9 shrink-0 shadow-none hover:bg-white/10"
                 onClick={() => window.location.href = 'mailto:ddedesign1809@gmail.com'}
               >
-                {t('contact.sendEmail')}
-              </Button>
+                <span className="text-white font-medium">
+                  {t('contact.sendEmail')}
+                </span>
+              </ShimmerButton>
             </CardContent>
           </Card>
         </div>
@@ -226,13 +233,16 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <Button
+                <ShimmerButton
                   onClick={handleSubmit}
-                  className="w-full mt-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white"
+                  className="w-full mt-4"
+                  background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
                 >
-                  <MessageSquare className="h-4 w-4 mr-2" />
-                  {t('contact.form.submit')}
-                </Button>
+                  <span className="flex items-center gap-2 font-medium text-white">
+                    <MessageSquare className="h-4 w-4" />
+                    {t('contact.form.submit')}
+                  </span>
+                </ShimmerButton>
               </div>
             </div>
           </div>

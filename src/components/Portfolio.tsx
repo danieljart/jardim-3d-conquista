@@ -3,6 +3,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
+import { MagicCard } from "@/components/ui/magic-card";
 import { GalleryHorizontal } from "lucide-react";
 
 const Portfolio = () => {
@@ -65,88 +67,94 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolioItems.map((item) => (
-            <div key={item.id} className="bg-[#151515] border border-[#252525] rounded-lg overflow-hidden hover:shadow-lg hover:shadow-indigo-500/10 transition-transform duration-300 hover:-translate-y-1 group">
-              <div className="h-64 overflow-hidden">
+            <MagicCard
+              key={item.id}
+              className="bg-white/5 backdrop-blur-md border border-white/10 overflow-hidden cursor-pointer group hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+              gradientColor="#6366f1"
+              onClick={() => { }}
+            >
+              <div className="h-64 overflow-hidden relative">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 relative z-10">
                 <div className="text-sm text-indigo-400 font-medium mb-1">{item.category}</div>
                 <h3 className="font-semibold text-lg mb-2 text-white">{item.title}</h3>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-500">@danieljardim.3d</span>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-indigo-400 hover:text-indigo-300 hover:bg-indigo-900/20"
-                  >
+                  <div className="flex items-center text-indigo-400 text-sm font-medium">
                     <GalleryHorizontal className="h-4 w-4 mr-1" /> Ver o sucesso
-                  </Button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </MagicCard>
           ))}
         </div>
 
         <div className="mt-8 md:mt-12 text-center">
           <p className="mb-4 text-white/80">{t('portfolio.instagram')}</p>
-          <Button
+          <ShimmerButton
             onClick={() => window.open('https://instagram.com/danieljardim.3d', '_blank')}
-            variant="outline"
-            className="border-indigo-500/30 text-indigo-400 hover:bg-indigo-900/20 hover:text-indigo-300"
+            className="mx-auto"
+            background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
           >
-            @danieljardim.3d
-          </Button>
+            <span className="text-white font-medium">@danieljardim.3d</span>
+          </ShimmerButton>
         </div>
 
         <div className="mt-12 md:mt-16 bg-[#151515] p-8 rounded-lg border border-[#252525]">
           <h3 className="text-3xl font-bold mb-8 text-center text-white">{t('portfolio.transformation.title')}</h3>
           <p className="text-center text-white/80 mb-8">{t('portfolio.transformation.desc')}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
-                <img
-                  src="/placeholder.svg"
-                  alt="Antes"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                />
-              </div>
-              <div className="text-center">
-                <span className="font-medium text-white">{t('portfolio.transformation.before')}</span>
-              </div>
+            <div className="h-full">
+              <MagicCard className="p-0 bg-white/5 backdrop-blur-md border border-white/10 h-full hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1" gradientColor="#6366f1">
+                <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Antes"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  />
+                </div>
+                <div className="text-center">
+                  <span className="font-medium text-white">{t('portfolio.transformation.before')}</span>
+                </div>
+              </MagicCard>
             </div>
 
-            <div>
-              <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
-                <img
-                  src="/placeholder.svg"
-                  alt="Render do Projeto"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                />
-              </div>
-              <div className="text-center">
-                <span className="font-medium text-white">{t('portfolio.transformation.render')}</span>
-                <p className="text-sm text-indigo-400 mt-1">{t('portfolio.transformation.renderDesc')}</p>
-              </div>
+            <div className="h-full">
+              <MagicCard className="p-0 bg-white/5 backdrop-blur-md border border-white/10 h-full hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1" gradientColor="#6366f1">
+                <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Render do Projeto"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  />
+                </div>
+                <div className="text-center">
+                  <span className="font-medium text-white">{t('portfolio.transformation.render')}</span>
+                  <p className="text-sm text-indigo-400 mt-1">{t('portfolio.transformation.renderDesc')}</p>
+                </div>
+              </MagicCard>
             </div>
 
-            <div>
-              <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
-                <img
-                  src="/placeholder.svg"
-                  alt="Depois"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                />
-              </div>
-              <div className="text-center">
-                <span className="font-medium text-white">{t('portfolio.transformation.after')}</span>
-                <p className="text-sm text-indigo-400 mt-1">{t('portfolio.transformation.afterDesc')}</p>
-              </div>
-            </div>
           </div>
+
+          <MagicCard className="p-0 bg-white/5 backdrop-blur-md border border-white/10 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1" gradientColor="#6366f1">
+            <div className="bg-[#181818] h-64 rounded-lg mb-4 overflow-hidden group">
+              <img
+                src="/placeholder.svg"
+                alt="Depois"
+                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="text-center">
+              <span className="font-medium text-white">{t('portfolio.transformation.after')}</span>
+              <p className="text-sm text-indigo-400 mt-1">{t('portfolio.transformation.afterDesc')}</p>
+            </div>
+          </MagicCard>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Play } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import ShimmerButton from '@/components/ui/shimmer-button';
 import { useNavigate } from 'react-router-dom';
 import videoSrc from '@/content/projects/ambientes/03/danieljardim.3d_1680981222_3076612849003130764_58748782469.mp4';
 
@@ -68,12 +69,15 @@ const VideoSection = () => {
           <p className="mb-8 text-xl text-white/80">
             {t('home.videoSection.footerText')}
           </p>
-          <Button
+          <ShimmerButton
             onClick={() => navigate('/contato')}
-            className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
+            className="mx-auto"
+            background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
           >
-            {t('home.videoSection.cta')}
-          </Button>
+            <span className="text-white font-medium px-4">
+              {t('home.videoSection.cta')}
+            </span>
+          </ShimmerButton>
         </div>
       </div>
     </section>

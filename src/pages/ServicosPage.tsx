@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 import { Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
 import ProjectCTA from '@/components/ProjectCTA';
+import { MagicCard } from "@/components/ui/magic-card";
 
 // Import images
 import fachadasImg from '@/content/projects/fachadas/Scene 0.png';
@@ -15,6 +16,7 @@ import personalizadosImg from '@/content/projects/personalizados/danieljardim.3d
 
 const ServicosPage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -80,10 +82,11 @@ const ServicosPage = () => {
             {services.map((service) => {
               const IconComponent = service.icon;
               return (
-                <Link
+                <MagicCard
                   key={service.id}
-                  to={service.slug}
-                  className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                  onClick={() => navigate(service.slug)}
+                  className="cursor-pointer group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                  gradientColor="#6366f1"
                 >
                   <div className="h-48 overflow-hidden bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
                     <img
@@ -108,7 +111,7 @@ const ServicosPage = () => {
                       {t('servicesPage.viewMore')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
-                </Link>
+                </MagicCard>
               );
             })}
           </div>
