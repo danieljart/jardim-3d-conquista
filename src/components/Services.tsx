@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Sparkles, ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
+import { MagicCard } from "@/components/ui/magic-card";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 // Import images
 import fachadasImg from '@/content/projects/fachadas/Scene 0.png';
@@ -58,10 +60,11 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div
+            <MagicCard
               key={index}
               onClick={() => navigate(service.slug)}
-              className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 h-full cursor-pointer hover:shadow-xl hover:shadow-indigo-900/20"
+              className="cursor-pointer h-full group bg-white/5 backdrop-blur-md"
+              gradientColor="#6366f1"
             >
               <div className="h-48 overflow-hidden relative">
                 <img
@@ -78,18 +81,21 @@ const Services = () => {
                   {t('services.viewProjects')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
-            </div>
+            </MagicCard>
           ))}
         </div>
 
         <div className="mt-8 md:mt-20 text-center">
-          <button
+          <ShimmerButton
             onClick={() => navigate('/contato')}
-            className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 mx-auto shadow-lg shadow-indigo-900/30"
+            className="mx-auto"
+            background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
           >
-            <Sparkles className="h-5 w-5" />
-            {t('services.requestQuote')}
-          </button>
+            <span className="flex items-center gap-2 font-medium">
+              <Sparkles className="h-5 w-5" />
+              {t('services.requestQuote')}
+            </span>
+          </ShimmerButton>
         </div>
       </div>
     </section>

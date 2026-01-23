@@ -6,20 +6,24 @@ import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 import ProjectCTA from '@/components/ProjectCTA';
 import { projectsData } from '@/data/projectsData';
-import useEmblaCarousel from 'embla-carousel-react';
-import AutoHeight from 'embla-carousel-auto-height';
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
+import ThumbnailCarousel from "@/components/ui/thumbnail-carousel";
+import { MagicCard } from "@/components/ui/magic-card";
 
 const ProjectDetailsPage = () => {
     const { t, i18n } = useTranslation();
     const { id } = useParams();
     const navigate = useNavigate();
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [AutoHeight()]);
-    const [selectedIndex, setSelectedIndex] = React.useState(0);
-    const [orientations, setOrientations] = React.useState<Record<number, 'horizontal' | 'vertical'>>({});
 
     const project = projectsData.find(p => p.id === Number(id));
+
+    // Related projects logic: Get 4 projects excluding current, preferably same category?
+    // For now simple exclusion and slice to keep it robust.
+    const relatedProjects = projectsData
+        .filter(p => p.id !== Number(id))
+        .sort(() => 0.5 - Math.random()) // Shuffle
+        .slice(0, 4);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -36,44 +40,6 @@ const ProjectDetailsPage = () => {
         );
     }
 
-    const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
-    const scrollNext = () => emblaApi && emblaApi.scrollNext();
-
-    const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-        containScroll: 'keepSnaps',
-        dragFree: true
-    });
-
-    const onThumbClick = React.useCallback(
-        (index: number) => {
-            if (!emblaApi || !emblaThumbsApi) return;
-            emblaApi.scrollTo(index);
-        },
-        [emblaApi, emblaThumbsApi]
-    );
-
-    const onSelect = React.useCallback((api: any) => {
-        setSelectedIndex(api.selectedScrollSnap());
-        if (emblaThumbsApi) emblaThumbsApi.scrollTo(api.selectedScrollSnap());
-    }, [emblaThumbsApi]);
-
-    useEffect(() => {
-        if (!emblaApi) return;
-        emblaApi.on('select', onSelect);
-        onSelect(emblaApi);
-    }, [emblaApi, onSelect]);
-
-    const handleImageLoad = (index: number, event: React.SyntheticEvent<HTMLImageElement>) => {
-        const { naturalWidth, naturalHeight } = event.currentTarget;
-        console.log(`Image ${index} loaded: ${naturalWidth}x${naturalHeight} (${naturalHeight > naturalWidth ? 'vertical' : 'horizontal'})`);
-        setOrientations(prev => ({
-            ...prev,
-            [index]: naturalHeight > naturalWidth ? 'vertical' : 'horizontal'
-        }));
-    };
-
-    const isVertical = orientations[selectedIndex] === 'vertical';
-
     return (
         <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-950 relative">
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -84,104 +50,163 @@ const ProjectDetailsPage = () => {
             <Navbar />
 
             <main className="pt-20 pb-8 md:pt-24 md:pb-16 relative z-10">
-                <div className="container mx-auto px-4 flex flex-col gap-2">
-                    <div className="flex justify-start">
-                        <Button
-                            onClick={() => navigate(-1)}
-                            variant="ghost"
-                            className="text-white/70 hover:text-white pl-0 hover:bg-transparent"
-                        >
-                            <ArrowLeft className="mr-2 h-4 w-4" /> {t('project.back')}
-                        </Button>
-                    </div>
+                <div className="container mx-auto px-4 max-w-[1600px]"> {/* Increased max-width for YouTube-like feel */}
 
-                    <div className={`grid grid-cols-1 ${isVertical ? 'lg:grid-cols-2' : 'lg:grid-cols-1'} gap-2 transition-all duration-500 ease-in-out`}>
-                        {/* Image Section */}
-                        <div className="flex flex-col gap-2">
-                            {/* Main Slider */}
-                            <div className="relative group overflow-hidden rounded-2xl flex items-center justify-center h-auto">
-                                <div className="w-full h-full" ref={emblaRef}>
-                                    <div className="flex h-full">
-                                        {project.images.map((img, index) => (
-                                            <div key={index} className="flex-[0_0_100%] min-w-0 relative h-full flex items-center justify-center">
-                                                <img
-                                                    src={img}
-                                                    alt={`${project.title} - Imagem ${index + 1}`}
-                                                    className="w-full h-auto object-contain rounded-2xl"
-                                                    onLoad={(e) => handleImageLoad(index, e)}
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
+
+
+                    <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
+
+                        {/* LEFT COLUMN: Gallery */}
+                        <div className="flex flex-col gap-4">
+                            {/* Title specific for Mobile/Top if desired? No, usually in Desc. 
+                                 YouTube puts Title BELOW video. 
+                                 But we have description card. Let's keep title in description card.
+                             */}
+                            <ThumbnailCarousel images={project.images} />
+                        </div>
+
+                        {/* RIGHT COLUMN: Description & Related */}
+                        <div className="flex flex-col gap-6">
+
+                            {/* Project Description Card */}
+                            <MagicCard
+                                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 flex flex-col hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                                gradientColor="#6366f1"
+                            >
+                                <div className="mb-4">
+                                    <span className="inline-block px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-medium mb-3 border border-indigo-500/30">
+                                        {t(`services.items.${project.categorySlug}.title`)}
+                                    </span>
+                                    <h1 className="text-2xl font-bold text-white mb-2 leading-tight">
+                                        {i18n.language === 'en' && project.title_en ? project.title_en : project.title}
+                                    </h1>
+                                    <div className="w-16 h-1 bg-gradient-to-r from-indigo-400 to-violet-400 rounded-full mb-4"></div>
                                 </div>
 
-                                <button
-                                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-white/10 z-10"
-                                    onClick={scrollPrev}
-                                >
-                                    <ChevronLeft className="h-6 w-6" />
-                                </button>
-                                <button
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-white/10 z-10"
-                                    onClick={scrollNext}
-                                >
-                                    <ChevronRight className="h-6 w-6" />
-                                </button>
-                            </div>
+                                <div>
+                                    <h2 className="text-sm font-bold text-white mb-2 uppercase tracking-wider opacity-80">{t('project.about')}</h2>
+                                    <p className="text-white/80 text-base leading-relaxed whitespace-pre-line">
+                                        {i18n.language === 'en' && project.description_en ? project.description_en : project.description}
+                                    </p>
+                                </div>
+                            </MagicCard>
 
-                            {/* Thumbnails */}
-                            <div className="overflow-hidden" ref={emblaThumbsRef}>
-                                <div className="flex gap-2">
-                                    {project.images.map((img, index) => (
-                                        <button
-                                            key={index}
-                                            onClick={() => onThumbClick(index)}
-                                            className={`relative flex-[0_0_15%] min-w-0 aspect-video rounded-lg overflow-hidden border-2 transition-all ${index === selectedIndex
-                                                ? 'border-indigo-500 opacity-100'
-                                                : 'border-transparent opacity-50 hover:opacity-80'
-                                                }`}
+                            {/* Recommended Projects */}
+                            <div className="flex flex-col gap-4">
+                                <h3 className="text-white text-lg font-bold pl-1">Outros Projetos</h3>
+                                <div className="grid grid-cols-3 gap-2">
+                                    {relatedProjects.slice(0, 3).map((p) => (
+                                        <div
+                                            key={p.id}
+                                            className="group relative aspect-[9/14] rounded-xl overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all cursor-pointer border border-white/10 hover:scale-[1.02] duration-300"
+                                            onClick={() => navigate(`/projeto/${p.id}`)}
                                         >
                                             <img
-                                                src={img}
-                                                alt={`Thumbnail ${index + 1}`}
-                                                className="w-full h-full object-cover"
+                                                src={p.images[0]}
+                                                alt={p.title}
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                             />
-                                        </button>
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-2">
+                                                <h4 className="text-white text-[10px] font-bold leading-tight group-hover:text-indigo-300 transition-colors line-clamp-2">
+                                                    {i18n.language === 'en' && p.title_en ? p.title_en : p.title}
+                                                </h4>
+                                            </div>
+                                        </div>
                                     ))}
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Description */}
-                        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-12 flex flex-col overflow-hidden h-auto">
-                            <div className="mb-6">
-                                <span className="inline-block px-4 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-medium mb-4 border border-indigo-500/30">
-                                    {t(`services.items.${project.categorySlug}.title`)}
-                                </span>
-                                <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                                    {i18n.language === 'en' && project.title_en ? project.title_en : project.title}
-                                </h1>
-                                <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 rounded-full"></div>
-                            </div>
-
-                            <div className="pr-4">
-                                <h2 className="text-xl font-bold text-white mb-4">{t('project.about')}</h2>
-                                <p className="text-white/80 text-lg leading-relaxed whitespace-pre-line">
-                                    {i18n.language === 'en' && project.description_en ? project.description_en : project.description}
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+
+                {/* Category Navigation Section */}
+                <section className="container mx-auto px-4 mt-16 md:mt-24 mb-8">
+                    {(() => {
+                        // Get representative image for each category from projectsData
+                        const getCategoryImage = (slug: string) => {
+                            const proj = projectsData.find(p => p.categorySlug === slug);
+                            return proj?.images[0] || '';
+                        };
+
+                        const serviceCategories = [
+                            { slug: 'fachadas', title: t('services.items.fachadas.title'), description: t('services.items.fachadas.overviewDesc'), path: '/servicos/fachadas', image: getCategoryImage('fachadas') },
+                            { slug: 'cenografia', title: t('services.items.cenografia.overviewTitle'), description: t('services.items.cenografia.overviewDesc'), path: '/servicos/cenografia', image: getCategoryImage('cenografia') },
+                            { slug: 'ambientes', title: t('services.items.ambientes.overviewTitle'), description: t('services.items.ambientes.overviewDesc'), path: '/servicos/ambientes', image: getCategoryImage('ambientes') },
+                            { slug: 'personalizados', title: t('services.items.personalizados.title'), description: t('services.items.personalizados.overviewDesc'), path: '/servicos/personalizados', image: getCategoryImage('personalizados') }
+                        ];
+                        const currentCategory = serviceCategories.find(c => c.slug === project?.categorySlug);
+                        const otherCategories = serviceCategories.filter(c => c.slug !== project?.categorySlug).slice(0, 3);
+
+                        return (
+                            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                                {/* Current Category Card */}
+                                {currentCategory && (
+                                    <div className="flex flex-col">
+                                        <p className="text-white/60 text-sm mb-2 font-medium">Você está aqui:</p>
+                                        <MagicCard
+                                            onClick={() => navigate(currentCategory.path)}
+                                            className="cursor-pointer h-full group bg-white/5 backdrop-blur-md border-2 border-indigo-500/50 overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                                            gradientColor="#6366f1"
+                                        >
+                                            <div className="h-24 overflow-hidden relative">
+                                                <img
+                                                    src={currentCategory.image}
+                                                    alt={currentCategory.title}
+                                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                />
+                                            </div>
+                                            <div className="p-3">
+                                                <h3 className="text-white text-sm font-bold leading-tight mb-1">{currentCategory.title}</h3>
+                                                <p className="text-white/60 text-xs line-clamp-2 mb-2">{currentCategory.description}</p>
+                                                <div className="flex items-center text-indigo-400 text-xs font-medium">
+                                                    {t('services.learnMore')} <ArrowRight className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                                                </div>
+                                            </div>
+                                        </MagicCard>
+                                    </div>
+                                )}
+
+                                {/* Other Categories */}
+                                {otherCategories.map((cat, idx) => (
+                                    <div key={cat.slug} className="flex flex-col">
+                                        {idx === 0 && <p className="text-white/60 text-sm mb-2 font-medium">Conheça também:</p>}
+                                        {idx !== 0 && <p className="text-white/60 text-sm mb-2 font-medium opacity-0">.</p>}
+                                        <MagicCard
+                                            onClick={() => navigate(cat.path)}
+                                            className="cursor-pointer h-full group bg-white/5 backdrop-blur-md border border-white/10 overflow-hidden hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                                            gradientColor="#6366f1"
+                                        >
+                                            <div className="h-24 overflow-hidden relative">
+                                                <img
+                                                    src={cat.image}
+                                                    alt={cat.title}
+                                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                />
+                                            </div>
+                                            <div className="p-3">
+                                                <h3 className="text-white text-sm font-bold leading-tight mb-1">{cat.title}</h3>
+                                                <p className="text-white/60 text-xs line-clamp-2 mb-2">{cat.description}</p>
+                                                <div className="flex items-center text-indigo-400 text-xs font-medium">
+                                                    {t('services.learnMore')} <ArrowRight className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                                                </div>
+                                            </div>
+                                        </MagicCard>
+                                    </div>
+                                ))}
+                            </div>
+                        );
+                    })()}
+                </section>
 
                 <div className="mt-8 md:mt-16">
                     <ProjectCTA />
                 </div>
-            </main>
+            </main >
 
             <Footer />
             <FloatingButton />
-        </div>
+        </div >
     );
 };
 

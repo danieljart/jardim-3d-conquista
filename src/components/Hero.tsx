@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
+import { MagicCard } from "@/components/ui/magic-card";
+import { TextReveal } from "@/components/ui/text-reveal";
+import { FadeText } from "@/components/ui/fade-text";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../content/projects/fachadas/Scene 0.png';
@@ -72,31 +76,44 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10 py-12 md:py-20">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 parallax parallax-slow">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in mb-1">
-              <Trans i18nKey="hero.title">
-                Crio projetos <span className="gradient-text">3D</span> que
-                <span className="gradient-text"> conquistam</span>
-              </Trans>
-            </h1>
-            <p className="mt-2 text-xl md:text-2xl text-white/90 max-w-lg mx-auto md:mx-0">
-              <Trans i18nKey="hero.subtitle">
-                Não deixe seu negócio passar despercebido. Com meus designs exclusivos, sua empresa não apenas se destaca: ela <span className="font-bold">impacta</span>!
-              </Trans>
-            </p>
-            <div className="mt-4 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold text-lg border-none shadow-lg shadow-violet-900/30"
-                onClick={() => navigate('/contato')}
-              >
-                {t('hero.cta')} <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+          <div className="md:w-1/2 text-center parallax parallax-slow z-30">
+            <div className="flex flex-col items-center">
+              <TextReveal
+                text="Crio projetos 3D que conquistam"
+                className="mb-4 text-center justify-center"
+                delay={0.2}
+              />
+              <FadeText
+                className="mt-4 text-xl md:text-2xl text-white/90 max-w-lg mx-auto text-center"
+                direction="up"
+                delay={1.2} // Delay to wait for title
+                text={
+                  <Trans i18nKey="hero.subtitle">
+                    Não deixe seu negócio passar despercebido. Com meus designs exclusivos, sua empresa não apenas se destaca: ela <span className="font-bold">impacta</span>!
+                  </Trans>
+                }
+              />
+              <div className="mt-8 flex justify-center w-full">
+                <FadeText
+                  delay={1.5}
+                  text={
+                    <ShimmerButton
+                      className="shadow-2xl"
+                      background="linear-gradient(90deg, #7c3aed 0%, #4f46e5 100%)"
+                      onClick={() => navigate('/contato')}
+                    >
+                      <span className="flex items-center text-lg font-semibold">
+                        {t('hero.cta')} <ArrowRight className="ml-2 h-5 w-5" />
+                      </span>
+                    </ShimmerButton>
+                  }
+                />
+              </div>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end parallax parallax-medium">
             <div className="relative w-full max-w-md group">
-              <div className="w-full h-[450px] glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500">
+              <MagicCard className="w-full h-[450px] glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500 bg-white/5" gradientColor="#6366f1">
                 <img
                   key={currentImageIndex}
                   src={slideshowImages[currentImageIndex]}
@@ -110,14 +127,14 @@ const Hero = () => {
                     </Trans>
                   </p>
                 </div>
-              </div>
+              </MagicCard>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

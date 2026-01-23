@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProjectCTA from '@/components/ProjectCTA';
 import FloatingButton from '@/components/FloatingButton';
+import ShimmerButton from '@/components/ui/shimmer-button';
+import { MagicCard } from '@/components/ui/magic-card';
 import { Award, Users, Clock, Target } from 'lucide-react';
 import profileImage from '@/assets/daniel-profile.jpg';
 
@@ -57,22 +59,25 @@ const SobrePage = () => {
               <p className="text-white/70 mb-6">
                 {t('about.page.hero.desc')}
               </p>
-              <button
+              <ShimmerButton
                 onClick={handleContactClick}
-                className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium shadow-lg"
+                background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
+                className="shadow-lg"
               >
-                {t('about.page.hero.cta')}
-              </button>
+                <span className="text-white font-medium">
+                  {t('about.page.hero.cta')}
+                </span>
+              </ShimmerButton>
             </div>
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md group">
-                <div className="w-full h-auto glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500">
+                <MagicCard className="w-full h-auto glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500 bg-white/5" gradientColor="#6366f1">
                   <img
                     src={profileImage}
                     alt="Daniel Jardim"
                     className="w-full h-auto object-cover rounded group-hover:scale-105 transition-all duration-700 animate-fade-in"
                   />
-                </div>
+                </MagicCard>
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse delay-1000"></div>
               </div>
@@ -86,16 +91,17 @@ const SobrePage = () => {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <div
+                <MagicCard
                   key={index}
-                  className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300"
+                  className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 text-center hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1"
+                  gradientColor="#6366f1"
                 >
                   <div className="bg-gradient-to-br from-indigo-600 to-violet-600 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-indigo-900/30">
                     <IconComponent className="h-7 w-7 text-white" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
                   <div className="text-white/60 text-sm">{stat.label}</div>
-                </div>
+                </MagicCard>
               );
             })}
           </div>
@@ -178,24 +184,24 @@ const SobrePage = () => {
             {t('about.page.why.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+            <MagicCard className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1" gradientColor="#6366f1">
               <h3 className="text-xl font-bold mb-3 text-white">{t('about.page.why.results.title')}</h3>
               <p className="text-white/70">
                 {t('about.page.why.results.desc')}
               </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+            </MagicCard>
+            <MagicCard className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1" gradientColor="#6366f1">
               <h3 className="text-xl font-bold mb-3 text-white">{t('about.page.why.communication.title')}</h3>
               <p className="text-white/70">
                 {t('about.page.why.communication.desc')}
               </p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+            </MagicCard>
+            <MagicCard className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1" gradientColor="#6366f1">
               <h3 className="text-xl font-bold mb-3 text-white">{t('about.page.why.experience.title')}</h3>
               <p className="text-white/70">
                 {t('about.page.why.experience.desc')}
               </p>
-            </div>
+            </MagicCard>
           </div>
         </section>
 

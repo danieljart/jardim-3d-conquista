@@ -1,10 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
+import ShimmerButton from "@/components/ui/shimmer-button";
+import { MagicCard } from "@/components/ui/magic-card";
 
 const ServicesOverview = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -54,34 +57,48 @@ const ServicesOverview = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Link
+              <MagicCard
                 key={index}
-                to={service.slug}
-                className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                onClick={() => navigate(service.slug)}
+                className="cursor-pointer h-full group bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                gradientColor="#6366f1"
               >
-                <div className="bg-gradient-to-br from-indigo-600 to-violet-600 w-16 h-16 rounded-full flex items-center justify-center mb-5 shadow-lg shadow-indigo-900/30">
-                  <IconComponent className="h-8 w-8 text-white" />
+                <div className="flex flex-col h-full">
+                  <div className="flex flex-col flex-grow items-center">
+                    <div className="flex flex-row items-center justify-center gap-4 mb-4 w-full">
+                      <div className="bg-gradient-to-br from-indigo-600 to-violet-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-indigo-900/30 flex-shrink-0">
+                        <IconComponent className="h-8 w-8 text-white" />
+                      </div>
+                      <div className="flex flex-col">
+                        <h3 className="text-xl font-semibold mb-1 text-white group-hover:text-indigo-400 transition-colors text-left leading-tight">
+                          {service.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="text-white/70 text-sm text-center">
+                      {service.description}
+                    </div>
+                  </div>
+                  <div className="mt-auto w-full flex justify-center text-indigo-400 text-sm font-medium pt-4">
+                    {t('services.learnMore')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-indigo-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-white/70 mb-4 text-sm">{service.description}</p>
-                <div className="flex items-center text-indigo-400 text-sm font-medium">
-                  {t('services.learnMore')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
+              </MagicCard>
             );
           })}
         </div>
 
         <div className="mt-8 md:mt-12 text-center">
-          <Link
-            to="/servicos"
-            className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-all duration-300 font-medium shadow-lg shadow-indigo-900/30"
+          <ShimmerButton
+            onClick={() => window.location.href = '/servicos'}
+            className="mx-auto"
+            background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
           >
-            {t('services.viewAll')}
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
+            <span className="flex items-center gap-2 font-medium">
+              {t('services.viewAll')}
+              <ArrowRight className="h-5 w-5" />
+            </span>
+          </ShimmerButton>
         </div>
       </div>
     </section>

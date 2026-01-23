@@ -2,6 +2,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Sparkles } from "lucide-react";
+import { MagicCard } from "@/components/ui/magic-card";
 
 const Testimonials = () => {
   const { t } = useTranslation();
@@ -47,9 +48,10 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div
+            <MagicCard
               key={testimonial.id}
-              className="glass-card rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-indigo-500/10 group"
+              className="glass-card rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-indigo-500/10 group bg-transparent"
+              gradientColor="#6366f1"
             >
               <div className="h-64 overflow-hidden">
                 <img
@@ -70,7 +72,7 @@ const Testimonials = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </MagicCard>
           ))}
         </div>
 

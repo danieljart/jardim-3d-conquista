@@ -2,6 +2,7 @@ import React from 'react';
 import { Play } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import ShimmerButton from '@/components/ui/shimmer-button';
 import { useNavigate } from 'react-router-dom';
 import videoSrc from '@/content/projects/ambientes/03/danieljardim.3d_1680981222_3076612849003130764_58748782469.mp4';
 
@@ -27,7 +28,7 @@ const VideoSection = () => {
 
         <div className="flex flex-col md:flex-row gap-8 items-stretch">
           <div className="group flex-1 flex flex-col">
-            <div className="w-full flex-1 bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 aspect-video md:aspect-auto md:h-auto md:min-h-[400px]">
+            <div className="w-full flex-1 bg-[#151515] rounded-xl overflow-hidden mb-2 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 aspect-video md:aspect-auto md:h-auto md:min-h-[400px]">
               <iframe
                 src="https://kuula.co/share/collection/7Fwmv?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
                 className="w-full h-full"
@@ -37,16 +38,13 @@ const VideoSection = () => {
                 title="Tour virtual - Loja conceito"
               ></iframe>
             </div>
-            <div className="h-auto md:h-32 flex flex-col justify-start">
-              <h3 className="text-xl font-semibold mb-2 text-white">{t('home.videoSection.tourTitle')}</h3>
-              <p className="text-white/70">
-                {t('home.videoSection.tourDesc')}
-              </p>
+            <div className="h-auto md:h-16 flex flex-col justify-center items-center">
+              <h3 className="text-xl font-semibold mb-2 text-white text-center">{t('home.videoSection.tourTitle')}</h3>
             </div>
           </div>
 
           <div className="group md:w-auto flex flex-col flex-shrink-0 items-center text-center md:items-end md:text-right">
-            <div className="max-w-xs mx-auto md:ml-auto aspect-[9/16] bg-[#151515] rounded-xl overflow-hidden mb-4 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 w-full md:w-80">
+            <div className="max-w-xs mx-auto md:ml-auto aspect-[9/16] bg-[#151515] rounded-xl overflow-hidden mb-2 border border-[#252525] group-hover:border-indigo-500/30 transition-all duration-300 w-full md:w-80">
               <video
                 src={videoSrc}
                 className="w-full h-full object-cover"
@@ -55,25 +53,25 @@ const VideoSection = () => {
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
-            <div className="h-auto md:h-32 flex flex-col justify-start items-center md:items-end">
-              <h3 className="text-xl font-semibold mb-2 text-white">{t('home.videoSection.presentationTitle')}</h3>
-              <p className="text-white/70 max-w-xs">
-                {t('home.videoSection.presentationDesc')}
-              </p>
+            <div className="h-auto md:h-16 flex flex-col justify-center items-center w-full">
+              <h3 className="text-xl font-semibold mb-2 text-white text-center">{t('home.videoSection.presentationTitle')}</h3>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 md:mt-16 text-center">
+        <div className="mt-8 text-center">
           <p className="mb-8 text-xl text-white/80">
             {t('home.videoSection.footerText')}
           </p>
-          <Button
+          <ShimmerButton
             onClick={() => navigate('/contato')}
-            className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
+            className="mx-auto"
+            background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
           >
-            {t('home.videoSection.cta')}
-          </Button>
+            <span className="text-white font-medium px-4">
+              {t('home.videoSection.cta')}
+            </span>
+          </ShimmerButton>
         </div>
       </div>
     </section>
