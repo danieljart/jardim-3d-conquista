@@ -11,14 +11,14 @@ const FloatingButton = () => {
     <div className="fixed bottom-6 right-6 z-50">
       <ShimmerButton
         className="shadow-xl"
-        background="white"
-        shimmerColor="#7c3aed"
+        background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
+        shimmerColor="#FFFFFF"
         shimmerSize="0.1em"
         borderRadius="100px"
         onClick={() => window.open('https://wa.me/5511949723280', '_blank')}
         aria-label={t('contact.whatsapp')}
       >
-        <MessageSquare className="h-7 w-7 text-indigo-600" />
+        <MessageSquare className="h-7 w-7 text-white" />
       </ShimmerButton>
     </div>
   );

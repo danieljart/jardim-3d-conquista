@@ -31,16 +31,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-6 md:py-24 bg-gradient-to-r from-indigo-950 to-violet-950 text-white relative overflow-hidden">
+    <section className="py-6 md:py-14 bg-transparent text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full opacity-20">
-        <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-violet-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-highlight/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-highlight/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">{t('testimonials.title')}</h2>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-400 to-violet-400 mx-auto mb-8 rounded-full"></div>
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+          <h2 className="text-3xl md:text-5xl font-black mb-6 text-white tracking-tight leading-tight">{t('testimonials.title')}</h2>
+          <div className="w-24 h-1.5 bg-highlight mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-white/80">
             {t('testimonials.subtitle')}
           </p>
@@ -48,31 +48,32 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <MagicCard
+            <div
               key={testimonial.id}
-              className="glass-card rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-indigo-500/10 group bg-transparent"
-              gradientColor="#6366f1"
+              className="glass-card rounded-[24px] overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(158,62,213,0.15)] group bg-white/5 relative"
             >
-              <div className="h-64 overflow-hidden">
+              <div className="h-64 overflow-hidden relative">
                 <img
                   src={testimonial.avatar}
                   alt={`Projeto para ${testimonial.company}`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0714] to-transparent opacity-80"></div>
               </div>
-              <div className="p-6">
-                <div className="text-3xl text-indigo-400 mb-4">"</div>
-                <p className="text-white/80 mb-6 min-h-[100px]">
+              <div className="p-8 relative">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -mr-16 -mt-16 group-hover:bg-primary/10 transition-colors"></div>
+                <div className="text-4xl text-primary mb-6 opacity-30 font-serif italic">"</div>
+                <p className="text-white/40 mb-10 min-h-[100px] leading-relaxed font-medium italic">
                   {testimonial.quote}
                 </p>
-                <div className="mt-auto border-t border-white/10 pt-4">
-                  <h4 className="font-semibold text-white text-lg">{testimonial.name}</h4>
-                  <p className="text-white/70 text-sm flex items-center">
-                    <Sparkles className="h-3 w-3 mr-1 text-indigo-400" /> {testimonial.company}
-                  </p>
+                <div className="mt-auto pt-6 border-t border-white/5">
+                  <h4 className="font-black text-white text-base tracking-tight mb-1">{testimonial.name}</h4>
+                  <span className="flex items-center gap-4 font-black tracking-wide text-sm md:text-base">
+                    <Sparkles className="h-3 w-3 mr-2 text-primary" /> {testimonial.company}
+                  </span>
                 </div>
               </div>
-            </MagicCard>
+            </div>
           ))}
         </div>
 
@@ -82,7 +83,7 @@ const Testimonials = () => {
             {t('testimonials.commitment.quote')}
           </blockquote>
           <p className="mt-4 font-semibold flex items-center justify-center">
-            <span className="bg-gradient-to-r from-indigo-600 to-violet-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">
+            <span className="bg-highlight w-8 h-8 rounded-full flex items-center justify-center mr-2">
               <Sparkles className="h-4 w-4 text-white" />
             </span>
             {t('testimonials.commitment.signature')}

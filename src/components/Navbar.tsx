@@ -47,7 +47,7 @@ const Navbar = () => {
                     <span className="text-white">
                         Daniel Jardim
                     </span>
-                    <span className="bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">3D</span>
+                    <span className="text-highlight">3D</span>
                 </Link>
 
                 {/* Desktop Menu */}
@@ -56,14 +56,15 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-sm font-medium transition-colors hover:text-indigo-400 ${location.pathname === link.path ? "text-indigo-400" : "text-white/80"
+                            className={`text-sm font-medium transition-all hover:text-highlight ${location.pathname === link.path ? "text-highlight" : "text-white/80"
                                 }`}
                         >
                             {link.name}
                         </Link>
                     ))}
                     <ShimmerButton
-                        background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
+                        background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
+                        shimmerColor="#FFFFFF"
                         className="rounded-full h-10 px-6"
                         onClick={handleContactClick}
                     >
@@ -75,7 +76,7 @@ const Navbar = () => {
                         variant="ghost"
                         size="icon"
                         onClick={toggleLanguage}
-                        className="text-white hover:text-indigo-400 hover:bg-white/10"
+                        className="text-white hover:text-highlight hover:bg-white/10"
                     >
                         <Globe size={20} />
                         <span className="sr-only">Toggle language</span>
@@ -88,7 +89,7 @@ const Navbar = () => {
                         variant="ghost"
                         size="icon"
                         onClick={toggleLanguage}
-                        className="text-white hover:text-indigo-400 hover:bg-white/10"
+                        className="text-white hover:text-highlight hover:bg-white/10"
                     >
                         <Globe size={20} />
                         <span className="sr-only">Toggle language</span>
@@ -109,7 +110,7 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-lg font-medium py-2 border-b border-white/5 ${location.pathname === link.path ? "text-indigo-400" : "text-white/80"
+                            className={`text-lg font-medium py-2 border-b border-white/5 ${location.pathname === link.path ? "text-highlight" : "text-white/80"
                                 }`}
                             onClick={() => setIsOpen(false)}
                         >
@@ -117,7 +118,8 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <ShimmerButton
-                        background="linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%)"
+                        background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
+                        shimmerColor="#FFFFFF"
                         className="w-full mt-2"
                         onClick={handleContactClick}
                     >

@@ -50,18 +50,23 @@ export const TextReveal: FC<TextRevealProps> = ({
             style={{ overflow: "hidden", display: "flex", flexWrap: "wrap", justifyContent: "center" }}
             variants={container}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.01 }}
             className={cn("text-4xl font-bold tracking-tight text-white sm:text-6xl", className)}
         >
-            {words.map((word, index) => (
-                <motion.span variants={child} style={{ marginRight: "0.25em" }} key={index}>
-                    {word === "3D" || word === "conquistam" ? (
-                        <span className="gradient-text">{word}</span>
-                    ) : (
-                        word
-                    )}
-                </motion.span>
-            ))}
+            {words.map((word, index) => {
+                const cleanWord = word.replace(/[.,!?;:]/g, "");
+                const isHighlight = ["3D", "conquistam", "impactam", "liderar", "vende", "converte", "Destaque", "essencial", "exclusivos", "destaca"].some(h => cleanWord.toLowerCase() === h.toLowerCase());
+                return (
+                    <motion.span variants={child} style={{ marginRight: "0.25em" }} key={index}>
+                        {isHighlight ? (
+                            <span className="text-highlight">{word}</span>
+                        ) : (
+                            word
+                        )}
+                    </motion.span>
+                );
+            })}
         </motion.h1>
     );
 };

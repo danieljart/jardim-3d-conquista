@@ -10,6 +10,7 @@ export function FadeText({
     },
     text,
     delay = 0,
+    viewport = { once: true, amount: 0.01 },
 }: {
     direction?: "up" | "down" | "left" | "right";
     className?: string;
@@ -20,6 +21,7 @@ export function FadeText({
     };
     text: React.ReactNode;
     delay?: number;
+    viewport?: any;
 }) {
     const directionOffset = useMemo(() => {
         const map = { up: 10, down: -10, left: -10, right: 10 };
@@ -41,7 +43,7 @@ export function FadeText({
                 [axis]: hidden?.[axis] ?? directionOffset,
             },
             show: {
-                ...(show ?? {}),
+                ...(show ?? { opacity: 1 }),
                 opacity: show?.opacity ?? 1,
                 [axis]: show?.[axis] ?? 0,
                 transition: {
@@ -55,8 +57,8 @@ export function FadeText({
     return (
         <motion.div
             initial="hidden"
-            animate="show"
-            viewport={{ once: true }}
+            whileInView="show"
+            viewport={viewport}
             variants={FADE_ANIMATION_VARIANTS}
             className={className}
         >

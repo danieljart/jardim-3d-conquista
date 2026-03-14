@@ -154,10 +154,14 @@
                 "desc": "I work with commercial façades, event scenography, and interiors. I create visual narratives that merge refined aesthetics with commercial strategy, making the future of your business tangible today.",
                 "cta": "Let's talk"
             },
+            "category": {
+                "youAreHere": "YOU ARE HERE:",
+                "knowMore": "SEE ALSO:"
+            },
             "story": {
                 "title": "My Journey",
-                "p1": "I started in graphic design in 2018, but it was in the three-dimensional realm that I found the perfect tool to express complex ideas.",
-                "p2": "My workflow integrates tools like Blender, D5 Render, and SketchUp for advanced modeling and rendering."
+                "p1": "I began my professional path in graphic design in 2018, building a strong foundation in composition, color theory, and visual communication. However, it was within the three-dimensional realm that I discovered the ultimate tool to materialize complex visions and transform abstract concepts into high-impact, hyper-realistic experiences.",
+                "p2": "Today, I utilize an ecosystem of cutting-edge tools like Blender, D5 Render, SketchUp, and CorelDRAW to develop optimized workflows. My focus lies at the intersection of technical precision and artistic storytelling, ensuring every project doesn't just simulate reality but tells a compelling story that drives business results."
             },
             "skills": {
                 "title": "Technical Skills",
@@ -244,7 +248,9 @@
             "title": "Ready to bring your project to life?",
             "desc": "Contact me and let's discuss how 3D visualization can add value and clarity to your business.",
             "button": "Chat on WhatsApp"
-        }
+        },
+        "requestQuote": "Request a Quote",
+        "relatedProjects": "Related Projects"
     },
     "notFound": {
         "title": "404",

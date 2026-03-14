@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-// import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/ui/shimmer-button";
-import { MagicCard } from "@/components/ui/magic-card";
-import { TextReveal } from "@/components/ui/text-reveal";
 import { FadeText } from "@/components/ui/fade-text";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
-import heroBg from '../content/projects/fachadas/Scene 0.png';
 
 // Slideshow images
 import imgFachada01 from '../content/projects/fachadas/01/SACOLÃO_ABCINTRA_0001@2x.png';
@@ -29,38 +25,30 @@ const slideshowImages = [
   imgCeno01, imgCeno02, imgCeno03, imgCeno04, imgCeno05, imgCeno06
 ];
 
+// Preload images globally to ensure they are cached once and never re-requested on remount
+slideshowImages.forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
+
 const Hero = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      document.documentElement.style.setProperty('--parallax-y', `${scrollY * 0.1}px`);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    // Preload images
-    slideshowImages.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % slideshowImages.length);
-    }, 5000);
+    }, 3500);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="min-h-screen flex items-start md:items-center pt-20 md:pt-16 relative overflow-hidden">
+    <section className="h-screen w-full flex items-center justify-center relative overflow-hidden bg-[#0F071A]">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-violet-900/90 z-10 mix-blend-multiply"></div>
+        {/* Simplified background overlay with less blur and deep purple tint */}
+        <div className="absolute inset-0 bg-[#0F071A]/75 z-10 backdrop-blur-[3px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F071A] via-transparent to-[#0F071A]/30 z-15"></div>
 
         {slideshowImages.map((image, index) => (
           <div
@@ -71,70 +59,58 @@ const Hero = () => {
           ></div>
         ))}
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)] backdrop-blur-[2px] z-20"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.1),transparent_70%)] z-20"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 py-12 md:py-20">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center parallax parallax-slow z-30">
-            <div className="flex flex-col items-center">
-              <TextReveal
-                text="Crio projetos 3D que conquistam"
-                className="mb-4 text-center justify-center"
-                delay={0.2}
-              />
-              <FadeText
-                className="mt-4 text-xl md:text-2xl text-white/90 max-w-lg mx-auto text-center"
-                direction="up"
-                delay={1.2} // Delay to wait for title
-                text={
-                  <Trans i18nKey="hero.subtitle">
-                    Não deixe seu negócio passar despercebido. Com meus designs exclusivos, sua empresa não apenas se destaca: ela <span className="font-bold">impacta</span>!
-                  </Trans>
-                }
-              />
-              <div className="mt-8 flex justify-center w-full">
-                <FadeText
-                  delay={1.5}
-                  text={
-                    <ShimmerButton
-                      className="shadow-2xl"
-                      background="linear-gradient(90deg, #7c3aed 0%, #4f46e5 100%)"
-                      onClick={() => navigate('/contato')}
-                    >
-                      <span className="flex items-center text-lg font-semibold">
-                        {t('hero.cta')} <ArrowRight className="ml-2 h-5 w-5" />
-                      </span>
-                    </ShimmerButton>
-                  }
-                />
-              </div>
-            </div>
+      <div className="container mx-auto px-4 relative z-30">
+        <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          {/* Main Title */}
+          <div className="mb-8 flex flex-col items-center">
+            <FadeText
+              direction="up"
+              delay={0.2}
+              className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-white"
+              text="Crio projetos 3D que"
+            />
+            <FadeText
+              direction="up"
+              delay={0.4}
+              className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-highlight"
+              text="conquistam!"
+            />
           </div>
-          <div className="md:w-1/2 flex justify-center md:justify-end parallax parallax-medium">
-            <div className="relative w-full max-w-md group">
-              <MagicCard className="w-full h-[450px] glass-card rounded-xl shadow-2xl border border-white/10 p-5 overflow-hidden animate-float group-hover:neon-border transition-all duration-500 bg-white/5" gradientColor="#6366f1">
-                <img
-                  key={currentImageIndex}
-                  src={slideshowImages[currentImageIndex]}
-                  alt={t('hero.alt')}
-                  className="w-full h-full object-cover rounded group-hover:scale-105 transition-all duration-700 animate-fade-in"
-                />
-                <div className="absolute bottom-8 left-0 right-0 mx-auto w-4/5 glass-card p-4 rounded-lg shadow-lg border border-white/10 backdrop-blur-xl">
-                  <p className="text-white font-medium">
-                    <Trans i18nKey="hero.card">
-                      Seu projeto, minha realidade 3D que <span className="font-bold">converte</span>.
-                    </Trans>
-                  </p>
-                </div>
-              </MagicCard>
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse"></div>
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-full blur-2xl opacity-70 animate-pulse delay-1000"></div>
-            </div>
-          </div>
+
+          <FadeText
+            className="text-lg md:text-xl text-white/50 max-w-[800px] mb-12 font-medium leading-relaxed"
+            direction="up"
+            delay={0.6}
+            text={
+              <Trans i18nKey="hero.subtitle">
+                A arquitetura do seu negócio precisa ser vista antes de ser construída.<br />
+                Crio narrativas visuais que antecipam o futuro e fazem sua marca liderar.
+              </Trans>
+            }
+          />
+
+          <FadeText
+            delay={1.0}
+            text={
+              <ShimmerButton
+                shimmerColor="#FFFFFF"
+                shimmerSize="0.1em"
+                background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
+                onClick={() => navigate('/contato')}
+                className="py-3 px-10 shadow-[0_20px_50px_rgba(158,62,213,0.3)] transition-all hover:scale-105"
+              >
+                <span className="flex items-center gap-4 text-sm md:text-base font-black tracking-wide">
+                  {t('hero.cta')} <ArrowRight className="h-5 w-5" />
+                </span>
+              </ShimmerButton>
+            }
+          />
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

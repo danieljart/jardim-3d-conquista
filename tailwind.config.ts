@@ -26,11 +26,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#47365C',
+					DEFAULT: '#9E3ED5',
 					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: '#583F7D',
+					DEFAULT: '#563474',
 					foreground: '#ffffff'
 				},
 				text: '#3B3147',
@@ -45,8 +45,8 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#9E3ED5',
+					foreground: '#ffffff'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -116,6 +116,14 @@ export default {
 						transform: "translate(calc(100cqw - 100%), 0)",
 					},
 				},
+				meteor: {
+					"0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+					"70%": { opacity: "1" },
+					"100%": {
+						transform: "rotate(215deg) translateX(-500px)",
+						opacity: "0",
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -123,6 +131,7 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				"spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
 				"shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite alternate",
+				"meteor-effect": "meteor 5s linear infinite",
 			}
 		}
 	},

@@ -6,9 +6,9 @@ import FloatingButton from '@/components/FloatingButton';
 
 const ContactPage = () => {
     return (
-        <div className="min-h-screen bg-[#121212]">
+        <div className="min-h-screen bg-transparent relative overflow-hidden flex flex-col">
             <Navbar />
-            <main className="pt-24">
+            <main className="flex-grow pt-16 md:pt-20 relative z-10 flex flex-col">
                 <Contact />
             </main>
             <Footer />

@@ -15,6 +15,8 @@ import ContactPage from "./pages/ContactPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import NotFound from "./pages/NotFound";
 
+import { BeamsBackground } from "./components/ui/beams-background";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -24,18 +26,23 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/servicos" element={<ServicosPage />} />
-          <Route path="/servicos/fachadas" element={<FachadasPage />} />
-          <Route path="/servicos/cenografia" element={<CenografiaPage />} />
-          <Route path="/servicos/ambientes" element={<AmbientesPage />} />
-          <Route path="/servicos/personalizados" element={<PersonalizadosPage />} />
-          <Route path="/sobre" element={<SobrePage />} />
-          <Route path="/contato" element={<ContactPage />} />
-          <Route path="/projeto/:id" element={<ProjectDetailsPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="relative min-h-screen bg-transparent">
+          <BeamsBackground intensity="strong" />
+          <div className="relative z-10">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/servicos" element={<ServicosPage />} />
+              <Route path="/servicos/fachadas" element={<FachadasPage />} />
+              <Route path="/servicos/cenografia" element={<CenografiaPage />} />
+              <Route path="/servicos/ambientes" element={<AmbientesPage />} />
+              <Route path="/servicos/personalizados" element={<PersonalizadosPage />} />
+              <Route path="/sobre" element={<SobrePage />} />
+              <Route path="/contato" element={<ContactPage />} />
+              <Route path="/projeto/:id" element={<ProjectDetailsPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
