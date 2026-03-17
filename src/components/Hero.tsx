@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import ShimmerButton from "@/components/ui/shimmer-button";
 import { FadeText } from "@/components/ui/fade-text";
 import { ArrowRight } from "lucide-react";
