@@ -69,13 +69,13 @@ const Hero = () => {
             <FadeText
               direction="up"
               delay={0.2}
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-white"
+              className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tight text-white whitespace-nowrap"
               text={t('hero.title')}
             />
             <FadeText
               direction="up"
               delay={0.4}
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-highlight"
+              className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tight text-highlight"
               text={t('hero.titleHighlight')}
             />
           </div>
