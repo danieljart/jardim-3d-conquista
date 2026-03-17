@@ -70,7 +70,7 @@ const Hero = () => {
               direction="up"
               delay={0.2}
               className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-white"
-              text="Crio projetos 3D que"
+              text={t('hero.title')}
             />
             <FadeText
               direction="up"
