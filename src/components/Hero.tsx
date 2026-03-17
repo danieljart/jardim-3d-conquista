@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import ShimmerButton from "@/components/ui/shimmer-button";
 import { FadeText } from "@/components/ui/fade-text";
 import { ArrowRight } from "lucide-react";
@@ -84,12 +84,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-white/50 max-w-[800px] mb-12 font-medium leading-relaxed"
             direction="up"
             delay={0.6}
-            text={
-              <Trans i18nKey="hero.subtitle">
-                A arquitetura do seu negócio precisa ser vista antes de ser construída.<br />
-                Crio narrativas visuais que antecipam o futuro e fazem sua marca liderar.
-              </Trans>
-            }
+            text={t('hero.subtitle')}
           />
 
           <FadeText
