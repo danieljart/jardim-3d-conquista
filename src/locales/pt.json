@@ -7,7 +7,8 @@
         "whatsapp": "WhatsApp"
     },
     "hero": {
-        "title": "Crio projetos 3D que <1>conquistam!</1>",
+        "title": "Crio projetos 3D que",
+        "titleHighlight": "conquistam!",
         "subtitle": "A arquitetura do seu negócio precisa ser vista antes de ser construída. Crio narrativas visuais que antecipam o futuro e fazem sua marca liderar.",
         "cta": "Vamos tirar o projeto do papel",
         "solutions": "Expertise em Visualização",
