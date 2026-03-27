@@ -32,7 +32,7 @@ const ProjectDetailsPage = () => {
         return (
             <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
                 <h1 className="text-3xl font-black mb-8 uppercase tracking-tighter">{t('project.notFound')}</h1>
-                <button onClick={() => navigate('/servicos')} className="bg-white text-black px-8 py-4 rounded-full text-sm font-black tracking-widest uppercase hover:scale-105 transition-transform">
+                <button onClick={() => navigate('/servicos')} className="bg-white text-black px-8 py-4 rounded-none text-sm font-black tracking-widest uppercase hover:scale-105 transition-transform">
                     {t('project.backToServices')}
                 </button>
             </div>

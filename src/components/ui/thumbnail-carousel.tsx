@@ -332,7 +332,7 @@ const ThumbnailCarousel = ({ images, className }: ThumbnailCarouselProps) => {
                         onClick={() => setIndex((i) => Math.max(0, i - 1))}
                         aria-label="Previous slide"
                         className={cn(
-                            "absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white",
+                            "absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-none p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white",
                             index === 0 && "hidden"
                         )}
                     >
@@ -343,13 +343,13 @@ const ThumbnailCarousel = ({ images, className }: ThumbnailCarouselProps) => {
                         onClick={() => setIndex((i) => Math.min(images.length - 1, i + 1))}
                         aria-label="Next slide"
                         className={cn(
-                            "absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white",
+                            "absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-none p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white",
                             index === images.length - 1 && "hidden"
                         )}
                     >
                         <ChevronRight className="w-6 h-6" />
                     </button>
-                    <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium border border-white/10 z-10'>
+                    <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-none text-xs font-medium border border-white/10 z-10'>
                         {index + 1} / {images.length}
                     </div>
                 </div>

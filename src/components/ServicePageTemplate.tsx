@@ -33,7 +33,7 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
     const finalCta = ctaText || t('services.items.fachadas.ctaText');
 
     return (
-    <div className="h-screen w-screen bg-black overflow-hidden flex flex-col selection:bg-purple-500/30 font-sans">
+    <div className="h-screen w-screen bg-black overflow-hidden flex flex-col selection:bg-white/20 font-sans">
       <Navbar />
 
       <div className="flex-1 w-full overflow-y-auto scroll-smooth snap-y snap-mandatory relative z-10 no-scrollbar">
@@ -41,8 +41,8 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
         <header className="relative h-screen min-h-screen flex flex-col justify-center overflow-hidden snap-start shrink-0">
           {/* Background Decor - Subtle */}
           <div className="absolute inset-0 pointer-events-none z-0">
-            <div className="absolute top-[15%] right-[-5%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] opacity-30"></div>
-            <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] opacity-30"></div>
+            <div className="absolute top-[15%] right-[-5%] w-[600px] h-[600px] bg-primary/10 rounded-none blur-[150px] opacity-30"></div>
+            <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-primary/10 rounded-none blur-[150px] opacity-30"></div>
           </div>
 
           <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -149,8 +149,8 @@ const ServicePageTemplate: React.FC<ServicePageProps> = ({
                 <motion.img
                   src={item.images[0]}
                   alt={item.title}
-                  initial={{ grayscale: "100%", opacity: 0.4, scale: 1.1 }}
-                  whileInView={{ grayscale: "0%", opacity: 1, scale: 1 }}
+                  initial={{ filter: "grayscale(100%)", opacity: 0.4, scale: 1.1 }}
+                  whileInView={{ filter: "grayscale(0%)", opacity: 1, scale: 1 }}
                   viewport={{ amount: 0.6 }}
                   transition={{ duration: 1.2, ease: "easeOut" }}
                   className="w-full h-full object-cover"

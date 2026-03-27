@@ -26,7 +26,7 @@ export function RoadmapCard({
     const hasHeader = !!title || !!description;
 
     return (
-        <MagicCard gradientColor="rgba(158, 62, 213, 0.2)" className="w-full shadow-2xl hover:shadow-[0_20px_50px_rgba(158,62,213,0.15)] transition-all duration-300 hover:scale-[1.01] bg-white/3 backdrop-blur-[24px] border border-white/10 text-left rounded-[32px] glass-card">
+        <MagicCard gradientColor="rgba(158, 62, 213, 0.2)" className="w-full shadow-2xl hover:shadow-[0_20px_50px_rgba(158,62,213,0.15)] transition-all duration-300 hover:scale-[1.01] bg-white/3 backdrop-blur-[24px] border border-white/10 text-left rounded-none glass-card">
             {hasHeader && (
                 <CardHeader>
                     <CardTitle className="text-white">{title}</CardTitle>
@@ -55,12 +55,12 @@ export function RoadmapCard({
                                         variants={{
                                             hover: { scale: 1.2, transition: { duration: 0.2 } }
                                         }}
-                                        className={`h-8 w-8 rounded-full flex items-center justify-center border-4 border-[#0B0714] transition-all duration-300 shadow-xl ${item.status === "done" || item.status === "in-progress"
+                                        className={`h-8 w-8 rounded-none flex items-center justify-center border-4 border-[#0B0714] transition-all duration-300 shadow-xl ${item.status === "done" || item.status === "in-progress"
                                             ? "bg-white shadow-[0_0_15px_rgba(255,255,255,0.4)]"
                                             : "bg-[#1A1A1A] border-white/5"
                                             }`}
                                     >
-                                        <div className={`h-2 w-2 rounded-full transition-colors duration-300 ${item.status === "done" || item.status === "in-progress"
+                                        <div className={`h-2 w-2 rounded-none transition-colors duration-300 ${item.status === "done" || item.status === "in-progress"
                                             ? "bg-primary"
                                             : "bg-white/10"
                                             }`} />

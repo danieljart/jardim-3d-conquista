@@ -32,7 +32,7 @@ const SobrePage = () => {
   const softwareSkills = t('about.page.skills.software', { returnObjects: true }) as string[] || [];
 
   return (
-    <div className="h-screen w-screen bg-black overflow-hidden flex flex-col selection:bg-purple-500/30 font-sans">
+    <div className="h-screen w-screen bg-black overflow-hidden flex flex-col selection:bg-white/20 font-sans">
       <Navbar />
 
       <div className="flex-1 w-full overflow-y-auto scroll-smooth snap-y snap-mandatory relative z-10 no-scrollbar">

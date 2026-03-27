@@ -45,14 +45,14 @@ const Services = () => {
   return (
     <section id="servicos" className="py-6 md:py-14 bg-transparent relative">
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-highlight/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary/5 rounded-none blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-primary/5 rounded-none blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <h2 className="text-3xl md:text-5xl font-black mb-6 text-white tracking-tight leading-tight whitespace-nowrap">{t('services.title')}</h2>
-          <div className="w-24 h-1.5 bg-highlight mx-auto mb-8 rounded-full"></div>
+          <div className="w-24 h-1.5 bg-primary mx-auto mb-8 rounded-none"></div>
           <p className="text-xl text-white/80">
             {t('services.subtitle')}
           </p>
@@ -68,8 +68,8 @@ const Services = () => {
               role="button"
               aria-label={`${t('services.learnMore')}: ${service.title}`}
               data-cursor="hover"
-              data-cursor-color="purple"
-              className="group relative flex flex-col justify-between p-8 min-h-[320px] bg-white/5 border border-white/10 rounded-[32px] overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-purple-500/50 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+              data-cursor-color="white"
+              className="group relative flex flex-col justify-between p-8 min-h-[320px] bg-white/5 border border-white/10 rounded-none overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
             >
               {/* Main content container with pointer-events-none for cursor reliability */}
               <div className="flex flex-col w-full relative z-10 h-full pointer-events-none">
@@ -81,7 +81,7 @@ const Services = () => {
                 <div className="mt-auto">
                   {/* Title and Button Row */}
                   <div className="flex items-end justify-between mb-4">
-                    <h3 className="text-3xl font-black text-white leading-[0.85] tracking-tighter uppercase max-w-[70%] transition-colors group-hover:text-purple-400">
+                    <h3 className="text-3xl font-black text-white leading-[0.85] tracking-tighter uppercase max-w-[70%] transition-colors group-hover:text-primary">
                       {service.title.split(' ').map((word, i, arr) => (
                         <React.Fragment key={i}>
                           {word}
@@ -91,7 +91,7 @@ const Services = () => {
                     </h3>
                     
                     {/* Round Arrow Button - Pointer events auto to be clickable but transition is handled by card click */}
-                    <div className="h-14 w-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+                    <div className="h-14 w-14 rounded-none border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
                       <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -104,7 +104,7 @@ const Services = () => {
               </div>
 
               {/* Purple glow effect */}
-              <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-purple-600/10 blur-[80px] group-hover:bg-purple-600/30 transition-all duration-700" />
+              <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-primary/10 blur-[80px] group-hover:bg-primary/30 transition-all duration-700" />
             </div>
           ))}
         </div>

@@ -57,7 +57,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-[#07020d]/70 z-10 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#07020d] via-transparent to-transparent z-20"></div>
-        <div className="absolute top-[20%] left-[-10%] w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[150px] z-10 opacity-40"></div>
+        <div className="absolute top-[20%] left-[-10%] w-[600px] h-[600px] bg-primary/10 rounded-none blur-[150px] z-10 opacity-40"></div>
       </div>
 
       <div className="container relative z-30 pt-24 pb-8 px-6 md:px-12 mx-auto pointer-events-none">
@@ -67,7 +67,7 @@ const Hero = () => {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "100%", opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="absolute left-6 md:left-12 top-0 w-[1px] bg-gradient-to-b from-transparent via-purple-600 to-white/20 origin-top -z-10"
+          className="absolute left-6 md:left-12 top-0 w-[1px] bg-gradient-to-b from-transparent via-primary to-white/20 origin-top -z-10"
         />
 
         <div className="flex flex-col items-start w-full relative">
