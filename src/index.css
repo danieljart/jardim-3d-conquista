@@ -1,201 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 265 45% 6%; /* #11071A - Deep Purple */
+    --background: 265 50% 5%;
     --foreground: 0 0% 98%;
 
-    --card: 260 38% 5%;
+    --card: 265 50% 8%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 260 38% 5%;
+    --popover: 265 50% 8%;
     --popover-foreground: 0 0% 98%;
 
-    /* Brand Colors aligned with Imagem 1 Gradient (#563474 to #9E3ED5) */
-    --primary: 280 65% 54%; /* #9E3ED5 (Gradient End) */
+    --primary: 270 91% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 275 38% 33%; /* #563474 (Gradient Start) */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 265 50% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 265 20% 15%;
+    --muted-foreground: 265 10% 60%;
 
-    --accent: 280 65% 54%;
+    --accent: 270 91% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 280 65% 54%;
+    --border: 265 30% 20%;
+    --input: 265 30% 20%;
+    --ring: 270 91% 65%;
 
-    --radius: 1rem;
+    --radius: 0px;
   }
 }
 
 @layer base {
   * {
-    @apply border-border selection:bg-primary/20 selection:text-white;
+    @apply border-border selection:bg-primary/30 selection:text-white;
   }
 
   body {
-    @apply bg-[#0F0716] text-slate-100;
-    font-family: 'Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', sans-serif;
-    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+    /* Immersive Noise Texture Overlay */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+    background-color: hsl(var(--background));
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-white;
+    font-family: 'Archivo', sans-serif;
+    @apply font-bold tracking-tight text-white;
   }
 
   html {
     @apply scroll-smooth;
   }
 
+  /* Lenis smooth scrolling recommendations */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  /* High-contrast neutral utility backgrounds */
   .bg-highlight {
-    background: linear-gradient(90deg, #563474 0%, #9E3ED5 100%) !important;
+    background: linear-gradient(135deg, #1f1f1f 0%, #3a3a3a 100%) !important;
   }
   
-  .text-highlight {
-    background: linear-gradient(90deg, #563474 0%, #9E3ED5 100%);
+  .text-highlight, .gradient-text {
+    background: linear-gradient(to right, #ffffff, #888888);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }
+  
+  .text-glow-primary {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+  }
 
   .border-highlight {
-    border-image: linear-gradient(90deg, #563474 0%, #9E3ED5 100%) 1;
+    border-image: linear-gradient(90deg, #333333 0%, #666666 100%) 1;
   }
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #130B24 0%, #1A0F33 50%, #25144A 100%);
-}
-
-.gradient-text {
-  @apply text-highlight;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
 }
 
 .service-card {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
 
-.custom-shape-divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider svg {
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 70px;
-}
-
-.custom-shape-divider .shape-fill {
-  fill: #0B0714;
+/* Glass panel for the new spatial/cinematic feel */
+.glass-panel, .glass-card {
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
 }
 
+/* Elegant neutral shadow for focus elements */
 .animate-glow {
-  animation: glow 3s ease-in-out infinite alternate;
+  animation: elegant-glow 4s ease-in-out infinite alternate;
 }
 
-@keyframes glow {
-  from {
-    box-shadow: 0 0 5px -5px #9E3ED5;
-  }
-
-  to {
-    box-shadow: 0 0 30px 5px #9E3ED5;
-  }
+@keyframes elegant-glow {
+  from { box-shadow: 0 0 10px -5px rgba(255,255,255,0.1); }
+  to { box-shadow: 0 0 40px 5px rgba(255,255,255,0.05); }
+}
+/* Cinematic Brutalist Textures */
+.concrete-text {
+  @apply text-primary;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.concrete-text-white {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.2'/%3E%3C/svg%3E");
+  background-blend-mode: multiply;
+  background-size: 200px 200px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
 }
 
+/* Parallax Utilities */
 .parallax {
-  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-.parallax-slow {
-  transform: translateY(var(--parallax-y, 0));
-}
-
-.parallax-medium {
-  transform: translateY(calc(var(--parallax-y, 0) * 2));
-}
-
-.parallax-fast {
-  transform: translateY(calc(var(--parallax-y, 0) * 3));
-}
+.parallax-slow { transform: translateY(var(--parallax-y, 0)); }
+.parallax-medium { transform: translateY(calc(var(--parallax-y, 0) * 1.5)); }
+.parallax-fast { transform: translateY(calc(var(--parallax-y, 0) * 2)); }
 
 .hover-lift {
-  transition: all 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .hover-lift:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .neon-border {
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5),
-    0 0 20px rgba(139, 92, 246, 0.3),
-    inset 0 0 10px rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.05),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 .section-divider {
-  height: 5px;
-  background: linear-gradient(90deg, #563474, #9E3ED5);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
   margin: 0 auto;
-  border-radius: 2px;
 }
 
 .animate-fade-in {
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }

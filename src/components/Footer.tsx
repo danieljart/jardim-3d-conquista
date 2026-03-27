@@ -1,137 +1,98 @@
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { ArrowUpRight } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="bg-[#08040F] text-white border-t border-white/5 relative overflow-hidden">
-      {/* Dynamic Purple Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_0%,rgba(158,62,213,0.08),transparent_70%)] pointer-events-none"></div>
-      
-      <div className="container mx-auto px-4 py-8 md:py-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">Daniel Jardim - 3D</h3>
-            <p className="text-white/80 mb-4">
+    <footer className="bg-background border-t border-neutral-900 pt-20 pb-10">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-20">
+          
+          {/* Brand & Socials */}
+          <div className="md:col-span-2">
+            <h3 className="text-3xl font-black tracking-tighter uppercase text-white mb-6">
+              DANIEL JARDIM <span className="text-neutral-600">3D</span>
+            </h3>
+            <p className="text-neutral-500 font-sans max-w-md leading-relaxed mb-8">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://instagram.com/danieljardim.3d"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white/80 transition-colors"
-                aria-label="Instagram"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <div className="flex gap-4">
+              <a href="https://instagram.com/danieljardim.3d" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-none border border-neutral-800 flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition-all duration-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform">
+                  <rect x="2" y="2" width="20" height="20" rx="0" ry="0"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              <a
-                href="https://wa.me/5511949723280"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white/80 transition-colors"
-                aria-label="WhatsApp"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-message-circle">
+              <a href="https://wa.me/5511949723280" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-none border border-neutral-800 flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition-all duration-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
               </a>
-              <a
-                href="mailto:ddedesign1809@gmail.com"
-                className="hover:text-white/80 transition-colors"
-                aria-label="Email"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-mail">
+              <a href="mailto:ddedesign1809@gmail.com" className="w-12 h-12 rounded-none border border-neutral-800 flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition-all duration-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </a>
             </div>
           </div>
+
+          {/* Connect */}
           <div>
-            <h4 className="font-semibold mb-4">{t('footer.services')}</h4>
-            <ul className="space-y-2 text-white/80">
+            <h4 className="text-xs uppercase tracking-[0.3em] font-black text-white mb-8 border-b border-neutral-900 pb-4">
+              {t('footer.contact')}
+            </h4>
+            <ul className="space-y-4">
               <li>
-                <a href="/servicos/fachadas" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.items.fachadas')}</a>
+                <a href="mailto:ddedesign1809@gmail.com" className="text-neutral-400 font-sans hover:text-white transition-colors flex items-center gap-2 group">
+                  Email <ArrowUpRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                </a>
               </li>
               <li>
-                <a href="/servicos/cenografia" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.items.cenografia')}</a>
+                <a href="https://wa.me/5511949723280" className="text-neutral-400 font-sans hover:text-white transition-colors flex items-center gap-2 group">
+                  WhatsApp <ArrowUpRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                </a>
               </li>
               <li>
-                <a href="/servicos/ambientes" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.items.ambientes')}</a>
-              </li>
-              <li>
-                <a href="/servicos/personalizados" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.items.personalizados')}</a>
+                <a href="https://instagram.com/danieljardim.3d" className="text-neutral-400 font-sans hover:text-white transition-colors flex items-center gap-2 group">
+                  Instagram <ArrowUpRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                </a>
               </li>
             </ul>
           </div>
+
+          {/* Navigation */}
           <div>
-            <h4 className="font-semibold mb-4">{t('footer.usefulLinks')}</h4>
-            <ul className="space-y-2 text-white/80">
+            <h4 className="text-xs uppercase tracking-[0.3em] font-black text-white mb-8 border-b border-neutral-900 pb-4">
+              {t('footer.explore')}
+            </h4>
+            <ul className="space-y-4">
               <li>
-                <a href="/sobre" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.aboutUs')}</a>
+                <a href="/" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('nav.home')}</a>
               </li>
               <li>
-                <a href="/galeria" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.portfolio')}</a>
+                <a href="/servicos/fachadas" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('services.items.fachadas.title')}</a>
               </li>
               <li>
-                <a href="/#videos" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.videos')}</a>
+                <a href="/servicos/cenografia" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('services.items.cenografia.title')}</a>
               </li>
               <li>
-                <a href="/#contato" className="hover:text-white transition-colors underline-offset-4 hover:underline">{t('footer.contact')}</a>
+                <a href="/sobre" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('nav.about')}</a>
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold mb-4">{t('footer.contact')}</h4>
-            <ul className="space-y-3 text-white/80">
-              <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="#FFFFFF">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <span>ddedesign1809@gmail.com</span>
-              </li>
-              <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="#FFFFFF">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-                <span>(11) 94972-3280</span>
-              </li>
-              <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="#FFFFFF">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                </svg>
-                <a
-                  href="https://instagram.com/danieljardim.3d"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  @danieljardim.3d
-                </a>
-              </li>
-              <li className="mt-6">
-                <a
-                  href="https://wa.me/5511949723280"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#563474] hover:bg-[#4a2d64] text-white px-6 py-3 rounded-full font-bold inline-flex items-center transition-all shadow-xl uppercase tracking-wider text-xs"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                  </svg>
-                  {t('footer.whatsapp')}
-                </a>
-              </li>
-            </ul>          </div>
+
         </div>
-        <div className="border-t border-white/10 mt-8 md:mt-12 pt-4 md:pt-8 text-center text-white/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} Daniel Jardim - 3D. {t('footer.rights')}</p>
+
+        {/* Bottom Bar */}
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-neutral-900 pt-8 mt-12 text-xs uppercase tracking-widest font-black text-neutral-600 gap-4">
+          <p>&copy; {new Date().getFullYear()} DANIEL JARDIM 3D. {t('footer.rights').toUpperCase()}</p>
+          <div className="flex gap-4">
+            <span className="hover:text-white transition-colors cursor-pointer">{t('footer.terms').toUpperCase()}</span>
+            <span className="hover:text-white transition-colors cursor-pointer">{t('footer.privacy').toUpperCase()}</span>
+          </div>
         </div>
       </div>
     </footer>

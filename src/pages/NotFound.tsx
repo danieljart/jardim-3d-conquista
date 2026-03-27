@@ -18,7 +18,7 @@ const NotFound = () => {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4 text-white">404</h1>
         <p className="text-xl text-white/60 mb-8">{t('notFound.message') || 'Página não encontrada'}</p>
-        <a href="/" className="px-6 py-3 bg-primary text-white rounded-full font-bold hover:opacity-90 transition-all">
+        <a href="/" className="px-6 py-3 bg-white text-black rounded-none font-bold hover:bg-neutral-200 transition-all">
           {t('notFound.return') || 'Voltar ao Início'}
         </a>
       </div>

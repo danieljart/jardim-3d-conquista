@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Globe } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import ShimmerButton from "@/components/ui/shimmer-button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -39,96 +37,99 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-black/80 backdrop-blur-md py-4" : "bg-transparent py-6"
-                }`}
+            className={`fixed w-full z-50 transition-all duration-500 ${
+                isScrolled ? "bg-background/80 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"
+            }`}
         >
-            <div className="container mx-auto px-4 flex justify-between items-center">
-                <Link to="/" className="text-2xl font-bold text-white flex items-center gap-2">
-                    <span className="text-white">
-                        Daniel Jardim
-                    </span>
-                    <span className="text-highlight">3D</span>
+            <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+                <Link to="/" className="text-xl md:text-2xl font-black text-white tracking-widest uppercase flex items-center gap-2 mix-blend-difference z-50">
+                    DANIEL JARDIM
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-10">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-sm font-medium transition-all hover:text-highlight ${location.pathname === link.path ? "text-highlight" : "text-white/80"
-                                }`}
+                            className={`text-xs font-black tracking-widest uppercase transition-all duration-300 relative group/link ${
+                                location.pathname === link.path ? "text-primary" : "text-neutral-500 hover:text-white"
+                            }`}
                         >
                             {link.name}
+                            <span className={`absolute -bottom-1 left-0 h-[2px] bg-primary transition-all duration-300 ${
+                                location.pathname === link.path ? "w-full" : "w-0 group-hover/link:w-full"
+                            }`}></span>
                         </Link>
                     ))}
-                    <ShimmerButton
-                        background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
-                        shimmerColor="#FFFFFF"
-                        className="rounded-full h-10 px-6"
-                        onClick={handleContactClick}
-                    >
-                        <span className="text-white font-medium text-sm">
-                            {t('nav.contact')}
-                        </span>
-                    </ShimmerButton>
-                    <Button
-                        variant="ghost"
-                        size="icon"
+                    
+                    <button
                         onClick={toggleLanguage}
-                        className="text-white hover:text-highlight hover:bg-white/10"
+                        onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleLanguage()}
+                        className="text-neutral-500 hover:text-white transition-colors p-2"
+                        aria-label={i18n.language === 'en' ? "Change to Portuguese" : "Mudar para Inglês"}
                     >
-                        <Globe size={20} />
-                        <span className="sr-only">Toggle language</span>
-                    </Button>
+                        <Globe size={18} />
+                    </button>
+
+                    <button
+                        onClick={handleContactClick}
+                        onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleContactClick()}
+                        className="bg-white text-black px-6 py-2.5 rounded-none text-xs font-black tracking-widest uppercase hover:bg-primary hover:text-white transition-all duration-300"
+                        aria-label={t('nav.contact')}
+                    >
+                        {t('nav.contact')}
+                    </button>
                 </div>
 
                 {/* Mobile Controls */}
-                <div className="md:hidden flex items-center gap-2">
-                    <Button
-                        variant="ghost"
-                        size="icon"
+                <div className="md:hidden flex items-center gap-4 z-50">
+                    <button
                         onClick={toggleLanguage}
-                        className="text-white hover:text-highlight hover:bg-white/10"
+                        onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleLanguage()}
+                        className="text-white hover:text-neutral-300 transition-colors p-2"
+                        aria-label={i18n.language === 'en' ? "Change to Portuguese" : "Mudar para Inglês"}
                     >
                         <Globe size={20} />
-                        <span className="sr-only">Toggle language</span>
-                    </Button>
+                    </button>
                     <button
                         className="text-white p-2"
                         onClick={() => setIsOpen(!isOpen)}
+                        onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setIsOpen(!isOpen)}
+                        aria-label={isOpen ? "Close menu" : "Open menu"}
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Menu */}
-            {isOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-t border-white/10 p-4 flex flex-col gap-4 animate-in slide-in-from-top-5">
+            {/* Mobile Menu Overlay */}
+            <div 
+                className={`md:hidden fixed inset-0 bg-background/95 backdrop-blur-2xl z-40 flex flex-col items-center justify-center transition-all duration-500 ${
+                    isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                }`}
+            >
+                <div className="flex flex-col items-center gap-8 w-full max-w-sm px-6">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-lg font-medium py-2 border-b border-white/5 ${location.pathname === link.path ? "text-highlight" : "text-white/80"
-                                }`}
+                            className={`text-3xl font-black uppercase tracking-widest transition-colors duration-300 ${
+                                location.pathname === link.path ? "text-white" : "text-neutral-600"
+                            }`}
                             onClick={() => setIsOpen(false)}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <ShimmerButton
-                        background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
-                        shimmerColor="#FFFFFF"
-                        className="w-full mt-2"
+                    <button
                         onClick={handleContactClick}
+                        className="w-full mt-8 bg-white text-black py-4 rounded-none text-sm font-black tracking-[0.2em] uppercase"
                     >
-                        <span className="text-white font-medium">
-                            {t('nav.whatsapp')}
-                        </span>
-                    </ShimmerButton>
+                        {t('nav.contact')}
+                    </button>
                 </div>
-            )}
+            </div>
         </nav>
     );
 };

@@ -1,9 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
-import { Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
-import ShimmerButton from "@/components/ui/shimmer-button";
-import { MagicCard } from "@/components/ui/magic-card";
+import { useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const ServicesOverview = () => {
   const { t } = useTranslation();
@@ -13,93 +12,104 @@ const ServicesOverview = () => {
     {
       title: t('services.items.fachadas.title'),
       description: t('services.items.fachadas.overviewDesc'),
-      icon: Building2,
-      slug: '/servicos/fachadas'
+      slug: '/servicos/fachadas',
+      number: '01'
     },
     {
       title: t('services.items.cenografia.overviewTitle'),
       description: t('services.items.cenografia.overviewDesc'),
-      icon: Warehouse,
-      slug: '/servicos/cenografia'
+      slug: '/servicos/cenografia',
+      number: '02'
     },
     {
       title: t('services.items.ambientes.overviewTitle'),
       description: t('services.items.ambientes.overviewDesc'),
-      icon: Home,
-      slug: '/servicos/ambientes'
+      slug: '/servicos/ambientes',
+      number: '03'
     },
     {
       title: t('services.items.personalizados.title'),
       description: t('services.items.personalizados.overviewDesc'),
-      icon: Trophy,
-      slug: '/servicos/personalizados'
+      slug: '/servicos/personalizados',
+      number: '04'
     }
   ];
-  return (
-    <section id="servicos" className="pt-8 md:pt-12 pb-4 md:pb-6 bg-transparent relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none">
-        <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]"></div>
-      </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mb-8 md:mb-10 text-center mx-auto">
-          <h2 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight tracking-tight">
-            {t('services.overviewTitle')}
-          </h2>
-          <div className="w-20 h-1.5 bg-highlight mb-8 rounded-full mx-auto"></div>
-          <p className="text-xl text-white/60">
-            {t('services.overviewSubtitle')}
-          </p>
+  return (
+    <section id="servicos" className="w-full bg-background pt-20 md:pt-32 pb-20 border-t border-neutral-950 snap-start h-screen flex flex-col justify-center">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 md:mb-32">
+          <div className="lg:col-span-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-[1px] bg-white"></div>
+              <span className="text-[10px] md:text-xs font-black tracking-[0.4em] uppercase text-neutral-400">Áreas de Atuação</span>
+            </div>
+            <h2 className="text-6xl md:text-8xl lg:text-[7vw] font-black text-white tracking-tighter leading-[0.8] uppercase break-words">
+              {t('services.overviewTitle')}
+            </h2>
+          </div>
+          <div className="lg:col-span-4 flex flex-col justify-between items-end">
+             <button
+                onClick={() => navigate('/servicos')}
+                className="group px-8 py-4 bg-white text-black text-[10px] md:text-xs font-black tracking-widest uppercase hover:bg-primary hover:text-white transition-all flex items-center gap-6 mb-8 lg:mb-0"
+              >
+                <span>{t('services.viewAll')}</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+              </button>
+              
+             <div className="flex items-start gap-4 border-l border-neutral-800 pl-6 py-2">
+                <div className="w-2 h-2 rounded-none bg-white mt-2 shrink-0"></div>
+                <p className="text-neutral-400 font-sans text-xs md:text-sm leading-relaxed">
+                  {t('services.overviewSubtitle')}
+                </p>
+             </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {services.map((service, index) => {
-            const IconComponent = service.icon;
-            return (
-              <div 
-                key={index}
-                onClick={() => navigate(service.slug)}
-                className="cursor-pointer h-full group glass-card rounded-[24px] p-8 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_10px_40px_rgba(158,62,213,0.15)] flex flex-col items-start text-left relative overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/10 transition-colors"></div>
-                
-                <div className="relative z-10 w-full flex flex-col h-full items-start">
-                  <div className="flex items-center gap-5 mb-4 w-full">
-                    <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-primary/80 transition-all duration-300 shrink-0">
-                      <IconComponent className="h-7 w-7 text-white" />
-                    </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-white leading-tight group-hover:text-highlight transition-colors">
-                      {service.title}
+        <div className="w-full border-t border-neutral-900/50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-neutral-900/50">
+          {services.map((service, index) => (
+            <motion.div 
+              key={index}
+              onClick={() => navigate(service.slug)}
+              onKeyDown={(e) => e.key === 'Enter' && navigate(service.slug)}
+              tabIndex={0}
+              role="button"
+              aria-label={`${t('services.learnMore')}: ${service.title}`}
+              initial={{ opacity: 0.8 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ amount: 0.8 }}
+              className="group w-full flex flex-col items-start p-6 md:p-10 cursor-pointer hover:bg-neutral-900/10 transition-all duration-700 relative overflow-hidden focus:outline-none focus:bg-neutral-900/20 snap-center md:snap-align-none"
+            >
+              {/* Hover Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-none blur-[60px]"></div>
+              </div>
+
+              <div className="flex flex-col w-full relative z-10 h-full pointer-events-none">
+                {/* Number and Title row */}
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-xl md:text-2xl font-black text-white/50 tracking-tighter shrink-0 pt-0.5">
+                    {service.number}
+                  </span>
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-xl md:text-2xl font-black text-white tracking-tighter uppercase group-hover:text-neutral-400 transition-colors duration-500 leading-none max-w-[12ch]">
+                      Áreas de <span className="text-primary">Atuação</span>
                     </h3>
                   </div>
-                  
-                  <p className="text-white/40 text-sm leading-relaxed mb-8 flex-grow">
-                    {service.description}
-                  </p>
-                  
-                  <div className="mt-auto flex items-center text-highlight text-[11px] font-black tracking-wide group-hover:opacity-80 transition-opacity">
-                    {t('services.learnMore')} <ArrowRight className="ml-2 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                  <div className="ml-auto flex w-10 h-10 rounded-none border border-neutral-800 items-center justify-center bg-white border-white text-black md:bg-transparent md:border-neutral-800 md:group-hover:bg-white md:group-hover:border-white transition-all duration-500 shrink-0">
+                    <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
                   </div>
                 </div>
+                
+                {/* Description below */}
+                <p className="text-neutral-500 text-xs md:text-sm font-sans leading-relaxed text-left group-hover:text-neutral-400 transition-colors duration-500 line-clamp-3">
+                  {service.description}
+                </p>
               </div>
-            );
-          })}
+            </motion.div>
+          ))}
         </div>
 
-        <div className="mt-8 md:mt-10 text-center">
-          <ShimmerButton
-            onClick={() => navigate('/servicos')}
-            className="mx-auto py-4 px-10 shadow-xl hover:scale-105 transition-transform"
-            shimmerColor="#FFFFFF"
-            background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
-          >
-            <span className="flex items-center gap-4 font-black tracking-wide text-sm md:text-base">
-              {t('services.viewAll')}
-              <ArrowRight className="h-6 w-6" />
-            </span>
-          </ShimmerButton>
-        </div>
       </div>
     </section>
   );

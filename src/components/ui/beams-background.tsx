@@ -32,7 +32,7 @@ function createBeam(width: number, height: number): Beam {
         angle: angle,
         speed: 0.5 + Math.random() * 0.8, // Faster movement
         opacity: 0.15 + Math.random() * 0.15,
-        hue: 260 + Math.random() * 40,
+        hue: 0, // White base
         pulse: Math.random() * Math.PI * 2,
         pulseSpeed: 0.01 + Math.random() * 0.02, // Slightly faster pulse
     };
@@ -86,11 +86,11 @@ export function BeamsBackground({
                 opacityMap[intensity];
 
             const gradient = ctx.createLinearGradient(0, 0, 0, beam.length);
-            gradient.addColorStop(0, `hsla(${beam.hue}, 70%, 65%, 0)`);
-            gradient.addColorStop(0.3, `hsla(${beam.hue}, 80%, 70%, ${pulsingOpacity * 0.4})`);
-            gradient.addColorStop(0.5, `hsla(${beam.hue}, 85%, 75%, ${pulsingOpacity})`);
-            gradient.addColorStop(0.7, `hsla(${beam.hue}, 80%, 70%, ${pulsingOpacity * 0.4})`);
-            gradient.addColorStop(1, `hsla(${beam.hue}, 70%, 65%, 0)`);
+            gradient.addColorStop(0, `hsla(0, 0%, 100%, 0)`);
+            gradient.addColorStop(0.3, `hsla(0, 0%, 100%, ${pulsingOpacity * 0.4})`);
+            gradient.addColorStop(0.5, `hsla(0, 0%, 100%, ${pulsingOpacity})`);
+            gradient.addColorStop(0.7, `hsla(0, 0%, 100%, ${pulsingOpacity * 0.4})`);
+            gradient.addColorStop(1, `hsla(0, 0%, 100%, 0)`);
 
             ctx.fillStyle = gradient;
             ctx.globalCompositeOperation = "screen";
@@ -132,7 +132,7 @@ export function BeamsBackground({
     return (
         <div
             className={cn(
-                "fixed inset-0 w-full h-full overflow-hidden pointer-events-none -z-10 bg-[#0F0716]",
+                "fixed inset-0 w-full h-full overflow-hidden pointer-events-none -z-10 bg-black",
                 className
             )}
         >
@@ -141,8 +141,8 @@ export function BeamsBackground({
                 className="absolute inset-0 opacity-40"
                 style={{ filter: "blur(30px)" }}
             />
-            {/* Global depth factor with purple tint */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(15,7,26,0)_0%,rgba(15,7,26,0.7)_100%)]" />
+            {/* Global depth factor - pure black shadow */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)]" />
             
             {children}
         </div>

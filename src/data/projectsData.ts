@@ -74,7 +74,10 @@ for (const path in infoFiles) {
     projectImagePaths.sort();
 
     for (const path of projectImagePaths) {
-        projectImages.push(imageFiles[path] as string);
+        const img = imageFiles[path];
+        // In eager glob with 'default' import, it should be the string directly.
+        // But let's be safe and check for .default if it's an object.
+        projectImages.push(typeof img === 'string' ? img : (img as any).default);
     }
 
     // Map category slug to display name

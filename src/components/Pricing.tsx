@@ -1,91 +1,92 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Check, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
-import ShimmerButton from "@/components/ui/shimmer-button";
-import { MagicCard } from "@/components/ui/magic-card";
-import { RoadmapCard } from "@/components/ui/roadmap-card";
+import { motion } from 'framer-motion';
 
 const Pricing = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const processSteps = [{
-    title: t('pricing.steps.1.title'),
-    description: t('pricing.steps.1.desc'),
-    icon: <div className="w-16 h-16 rounded-full bg-highlight flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-purple-900/30">1</div>
-  }, {
-    title: t('pricing.steps.2.title'),
-    description: t('pricing.steps.2.desc'),
-    icon: <div className="w-16 h-16 rounded-full bg-highlight flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-purple-900/30">2</div>
-  }, {
-    title: t('pricing.steps.3.title'),
-    description: t('pricing.steps.3.desc'),
-    icon: <div className="w-16 h-16 rounded-full bg-highlight flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-purple-900/30">3</div>
-  }, {
-    title: t('pricing.steps.4.title'),
-    description: t('pricing.steps.4.desc'),
-    icon: <div className="w-16 h-16 rounded-full bg-highlight flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-purple-900/30">4</div>
-  }];
+  
+  const processSteps = [
+    { number: '01', title: t('pricing.steps.1.title'), description: t('pricing.steps.1.desc') },
+    { number: '02', title: t('pricing.steps.2.title'), description: t('pricing.steps.2.desc') },
+    { number: '03', title: t('pricing.steps.3.title'), description: t('pricing.steps.3.desc') },
+    { number: '04', title: t('pricing.steps.4.title'), description: t('pricing.steps.4.desc') }
+  ];
 
   return (
-    <section id="processo" className="pt-4 md:pt-6 pb-12 md:pb-20 bg-transparent relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full opacity-30">
-        <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]"></div>
-      </div>
-
-      <div className="container mx-auto px-4 pt-6 md:pt-8 pb-4 md:pb-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white leading-tight">{t('pricing.title')}</h2>
-          <div className="w-20 h-1.5 bg-highlight mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl text-white/60">
-            {t('pricing.subtitle')}
-          </p>
-        </div>
-
-        <div className="mb-8">
-          <RoadmapCard
-            title=""
-            description=""
-            items={processSteps.map((step, index) => ({
-              quarter: `${index + 1}`,
-              title: step.title,
-              description: step.description,
-              status: "in-progress"
-            }))}
-          />
-        </div>
-
-        <MagicCard 
-          gradientColor="rgba(158, 62, 213, 0.2)" 
-          className="mt-6 w-full shadow-2xl bg-white/3 backdrop-blur-[24px] border border-white/10 text-left rounded-[32px] glass-card group relative"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px] -mr-32 -mt-32"></div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 h-full relative z-10 p-6 md:p-8">
-            <div className="flex flex-row items-center gap-6 text-left md:max-w-xl w-full">
-              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white font-black text-xl flex-shrink-0 border border-white/10">5</div>
-              <div className="flex flex-col">
-                <h3 className="text-2xl font-black text-white leading-tight mb-2 tracking-tight">{t('pricing.final.title')}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{t('pricing.final.desc')}</p>
-              </div>
+    <>
+      <section id="processo" className="w-full bg-background pt-16 md:pt-24 pb-16 border-t border-neutral-950 snap-start h-screen flex flex-col justify-center">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="flex flex-col gap-4 md:gap-6 mb-12 md:mb-24">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-[1px] bg-white"></div>
+              <span className="text-[10px] font-black tracking-[0.4em] uppercase text-neutral-400">
+                Work Process
+              </span>
             </div>
-            <div className="w-full md:w-auto flex-shrink-0">
-              <ShimmerButton
-                onClick={() => navigate('/contato')}
-                className="py-4 px-10 shadow-2xl transition-transform hover:scale-105"
-                shimmerColor="#FFFFFF"
-                background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
-              >
-                <span className="flex items-center justify-center gap-3 text-white font-black tracking-wide text-sm md:text-base">
-                  <Sparkles className="h-5 w-5" />
-                  {t('pricing.final.button')}
-                </span>
-              </ShimmerButton>
+            <h2 className="text-6xl md:text-8xl lg:text-[8vw] font-black text-white tracking-tighter leading-[0.8] uppercase max-w-5xl">
+              {t('pricing.title')}
+            </h2>
+            <div className="flex items-center gap-4 mt-4">
+              <div className="w-2 h-2 rounded-none bg-white"></div>
+              <p className="text-neutral-400 font-sans max-w-2xl text-base md:text-xl leading-relaxed">
+                {t('pricing.subtitle')}
+              </p>
             </div>
           </div>
-        </MagicCard>
-      </div>
-    </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12 md:gap-y-20">
+            {processSteps.map((step, index) => (
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0.8 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ amount: 0.8 }}
+                className="flex flex-col border-t border-neutral-900 pt-8 md:pt-10 relative group snap-center md:snap-align-none"
+              >
+                <div className="absolute top-0 left-0 w-12 h-[1px] bg-white transition-all duration-700 group-hover:w-full"></div>
+                
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-xl md:text-2xl font-black text-white/50 tracking-tighter shrink-0 pt-0.5">{step.number}</span>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white uppercase tracking-tighter leading-none max-w-[12ch]">
+                    {step.title}
+                  </h3>
+                </div>
+                
+                <p className="text-neutral-500 text-xs md:text-sm lg:text-base font-sans leading-relaxed">
+                  {step.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Card as its own snap-start section to guarantee visibility on PC */}
+      <section className="snap-start w-full py-16 md:py-24 bg-background flex items-center justify-center h-screen">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="w-full bg-neutral-950 border border-neutral-900 p-10 md:p-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12 md:gap-20 group hover:border-neutral-800 transition-colors">
+            <div className="flex flex-col gap-6 md:gap-8 max-w-3xl">
+              <h3 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter uppercase leading-[0.85]">
+                {t('pricing.final.title')}
+              </h3>
+              <p className="text-neutral-400 font-sans text-sm md:text-base lg:text-xl leading-relaxed">
+                {t('pricing.final.desc')}
+              </p>
+            </div>
+            <button
+              onClick={() => navigate('/contato')}
+              className="flex-shrink-0 w-full lg:w-auto px-10 py-6 md:px-12 md:py-8 bg-white text-black text-xs md:text-sm font-black tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors flex justify-between items-center gap-8 md:gap-12"
+            >
+              {t('pricing.final.button')}
+              <ArrowRight className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

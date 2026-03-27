@@ -1,144 +1,123 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingButton from '@/components/FloatingButton';
-import { Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
-import ProjectCTA from '@/components/ProjectCTA';
-import { MagicCard } from "@/components/ui/magic-card";
-
-// Import images
-import fachadasImg from '@/content/projects/fachadas/Scene 0.png';
-import cenografiaImg from '@/content/projects/cenografia/1.jpeg';
-import ambientesImg from '@/content/projects/ambientes/danieljardim.3d_1727818425_3469514874563525172_58748782469.jpg';
-import personalizadosImg from '@/content/projects/personalizados/danieljardim.3d_1692115206_3170014560966158750_58748782469.jpg';
-
-import { BeamsBackground } from '@/components/ui/beams-background';
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { projectsData } from "@/data/projectsData";
+import { ServiceCategorySection } from "@/components/ui/service-category-section";
 
 const ServicosPage = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
+
+  const getCategoryImage = (slug: string) => {
+    // Priority mapping for better visuals
+    const mapping: Record<string, number> = {
+      'fachadas': 1,
+      'cenografia': 4,
+      'ambientes': 5,
+      'personalizados': 9
+    };
+    
+    const projectId = mapping[slug];
+    const project = projectsData.find(p => p.id === projectId) || projectsData.find(p => p.categorySlug === slug);
+    return project?.images[0] || "/placeholder.svg";
+  };
 
   const services = [
     {
-      id: 'fachadas',
+      id: "cenografia",
+      title: t('services.items.cenografia.title'),
+      desc: t('services.items.cenografia.description'),
+      path: "/servicos/cenografia",
+      image: getCategoryImage("cenografia")
+    },
+    {
+      id: "ambientes",
+      title: t('services.items.ambientes.title'),
+      desc: t('services.items.ambientes.description'),
+      path: "/servicos/ambientes",
+      image: getCategoryImage("ambientes")
+    },
+    {
+      id: "fachadas",
       title: t('services.items.fachadas.title'),
-      description: t('services.items.fachadas.description'),
-      icon: Building2,
-      image: fachadasImg,
-      slug: '/servicos/fachadas'
+      desc: t('services.items.fachadas.description'),
+      path: "/servicos/fachadas",
+      image: getCategoryImage("fachadas")
     },
     {
-      id: 'cenografia',
-      title: t('services.items.cenografia.overviewTitle'),
-      description: t('services.items.cenografia.description'),
-      icon: Warehouse,
-      image: cenografiaImg,
-      slug: '/servicos/cenografia'
-    },
-    {
-      id: 'ambientes',
-      title: t('services.items.ambientes.overviewTitle'),
-      description: t('services.items.ambientes.description'),
-      icon: Home,
-      image: ambientesImg,
-      slug: '/servicos/ambientes'
-    },
-    {
-      id: 'personalizados',
+      id: "personalizados",
       title: t('services.items.personalizados.title'),
-      description: t('services.items.personalizados.description'),
-      icon: Trophy,
-      image: personalizadosImg,
-      slug: '/servicos/personalizados'
+      desc: t('services.items.personalizados.description'),
+      path: "/servicos/personalizados",
+      image: getCategoryImage("personalizados")
     }
   ];
 
   return (
-    <div className="min-h-screen bg-transparent relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
+    <div className="h-screen w-screen bg-black overflow-hidden flex flex-col">
+      <Navbar />
+      
+      {/* Background Decor - Global purple glows */}
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-40">
+        <div className="absolute top-[10%] left-[-10%] w-[800px] h-[800px] bg-white/5 rounded-none blur-[150px]"></div>
+        <div className="absolute top-[40%] right-[-10%] w-[800px] h-[800px] bg-neutral-900/10 rounded-none blur-[150px]"></div>
       </div>
 
-      <Navbar />
-
-      <main className="pt-36 md:pt-44 pb-16 relative z-10">
-        {/* Hero Section */}
-        <section className="container mx-auto px-4 mb-16">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white leading-tight">
-              {t('servicesPage.title')}
-            </h1>
-            <div className="w-20 h-1.5 bg-highlight mx-auto mb-8 rounded-full"></div>
-            <p className="text-xl text-white/60">
-              {t('servicesPage.subtitle')}
-            </p>
+      {/* Main Snap Container */}
+      <div className="flex-1 w-full overflow-y-auto scroll-smooth snap-y snap-mandatory relative z-10">
+        
+        {/* Header Section */}
+        <section className="snap-start min-h-[70vh] w-full flex flex-col justify-center bg-black relative overflow-hidden pt-32 pb-20">
+          <div className="container mx-auto px-6 md:px-12 relative z-10">
+            <div className="max-w-4xl">
+              <motion.p 
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="text-[10px] md:text-xs tracking-[0.5em] uppercase text-primary mb-8 font-black"
+              >
+                {t('services.overviewTitle')}
+              </motion.p>
+              <motion.h1 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="text-6xl md:text-[10vw] font-black tracking-tighter leading-[0.8] uppercase mb-12"
+              >
+                <span className="text-white">{t('services.pageTitle')}</span> <br />
+                <span className="text-primary inline-block">{t('services.pageTitleHighlight')}</span>
+                <span className="text-white/20 inline-block ml-2">{t('services.pageTitleEnd')}</span>
+              </motion.h1>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-neutral-400 text-lg md:text-2xl font-sans max-w-2xl leading-relaxed"
+              >
+                {t('services.pageDescription')}
+              </motion.p>
+            </div>
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service) => {
-              const IconComponent = service.icon;
-              return (
-                <div
-                  key={service.id}
-                  onClick={() => navigate(service.slug)}
-                  className="cursor-pointer group relative h-[500px] rounded-[24px] overflow-hidden border border-white/10 transition-all duration-500 hover:border-primary/50"
-                >
-                  {/* Background Image */}
-                  <div className="absolute inset-0">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                  </div>
+        {/* Category Sections */}
+        {services.map((service, index) => (
+          <ServiceCategorySection 
+            key={service.id}
+            id={service.id}
+            title={service.title}
+            description={service.desc}
+            imageUrl={service.image}
+            path={service.path}
+            index={index}
+          />
+        ))}
 
-                  {/* Netflix-style Gradient Overlay */}
-                  <div 
-                    className="absolute inset-0 transition-opacity duration-500"
-                    style={{
-                      background: 'linear-gradient(to top, #0B0714 10%, rgba(11,7,20, 0.8) 40%, transparent 100%)'
-                    }}
-                  />
-
-                  {/* Hover Overlay Light */}
-                  <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                  {/* Content positioned at the bottom half */}
-                  <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-10 text-left">
-                    <div className="mb-6 transform transition-all duration-500 group-hover:-translate-y-2">
-                      <div className="bg-highlight/20 backdrop-blur-md w-14 h-14 rounded-2xl flex items-center justify-center mb-6 border border-white/10">
-                        <IconComponent className="h-7 w-7 text-[#9E3ED5]" />
-                      </div>
-                      <h2 className="text-3xl font-bold mb-4 text-white">
-                        {service.title}
-                      </h2>
-                      <p className="text-white/60 mb-6 text-[15px] leading-relaxed max-w-md line-clamp-3">
-                        {service.description}
-                      </p>
-                      <div className="flex items-center text-highlight font-bold tracking-wide group/btn">
-                        {t('servicesPage.viewMore').toUpperCase()} 
-                        <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+        {/* Footer Section */}
+        <section className="snap-start w-full bg-background border-t border-neutral-900">
+          <Footer />
         </section>
-
-        {/* CTA Section */}
-        <ProjectCTA />
-      </main>
-
-      <Footer />
-      <FloatingButton />
+      </div>
     </div>
   );
 };

@@ -330,8 +330,9 @@ const ThumbnailCarousel = ({ images, className }: ThumbnailCarouselProps) => {
                     <button
                         disabled={index === 0}
                         onClick={() => setIndex((i) => Math.max(0, i - 1))}
+                        aria-label="Previous slide"
                         className={cn(
-                            "absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10",
+                            "absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white",
                             index === 0 && "hidden"
                         )}
                     >
@@ -340,8 +341,9 @@ const ThumbnailCarousel = ({ images, className }: ThumbnailCarouselProps) => {
                     <button
                         disabled={index === images.length - 1}
                         onClick={() => setIndex((i) => Math.min(images.length - 1, i + 1))}
+                        aria-label="Next slide"
                         className={cn(
-                            "absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10",
+                            "absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 disabled:opacity-0 z-10 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white",
                             index === images.length - 1 && "hidden"
                         )}
                     >

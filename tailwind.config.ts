@@ -68,8 +68,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['TikTok Sans', 'Inter', 'sans-serif'],
-				heading: ['TikTok Sans', 'Montserrat', 'sans-serif'],
+				sans: ['Space Grotesk', 'Inter', 'sans-serif'],
+				heading: ['Archivo', 'Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

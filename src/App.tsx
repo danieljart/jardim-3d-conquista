@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import Home from "./pages/Home";
+import Index from "./pages/Index";
 import ServicosPage from "./pages/ServicosPage";
 import FachadasPage from "./pages/FachadasPage";
 import CenografiaPage from "./pages/CenografiaPage";
@@ -14,8 +14,9 @@ import SobrePage from "./pages/SobrePage";
 import ContactPage from "./pages/ContactPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import NotFound from "./pages/NotFound";
+import FloatingButton from "./components/FloatingButton";
 
-import { BeamsBackground } from "./components/ui/beams-background";
+import { SmoothScroll } from "./components/ui/smooth-scroll";
 
 const queryClient = new QueryClient();
 
@@ -26,11 +27,10 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <div className="relative min-h-screen bg-transparent">
-          <BeamsBackground intensity="strong" />
-          <div className="relative z-10">
+        <div className="relative min-h-screen bg-[#07020d]">
+          <main id="main-content" className="relative z-10 w-full overflow-x-hidden">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Index />} />
               <Route path="/servicos" element={<ServicosPage />} />
               <Route path="/servicos/fachadas" element={<FachadasPage />} />
               <Route path="/servicos/cenografia" element={<CenografiaPage />} />
@@ -41,7 +41,8 @@ const App = () => (
               <Route path="/projeto/:id" element={<ProjectDetailsPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </div>
+          </main>
+          <FloatingButton />
         </div>
       </BrowserRouter>
     </TooltipProvider>

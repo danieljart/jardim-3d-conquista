@@ -1,4 +1,7 @@
 {
+    "common": {
+        "scroll": "Scroll"
+    },
     "nav": {
         "home": "Home",
         "services": "Services",
@@ -7,8 +10,10 @@
         "whatsapp": "WhatsApp"
     },
     "hero": {
-        "title": "Crafting 3D visuals that",
-        "titleHighlight": "captivate!",
+        "title1": "I create",
+        "title2": "3D projects",
+        "title3": "that",
+        "titleHighlight": "conquer!",
         "subtitle": "Don't let your vision remain unseen. I create immersive visual storytelling that makes your brand not just visible, but unforgettable.",
         "cta": "Let's visualize your project",
         "solutions": "Visualization Expertise",
@@ -24,11 +29,14 @@
         "overviewSubtitle": "From scenography to commercial architecture: imagery that materializes business.",
         "learnMore": "Learn more",
         "viewAll": "View all services",
+        "pageTitle": "Our",
+        "pageTitleHighlight": "Technical Excellence",
+        "pageDescription": "We transform complex concepts into tangible realities through high-performance 3D visualization and strategic design.",
         "included": "What's included",
         "gallery": "Project Gallery",
         "items": {
             "fachadas": {
-                "title": "Commercial Façades",
+                "title": "COMMERCIAL FAÇADES",
                 "description": "The face of your business. Designs that draw customers in from the street.",
                 "overviewDesc": "3D revitalization and creation of façades to make your brand stand out in the urban landscape.",
                 "pageTitle": "Commercial Façades",
@@ -41,8 +49,8 @@
                 "ctaText": "Quote my façade"
             },
             "cenografia": {
-                "title": "Scenography & Events",
-                "overviewTitle": "Scenography & Booths",
+                "title": "SCENOGRAPHY & BOOTHS",
+                "overviewTitle": "SCENOGRAPHY & BOOTHS",
                 "description": "Ephemeral spaces, lasting impact. Design for trade shows and stages.",
                 "overviewDesc": "Creation of booths and brand activations that drive traffic and engagement at events.",
                 "pageTitle": "Scenography",
@@ -55,8 +63,8 @@
                 "ctaText": "Quote scenography project"
             },
             "ambientes": {
-                "title": "Interiors",
-                "overviewTitle": "Interior Design",
+                "title": "INTERIOR DESIGN",
+                "overviewTitle": "INTERIOR DESIGN",
                 "description": "Atmosphere and function. Visualization for retail and corporate spaces.",
                 "overviewDesc": "Visualization of layouts that optimize user experience and operations.",
                 "pageTitle": "Interiors",
@@ -69,7 +77,7 @@
                 "ctaText": "Quote interior project"
             },
             "personalizados": {
-                "title": "Custom Projects",
+                "title": "SPECIAL PROJECTS",
                 "description": "Trophies, kiosks, and product modeling.",
                 "overviewDesc": "Product design and exclusive pieces for awards and POS.",
                 "pageTitle": "Custom",
@@ -92,6 +100,9 @@
         "videos": "Videos & Tours",
         "contact": "Contact",
         "whatsapp": "WhatsApp",
+        "explore": "Explore",
+        "terms": "Terms",
+        "privacy": "Privacy",
         "rights": "All rights reserved.",
         "items": {
             "fachadas": "Commercial Façades",
@@ -161,13 +172,39 @@
             },
             "story": {
                 "title": "My Journey",
-                "p1": "I began my professional path in graphic design in 2018, building a strong foundation in composition, color theory, and visual communication. However, it was within the three-dimensional realm that I discovered the ultimate tool to materialize complex visions and transform abstract concepts into high-impact, hyper-realistic experiences.",
-                "p2": "Today, I utilize an ecosystem of cutting-edge tools like Blender, D5 Render, SketchUp, and CorelDRAW to develop optimized workflows. My focus lies at the intersection of technical precision and artistic storytelling, ensuring every project doesn't just simulate reality but tells a compelling story that drives business results."
+                "p1_title": "The Beginning of the Journey",
+                "p1": "My journey in design began in 2018, initially focused on graphic design and visual communication. However, it was by diving into the three-dimensional world that I found the perfect tool to express complex ideas and create visualizations that transcend the obvious. Today, my work is the bridge between architectural concept and high-end visual materialization.",
+                "p2_title": "Technical Mastery & Workflow",
+                "p2": "I use an advanced workflow integrated with Blender, D5 Render, SketchUp and CorelDRAW, allowing for agile delivery with impressive technical fidelity. My focus is always on visual narrative: each light and each texture are thought out to enhance the project and anticipate the success of my partners' enterprise."
             },
             "skills": {
+                "sectionTitle": "Skills",
+                "topTitle": "Top Skills",
+                "techTitle": "Technical",
+                "softTitle": "Software",
                 "title": "Technical Skills",
                 "design": "Design & CGI",
-                "audiovisual": "Post-production & Motion"
+                "audiovisual": "Post-production & Motion",
+                "top": [
+                    "Scenography",
+                    "Commercial Arch.",
+                    "Retail Design",
+                    "Spatial Planning",
+                    "Branding"
+                ],
+                "technical": [
+                    "Layout Validation",
+                    "Design Feasibility",
+                    "Visual Communication",
+                    "CNC Preparation",
+                    "Filmmaking (Edit/Capt)"
+                ],
+                "software": [
+                    "Blender 3D",
+                    "D5 Render",
+                    "Adobe (PS, Ai, Pr, Ae)",
+                    "CorelDraw"
+                ]
             },
             "why": {
                 "title": "Why work with me?",
@@ -206,7 +243,7 @@
                 "desc": "You view and approve every step, from draft to final render."
             },
             "efficient": {
-                "title": "Deadline Commitment",
+                "title": "Efficiency and Agility",
                 "desc": "Clear schedules and punctual deliveries so your construction or launch is never delayed."
             },
             "measurable": {
@@ -266,8 +303,9 @@
             "tourDesc": "Interactive virtual tour allowing full exploration of the space and details prior to construction.",
             "presentationTitle": "3D Cinematography - Commercial Façade",
             "presentationDesc": "A cinematic showcase of the commercial façade transformation, highlighting architectural details and visual communication.",
-            "footerText": "My 3D videos and virtual tours provide a realistic immersive experience that anticipates the realization of your project.",
-            "cta": "I want to discuss a project"
+            "footerText": "Video and virtual tours eliminate doubts, validate design, and serve as powerful sales and marketing tools.",
+            "cta": "Request an animation quote",
+            "videoFallback": "Your browser does not support the video element."
         }
     },
     "pricing": {
@@ -293,17 +331,35 @@
         },
         "final": {
             "title": "Delivered results, lasting partnership",
-            "desc": "Impeccable projects and full support for what comes next.",
+                "desc": "Impeccable projects and full support for what comes next.",
             "button": "Request a quote"
         }
     },
     "testimonials": {
-        "title": "Client Testimonials",
-        "subtitle": "The greatest validation of my work lies in the success of the clients who trusted me.",
+        "title": "What my partners say",
+        "subtitle": "The best proof of value is not the image, but the result it generates.",
+        "projectAlt": "Audiovisual project for",
         "commitment": {
             "title": "My commitment to you",
             "quote": "\"My mission is to apply the full potential of visual creativity to drive your business results. It's about strategy, impact, and sustainable growth. Count on my dedication to take your brand to the next level.\"",
             "signature": "Daniel Jardim - 3D Artist & Designer"
+        },
+        "items": {
+            "1": {
+                "name": "Sara Silva",
+                "company": "Coonline Accounting",
+                "quote": "The 3D project for our façade exceeded all expectations. Implementation increased new customer numbers by 35% in the first quarter after the renovation. Daniel knew exactly how to translate what we were looking for into our brand."
+            },
+            "2": {
+                "name": "Raul Aguilera",
+                "company": "Tudo Conveniência",
+                "quote": "Working with Daniel was an incredible experience. He understood exactly what we wanted for our new visual identity and translated it perfectly into 3D. Communication was always clear, and the final result left us impressed."
+            },
+            "3": {
+                "name": "Ricardo Mendes",
+                "company": "Docile Confectionery",
+                "quote": "The 3D modeling of our booth for the trade show was fundamental for us to stand out from competitors. The result attracted many more visitors to our space and generated excellent business contacts. We are already planning new projects together."
+            }
         }
     },
     "portfolio": {
@@ -318,6 +374,24 @@
             "renderDesc": "Photorealistic preview",
             "after": "After",
             "afterDesc": "Real impact on brand perception"
+        },
+        "items": {
+            "1": {
+                "title": "Sacolão Abcintra",
+                "category": "Commercial Façades"
+            },
+            "2": {
+                "title": "Coca-Cola / REMSA Arena",
+                "category": "Scenography & Events"
+            },
+            "3": {
+                "title": "Elen Koc’s Studio",
+                "category": "Commercial Interiors"
+            },
+            "4": {
+                "title": "Bodytech",
+                "category": "Special Projects"
+            }
         }
     },
     "projects/ambientes/01/title": "Laman",

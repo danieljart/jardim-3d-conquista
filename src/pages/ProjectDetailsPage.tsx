@@ -6,12 +6,8 @@ import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
 import ProjectCTA from '@/components/ProjectCTA';
 import { projectsData } from '@/data/projectsData';
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, Building2, Warehouse, Home, Trophy, ArrowRight } from 'lucide-react';
-import thumbnailCarousel from "@/components/ui/thumbnail-carousel";
-import ShimmerButton from '@/components/ui/shimmer-button';
-import { MagicCard } from "@/components/ui/magic-card";
-import { BeamsBackground } from '@/components/ui/beams-background';
+import { ArrowRight, ArrowLeft, Share2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const ProjectDetailsPage = () => {
     const { t, i18n } = useTranslation();
@@ -20,12 +16,13 @@ const ProjectDetailsPage = () => {
 
     const project = projectsData.find(p => p.id === Number(id));
 
-    // Related projects logic: Get 4 projects excluding current, preferably same category?
-    // For now simple exclusion and slice to keep it robust.
     const relatedProjects = projectsData
-        .filter(p => p.id !== Number(id))
-        .sort(() => 0.5 - Math.random()) // Shuffle
-        .slice(0, 4);
+        .filter(p => {
+            if (p.id === Number(id)) return false;
+            if (!project) return false;
+            return p.categorySlug === project.categorySlug;
+        })
+        .slice(0, 3);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -34,183 +31,160 @@ const ProjectDetailsPage = () => {
     if (!project) {
         return (
             <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
-                <h1 className="text-2xl font-bold mb-4">{t('project.notFound')}</h1>
-                <Button onClick={() => navigate('/servicos')} variant="outline">
+                <h1 className="text-3xl font-black mb-8 uppercase tracking-tighter">{t('project.notFound')}</h1>
+                <button onClick={() => navigate('/servicos')} className="bg-white text-black px-8 py-4 rounded-full text-sm font-black tracking-widest uppercase hover:scale-105 transition-transform">
                     {t('project.backToServices')}
-                </Button>
+                </button>
             </div>
         );
     }
 
     return (
-        <div className="min-h-screen bg-transparent relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
-                <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
+        <div className="min-h-screen bg-black relative overflow-hidden selection:bg-white/20">
+            <div className="fixed inset-0 pointer-events-none z-0">
+                <div className="absolute top-[-10%] left-[-10%] w-[800px] h-[800px] bg-white/5 rounded-none blur-[180px] opacity-40"></div>
+                <div className="absolute bottom-[-10%] right-[-10%] w-[800px] h-[800px] bg-neutral-900/10 rounded-none blur-[180px] opacity-40"></div>
             </div>
 
             <Navbar />
 
-            <main className="pt-20 md:pt-24 pb-8 relative z-10">
-                <div className="container mx-auto px-4 max-w-[1400px]">
-                    <div className="grid grid-cols-1 lg:grid-cols-[1.8fr_1fr] gap-12">
-
-                        {/* LEFT COLUMN: Gallery */}
-                        <div className="flex flex-col gap-6">
-                            {project.images.map((img, idx) => (
-                                <div 
-                                    key={idx} 
-                                    className="rounded-[32px] overflow-hidden border border-white/10 transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_24px_48px_rgba(158,62,213,0.1)] shadow-2xl w-fit mx-auto bg-white/3 relative group"
+            <main className="pt-32 md:pt-48 pb-24 relative z-10">
+                <div className="container mx-auto px-6 md:px-12">
+                    
+                    {/* Project Header */}
+                    <div className="flex flex-col mb-16 md:mb-32">
+                        <motion.button 
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            onClick={() => navigate(-1)}
+                            className="flex items-center gap-3 text-neutral-500 hover:text-white transition-colors mb-16 text-[10px] uppercase font-black tracking-[0.4em] group w-fit"
+                        >
+                            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                            {t('project.back')}
+                        </motion.button>
+                        
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+                            <div className="lg:col-span-8">
+                                <motion.span 
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    className="inline-block px-5 py-2 border border-white/10 bg-white/5 text-neutral-400 text-[10px] font-black mb-10 uppercase tracking-[0.4em] rounded-none"
                                 >
-                                    <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    {t(`services.items.${project.categorySlug}.title`)}
+                                </motion.span>
+                                <motion.h1 
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1 }}
+                                    className="text-5xl md:text-[9vw] lg:text-[7vw] font-black text-white leading-[0.8] tracking-tighter uppercase"
+                                >
+                                    {i18n.language === 'en' && project.title_en ? project.title_en : project.title}
+                                </motion.h1>
+                            </div>
+                            <div className="lg:col-span-4 flex justify-start lg:justify-end gap-6 h-fit">
+                                <button className="w-14 h-14 rounded-none border border-neutral-800 bg-black/40 text-neutral-500 hover:bg-white hover:text-black hover:border-white transition-all flex items-center justify-center group">
+                                    <Share2 className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                                </button>
+                                <button 
+                                    onClick={() => navigate('/contato')}
+                                    onKeyDown={(e) => e.key === 'Enter' && navigate('/contato')}
+                                    aria-label={t('project.requestQuote')}
+                                    className="px-10 py-5 bg-white text-black text-[10px] font-black uppercase tracking-[0.3em] rounded-none hover:bg-neutral-200 transition-all duration-700 shadow-2xl focus:ring-2 focus:ring-white focus:outline-none"
+                                >
+                                    {t('project.requestQuote')}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Premium Asymmetrical Gallery */}
+                    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 mb-32">
+                        {project.images.map((img, idx) => {
+                            // Enhanced 21st.dev style grid
+                            let gridClass = "md:col-span-12 aspect-[21/9] md:h-auto"; 
+                            if (idx % 3 === 0) gridClass = "md:col-span-12 aspect-[21/9]";
+                            if (idx % 3 === 1) gridClass = "md:col-span-7 aspect-[16/10]";
+                            if (idx % 3 === 2) gridClass = "md:col-span-5 aspect-[16/10]";
+
+                            return (
+                                <motion.div 
+                                    key={idx}
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    viewport={{ once: true, margin: "-10%" }}
+                                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                                    className={`${gridClass} overflow-hidden bg-neutral-900/50 border border-neutral-800/50 relative group cursor-pointer rounded-none`}
+                                >
                                     <img 
                                         src={img} 
                                         alt={`${project.title} - ${idx + 1}`}
-                                        className="max-w-full max-h-[85vh] h-auto block relative z-10 transition-transform duration-700 group-hover:scale-105"
+                                        className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-[2s] ease-[cubic-bezier(0.16,1,0.3,1)] scale-110 group-hover:scale-100"
                                     />
-                                </div>
-                            ))}
+                                    
+                                    {/* Neutral Overlay on Hover */}
+                                    <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none" />
+                                    
+                                    {/* Minimalist Counter */}
+                                    <div className="absolute bottom-8 right-8 px-4 py-2 bg-black/40 backdrop-blur-xl border border-white/5 rounded-none opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700">
+                                        <span className="text-[8px] font-black text-white uppercase tracking-[0.4em]">
+                                            PX_VIEW // 0{idx + 1}
+                                        </span>
+                                    </div>
+                                </motion.div>
+                            )
+                        })}
+                    </div>
+
+                    {/* Project Info Section */}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24 py-32 border-t border-neutral-900/50">
+                        <div className="lg:col-span-8 flex flex-col gap-16">
+                            <div>
+                                <h2 className="text-[10px] font-black text-neutral-400 mb-10 uppercase tracking-[0.5em] flex items-center gap-4">
+                                    <div className="h-[2px] w-8 bg-neutral-800"></div>
+                                    {t('project.about')}
+                                </h2>
+                                <p className="text-neutral-400 text-xl md:text-3xl leading-[1.3] font-black tracking-tight uppercase max-w-5xl">
+                                    {i18n.language === 'en' && project.description_en ? project.description_en : project.description}
+                                </p>
+                            </div>
                         </div>
 
-                        {/* RIGHT COLUMN: Description & Related */}
-                        <div className="flex flex-col gap-6">
-
-                            {/* Project Description Card */}
-                            <div className="glass-card rounded-[32px] p-8 md:p-10 flex flex-col bg-white/3 backdrop-blur-[24px] border border-white/10 shadow-[0_32px_64px_rgba(0,0,0,0.4)] relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -mr-32 -mt-32"></div>
-                                <div className="mb-10 text-left relative z-10">
-                                    <span className="inline-block px-5 py-2 rounded-full bg-primary/10 text-primary text-[10px] font-black mb-6 border border-primary/20 uppercase tracking-[0.2em]">
-                                        {t(`services.items.${project.categorySlug}.title`)}
-                                    </span>
-                                    <h1 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight tracking-tight">
-                                        {i18n.language === 'en' && project.title_en ? project.title_en : project.title}
-                                    </h1>
-                                </div>
-
-                                <div className="mb-12 text-left relative z-10">
-                                    <h2 className="text-[11px] font-black text-white/30 mb-6 uppercase tracking-[0.3em]">{t('project.about') || 'SOBRE O PROJETO'}</h2>
-                                    <p className="text-white/50 text-lg md:text-xl leading-[1.8] font-medium tracking-tight">
-                                        {i18n.language === 'en' && project.description_en ? project.description_en : project.description}
-                                    </p>
-                                </div>
-
-                                <ShimmerButton
-                                    onClick={() => navigate('/contato')}
-                                    background="linear-gradient(90deg, #563474 0%, #9E3ED5 100%)"
-                                    shimmerColor="#FFFFFF"
-                                    className="w-full py-3 text-sm md:text-base font-black uppercase tracking-[0.2em] shadow-[0_20px_40px_rgba(158,62,213,0.3)] rounded-[20px] relative z-10 transition-transform duration-300 hover:scale-[1.02]"
-                                >
-                                    {t('project.requestQuote') || 'Solicitar Orçamento'}
-                                </ShimmerButton>
-                            </div>
-
-                            {/* Recommended Projects */}
-                            <div className="flex flex-col gap-6">
-                                <h3 className="text-white text-xl font-bold border-l-4 border-highlight pl-4">{t('project.relatedProjects')}</h3>
-                                <div className="grid grid-cols-3 gap-4">
-                                    {relatedProjects.slice(0, 3).map((p) => (
-                                        <div
-                                            key={p.id}
-                                            className="group relative rounded-[20px] overflow-hidden hover:shadow-[0_20px_40px_rgba(158,62,213,0.2)] transition-all cursor-pointer border border-white/10 hover:scale-[1.05] duration-500 bg-white/5 aspect-[4/3]"
-                                            onClick={() => navigate(`/projeto/${p.id}`)}
-                                        >
-                                            <img
-                                                src={p.images[0]}
-                                                alt={p.title}
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0714] via-[#0B0714]/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                                <h4 className="text-white text-[10px] uppercase font-black tracking-widest leading-tight line-clamp-2">
-                                                    {i18n.language === 'en' && p.title_en ? p.title_en : p.title}
-                                                </h4>
-                                            </div>
+                        <div className="lg:col-span-4 flex flex-col gap-12 bg-neutral-900/10 border border-neutral-800/30 p-10 md:p-12 rounded-none backdrop-blur-sm self-start group">
+                            <h3 className="text-xl font-black text-white uppercase tracking-tighter mb-4 flex justify-between items-center">
+                                {t('project.relatedProjects')}
+                                <ArrowRight className="w-5 h-5 text-white opacity-0 group-hover:opacity-100 -rotate-45 group-hover:rotate-0 transition-all" />
+                            </h3>
+                            <div className="flex flex-col gap-8">
+                                {relatedProjects.map((p) => (
+                                    <div 
+                                        key={p.id} 
+                                        onClick={() => navigate(`/projeto/${p.id}`)}
+                                        onKeyDown={(e) => e.key === 'Enter' && navigate(`/projeto/${p.id}`)}
+                                        tabIndex={0}
+                                        role="button"
+                                        aria-label={`${t('project.relatedProjects')}: ${p.title}`}
+                                        className="group/item cursor-pointer flex gap-6 items-center focus:outline-none focus:ring-1 focus:ring-white/50 p-2 rounded-none"
+                                    >
+                                        <div className="w-24 h-24 overflow-hidden border border-neutral-800 shrink-0 rounded-none bg-neutral-900">
+                                            <img src={p.images[0]} alt={p.title} className="w-full h-full object-cover grayscale group-hover/item:grayscale-0 group-hover/item:scale-110 transition-all duration-1000" />
                                         </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Category Navigation Section (Vertical Sidebar) */}
-                            <div className="flex flex-col gap-6">
-                                {(() => {
-                                    const getCategoryImage = (slug: string) => {
-                                        const proj = projectsData.find(p => p.categorySlug === slug);
-                                        return proj?.images[0] || '';
-                                    };
-
-                                    const serviceCategories = [
-                                        { slug: 'fachadas', title: t('services.items.fachadas.title'), path: '/servicos/fachadas', image: getCategoryImage('fachadas') },
-                                        { slug: 'cenografia', title: t('services.items.cenografia.overviewTitle'), path: '/servicos/cenografia', image: getCategoryImage('cenografia') },
-                                        { slug: 'ambientes', title: t('services.items.ambientes.overviewTitle'), path: '/servicos/ambientes', image: getCategoryImage('ambientes') },
-                                        { slug: 'personalizados', title: t('services.items.personalizados.title'), path: '/servicos/personalizados', image: getCategoryImage('personalizados') }
-                                    ];
-                                    const currentCategory = serviceCategories.find(c => c.slug === project?.categorySlug);
-                                    const otherCategories = serviceCategories.filter(c => c.slug !== project?.categorySlug);
-
-                                    return (
-                                        <div className="flex flex-col gap-6">
-                                            {/* Current Category */}
-                                            {currentCategory && (
-                                                <div className="flex flex-col">
-                                                    <div
-                                                        onClick={() => navigate(currentCategory.path)}
-                                                        className="cursor-pointer group glass-card rounded-[24px] border-2 border-primary/30 overflow-hidden hover:shadow-[0_20px_40px_rgba(158,62,213,0.15)] transition-all duration-500 hover:scale-[1.02] bg-white/5 flex flex-row items-center p-4 relative"
-                                                    >
-                                                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-16 -mt-16 group-hover:bg-primary/20 transition-colors"></div>
-                                                        <div className="w-16 h-16 rounded-[14px] overflow-hidden shrink-0 border border-white/10 relative z-10">
-                                                            <img
-                                                                src={currentCategory.image}
-                                                                alt={currentCategory.title}
-                                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                                            />
-                                                        </div>
-                                                        <div className="ml-5 flex-1 relative z-10">
-                                                            <h3 className="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-1 opacity-40">{t('category.youAreHere') || 'VOCÊ ESTÁ AQUI:'}</h3>
-                                                            <h3 className="text-white text-base font-black uppercase tracking-tight mb-2 group-hover:text-highlight transition-colors">{currentCategory.title}</h3>
-                                                            <div className="flex items-center text-primary text-[10px] font-black uppercase tracking-[0.2em]">
-                                                                {t('services.learnMore')} <ArrowRight className="ml-3 h-3 w-3 group-hover:translate-x-2 transition-transform" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            )}
-
-                                            {/* Other Categories */}
-                                            <div className="flex flex-col gap-4">
-                                                <p className="text-white/40 text-[10px] mb-2 font-black uppercase tracking-[0.2em] pl-2">{t('category.knowMore') || 'CONHEÇA TAMBÉM:'}</p>
-                                                {otherCategories.map((cat) => (
-                                                    <div
-                                                        key={cat.slug}
-                                                        onClick={() => navigate(cat.path)}
-                                                        className="cursor-pointer group glass-card rounded-[20px] border border-white/10 overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white/5 flex flex-row items-center p-3"
-                                                    >
-                                                        <div className="w-12 h-12 rounded-[10px] overflow-hidden shrink-0 border border-white/5 transition-all group-hover:border-primary/30">
-                                                            <img
-                                                                src={cat.image}
-                                                                alt={cat.title}
-                                                                className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all group-hover:scale-110"
-                                                              />
-                                                        </div>
-                                                        <div className="ml-4">
-                                                            <h3 className="text-white/40 group-hover:text-white text-sm font-black uppercase tracking-tight transition-colors">{cat.title}</h3>
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </div>
+                                        <div className="flex flex-col">
+                                            <span className="text-[8px] uppercase tracking-[0.3em] text-neutral-600 mb-2 group-hover/item:text-neutral-400 transition-colors">PROJ_0{p.id}</span>
+                                            <h4 className="text-sm font-black text-white uppercase group-hover/item:text-neutral-200 transition-colors leading-tight">{p.title}</h4>
                                         </div>
-                                    );
-                                })()}
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="mt-12 md:mt-16 mb-4">
+                <div className="mt-32">
                     <ProjectCTA />
                 </div>
             </main>
 
             <Footer />
-            <FloatingButton />
         </div>
     );
 };

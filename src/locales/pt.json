@@ -1,4 +1,7 @@
 {
+    "common": {
+        "scroll": "Scroll"
+    },
     "nav": {
         "home": "Início",
         "services": "Serviços",
@@ -7,7 +10,9 @@
         "whatsapp": "WhatsApp"
     },
     "hero": {
-        "title": "Crio projetos 3D que",
+        "title1": "Crio",
+        "title2": "Projetos 3D",
+        "title3": "que",
         "titleHighlight": "conquistam!",
         "subtitle": "A arquitetura do seu negócio precisa ser vista antes de ser construída. Crio narrativas visuais que antecipam o futuro e fazem sua marca liderar.",
         "cta": "Vamos tirar o projeto do papel",
@@ -24,7 +29,8 @@
             "presentationTitle": "Tour Virtual - Comunicação Visual",
             "presentationDesc": "Um olhar cinematográfico sobre a renovação da fachada, destacando a iluminação noturna e o impacto da nova comunicação visual.",
             "footerText": "O vídeo e o tour virtual eliminam dúvidas, validam o design e servem como ferramentas poderosas de venda e marketing.",
-            "cta": "Quero orçar uma animação"
+            "cta": "Quero orçar uma animação",
+            "videoFallback": "Seu navegador não suporta o elemento de vídeo."
         }
     },
     "services": {
@@ -36,12 +42,16 @@
         "overviewSubtitle": "Da cenografia à arquitetura comercial: imagens que materializam negócios.",
         "learnMore": "Detalhes",
         "viewAll": "Ver todos os serviços",
+        "pageTitle": "Nossa",
+        "pageTitleHighlight": "Excelência",
+        "pageTitleEnd": "Técnica",
+        "pageDescription": "Transformamos conceitos complexos em realidades tangíveis através de visualização 3D de alta performance e design estratégico.",
         "included": "O que está incluído",
         "gallery": "Galeria de Projetos",
         "solutionsIn": "Explorando soluções visuais em",
         "items": {
             "fachadas": {
-                "title": "Fachadas Comerciais",
+                "title": "FACHADAS COMERCIAIS",
                 "description": "O rosto do seu negócio. Projetos que atraem clientes da rua para dentro.",
                 "overviewDesc": "Revitalização e criação de fachadas 3D para destacar sua marca na paisagem urbana.",
                 "pageTitle": "Fachadas Comerciais",
@@ -54,8 +64,8 @@
                 "ctaText": "Orçar minha fachada"
             },
             "cenografia": {
-                "title": "Cenografia e Eventos",
-                "overviewTitle": "Cenografia & Estandes",
+                "title": "CENOGRAFIA & ESTANDES",
+                "overviewTitle": "CENOGRAFIA & ESTANDES",
                 "description": "Espaços efêmeros, impacto duradouro. Design para feiras e palcos.",
                 "overviewDesc": "Criação de estandes e ativações de marca que geram fluxo e engajamento em eventos.",
                 "pageTitle": "Cenografia",
@@ -68,8 +78,8 @@
                 "ctaText": "Orçar projeto cenográfico"
             },
             "ambientes": {
-                "title": "Interiores Comerciais",
-                "overviewTitle": "Design de Interiores",
+                "title": "DESIGN DE INTERIORES",
+                "overviewTitle": "DESIGN DE INTERIORES",
                 "description": "Atmosfera e função. Visualização para varejo e corporativo.",
                 "overviewDesc": "Visualização de layouts que otimizam a experiência do usuário e a operação.",
                 "pageTitle": "Interiores",
@@ -82,7 +92,7 @@
                 "ctaText": "Orçar projeto de interiores"
             },
             "personalizados": {
-                "title": "Projetos Especiais",
+                "title": "PROJETOS ESPECIAIS",
                 "description": "Troféus, totens e modelagem de produto.",
                 "overviewDesc": "Design de produto e peças exclusivas para premiações e PDV.",
                 "pageTitle": "Customização",
@@ -149,16 +159,42 @@
                 "greeting": "Olá, eu sou",
                 "role": "Sou artista 3D especializado em ArchViz e Cenografia.",
                 "desc": "Atuo com fachadas comerciais, cenografia de eventos e ambientes internos. Crio narrativas visuais que unem estética apurada e estratégia comercial, tangibilizando o futuro do seu negócio.",
-                "cta": "Entrar em contato",
-                "skills": {
-                    "title": "Expertise Técnica",
-                    "design": "Design & CGI",
-                    "audiovisual": "Pós-produção & Motion"
-                }
+                "cta": "Entrar em contato"
+            },
+            "skills": {
+                "sectionTitle": "Habilidades",
+                "topTitle": "Principais",
+                "techTitle": "Técnicas",
+                "softTitle": "Software",
+                "title": "Expertise Técnica",
+                "design": "Design & CGI",
+                "audiovisual": "Pós-produção & Motion",
+                "top": [
+                    "Cenografia",
+                    "Arq. Comercial",
+                    "Design de Varejo",
+                    "Plan. Espacial",
+                    "Branding"
+                ],
+                "technical": [
+                    "Validação de Layout",
+                    "Viabilidade de Design",
+                    "Comunicação Visual",
+                    "Preparação CNC",
+                    "Filmmaking (Edit/Capt)"
+                ],
+                "software": [
+                    "Blender 3D",
+                    "D5 Render",
+                    "Adobe (PS, Ai, Pr, Ae)",
+                    "CorelDraw"
+                ]
             },
             "story": {
                 "title": "Minha Jornada",
+                "p1_title": "O Início da Trajetória",
                 "p1": "Minha trajetória no design começou em 2018, focada inicialmente em design gráfico e comunicação visual. No entanto, foi ao mergulhar no mundo tridimensional que encontrei a ferramenta perfeita para expressar ideias complexas e criar visualizações que transcendem o óbvio. Hoje, meu trabalho é a ponte entre o conceito arquitetônico e a materialização visual de alto padrão.",
+                "p2_title": "Domínio Técnico & Workflow",
                 "p2": "Utilizo um workflow avançado integrado com Blender, D5 Render, SketchUp e CorelDRAW, permitindo uma entrega ágil e com fidelidade técnica impressionante. Meu foco é sempre a narrativa visual: cada luz e cada textura são pensadas para valorizar o projeto e antecipar o sucesso do empreendimento dos meus parceiros."
             },
             "why": {
@@ -297,6 +333,7 @@
     "testimonials": {
         "title": "O que dizem meus parceiros",
         "subtitle": "A melhor prova de valor não é a imagem, é o resultado que ela gera.",
+        "projectAlt": "Projeto audiovisual para",
         "commitment": {
             "title": "Minha filosofia de trabalho",
             "quote": "\"Minha missão não é apenas fazer 'imagens bonitas', mas usar a visualização 3D como ferramenta de negócios. Estratégia visual, impacto imediato e clareza de comunicação: é assim que elevamos o padrão do seu projeto.\"",
@@ -332,6 +369,24 @@
             "renderDesc": "O projeto materializado",
             "after": "Resultado Final",
             "afterDesc": "Impacto real na percepção da marca"
+        },
+        "items": {
+            "1": {
+                "title": "Sacolão Abcintra",
+                "category": "Fachadas Comerciais"
+            },
+            "2": {
+                "title": "Coca-Cola / Arena REMSA",
+                "category": "Cenografia e Eventos"
+            },
+            "3": {
+                "title": "Elen Koc’s Studio",
+                "category": "Interiores Comerciais"
+            },
+            "4": {
+                "title": "Bodytech",
+                "category": "Projetos Especiais"
+            }
         }
     },
     "footer": {
@@ -343,6 +398,9 @@
         "videos": "Vídeos e Tours",
         "contact": "Contato",
         "whatsapp": "WhatsApp",
+        "explore": "Explore",
+        "terms": "Termos",
+        "privacy": "Privacidade",
         "rights": "Todos os direitos reservados."
     },
     "projects/ambientes/01/title": "Laman",

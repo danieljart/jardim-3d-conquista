@@ -15,10 +15,10 @@ export function MagicCard({
     children,
     className,
     gradientSize = 300,
-    gradientColor = "#8B5CF6", // Vivid Purple
-    gradientOpacity = 0.15,
-    gradientFrom = "#8B5CF6",
-    gradientTo = "#C084FC", // Lighter purple
+    gradientColor = "#ffffff", 
+    gradientOpacity = 0.1,
+    gradientFrom = "#ffffff",
+    gradientTo = "#ffffff",
     ...props
 }: MagicCardProps) {
     const cardRef = useRef<HTMLDivElement>(null);
@@ -76,14 +76,14 @@ export function MagicCard({
         <div
             ref={cardRef}
             className={cn(
-                "group relative flex h-full w-full overflow-hidden rounded-xl border text-black dark:text-white",
+                "group relative flex h-full w-full overflow-hidden rounded-none border text-black dark:text-white",
                 className,
             )}
             {...props}
         >
             <div className="relative z-10 h-full w-full">{children}</div>
             <motion.div
-                className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                className="pointer-events-none absolute -inset-px rounded-none opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 style={{
                     background: useMotionTemplate`
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)
@@ -92,7 +92,7 @@ export function MagicCard({
                 }}
             />
             <motion.div
-                className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                className="pointer-events-none absolute -inset-px rounded-none opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 style={{
                     background: useMotionTemplate`
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientFrom}, transparent 100%)

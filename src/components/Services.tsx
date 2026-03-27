@@ -63,24 +63,48 @@ const Services = () => {
             <div
               key={index}
               onClick={() => navigate(service.slug)}
-              className="glass-card rounded-[24px] overflow-hidden cursor-pointer group transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(158,62,213,0.2)]"
+              onKeyDown={(e) => e.key === 'Enter' && navigate(service.slug)}
+              tabIndex={0}
+              role="button"
+              aria-label={`${t('services.learnMore')}: ${service.title}`}
+              data-cursor="hover"
+              data-cursor-color="purple"
+              className="group relative flex flex-col justify-between p-8 min-h-[320px] bg-white/5 border border-white/10 rounded-[32px] overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-purple-500/50 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
             >
-              <div className="h-48 overflow-hidden relative">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0714] to-transparent opacity-80"></div>
-              </div>
-              <div className="p-8 relative">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -mr-16 -mt-16 group-hover:bg-primary/10 transition-colors"></div>
-                <h3 className="text-xl font-black mb-3 text-white tracking-tight group-hover:text-highlight transition-colors leading-tight">{service.title}</h3>
-                <p className="text-white/40 text-sm mb-6 leading-relaxed font-medium line-clamp-2">{service.description}</p>
-                <div className="flex items-center text-primary text-[11px] font-black uppercase tracking-[0.2em]">
-                  {t('services.viewProjects')} <ArrowRight className="ml-3 h-4 w-4 group-hover:translate-x-2 transition-transform" />
+              {/* Main content container with pointer-events-none for cursor reliability */}
+              <div className="flex flex-col w-full relative z-10 h-full pointer-events-none">
+                {/* Number indicator */}
+                <span className="text-white/20 font-black text-6xl tracking-tighter mb-4 opacity-50 group-hover:opacity-100 transition-opacity">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+
+                <div className="mt-auto">
+                  {/* Title and Button Row */}
+                  <div className="flex items-end justify-between mb-4">
+                    <h3 className="text-3xl font-black text-white leading-[0.85] tracking-tighter uppercase max-w-[70%] transition-colors group-hover:text-purple-400">
+                      {service.title.split(' ').map((word, i, arr) => (
+                        <React.Fragment key={i}>
+                          {word}
+                          {i === Math.floor(arr.length / 2) - 1 ? <br /> : ' '}
+                        </React.Fragment>
+                      ))}
+                    </h3>
+                    
+                    {/* Round Arrow Button - Pointer events auto to be clickable but transition is handled by card click */}
+                    <div className="h-14 w-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+                      <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-white/40 text-sm leading-relaxed font-medium">
+                    {service.description}
+                  </p>
                 </div>
               </div>
+
+              {/* Purple glow effect */}
+              <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-purple-600/10 blur-[80px] group-hover:bg-purple-600/30 transition-all duration-700" />
             </div>
           ))}
         </div>
