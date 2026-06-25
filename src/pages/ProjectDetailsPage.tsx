@@ -89,7 +89,7 @@ const ProjectDetailsPage = () => {
                                     onClick={() => navigate('/contato')}
                                     onKeyDown={(e) => e.key === 'Enter' && navigate('/contato')}
                                     aria-label={t('project.requestQuote')}
-                                    className="px-10 py-5 bg-white text-black text-[10px] font-black uppercase tracking-[0.3em] rounded-none hover:bg-neutral-200 transition-all duration-700 shadow-2xl focus:ring-2 focus:ring-white focus:outline-none"
+                                    className="flex items-center gap-4 bg-white text-black px-6 py-4 md:px-8 md:py-6 rounded-none text-[10px] md:text-xs font-black tracking-widest uppercase hover:bg-primary hover:text-white transition-all duration-500 shadow-2xl focus:ring-2 focus:ring-white focus:outline-none"
                                 >
                                     {t('project.requestQuote')}
                                 </button>
@@ -140,19 +140,22 @@ const ProjectDetailsPage = () => {
                         <div className="lg:col-span-8 flex flex-col gap-16">
                             <div>
                                 <h2 className="text-[10px] font-black text-neutral-400 mb-10 uppercase tracking-[0.5em] flex items-center gap-4">
-                                    <div className="h-[2px] w-8 bg-neutral-800"></div>
+                                    <div className="h-[2px] w-8 bg-primary"></div>
                                     {t('project.about')}
                                 </h2>
-                                <p className="text-neutral-400 text-xl md:text-3xl leading-[1.3] font-black tracking-tight uppercase max-w-5xl">
-                                    {i18n.language === 'en' && project.description_en ? project.description_en : project.description}
-                                </p>
+                                <div className="text-white text-base md:text-xl leading-relaxed font-sans max-w-4xl space-y-4">
+                                    {((i18n.language === 'en' && project.description_en) ? project.description_en : project.description)?.split('. ').map((paragraph, idx) => (
+                                        paragraph.trim() && <p key={idx}>{paragraph.trim()}{paragraph.endsWith('.') ? '' : '.'}</p>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
                         <div className="lg:col-span-4 flex flex-col gap-12 bg-neutral-900/10 border border-neutral-800/30 p-10 md:p-12 rounded-none backdrop-blur-sm self-start group">
-                            <h3 className="text-xl font-black text-white uppercase tracking-tighter mb-4 flex justify-between items-center">
+                            <h3 className="text-xl font-black text-white uppercase tracking-tighter mb-4 flex justify-between items-center relative pl-4">
+                                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-full bg-primary"></div>
                                 {t('project.relatedProjects')}
-                                <ArrowRight className="w-5 h-5 text-white opacity-0 group-hover:opacity-100 -rotate-45 group-hover:rotate-0 transition-all" />
+                                <ArrowRight className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 -rotate-45 group-hover:rotate-0 transition-all" />
                             </h3>
                             <div className="flex flex-col gap-8">
                                 {relatedProjects.map((p) => (
@@ -169,8 +172,8 @@ const ProjectDetailsPage = () => {
                                             <img src={p.images[0]} alt={p.title} className="w-full h-full object-cover grayscale group-hover/item:grayscale-0 group-hover/item:scale-110 transition-all duration-1000" />
                                         </div>
                                         <div className="flex flex-col">
-                                            <span className="text-[8px] uppercase tracking-[0.3em] text-neutral-600 mb-2 group-hover/item:text-neutral-400 transition-colors">PROJ_0{p.id}</span>
-                                            <h4 className="text-sm font-black text-white uppercase group-hover/item:text-neutral-200 transition-colors leading-tight">{p.title}</h4>
+                                            <span className="text-[8px] uppercase tracking-[0.3em] text-neutral-600 mb-2 group-hover/item:text-white transition-colors">PROJ_0{p.id}</span>
+                                            <h4 className="text-sm font-black text-neutral-400 uppercase group-hover/item:text-primary transition-colors leading-tight">{p.title}</h4>
                                         </div>
                                     </div>
                                 ))}

@@ -163,10 +163,10 @@ const SobrePage = () => {
                     {item.index}
                   </span>
                   <div className="max-w-lg relative z-10">
-                    <h3 className="text-3xl md:text-5xl font-black text-white mb-8 uppercase tracking-tighter leading-none group-hover:text-neutral-400 transition-colors">
+                    <h3 className="text-3xl md:text-5xl font-black text-white mb-8 uppercase tracking-tighter leading-none group-hover:text-primary transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-neutral-500 font-medium leading-relaxed text-sm md:text-xl opacity-80 group-hover:opacity-100 transition-opacity">
+                    <p className="text-neutral-500 font-medium leading-relaxed text-sm md:text-xl opacity-80 group-hover:text-white group-hover:opacity-100 transition-colors">
                       {item.desc}
                     </p>
                   </div>
@@ -198,15 +198,15 @@ const SobrePage = () => {
                 { title: t('about.page.skills.techTitle'), skills: technicalSkills, icon: "02" },
                 { title: t('about.page.skills.softTitle'), skills: softwareSkills, icon: "03" }
               ].map((group, i) => (
-                <div key={i} className="flex flex-col p-8 md:p-12 bg-black group hover:bg-neutral-900/40 transition-all duration-700 relative overflow-hidden">
-                  <span className="absolute -top-6 -right-6 text-7xl font-black text-white/5 group-hover:text-white/5 transition-colors">{group.icon}</span>
-                  <h3 className="text-xl font-black text-white mb-8 uppercase flex items-center gap-4">
+                <div key={i} className="flex flex-col p-8 md:p-12 bg-black group hover:bg-neutral-900/40 transition-all duration-700 relative">
+                  <span className="absolute top-4 right-4 text-7xl font-black text-white/5 group-hover:text-white/10 transition-colors z-0">{group.icon}</span>
+                  <h3 className="text-xl font-black text-white mb-8 uppercase flex items-center gap-4 relative z-10">
                     <span className="w-3 h-3 bg-white" />
                     {group.title}
                   </h3>
                   <ul className="flex flex-col gap-4">
                     {group.skills.map((skill, idx) => (
-                      <li key={idx} className="text-neutral-500 font-bold text-sm md:text-lg hover:text-white transition-colors flex items-center gap-4 group/item">
+                      <li key={idx} className="text-neutral-500 font-bold text-sm md:text-lg hover:text-white transition-colors flex items-center gap-4 group/item relative z-10">
                         <span className="text-neutral-700 text-[10px] font-black group-hover/item:text-neutral-400 transition-colors">/</span>
                         {skill}
                       </li>
@@ -247,15 +247,15 @@ const SobrePage = () => {
                   className="group relative p-10 bg-neutral-900/10 hover:bg-neutral-900/30 transition-all duration-700 rounded-none overflow-hidden"
                 >
                   <div className="w-14 h-14 rounded-none border border-neutral-800 bg-black flex items-center justify-center mb-8 group-hover:bg-white group-hover:border-white transition-all duration-700">
-                    <ArrowDownRight strokeWidth={2.5} className="text-neutral-500 group-hover:text-black group-hover:-rotate-45 transition-all duration-700" />
+                    <ArrowDownRight strokeWidth={2.5} className="text-neutral-500 group-hover:text-primary group-hover:-rotate-45 transition-all duration-700" />
                   </div>
-                  <h4 className="text-3xl font-black text-white mb-6 uppercase tracking-tighter group-hover:text-neutral-400 transition-colors leading-[0.85]">
+                  <h4 className="text-3xl font-black text-white mb-6 uppercase tracking-tighter group-hover:text-primary transition-colors leading-[0.85]">
                     {item.title}
                   </h4>
                   <p className="text-neutral-500 font-medium leading-relaxed group-hover:text-neutral-300 transition-colors text-base md:text-lg">
                     {item.desc}
                   </p>
-                  <div className="absolute bottom-0 left-0 h-1 bg-white w-0 group-hover:w-full transition-all duration-1000" />
+                  <div className="absolute bottom-0 left-0 h-1 bg-primary w-0 group-hover:w-full transition-all duration-1000" />
                 </motion.div>
               ))}
             </div>

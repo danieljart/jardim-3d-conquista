@@ -10,21 +10,21 @@ const ServicesOverview = () => {
 
   const services = [
     {
-      title: t('services.items.fachadas.title'),
-      description: t('services.items.fachadas.overviewDesc'),
-      slug: '/servicos/fachadas',
+      title: t('services.items.cenografia.title'),
+      description: t('services.items.cenografia.overviewDesc'),
+      slug: '/servicos/cenografia',
       number: '01'
     },
     {
-      title: t('services.items.cenografia.overviewTitle'),
-      description: t('services.items.cenografia.overviewDesc'),
-      slug: '/servicos/cenografia',
+      title: t('services.items.ambientes.title'),
+      description: t('services.items.ambientes.overviewDesc'),
+      slug: '/servicos/ambientes',
       number: '02'
     },
     {
-      title: t('services.items.ambientes.overviewTitle'),
-      description: t('services.items.ambientes.overviewDesc'),
-      slug: '/servicos/ambientes',
+      title: t('services.items.fachadas.title'),
+      description: t('services.items.fachadas.overviewDesc'),
+      slug: '/servicos/fachadas',
       number: '03'
     },
     {
@@ -45,7 +45,7 @@ const ServicesOverview = () => {
               <span className="text-[10px] md:text-xs font-black tracking-[0.4em] uppercase text-neutral-400">Áreas de Atuação</span>
             </div>
             <h2 className="text-6xl md:text-8xl lg:text-[7vw] font-black text-white tracking-tighter leading-[0.8] uppercase break-words">
-              {t('services.overviewTitle')}
+              {t('services.overviewTitle').split(' ').slice(0, -1).join(' ')} <span className="text-primary">{t('services.overviewTitle').split(' ').slice(-1)}</span>
             </h2>
           </div>
           <div className="lg:col-span-4 flex flex-col justify-between items-end">
@@ -59,7 +59,7 @@ const ServicesOverview = () => {
               
              <div className="flex items-start gap-4 border-l border-neutral-800 pl-6 py-2">
                 <div className="w-2 h-2 rounded-none bg-white mt-2 shrink-0"></div>
-                <p className="text-neutral-400 font-sans text-xs md:text-sm leading-relaxed">
+                <p className="text-white font-sans text-xs md:text-sm leading-relaxed">
                   {t('services.overviewSubtitle')}
                 </p>
              </div>
@@ -93,7 +93,7 @@ const ServicesOverview = () => {
                   </span>
                   <div className="flex flex-col gap-2">
                     <h3 className="text-xl md:text-2xl font-black text-white tracking-tighter uppercase group-hover:text-neutral-400 transition-colors duration-500 leading-none max-w-[12ch]">
-                      Áreas de <span className="text-primary">Atuação</span>
+                      {service.title.split(' ').slice(0, -1).join(' ')} <span className="text-primary">{service.title.split(' ').slice(-1)}</span>
                     </h3>
                   </div>
                   <div className="ml-auto flex w-10 h-10 rounded-none border border-neutral-800 items-center justify-center bg-white border-white text-black md:bg-transparent md:border-neutral-800 md:group-hover:bg-white md:group-hover:border-white transition-all duration-500 shrink-0">
@@ -102,7 +102,7 @@ const ServicesOverview = () => {
                 </div>
                 
                 {/* Description below */}
-                <p className="text-neutral-500 text-xs md:text-sm font-sans leading-relaxed text-left group-hover:text-neutral-400 transition-colors duration-500 line-clamp-3">
+                <p className="text-white text-xs md:text-sm font-sans leading-relaxed text-left transition-colors duration-500 line-clamp-3">
                   {service.description}
                 </p>
               </div>

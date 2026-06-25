@@ -69,7 +69,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section className="h-screen flex flex-col justify-center bg-black relative overflow-hidden snap-start shrink-0">
+      <section className="h-screen flex flex-col justify-center bg-[#07020d] relative overflow-hidden snap-start shrink-0">
         <div className="absolute inset-0 opacity-20 pointer-events-none z-0">
           <div className="absolute top-[10%] right-[-10%] w-[1000px] h-[1000px] bg-white/5 rounded-none blur-[200px]"></div>
         </div>
@@ -98,7 +98,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
       </section>
 
       {/* SECTION 2: FORM, BENEFITS & SOCIAL */}
-      <section className="h-screen flex flex-col justify-center bg-black snap-start shrink-0 overflow-hidden border-t border-white/5">
+      <section className="h-screen flex flex-col justify-center bg-[#07020d] snap-start shrink-0 overflow-hidden border-t border-white/5">
         <div className="container mx-auto px-6 md:px-12">
           {/* Main Grid: Benefits & Form */}
           <div className="grid grid-cols-1 lg:grid-cols-12 border border-white/10 bg-black/20 backdrop-blur-sm mb-8">
@@ -124,7 +124,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
                         <h4 className="font-black text-white text-xl md:text-2xl mb-2 uppercase tracking-tighter group-hover:text-primary transition-colors leading-[0.9]">
                           {reason.title}
                         </h4>
-                        <p className="text-neutral-500 font-medium leading-relaxed text-xs md:text-sm max-w-sm group-hover:text-neutral-400 transition-colors">
+                        <p className="text-neutral-500 font-medium leading-relaxed text-xs md:text-sm max-w-sm group-hover:text-white group-hover:scale-[1.05] transform origin-left transition-all duration-500">
                           {reason.desc}
                         </p>
                       </div>
@@ -138,7 +138,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
             <div className="lg:col-span-7 flex flex-col h-full bg-white/[0.01]">
               <div className="grid grid-cols-1 md:grid-cols-2 border-b border-white/10">
                 <div className="p-6 md:p-8 border-b md:border-b-0 md:border-r border-white/10 focus-within:bg-white/5 transition-colors">
-                  <label className="text-[8px] tracking-[0.5em] font-black text-neutral-500 uppercase block mb-3">
+                  <label className="text-[10px] tracking-[0.5em] font-black text-white uppercase block mb-3">
                     {t('contact.form.name')}
                   </label>
                   <input
@@ -149,7 +149,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
                   />
                 </div>
                 <div className="p-6 md:p-8 focus-within:bg-white/5 transition-colors">
-                  <label className="text-[8px] tracking-[0.5em] font-black text-neutral-500 uppercase block mb-3">
+                  <label className="text-[10px] tracking-[0.5em] font-black text-white uppercase block mb-3">
                     {t('contact.form.company')}
                   </label>
                   <input
@@ -163,10 +163,10 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
 
               {/* Services Selection */}
               <div className="p-6 md:p-8 flex-grow bg-white/[0.02]">
-                <label className="text-[8px] tracking-[0.5em] font-black text-neutral-500 uppercase block mb-4">
+                <label className="text-[10px] tracking-[0.5em] font-black text-white uppercase block mb-4">
                   {t('contact.form.services')}
                 </label>
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 gap-2">
                   {services.map((service) => {
                     const isChecked = selectedServices.includes(service.label);
                     return (
@@ -180,7 +180,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
                             : "border-white/5 bg-transparent text-neutral-500 hover:border-white/20 hover:text-white"
                         }`}
                       >
-                        <span className="text-[9px] font-black uppercase tracking-widest leading-tight">{service.label}</span>
+                        <span className="text-[11px] md:text-xs font-black uppercase tracking-widest leading-tight">{service.label}</span>
                         <div className={`w-3 h-3 border ${isChecked ? 'border-white bg-white' : 'border-neutral-800'} shrink-0`} />
                       </button>
                     );
@@ -228,7 +228,7 @@ const Contact: React.FC<ContactProps> = ({ minimal = false }) => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-6 p-6 bg-black hover:bg-neutral-900 transition-all duration-700 group relative overflow-hidden h-full"
+                className="flex items-center gap-6 p-6 bg-[#07020d] hover:bg-neutral-900 transition-all duration-700 group relative overflow-hidden h-full"
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-white/5 group-hover:bg-primary transition-all duration-500 relative z-10 shrink-0">
                   <social.icon className="h-5 w-5 text-neutral-500 group-hover:text-white" strokeWidth={2.5} />

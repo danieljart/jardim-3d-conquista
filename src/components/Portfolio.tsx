@@ -11,8 +11,8 @@ const imgPlaceholder = "https://images.unsplash.com/photo-1600607686527-6fb88609
 const Portfolio = ({ containerRef }: { containerRef?: React.RefObject<HTMLDivElement> }) => {
   const { t, i18n } = useTranslation();
   
-  // Specific projects requested: McCain, Fernando Perez, Schweppes, Amaral
-  const featuredIds = [3004, 1002, 3005, 1003];
+  // Specific projects requested: Coca-Cola, Fernando Perez, Laman, Amaral
+  const featuredIds = [3002, 1002, 4001, 1003];
   
   const portfolioItems = featuredIds
     .map(id => projectsData.find(p => p.id === id))
@@ -70,7 +70,7 @@ const Portfolio = ({ containerRef }: { containerRef?: React.RefObject<HTMLDivEle
             </div>
             <div>
               <p className="text-neutral-500 text-xs md:text-sm tracking-[0.3em] uppercase mb-4">{t('portfolio.instagram')}</p>
-              <h3 className="text-4xl md:text-6xl lg:text-[7vw] font-black text-white tracking-tighter uppercase group-hover:text-neutral-400 transition-colors duration-500 leading-none">
+              <h3 className="text-4xl md:text-6xl lg:text-[7vw] font-black text-white tracking-tighter uppercase group-hover:text-primary transition-colors duration-500 leading-none">
                 @danieljardim.3d
               </h3>
             </div>

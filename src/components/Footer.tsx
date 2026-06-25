@@ -73,10 +73,16 @@ const Footer = () => {
                 <a href="/" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('nav.home')}</a>
               </li>
               <li>
-                <a href="/servicos/fachadas" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('services.items.fachadas.title')}</a>
+                <a href="/servicos/cenografia" className="text-neutral-400 font-sans hover:text-white transition-colors">Cenografia & Estandes</a>
               </li>
               <li>
-                <a href="/servicos/cenografia" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('services.items.cenografia.title')}</a>
+                <a href="/servicos/ambientes" className="text-neutral-400 font-sans hover:text-white transition-colors">Ambientes</a>
+              </li>
+              <li>
+                <a href="/servicos/fachadas" className="text-neutral-400 font-sans hover:text-white transition-colors">Fachadas Comerciais</a>
+              </li>
+              <li>
+                <a href="/servicos/personalizados" className="text-neutral-400 font-sans hover:text-white transition-colors">Projetos Personalizados</a>
               </li>
               <li>
                 <a href="/sobre" className="text-neutral-400 font-sans hover:text-white transition-colors">{t('nav.about')}</a>

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import ProjectCTA from './ProjectCTA';
 
 const Pricing = () => {
   const { t } = useTranslation();
@@ -27,11 +28,11 @@ const Pricing = () => {
               </span>
             </div>
             <h2 className="text-6xl md:text-8xl lg:text-[8vw] font-black text-white tracking-tighter leading-[0.8] uppercase max-w-5xl">
-              {t('pricing.title')}
+              {t('pricing.title').split(' ').slice(0, -2).join(' ')} <span className="text-primary">{t('pricing.title').split(' ').slice(-2).join(' ')}</span>
             </h2>
             <div className="flex items-center gap-4 mt-4">
               <div className="w-2 h-2 rounded-none bg-white"></div>
-              <p className="text-neutral-400 font-sans max-w-2xl text-base md:text-xl leading-relaxed">
+              <p className="text-white font-sans max-w-2xl text-base md:text-xl leading-relaxed">
                 {t('pricing.subtitle')}
               </p>
             </div>
@@ -46,16 +47,16 @@ const Pricing = () => {
                 viewport={{ amount: 0.8 }}
                 className="flex flex-col border-t border-neutral-900 pt-8 md:pt-10 relative group snap-center md:snap-align-none"
               >
-                <div className="absolute top-0 left-0 w-12 h-[1px] bg-white transition-all duration-700 group-hover:w-full"></div>
+                <div className="absolute top-0 left-0 w-12 h-[1px] bg-white transition-all duration-700 group-hover:w-full group-hover:bg-primary"></div>
                 
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="text-xl md:text-2xl font-black text-white/50 tracking-tighter shrink-0 pt-0.5">{step.number}</span>
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white uppercase tracking-tighter leading-none max-w-[12ch]">
+                  <span className="text-xl md:text-2xl font-black text-white/50 tracking-tighter shrink-0 pt-0.5 group-hover:text-primary group-hover:scale-110 transform origin-left transition-all duration-500">{step.number}</span>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white uppercase tracking-tighter leading-none max-w-[12ch] group-hover:text-primary group-hover:scale-[1.05] transform origin-left transition-all duration-500">
                     {step.title}
                   </h3>
                 </div>
                 
-                <p className="text-neutral-500 text-xs md:text-sm lg:text-base font-sans leading-relaxed">
+                <p className="text-neutral-500 group-hover:text-white group-hover:scale-[1.05] transform origin-left transition-all duration-500 text-xs md:text-sm lg:text-base font-sans leading-relaxed">
                   {step.description}
                 </p>
               </motion.div>
@@ -65,26 +66,9 @@ const Pricing = () => {
       </section>
 
       {/* Final CTA Card as its own snap-start section to guarantee visibility on PC */}
-      <section className="snap-start w-full py-16 md:py-24 bg-background flex items-center justify-center h-screen">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="w-full bg-neutral-950 border border-neutral-900 p-10 md:p-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12 md:gap-20 group hover:border-neutral-800 transition-colors">
-            <div className="flex flex-col gap-6 md:gap-8 max-w-3xl">
-              <h3 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter uppercase leading-[0.85]">
-                {t('pricing.final.title')}
-              </h3>
-              <p className="text-neutral-400 font-sans text-sm md:text-base lg:text-xl leading-relaxed">
-                {t('pricing.final.desc')}
-              </p>
-            </div>
-            <button
-              onClick={() => navigate('/contato')}
-              className="flex-shrink-0 w-full lg:w-auto px-10 py-6 md:px-12 md:py-8 bg-white text-black text-xs md:text-sm font-black tracking-[0.2em] uppercase hover:bg-neutral-200 transition-colors flex justify-between items-center gap-8 md:gap-12"
-            >
-              {t('pricing.final.button')}
-              <ArrowRight className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
+      {/* Final CTA Card as its own snap-start section to guarantee visibility on PC */}
+      <section className="snap-start w-full bg-background flex items-center justify-center h-screen">
+        <ProjectCTA titleKey="pricing.final.title" descKey="pricing.final.desc" btnKey="pricing.final.button" />
       </section>
     </>
   );

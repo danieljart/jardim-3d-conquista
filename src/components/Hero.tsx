@@ -122,7 +122,7 @@ const Hero = () => {
                transition={{ duration: 0.8, delay: 0.5 }}
                className="max-w-md border-l-4 border-white pl-8"
             >
-              <p className="text-lg md:text-2xl text-neutral-400 font-medium leading-tight mb-2">
+              <p className="text-lg md:text-2xl text-white font-medium leading-tight mb-2">
                 {t('hero.subtitle')}
               </p>
               <p className="text-[10px] md:text-xs tracking-[0.4em] text-primary/60 uppercase font-black">
@@ -136,10 +136,10 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => navigate('/contato')}
-              className="group flex items-center gap-6 bg-white text-black px-10 py-6 md:px-12 md:py-8 rounded-none font-black text-xs md:text-sm tracking-[0.3em] uppercase hover:bg-neutral-200 transition-all duration-500 shrink-0"
+              className="group flex items-center gap-6 bg-white text-black px-10 py-6 md:px-12 md:py-8 rounded-none font-black text-xs md:text-sm tracking-[0.3em] uppercase hover:bg-primary hover:text-white transition-all duration-500 shrink-0"
             >
               <span>{t('hero.cta')}</span>
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-black text-white flex items-center justify-center group-hover:rotate-[-45deg] group-hover:bg-white group-hover:text-black transition-all duration-500">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-black text-white flex items-center justify-center group-hover:rotate-[-45deg] group-hover:bg-white group-hover:text-primary transition-all duration-500">
                 <ArrowDownRight className="w-5 h-5 md:w-6 md:h-6" strokeWidth={3} />
               </div>
             </motion.button>
